@@ -1,0 +1,69 @@
+{
+  "version": "51234ss",
+  "cacheList": [
+    "/mb/Schala/v2-1/How To Add GitHub.md",
+    "/mb/Schala/v2-1/index.html",
+    "/mb/Schala/v2-1/main.js",
+    "/mb/Schala/v2-1/package.json",
+    "/mb/Schala/v2-1/readme.md",
+    "/mb/Schala/v2-1/test.js",
+    
+    "/mb/Schala/v2-1/component/addGrammer.js",
+    "/mb/Schala/v2-1/component/addVocab.js",
+    "/mb/Schala/v2-1/component/catalog.js",
+    "/mb/Schala/v2-1/component/exportModal.js",
+    "/mb/Schala/v2-1/component/floatingMenu.js",
+    "/mb/Schala/v2-1/component/importArticleFromJs.js",
+    "/mb/Schala/v2-1/component/importArticlesFromFile.js",
+    "/mb/Schala/v2-1/component/index.html",
+    "/mb/Schala/v2-1/component/progress.js",
+    
+    "/mb/Schala/v2-1/component/common/floatingBall.js",
+    "/mb/Schala/v2-1/component/common/floatingContrl.js",
+    "/mb/Schala/v2-1/component/common/index.html",
+    "/mb/Schala/v2-1/component/common/menu.js",
+    
+    "/mb/Schala/v2-1/css/addGram.css",
+    "/mb/Schala/v2-1/css/addVocab.css",
+    "/mb/Schala/v2-1/css/catalog.css",
+    "/mb/Schala/v2-1/css/export.css",
+    "/mb/Schala/v2-1/css/import.css",
+    "/mb/Schala/v2-1/css/importFromJs.css",
+    "/mb/Schala/v2-1/css/menu.css",
+    
+    "/mb/Schala/v2-1/css/article/chineseContent.css",
+    "/mb/Schala/v2-1/css/article/englishText.css",
+    "/mb/Schala/v2-1/css/article/grammer.css",
+    "/mb/Schala/v2-1/css/article/head.css",
+    "/mb/Schala/v2-1/css/article/paragraph.css",
+    "/mb/Schala/v2-1/css/article/vocab-list.css",
+    
+    "/mb/Schala/v2-1/css/common/delete.css",
+    "/mb/Schala/v2-1/css/common/speaker.css",
+    
+    "/mb/Schala/v2-1/css/page/container.css",
+    
+    "/mb/Schala/v2-1/js/cssMaker.js",
+    "/mb/Schala/v2-1/js/data.js",
+    "/mb/Schala/v2-1/js/lingo.js",
+    "/mb/Schala/v2-1/js/nodeCreater.js",
+    "/mb/Schala/v2-1/js/res.js",
+    "/mb/Schala/v2-1/js/svg.js",
+    "/mb/Schala/v2-1/js/textAnalyzer.js",
+    
+    "/mb/Schala/v2-1/res/articles/importArticles.js",
+    "/mb/Schala/v2-1/res/articles/key.json",
+    
+    "/mb/Schala/v2-1/res/img/png/icon.png",
+    "/mb/Schala/v2-1/res/img/svg/copy.svg",
+    "/mb/Schala/v2-1/res/img/svg/speaker.svg",
+    
+    "/mb/Schala/v2-1/res/loadRes/index.html",
+    "/mb/Schala/v2-1/res/loadRes/index.js",
+    "/mb/Schala/v2-1/res/loadRes/Info.json",
+    "/mb/Schala/v2-1/res/loadRes/loader.js",
+    "/mb/Schala/v2-1/res/loadRes/num.js",
+    "/mb/Schala/v2-1/res/loadRes/num.json",
+    "/mb/Schala/v2-1/res/loadRes/test.html"
+  ]
+}

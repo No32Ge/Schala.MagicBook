@@ -1,0 +1,75 @@
+{
+  "version": "1234",
+  "cacheList": [
+    "/mb/b21/How To Add GitHub.md",
+    "/mb/b21/index.html",
+    "/mb/b21/main.js",
+    "/mb/b21/package.json",
+    "/mb/b21/readme.md",
+    "/mb/b21/test.js",
+
+    "/mb/b21/component/addGrammer.js",
+    "/mb/b21/component/addVocab.js",
+    "/mb/b21/component/catalog.js",
+    "/mb/b21/component/exportModal.js",
+    "/mb/b21/component/floatingMenu.js",
+    "/mb/b21/component/importArticleFromJs.js",
+    "/mb/b21/component/importArticlesFromFile.js",
+    "/mb/b21/component/index.html",
+    "/mb/b21/component/progress.js",
+
+    "/mb/b21/component/common/floatingBall.js",
+    "/mb/b21/component/common/floatingContrl.js",
+    "/mb/b21/component/common/index.html",
+    "/mb/b21/component/common/menu.js",
+
+    "/mb/b21/css/addGram.css",
+    "/mb/b21/css/addVocab.css",
+    "/mb/b21/css/catalog.css",
+    "/mb/b21/css/export.css",
+    "/mb/b21/css/import.css",
+    "/mb/b21/css/importFromJs.css",
+    "/mb/b21/css/menu.css",
+
+    "/mb/b21/css/article/chineseContent.css",
+    "/mb/b21/css/article/englishText.css",
+    "/mb/b21/css/article/grammer.css",
+    "/mb/b21/css/article/head.css",
+    "/mb/b21/css/article/paragraph.css",
+    "/mb/b21/css/article/vocab-list.css",
+
+    "/mb/b21/css/common/delete.css",
+    "/mb/b21/css/common/speaker.css",
+
+    "/mb/b21/css/page/container.css",
+
+    "/mb/b21/js/cssMaker.js",
+    "/mb/b21/js/data.js",
+    "/mb/b21/js/lingo.js",
+    "/mb/b21/js/nodeCreater.js",
+    "/mb/b21/js/res.js",
+    "/mb/b21/js/svg.js",
+    "/mb/b21/js/textAnalyzer.js",
+
+    "/mb/b21/res/articles/importArticles.js",
+    "/mb/b21/res/articles/key.json",
+
+    "/mb/b21/res/img/png/icon.png",
+    "/mb/b21/res/img/svg/copy.svg",
+    "/mb/b21/res/img/svg/speaker.svg",
+
+    "/mb/b21/res/loadRes/index.html",
+    "/mb/b21/res/loadRes/index.js",
+    "/mb/b21/res/loadRes/Info.json",
+    "/mb/b21/res/loadRes/loader.js",
+    "/mb/b21/res/loadRes/num.js",
+    "/mb/b21/res/loadRes/num.json",
+    "/mb/b21/res/loadRes/test.html",
+
+    "/mb/service-worker.js",
+    "/mb/manifest.json",
+
+    "/mb/reps/sea-4839056.jpg",
+    "/mb/reps/img/pawel-czerwinski-ISgDx2aOAB8-unsplash.jpg"
+  ]
+}

@@ -15,6 +15,17 @@ body {
     padding: 10px;
 }
 
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #0a0a0a url('/mb/reps/img/pawel-czerwinski-ISgDx2aOAB8-unsplash.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
 .container {
     max-width: 800px;
     margin: 0 auto;
