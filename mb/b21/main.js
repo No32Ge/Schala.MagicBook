@@ -38,8 +38,8 @@ function initNode() {
         initialX: window.innerWidth - 80,
         initialY: window.innerHeight / 3,
         size: 60,
-        color: '#3498db21',
-        icon: ' ',
+        color: '#3498db70',
+        icon: 'G',
         clickBack: function (x, y, set) {
             set(menu);
             console.log("点击");
@@ -51,6 +51,7 @@ function initNode() {
             console.log("拖动事件");
         }
     });
+    document.getElementById("")
     document.dispatchEvent(new CustomEvent('initStep', { detail: "基本功能加载完成" }));
 
     document.getElementById("toggle-explanations").addEventListener('change', function () {

@@ -230,7 +230,7 @@
     cursor: pointer;
     z-index: 999;
     /* 必须配合半透明背景色 */
-    background-color: rgba(22, 22, 22, 0.219);
+    background-color: rgba(0, 111, 175, 0.411);
 
     /* 模糊 20px，饱和度提升到 180% */
     backdrop-filter: blur(20px) saturate(180%);
@@ -242,7 +242,7 @@
 }
 
 .catalog-toggle-btn:hover {
-    background: #ffffff00;
+    background: #005ac01a;
     transform: translateX(5px);
 }
 
@@ -283,9 +283,8 @@
         width: 100%;
     }
 
-    .catalog-toggle-btn:hover {
-        background: #00a3ee10;
-        transform: scale(0.2) translateY(-50px);
+    .catalog-toggle-btn {
+        display: none;
     }
 }
 
