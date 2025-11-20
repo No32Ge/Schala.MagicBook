@@ -70,7 +70,7 @@ self.addEventListener('fetch', (event) => {
 
     try {
       const res = await fetch(req);
-      if (res.status === 200) {
+      if (res.status === 200 && (req.url.startsWith('http://') || req.url.startsWith('https://'))) {
         cache.put(req, res.clone());
       }
       return res;
