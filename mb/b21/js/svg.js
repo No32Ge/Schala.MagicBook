@@ -93,6 +93,43 @@ export async function loadMultipleSVGs(iconUrls) {
         .map(result => result.data);
 }
 
+
+/**
+ * 批量加载 SVG 文件并按指定尺寸注入宽高。
+ *
+ * @async
+ * @param {string} from - SVG 文件所在目录路径（不带结尾的 `/`）。
+ * @param {string[]} [importIcons=[]] - 需要加载的所有图标名称（不含 `.svg`）。
+ * @param {string[]} [filter=[]] - 已存在或无需加载的图标名称列表，将从 importIcons 中排除。
+ * @param {number} [width=16] - 注入到 <svg> 标签的宽度。
+ * @param {number} [height=16] - 注入到 <svg> 标签的高度。
+ *
+ * @returns {Promise<Object<string,string>|undefined>}  
+ * 返回一个以图标名称为键、SVG 字符串为值的对象。  
+ * 若没有需要加载的图标（全都在 filter 中），则返回 undefined。
+ *
+ * @description
+ * - 会自动过滤掉已存在的图标，只加载缺失部分。
+ * - 使用 Promise.all 并行加载所有缺失的 SVG。
+ * - 会使用正则将原始 SVG 的 <svg> 标签替换为带 width/height 的版本。
+ */
+export async function importSVGs(from, importIcons = [], filter = [], width = 16, height = 16) {
+    const svgs = {};
+    const missingIcons = importIcons.filter(name => !filter.includes(name));
+    if (missingIcons.length === 0) return svgs;
+    await Promise.all(
+        missingIcons.map(async (name) => {
+            const rawSVG = await loadSVGWithRetry(`${from}/${name}.svg`);
+            const svg = rawSVG.replace(/<svg(\s)/, `<svg width="${width}" height="${height}"$1`);
+            svgs[name] = svg;
+        })
+    );
+
+    return svgs;
+}
+
+
+
 // 使用方法
 
 // const icons = await loadMultipleSVGs([

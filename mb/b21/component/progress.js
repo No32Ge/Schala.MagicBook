@@ -31,8 +31,8 @@ function initCSS() {
         top: '0',
         left: '0',
         width: '100%',
-        height: '6px', // 稍微加高一点
-        background: 'rgba(236, 240, 241, 0.9)', // 半透明背景
+        height: '8px', // 稍微加高一点
+        background: 'rgba(236, 240, 241, 0.13)', // 半透明背景
         zIndex: '10000',
         backdropFilter: 'blur(4px)', // 毛玻璃效果
         boxShadow: '0 2px 10px rgba(0,0,0,0.1)' // 轻微阴影
@@ -43,7 +43,7 @@ function initCSS() {
     progressBar.set({
         height: '100%',
         // 使用渐变色背景，从红到黄到绿
-        background: 'linear-gradient(90deg, #ff4757 0%, #ffa502 50%, #2ed573 100%)',
+        background: 'linear-gradient(90deg, #ff475636 0%, #ffa6024f 50%rgba(46, 213, 116, 0.27)73 100%)',
         width: '0%',
         transition: 'width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)', // 更平滑的缓动函数
         position: 'relative',
@@ -121,7 +121,7 @@ function updateProgressBar() {
         bar.style.width = percent + "%";
         
         // 动态更新颜色
-        bar.style.background = `linear-gradient(90deg, #47f3ffff 0%, #0685a5ff 50%, #037cc2ff 100%)`;
+        bar.style.background = `linear-gradient(90deg, #47f3ff67 0%, #0685a548 50%, #037cc2af 100%)`;
         
         // 根据进度添加发光效果
         if (percent > 90) {

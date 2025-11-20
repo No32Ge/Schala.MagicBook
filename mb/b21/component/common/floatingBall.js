@@ -482,7 +482,7 @@ function initCSS() {
         position: 'fixed',
         width: '60px',
         height: '60px',
-        background: '#7cb2d61e',
+        // background: '#7cb2d61e',
         borderRadius: '50%',
         display: 'flex',
         alignItems: 'center',

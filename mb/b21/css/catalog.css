@@ -14,7 +14,7 @@
     top: 0;
     width: 300px;
     height: 100vh;
-    background: white;
+    /* background: white; */
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     z-index: 9997;
     transform: translateX(-100%);
@@ -22,6 +22,14 @@
     overflow-y: auto;
     display: flex;
     flex-direction: column;
+    /* 必须配合半透明背景色 */
+    background-color: rgba(222, 223, 224, 0.014);
+
+    /* 模糊 20px，饱和度提升到 180% */
+    backdrop-filter: blur(1px) saturate(180%);
+
+    /* 兼容 Safari */
+    -webkit-backdrop-filter: blur(1px) saturate(180%);
 }
 
 .article-catalog.show {
@@ -30,12 +38,20 @@
 
 .catalog-header {
     padding: 20px;
-    background: var(--primary-color);
+    /* background: var(--primary-color); */
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--border-color);
+    /* 必须配合半透明背景色 */
+    background-color: rgba(10, 91, 158, 0.295);
+
+    /* 模糊 20px，饱和度提升到 180% */
+    backdrop-filter: blur(2px) saturate(180%);
+
+    /* 兼容 Safari */
+    -webkit-backdrop-filter: blur(2px) saturate(180%);
 }
 
 .catalog-title {
@@ -104,8 +120,11 @@
 }
 
 .article-catalog-item.active {
-    background: var(--secondary-color);
+    background: #3498db33;
     color: white;
+    backdrop-filter: blur(2px) saturate(180%);
+    /* 兼容 Safari */
+    -webkit-backdrop-filter: blur(2px) saturate(180%);
 }
 
 .article-catalog-item.active::before {
@@ -203,19 +222,27 @@
     position: fixed;
     left: 20px;
     top: 20px;
-    background: var(--secondary-color);
+    /* background: var(--secondary-color); */
     color: white;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
     z-index: 999;
+    /* 必须配合半透明背景色 */
+    background-color: rgba(22, 22, 22, 0.219);
+
+    /* 模糊 20px，饱和度提升到 180% */
+    backdrop-filter: blur(20px) saturate(180%);
+
+    /* 兼容 Safari */
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
     transition: all 0.3s ease;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .catalog-toggle-btn:hover {
-    background: #2980b9;
+    background: #ffffff00;
     transform: translateX(5px);
 }
 
@@ -224,26 +251,28 @@
     .article-catalog {
         width: 280px;
     }
-    
+
+
+
     .catalog-toggle-btn {
         left: 10px;
         top: 10px;
         padding: 8px 12px;
         font-size: 0.9rem;
     }
-    
+
     .catalog-header {
         padding: 15px;
     }
-    
+
     .catalog-title {
         font-size: 1.1rem;
     }
-    
+
     .article-catalog-item {
         padding: 10px 12px;
     }
-    
+
     .catalog-item-title {
         font-size: 0.9rem;
     }
@@ -253,9 +282,10 @@
     .article-catalog {
         width: 100%;
     }
-    
-    .catalog-toggle-btn {
-        display: none;
+
+    .catalog-toggle-btn:hover {
+        background: #00a3ee10;
+        transform: scale(0.2) translateY(-50px);
     }
 }
 

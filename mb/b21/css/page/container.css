@@ -35,3 +35,14 @@ body {
     overflow: hidden;
     position: relative;
 }
+
+.glass-effect {
+    /* 必须配合半透明背景色 */
+    background-color: rgba(138, 136, 136, 0.13); 
+    
+    /* 模糊 20px，饱和度提升到 180% */
+    backdrop-filter: blur(2px) saturate(180%);
+    
+    /* 兼容 Safari */
+    -webkit-backdrop-filter: blur(20px) saturate(180%); 
+}

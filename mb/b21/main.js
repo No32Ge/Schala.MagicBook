@@ -16,12 +16,13 @@ import { exportModalElement } from "./component/exportModal.js";
 import { getLibraryItemWithChapters } from "./res/articles/importArticles.js";
 import { initProgress } from "./component/progress.js";
 import FloatingBall from "./component/common/floatingBall.js"
+import { initArtcleData } from "./article/articleInit.js"
 
 
-const testData = await getLibraryItemWithChapters("/mb/library/index/libraryIndex.json","wonder",(done,tol,url,res)=>{
+const testData = await getLibraryItemWithChapters("/mb/library/index/libraryIndex.json", "wonder", (done, tol, url, res) => {
     document.dispatchEvent(new CustomEvent('initStep', { detail: `加载文章数据 <br>共(${done}/${tol}) ${url} ${res.ok ? "加载成功" : "<span style = 'color:red;'>res.error.errorMessage</span>"}` }));
 })
-console.log("测试数据",testData);
+
 
 function initNode() {
     document.dispatchEvent(new CustomEvent('initStep', { detail: "开始初始化" }));
@@ -33,12 +34,12 @@ function initNode() {
     document.body.appendChild(importArticlesModal);
     document.body.appendChild(addVocabModal);
     // 创建悬浮球实例
-    const floatingBall = new FloatingBall({
+    new FloatingBall({
         initialX: window.innerWidth - 80,
         initialY: window.innerHeight / 3,
         size: 60,
-        color: '#3498db',
-        icon: '𝔾',
+        color: '#3498db21',
+        icon: ' ',
         clickBack: function (x, y, set) {
             set(menu);
             console.log("点击");
@@ -71,7 +72,6 @@ function initNode() {
 
     document.getElementById('article-catalog-btn').addEventListener('click', function (e) {
         e.stopPropagation();
-        console.log("点击展示目录");
         document.getElementById('article-catalog').classList.toggle('show');
         renderCatalogList();
     });
@@ -82,33 +82,7 @@ function initNode() {
 // 多篇文章数据 - 新格式
 const articlesData = [];
 
-// 词性类型映射
-const posTypes = {
-    "n": { "en": "noun", "cn": "名词" },
-    "v": { "en": "verb", "cn": "动词" },
-    "adj": { "en": "adjective", "cn": "形容词" },
-    "adv": { "en": "adverb", "cn": "副词" },
-    "prep": { "en": "preposition", "cn": "介词" },
-    "conj": { "en": "conjunction", "cn": "连词" },
-    "pron": { "en": "pronoun", "cn": "代词" },
-    "det": { "en": "determiner", "cn": "限定词" },
-    "int": { "en": "interjection", "cn": "感叹词" },
-    "phr": { "en": "phrase", "cn": "短语" },
-    "S": { "en": "sentence", "cn": "句子" }
-};
-
-// 语法类别映射
-const gramTypes = {
-    "S": { "en": "Sentence Structure", "cn": "句子结构" },
-    "T": { "en": "Tense", "cn": "时态" },
-    "C": { "en": "Clause", "cn": "从句" },
-    "P": { "en": "Punctuation", "cn": "标点" },
-    "W": { "en": "Word Form / Morphology", "cn": "词形变化" },
-    "O": { "en": "Others", "cn": "其他" }
-};
-
 let currentTooltipTimeout = null;
-
 
 
 // 应用状态
@@ -141,43 +115,15 @@ const appDatas = {
     }
 };
 
-const useFuncs = {
-    // 用来找到图标
-    appGetIconSVGs(name) {
-        return appDatas.system.icon.svgs[name];
-    },
-    // 用来设置图标
-    appSetIconSVG(name, value) {
-        appDatas.system.icon.svgs[name] = value;
-    }
-};
+
 
 const app = {
     appState: appState,
-    useFuncs: useFuncs,
     appDatas: appDatas
 }
 
 import { CssStyleMaker } from './js/cssMaker.js';
-// 初始化svg函数
-async function initSVG(from, importIcons = [], width = 16, height = 16) {
-    const { loadSVGWithRetry } = await import('./js/svg.js');
-    // 只保留缺失的 SVG filter功能是保留满足条件的数组
-    const missingIcons = importIcons.filter(name => !app.useFuncs.appGetIconSVGs(name));
-
-    if (missingIcons.length === 0) return; // 全部已存在，直接返回
-
-    // 并行加载缺失的 SVG
-    await Promise.all(
-        missingIcons.map(async (name) => {
-            const rawSVG = await loadSVGWithRetry(`${from}/${name}.svg`);
-            // 使用正则更安全地设置宽高
-            const svg = rawSVG.replace(/<svg(\s)/, `<svg width="${width}" height="${height}"$1`);
-            app.useFuncs.appSetIconSVG(name, svg);
-        })
-    );
-}
-
+import { importSVGs } from "./js/svg.js";
 
 async function initArticles() {
     const { originalArticleData: articleDatas } = await import('./js/data.js');
@@ -185,15 +131,16 @@ async function initArticles() {
 }
 
 async function init() {
-    await initSVG('./res/img/svg', ['copy', 'speaker']);
+    const svgs = appDatas.system.icon.svgs;
+    let addsvg = await initSVG(svgs);
+    Object.assign(svgs, addsvg);
     await initArticles();
-    patch();
-
 }
 
-// 补丁：这个函数存在的意义是由于有些事件需要延后处理，比如点击悬浮球中的目录时，展示目录，但是悬浮球的创建事件早于目录，因为目录是后期可能需要升级，因此处理目录的事件不能绑定到悬浮球内。
-function patch() {
+async function initSVG(loadAlready) {
+    return importSVGs('./res/img/svg', ['copy', 'speaker'], Object.keys(loadAlready))
 }
+
 
 
 function onCustomEvent(name, listener) {
@@ -253,6 +200,7 @@ function initApp() {
         }
 
     }
+    registerCatalogObserver?.();
     initGlobalSpeechControl?.();
     document.dispatchEvent(new CustomEvent('initStep', { detail: `语音组件加载完毕，可使用的语音有：${voices.map((e, i) => `<div>(${i}) ${e.name} (${e.lang})</div>`).join("")}` }));
 
@@ -365,65 +313,43 @@ function testSpeaker(text) {
 }
 
 testSpeaker("hello world");
+/**
+ * 注册目录监听器 (基于屏幕宽度)
+ * 逻辑：当 article-catalog 变为显示状态时，
+ * 如果当前屏幕宽度 <= 768px (符合 CSS @media max-width: 768px)，
+ * 则自动隐藏 floating-menu。
+ */
+function registerCatalogObserver() {
+    const catalogEl = document.getElementById("article-catalog");
+    const floatMenuEl = document.getElementById("floating-menu");
 
+    // 安全检查
+    if (!catalogEl || !floatMenuEl) return;
 
-// 文章数据初始化函数
-function initArtcleData(currentArticle) {
-    // 确保文章对象存在
-    if (!currentArticle) return currentArticle;
-
-    // 设置默认的语法类型
-    if (!currentArticle.gram_types) {
-        currentArticle.gram_types = gramTypes;
-    }
-
-    // 设置默认的词性类型
-    if (!currentArticle.pos_types) {
-        currentArticle.pos_types = posTypes;
-    }
-
-    // 确保文章有ID（如果没有，使用标题作为ID）
-    if (!currentArticle.id && currentArticle.title) {
-        currentArticle.id = currentArticle.title.toLowerCase().replace(/[^a-z0-9]/g, '_');
-    }
-
-    // 确保段落数据存在且是数组
-    if (!currentArticle.paras || !Array.isArray(currentArticle.paras)) {
-        currentArticle.paras = [];
-    }
-
-    // 初始化每个段落
-    currentArticle.paras.forEach((para, index) => {
-        // 确保段落有ID
-        if (!para.id) {
-            para.id = index + 1;
+    // 创建观察者
+    const observer = new MutationObserver((mutationsList) => {
+        for (const mutation of mutationsList) {
+            // 只监听 class 变化
+            if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+                
+                // 1. 判断目录是否处于“显示”状态
+                if (catalogEl.classList.contains("show")) {
+                    
+                    // 2. 【核心修改】使用 matchMedia 判断屏幕宽度
+                    // 这行代码等同于 CSS 中的 @media (max-width: 768px)
+                    if (window.matchMedia("(max-width: 768px)").matches) {
+                        
+                        // 移除浮动菜单的 show 类
+                        floatMenuEl.classList.remove("show");
+                        // console.log("触发响应式规则：屏幕<=768px，目录打开导致菜单隐藏");
+                    }
+                }
+            }
         }
-
-        // 确保词汇表存在
-        if (!para.vocab) {
-            para.vocab = [];
-        }
-
-        // 确保语法点存在
-        if (!para.gram) {
-            para.gram = [];
-        }
-
-        // 初始化每个词汇项
-        para.vocab.forEach(vocab => {
-            if (!vocab.ph) vocab.ph = "";
-            if (!vocab.pos) vocab.pos = "n";
-            if (!vocab.mean) vocab.mean = "";
-            if (!vocab.ex) vocab.ex = "";
-        });
-
-        // 初始化每个语法项
-        para.gram.forEach(gram => {
-            if (!gram.category) gram.category = "O";
-        });
     });
 
-    return currentArticle;
+    // 开始监听：只观察 class 属性的变化
+    observer.observe(catalogEl, { attributes: true, attributeFilter: ['class'] });
 }
 
 
@@ -476,7 +402,6 @@ const slotTooltip = document.getElementById('slot-tooltip');
 
 // 点击快捷复制语法
 function renderCpoyBtn(text) {
-
     const copy = document.createElement('span');
 
     // 创建样式实例 - 注意参数顺序变为 (config, clsName)
@@ -529,7 +454,7 @@ function renderCpoyBtn(text) {
 
     // 将样式应用到元素
     copyBtnStyle.inject(copy);
-    copy.innerHTML = `${app.useFuncs.appGetIconSVGs('copy')}`;
+    copy.innerHTML = `${"暂时不要图标"}`;
 
 
     copy.addEventListener('click', async function () {
@@ -548,6 +473,9 @@ function renderCpoyBtn(text) {
 // 渲染页面
 function renderPage() {
     const currentArticle = getCurrentArticle();
+
+    const gramTypes = currentArticle.gram_types;
+    const posTypes = currentArticle.pos_types;
 
     // 设置标题
     document.getElementById('page-title').textContent = currentArticle.title;
@@ -778,7 +706,7 @@ function renderPage() {
             grammarList.id = `grammar-${paragraph.id}`;
 
             paragraph.gram.forEach((grammar, index) => {
-                const grammarPage = renderGrammarCard(grammar);
+                const grammarPage = renderGrammarCard(grammar, gramTypes);
                 grammarList.appendChild(grammarPage);
                 appState.grammarRules.push(grammar)
             });
@@ -789,7 +717,7 @@ function renderPage() {
                 slot.addEventListener('click', (event) => {
                     const slotName = event.target.dataset.slot;
                     const ruleId = event.target.dataset.rule;
-                    showSlotTooltip(slotName, ruleId, event);
+                    showSlotTooltip(slotName, ruleId, posTypes, event);
                 });
 
                 // 鼠标移出时隐藏工具提示
@@ -854,7 +782,7 @@ function toggleExplanations() {
 }
 
 // 渲染语法卡片
-function renderGrammarCard(rule) {
+function renderGrammarCard(rule, gramTypes) {
     const card = document.createElement('div');
     card.className = 'grammar-card';
     card.dataset.ruleId = rule.id;
@@ -992,7 +920,7 @@ function renderPattern(pattern, components, ruleId) {
 }
 
 // 显示槽位工具提示
-function showSlotTooltip(slot, ruleId, event) {
+function showSlotTooltip(slot, ruleId, posTypes, event) {
     // 清除之前的超时
     if (currentTooltipTimeout) {
         clearTimeout(currentTooltipTimeout);
@@ -2331,6 +2259,7 @@ function createWordHeader(vocab, paragraph, index) {
 
     return wordHeader;
 }
+
 // 创建删除按钮
 function createDeleteButton(vocab, paragraph, index) {
     const deleteBtn = document.createElement('button');
