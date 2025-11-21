@@ -1,5 +1,3 @@
-好的，我帮你整理成一份完整的 README.md 文档，保留你的原文风格，同时格式清晰，图片引用也做了 Markdown 处理：
-
 
 # Schala's Magic Book
 
@@ -145,8 +143,3 @@ The main focus is on the JSON data. If you follow the format rules, everything w
 Focus on the **JSON data** and follow the format rules—everything else is handled by the page automatically.
 
 
-
-
-````
-
-````
