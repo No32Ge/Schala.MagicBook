@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
@@ -19,13 +20,13 @@
             padding: 20px;
             min-height: 100vh;
         }
-        
+
         .container {
             max-width: 900px;
             margin: 0 auto;
             padding: 20px;
         }
-        
+
         header {
             text-align: center;
             margin-bottom: 30px;
@@ -34,25 +35,25 @@
             border-radius: 10px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-        
+
         h1 {
             color: #ff0000;
             margin-bottom: 10px;
             font-size: 2.2rem;
         }
-        
+
         .description {
             color: #666;
             max-width: 600px;
             margin: 0 auto;
         }
-        
+
         .players-container {
             display: grid;
             grid-template-columns: 1fr;
             gap: 30px;
         }
-        
+
         .player-card {
             background: white;
             border-radius: 12px;
@@ -60,12 +61,12 @@
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
+
         .player-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
         }
-        
+
         .player-header {
             padding: 15px 20px;
             background: #ff0000;
@@ -75,20 +76,21 @@
             justify-content: space-between;
             align-items: center;
         }
-        
+
         .youtube-player-container {
             position: relative;
             width: 100%;
             background: #000;
         }
-        
+
         .youtube-player-wrapper {
             position: relative;
             width: 100%;
-            padding-bottom: 56.25%; /* 16:9 宽高比 */
+            padding-bottom: 56.25%;
+            /* 16:9 宽高比 */
             height: 0;
         }
-        
+
         .youtube-player {
             position: absolute;
             top: 0;
@@ -97,7 +99,7 @@
             height: 100%;
             z-index: 1;
         }
-        
+
         /* 透明覆盖层 - 阻止与YouTube iframe的直接交互 */
         .youtube-overlay {
             position: absolute;
@@ -108,13 +110,15 @@
             background: transparent;
             z-index: 2;
             cursor: pointer;
-            display: none; /* 默认隐藏覆盖层 */
+            display: none;
+            /* 默认隐藏覆盖层 */
         }
-        
+
         .youtube-overlay.active {
-            display: block; /* 激活时显示覆盖层 */
+            display: block;
+            /* 激活时显示覆盖层 */
         }
-        
+
         /* 覆盖层激活时的视觉提示 */
         .youtube-overlay.active::after {
             content: "覆盖层已激活 - 点击播放/暂停";
@@ -130,18 +134,18 @@
             opacity: 0;
             transition: opacity 0.3s;
         }
-        
+
         .youtube-player-container:hover .youtube-overlay.active::after {
             opacity: 1;
         }
-        
+
         /* 自定义控制栏 */
         .custom-controls {
             position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
-            background: linear-gradient(transparent, rgba(0,0,0,0.7));
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
             padding: 10px;
             opacity: 0;
             transition: opacity 0.3s;
@@ -151,21 +155,21 @@
             z-index: 3;
             pointer-events: auto;
         }
-        
+
         .youtube-player-container:hover .custom-controls {
             opacity: 1;
         }
-        
+
         .progress-container {
             width: 100%;
             height: 6px;
-            background: rgba(255,255,255,0.3);
+            background: rgba(255, 255, 255, 0.3);
             border-radius: 3px;
             cursor: pointer;
             position: relative;
             pointer-events: auto;
         }
-        
+
         .progress-bar {
             height: 100%;
             background: #ff0000;
@@ -173,7 +177,7 @@
             width: 0%;
             position: relative;
         }
-        
+
         .progress-handle {
             position: absolute;
             right: -6px;
@@ -186,23 +190,23 @@
             opacity: 0;
             transition: opacity 0.2s;
         }
-        
+
         .progress-container:hover .progress-handle {
             opacity: 1;
         }
-        
+
         .controls-bottom {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        
+
         .control-group {
             display: flex;
             align-items: center;
             gap: 10px;
         }
-        
+
         .control-btn {
             background: transparent;
             border: none;
@@ -218,45 +222,45 @@
             height: 32px;
             pointer-events: auto;
         }
-        
+
         .control-btn:hover {
-            background: rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.2);
         }
-        
+
         .control-btn i {
             font-size: 16px;
         }
-        
+
         .time-display {
             color: white;
             font-family: monospace;
             font-size: 13px;
             margin: 0 10px;
         }
-        
+
         .volume-control {
             display: flex;
             align-items: center;
             gap: 5px;
         }
-        
+
         .volume-slider {
             width: 60px;
             height: 4px;
-            background: rgba(255,255,255,0.3);
+            background: rgba(255, 255, 255, 0.3);
             border-radius: 2px;
             position: relative;
             cursor: pointer;
             pointer-events: auto;
         }
-        
+
         .volume-level {
             height: 100%;
             background: white;
             border-radius: 2px;
             width: 100%;
         }
-        
+
         /* 覆盖层开关样式 */
         .overlay-toggle {
             display: flex;
@@ -265,20 +269,20 @@
             color: white;
             font-size: 14px;
         }
-        
+
         .toggle-switch {
             position: relative;
             display: inline-block;
             width: 50px;
             height: 24px;
         }
-        
+
         .toggle-switch input {
             opacity: 0;
             width: 0;
             height: 0;
         }
-        
+
         .toggle-slider {
             position: absolute;
             cursor: pointer;
@@ -290,7 +294,7 @@
             transition: .4s;
             border-radius: 24px;
         }
-        
+
         .toggle-slider:before {
             position: absolute;
             content: "";
@@ -302,15 +306,15 @@
             transition: .4s;
             border-radius: 50%;
         }
-        
-        input:checked + .toggle-slider {
+
+        input:checked+.toggle-slider {
             background-color: #ff0000;
         }
-        
-        input:checked + .toggle-slider:before {
+
+        input:checked+.toggle-slider:before {
             transform: translateX(26px);
         }
-        
+
         .instructions {
             background: white;
             padding: 25px;
@@ -318,27 +322,27 @@
             margin-top: 30px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-        
+
         .instructions h2 {
             color: #ff0000;
             margin-bottom: 15px;
         }
-        
+
         .instructions ol {
             padding-left: 20px;
         }
-        
+
         .instructions li {
             margin-bottom: 10px;
         }
-        
+
         code {
             background: #f1f1f1;
             padding: 2px 6px;
             border-radius: 4px;
             font-family: monospace;
         }
-        
+
         @media (min-width: 768px) {
             .players-container {
                 grid-template-columns: 1fr 1fr;
@@ -354,7 +358,7 @@
             <h1>增强版YouTube播放器组件</h1>
             <p class="description">功能完整的自定义YouTube播放器，集成控制栏，支持进度条、音量控制、全屏等功能</p>
         </header>
-        
+
         <div class="players-container">
             <div class="player-card">
                 <div class="player-header">
@@ -369,7 +373,7 @@
                 </div>
                 <div id="player1"></div>
             </div>
-            
+
             <div class="player-card">
                 <div class="player-header">
                     <span>播放器 2 - 经典视频</span>
@@ -384,13 +388,14 @@
                 <div id="player2"></div>
             </div>
         </div>
-        
+
         <div class="instructions">
             <h2>使用说明</h2>
             <ol>
                 <li>将鼠标悬停在视频上显示控制栏</li>
                 <li>使用进度条拖动或点击来跳转到指定时间点</li>
-                <li>点击<i class="fas fa-play" style="margin: 0 5px;"></i>/<i class="fas fa-pause" style="margin: 0 5px;"></i>按钮控制播放</li>
+                <li>点击<i class="fas fa-play" style="margin: 0 5px;"></i>/<i class="fas fa-pause"
+                        style="margin: 0 5px;"></i>按钮控制播放</li>
                 <li>使用<i class="fas fa-expand" style="margin: 0 5px;"></i>按钮进入/退出全屏模式</li>
                 <li>使用音量控制调整音量大小</li>
                 <li>使用右上角的开关控制覆盖层：
@@ -408,7 +413,7 @@
     <script>
         // 存储所有播放器实例
         const youtubePlayers = {};
-        
+
         // 创建YouTube播放器的函数
         function createYouTubePlayer(url, containerId, options = {}) {
             // 默认选项 - 完全取消推荐和无关内容
@@ -422,24 +427,24 @@
                 showinfo: 0,
                 disablekb: 1           // 禁用键盘控制
             };
-            
+
             // 合并选项
             const playerOptions = { ...defaultOptions, ...options };
-            
+
             // 从URL提取视频ID
             const videoId = extractVideoId(url);
             if (!videoId) {
                 console.error("无法从URL中提取视频ID");
                 return null;
             }
-            
+
             // 获取容器元素
             const container = document.getElementById(containerId);
             if (!container) {
                 console.error(`找不到ID为"${containerId}"的容器元素`);
                 return null;
             }
-            
+
             // 创建播放器结构
             container.innerHTML = `
                 <div class="youtube-player-container" id="${containerId}-container">
@@ -481,14 +486,14 @@
                     </div>
                 </div>
             `;
-            
+
             // 初始化播放器
             initPlayer(containerId, videoId, playerOptions);
-            
+
             // 返回播放器ID
             return containerId;
         }
-        
+
         // 从URL中提取视频ID
         function extractVideoId(url) {
             // 处理各种YouTube URL格式
@@ -496,7 +501,7 @@
             const match = url.match(regExp);
             return (match && match[7].length === 11) ? match[7] : null;
         }
-        
+
         // 初始化播放器
         function initPlayer(containerId, videoId, playerOptions) {
             // 等待YouTube API加载
@@ -508,7 +513,7 @@
                 createYTPlayer(containerId, videoId, playerOptions);
             }
         }
-        
+
         // 加载YouTube API
         function loadYouTubeAPI() {
             return new Promise((resolve) => {
@@ -517,20 +522,20 @@
                     resolve();
                     return;
                 }
-                
+
                 // 创建脚本元素
                 const tag = document.createElement('script');
                 tag.src = 'https://www.youtube.com/iframe_api';
                 const firstScriptTag = document.getElementsByTagName('script')[0];
                 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-                
+
                 // 设置回调
-                window.onYouTubeIframeAPIReady = function() {
+                window.onYouTubeIframeAPIReady = function () {
                     resolve();
                 };
             });
         }
-        
+
         // 创建YouTube播放器实例
         function createYTPlayer(containerId, videoId, playerOptions) {
             const player = new YT.Player(`${containerId}-player`, {
@@ -541,14 +546,14 @@
                     'onStateChange': (event) => onPlayerStateChange(event, containerId)
                 }
             });
-            
+
             // 存储播放器实例
             youtubePlayers[containerId] = player;
-            
+
             // 绑定控件事件
             bindControlEvents(containerId, player);
         }
-        
+
         // 绑定控制事件
         function bindControlEvents(containerId, player) {
             const playPauseBtn = document.getElementById(`${containerId}-playPauseBtn`);
@@ -559,12 +564,12 @@
             const volumeSlider = document.getElementById(`${containerId}-volume-slider`);
             const overlay = document.getElementById(`${containerId}-overlay`);
             const overlayToggle = document.getElementById(`${containerId}-overlay-toggle`);
-            
+
             // 播放/暂停
             playPauseBtn.addEventListener('click', () => {
                 togglePlayPause(containerId);
             });
-            
+
             // 重新播放
             replayBtn.addEventListener('click', () => {
                 if (player) {
@@ -573,28 +578,28 @@
                     updatePlayPauseButton(containerId, YT.PlayerState.PLAYING);
                 }
             });
-            
+
             // 全屏
             fullscreenBtn.addEventListener('click', () => {
                 toggleFullscreen(containerId);
             });
-            
+
             // 进度条点击
             progressContainer.addEventListener('click', (e) => {
                 if (!player || !player.getDuration) return;
-                
+
                 const rect = progressContainer.getBoundingClientRect();
                 const percent = (e.clientX - rect.left) / rect.width;
                 const newTime = player.getDuration() * percent;
-                
+
                 player.seekTo(newTime);
                 updateProgressBar(containerId);
             });
-            
+
             // 音量控制
             let isMuted = false;
             let lastVolume = 100;
-            
+
             volumeBtn.addEventListener('click', () => {
                 if (isMuted) {
                     player.unMute();
@@ -608,31 +613,31 @@
                     updateVolumeUI(containerId, 0);
                 }
             });
-            
+
             volumeSlider.addEventListener('click', (e) => {
                 if (!player) return;
-                
+
                 const rect = volumeSlider.getBoundingClientRect();
                 const percent = (e.clientX - rect.left) / rect.width;
                 const volume = Math.max(0, Math.min(100, Math.round(percent * 100)));
-                
+
                 player.setVolume(volume);
                 player.unMute();
                 isMuted = false;
                 updateVolumeUI(containerId, volume);
             });
-            
+
             // 为覆盖层添加点击事件 - 实现点击视频区域播放/暂停
             overlay.addEventListener('click', () => {
                 togglePlayPause(containerId);
             });
-            
+
             // 阻止覆盖层上的右键菜单
             overlay.addEventListener('contextmenu', (e) => {
                 e.preventDefault();
                 return false;
             });
-            
+
             // 覆盖层开关控制
             if (overlayToggle) {
                 overlayToggle.addEventListener('change', (e) => {
@@ -642,57 +647,57 @@
                         overlay.classList.remove('active');
                     }
                 });
-                
+
                 // 默认启用覆盖层
                 overlay.classList.add('active');
             }
         }
-        
+
         // 切换播放/暂停
         function togglePlayPause(containerId) {
             const player = youtubePlayers[containerId];
             if (!player) return;
-            
+
             if (player.getPlayerState() === YT.PlayerState.PLAYING) {
                 player.pauseVideo();
             } else {
                 player.playVideo();
             }
         }
-        
+
         // 更新播放/暂停按钮状态
         function updatePlayPauseButton(containerId, state) {
             const button = document.getElementById(`${containerId}-playPauseBtn`);
             const icon = button.querySelector('i');
-            
+
             if (state === YT.PlayerState.PLAYING) {
                 icon.className = 'fas fa-pause';
             } else {
                 icon.className = 'fas fa-play';
             }
         }
-        
+
         // 更新进度条
         function updateProgressBar(containerId) {
             const player = youtubePlayers[containerId];
             if (!player || !player.getDuration || !player.getCurrentTime) return;
-            
+
             const progressBar = document.getElementById(`${containerId}-progress-bar`);
             const duration = player.getDuration();
             const current = player.getCurrentTime();
             const percent = (current / duration) * 100;
-            
+
             progressBar.style.width = `${percent}%`;
         }
-        
+
         // 更新音量UI
         function updateVolumeUI(containerId, volume) {
             const volumeLevel = document.getElementById(`${containerId}-volume-level`);
             const volumeBtn = document.getElementById(`${containerId}-volumeBtn`);
             const icon = volumeBtn.querySelector('i');
-            
+
             volumeLevel.style.width = `${volume}%`;
-            
+
             if (volume === 0) {
                 icon.className = 'fas fa-volume-mute';
             } else if (volume < 50) {
@@ -701,13 +706,13 @@
                 icon.className = 'fas fa-volume-up';
             }
         }
-        
+
         // 切换全屏
         function toggleFullscreen(containerId) {
             const container = document.getElementById(`${containerId}-container`);
             const fullscreenBtn = document.getElementById(`${containerId}-fullscreenBtn`);
             const icon = fullscreenBtn.querySelector('i');
-            
+
             if (!document.fullscreenElement) {
                 // 进入全屏
                 if (container.requestFullscreen) {
@@ -717,7 +722,7 @@
                 } else if (container.msRequestFullscreen) {
                     container.msRequestFullscreen();
                 }
-                
+
                 icon.className = 'fas fa-compress';
             } else {
                 // 退出全屏
@@ -728,71 +733,79 @@
                 } else if (document.msExitFullscreen) {
                     document.msExitFullscreen();
                 }
-                
+
                 icon.className = 'fas fa-expand';
             }
         }
-        
+
         // 播放器准备就绪回调
         function onPlayerReady(event, containerId) {
             console.log(`播放器 ${containerId} 准备就绪`);
             updateTimeDisplay(containerId);
             updateProgressBar(containerId);
-            
+
             // 初始化音量
             const player = youtubePlayers[containerId];
             if (player && player.getVolume) {
                 updateVolumeUI(containerId, player.getVolume());
             }
         }
-        
+
         // 播放器状态改变回调
         function onPlayerStateChange(event, containerId) {
             updatePlayPauseButton(containerId, event.data);
-            
+
             // 如果视频结束，重置播放按钮
             if (event.data === YT.PlayerState.ENDED) {
                 updatePlayPauseButton(containerId, YT.PlayerState.PAUSED);
             }
         }
-        
+
         // 更新时间显示
         function updateTimeDisplay(containerId) {
             const player = youtubePlayers[containerId];
             if (!player || !player.getDuration) return;
-            
+
             const timeElem = document.getElementById(`${containerId}-time`);
             const duration = player.getDuration();
             const current = player.getCurrentTime();
             const formatTime = (t) => `${Math.floor(t / 60)}:${Math.floor(t % 60).toString().padStart(2, '0')}`;
             timeElem.textContent = `${formatTime(current)} / ${formatTime(duration)}`;
-            
+
             // 更新进度条
             updateProgressBar(containerId);
-            
+
             // 定期更新
             setTimeout(() => updateTimeDisplay(containerId), 500);
         }
-        
+
+        function initPlayer(containerId, videoId, playerOptions) {
+            createYTPlayer(containerId, videoId, playerOptions);
+        }
+
         // 页面加载完成后初始化播放器
         window.addEventListener('DOMContentLoaded', () => {
             // 示例：创建两个播放器
             createYouTubePlayer(
-                "https://www.youtube.com/watch?v=WSETfNmy8o8", 
+                "https://www.youtube.com/watch?v=WSETfNmy8o8",
                 "player1"
             );
-            
+
             createYouTubePlayer(
-                "https://www.youtube.com/watch?v=WSETfNmy8o8", 
+                "https://www.youtube.com/watch?v=WSETfNmy8o8",
                 "player2"
             );
         });
-        
+
+        function initPlayer(containerId, videoId, playerOptions) {
+            createYTPlayer(containerId, videoId, playerOptions);
+        }
+
         // 监听全屏变化事件
         document.addEventListener('fullscreenchange', handleFullscreenChange);
         document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
         document.addEventListener('msfullscreenchange', handleFullscreenChange);
-        
+
         function handleFullscreenChange() {
             // 更新所有播放器的全屏按钮状态
             Object.keys(youtubePlayers).forEach(containerId => {
@@ -807,4 +820,5 @@
         }
     </script>
 </body>
+
 </html>
