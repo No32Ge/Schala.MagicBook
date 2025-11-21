@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自定义 YouTube 播放器</title>
+    <style>
+        #player-container {
+            position: relative;
+            width: 100%;
+            max-width: 560px;
+            margin: auto;
+        }
+
+        #controls {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 8px 16px;
+            margin: 0 5px;
+        }
+
+        #time {
+            margin-left: 10px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>自定义 YouTube 播放器 Demo</h2>
+
+    <div id="player-container">
+        <div id="player"></div>
+    </div>
+
+    <div id="controls">
+        <button id="playBtn">播放</button>
+        <button id="pauseBtn">暂停</button>
+        <span id="time">0:00 / 0:00</span>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+        let player;
+
+        // YouTube API 回调，创建播放器
+        function onYouTubeIframeAPIReady() {
+            const url = "https://www.youtube.com/watch?v=WSETfNmy8o8&list=RDWSETfNmy8o8&start_radio=1";
+            const match = url.match(/[?&]v=([^&]+)/i);
+            const videoId = match ? match[1] : null;
+            player = new YT.Player('player', {
+                height: '315',
+                width: '560',
+                videoId: videoId, // 替换为你的视频ID
+                playerVars: {
+                    'controls': 0,   // 隐藏默认控件
+                    'rel': 0,
+                    'modestbranding': 1
+                },
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+
+        function onPlayerReady(event) {
+            console.log("播放器准备就绪");
+        }
+
+        function onPlayerStateChange(event) {
+            const timeElem = document.getElementById('time');
+            const duration = player.getDuration();
+            const current = player.getCurrentTime();
+            const formatTime = (t) => `${Math.floor(t / 60)}:${Math.floor(t % 60).toString().padStart(2, '0')}`;
+            timeElem.textContent = `${formatTime(current)} / ${formatTime(duration)}`;
+        }
+
+        // 自定义控件
+        document.getElementById('playBtn').addEventListener('click', () => {
+            if (player) player.playVideo();
+        });
+        document.getElementById('pauseBtn').addEventListener('click', () => {
+            if (player) player.pauseVideo();
+        });
+
+        // 实时更新时间
+        setInterval(() => {
+            if (player && player.getDuration) {
+                const timeElem = document.getElementById('time');
+                const duration = player.getDuration();
+                const current = player.getCurrentTime();
+                const formatTime = (t) => `${Math.floor(t / 60)}:${Math.floor(t % 60).toString().padStart(2, '0')}`;
+                timeElem.textContent = `${formatTime(current)} / ${formatTime(duration)}`;
+            }
+        }, 500);
+    </script>
+
+</body>
+
+</html>
