@@ -71,11 +71,15 @@
             background: #ff0000;
             color: white;
             font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         
         .youtube-player-container {
             position: relative;
             width: 100%;
+            background: #000;
         }
         
         .youtube-player-wrapper {
@@ -91,58 +95,220 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: #000;
+            z-index: 1;
         }
         
-        .youtube-controls {
+        /* 透明覆盖层 - 阻止与YouTube iframe的直接交互 */
+        .youtube-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            z-index: 2;
+            cursor: pointer;
+            display: none; /* 默认隐藏覆盖层 */
+        }
+        
+        .youtube-overlay.active {
+            display: block; /* 激活时显示覆盖层 */
+        }
+        
+        /* 覆盖层激活时的视觉提示 */
+        .youtube-overlay.active::after {
+            content: "覆盖层已激活 - 点击播放/暂停";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .youtube-player-container:hover .youtube-overlay.active::after {
+            opacity: 1;
+        }
+        
+        /* 自定义控制栏 */
+        .custom-controls {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.7));
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            z-index: 3;
+            pointer-events: auto;
+        }
+        
+        .youtube-player-container:hover .custom-controls {
+            opacity: 1;
+        }
+        
+        .progress-container {
+            width: 100%;
+            height: 6px;
+            background: rgba(255,255,255,0.3);
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+            pointer-events: auto;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            background: #ff0000;
+            border-radius: 3px;
+            width: 0%;
+            position: relative;
+        }
+        
+        .progress-handle {
+            position: absolute;
+            right: -6px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 12px;
+            height: 12px;
+            background: #ff0000;
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        
+        .progress-container:hover .progress-handle {
+            opacity: 1;
+        }
+        
+        .controls-bottom {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 12px 20px;
-            background-color: #f8f8f8;
-            border-top: 1px solid #e0e0e0;
         }
         
         .control-group {
             display: flex;
             align-items: center;
+            gap: 10px;
         }
         
-        .youtube-controls button {
+        .control-btn {
+            background: transparent;
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 3px;
+            transition: background 0.2s;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 8px 16px;
-            margin: 0 5px;
-            background-color: #ff0000;
+            width: 32px;
+            height: 32px;
+            pointer-events: auto;
+        }
+        
+        .control-btn:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .control-btn i {
+            font-size: 16px;
+        }
+        
+        .time-display {
             color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-weight: 600;
-            transition: all 0.2s;
-            min-width: 80px;
-        }
-        
-        .youtube-controls button:hover {
-            background-color: #cc0000;
-            transform: translateY(-2px);
-        }
-        
-        .youtube-controls button:active {
-            transform: translateY(0);
-        }
-        
-        .youtube-controls button i {
-            margin-right: 5px;
-        }
-        
-        .youtube-time {
-            margin-left: 15px;
             font-family: monospace;
+            font-size: 13px;
+            margin: 0 10px;
+        }
+        
+        .volume-control {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .volume-slider {
+            width: 60px;
+            height: 4px;
+            background: rgba(255,255,255,0.3);
+            border-radius: 2px;
+            position: relative;
+            cursor: pointer;
+            pointer-events: auto;
+        }
+        
+        .volume-level {
+            height: 100%;
+            background: white;
+            border-radius: 2px;
+            width: 100%;
+        }
+        
+        /* 覆盖层开关样式 */
+        .overlay-toggle {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: white;
             font-size: 14px;
-            color: #333;
-            font-weight: 600;
+        }
+        
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 24px;
+        }
+        
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .toggle-slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 24px;
+        }
+        
+        .toggle-slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+        
+        input:checked + .toggle-slider {
+            background-color: #ff0000;
+        }
+        
+        input:checked + .toggle-slider:before {
+            transform: translateX(26px);
         }
         
         .instructions {
@@ -154,7 +320,7 @@
         }
         
         .instructions h2 {
-            color: #b69999;
+            color: #ff0000;
             margin-bottom: 15px;
         }
         
@@ -186,17 +352,35 @@
     <div class="container">
         <header>
             <h1>增强版YouTube播放器组件</h1>
-            <p class="description">功能完整的自定义YouTube播放器，支持播放/暂停切换、全屏控制、重新播放，并完全取消视频推荐和无关弹窗</p>
+            <p class="description">功能完整的自定义YouTube播放器，集成控制栏，支持进度条、音量控制、全屏等功能</p>
         </header>
         
         <div class="players-container">
             <div class="player-card">
-                <div class="player-header">播放器 1 - 流行音乐</div>
+                <div class="player-header">
+                    <span>播放器 1 - 流行音乐</span>
+                    <div class="overlay-toggle">
+                        <span>覆盖层:</span>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="player1-overlay-toggle" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                </div>
                 <div id="player1"></div>
             </div>
             
             <div class="player-card">
-                <div class="player-header">播放器 2 - 经典视频</div>
+                <div class="player-header">
+                    <span>播放器 2 - 经典视频</span>
+                    <div class="overlay-toggle">
+                        <span>覆盖层:</span>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="player2-overlay-toggle" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                </div>
                 <div id="player2"></div>
             </div>
         </div>
@@ -204,11 +388,17 @@
         <div class="instructions">
             <h2>使用说明</h2>
             <ol>
-                <li>点击<i class="fas fa-play" style="margin: 0 5px;"></i>按钮开始播放视频</li>
-                <li>播放过程中按钮会变为<i class="fas fa-pause" style="margin: 0 5px;"></i>，点击可暂停</li>
-                <li>使用<i class="fas fa-expand" style="margin: 0 5px;"></i>按钮进入全屏模式</li>
-                <li>全屏模式下使用<i class="fas fa-compress" style="margin: 0 5px;"></i>按钮退出全屏</li>
-                <li>点击<i class="fas fa-redo" style="margin: 0 5px;"></i>按钮可重新播放视频</li>
+                <li>将鼠标悬停在视频上显示控制栏</li>
+                <li>使用进度条拖动或点击来跳转到指定时间点</li>
+                <li>点击<i class="fas fa-play" style="margin: 0 5px;"></i>/<i class="fas fa-pause" style="margin: 0 5px;"></i>按钮控制播放</li>
+                <li>使用<i class="fas fa-expand" style="margin: 0 5px;"></i>按钮进入/退出全屏模式</li>
+                <li>使用音量控制调整音量大小</li>
+                <li>使用右上角的开关控制覆盖层：
+                    <ul>
+                        <li>开启覆盖层：阻止与YouTube原生控件的交互，只能使用自定义控制栏</li>
+                        <li>关闭覆盖层：可以直接与YouTube播放器交互</li>
+                    </ul>
+                </li>
                 <li>播放器已完全取消视频推荐和无关弹窗</li>
             </ol>
             <p style="margin-top: 15px;">在自己的项目中使用：<code>createYouTubePlayer("YouTube视频URL", "容器元素ID")</code></p>
@@ -223,14 +413,14 @@
         function createYouTubePlayer(url, containerId, options = {}) {
             // 默认选项 - 完全取消推荐和无关内容
             const defaultOptions = {
-                controls: 0,
-                modestbranding: 1,
-                rel: 0,
-                fs: 0,
-                iv_load_policy: 3,
+                controls: 0,           // 隐藏YouTube原生控件
+                modestbranding: 1,     // 隐藏YouTube logo
+                rel: 0,                // 不显示相关视频
+                fs: 0,                 // 隐藏全屏按钮（使用自定义的）
+                iv_load_policy: 3,     // 隐藏视频注释
                 autoplay: 0,
                 showinfo: 0,
-                disablekb: 1
+                disablekb: 1           // 禁用键盘控制
             };
             
             // 合并选项
@@ -252,24 +442,41 @@
             
             // 创建播放器结构
             container.innerHTML = `
-                <div class="youtube-player-container">
+                <div class="youtube-player-container" id="${containerId}-container">
                     <div class="youtube-player-wrapper">
                         <div id="${containerId}-player" class="youtube-player"></div>
-                    </div>
-                    <div class="youtube-controls">
-                        <div class="control-group">
-                            <button id="${containerId}-playPauseBtn">
-                                <i class="fas fa-play"></i> 播放
-                            </button>
-                            <button id="${containerId}-replayBtn">
-                                <i class="fas fa-redo"></i> 重新播放
-                            </button>
-                        </div>
-                        <div class="control-group">
-                            <span id="${containerId}-time" class="youtube-time">0:00 / 0:00</span>
-                            <button id="${containerId}-fullscreenBtn">
-                                <i class="fas fa-expand"></i> 全屏
-                            </button>
+                        <!-- 透明覆盖层 - 阻止与YouTube iframe的直接交互 -->
+                        <div class="youtube-overlay" id="${containerId}-overlay"></div>
+                        <div class="custom-controls" id="${containerId}-controls">
+                            <div class="progress-container" id="${containerId}-progress-container">
+                                <div class="progress-bar" id="${containerId}-progress-bar">
+                                    <div class="progress-handle"></div>
+                                </div>
+                            </div>
+                            <div class="controls-bottom">
+                                <div class="control-group">
+                                    <button class="control-btn" id="${containerId}-playPauseBtn">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                    <button class="control-btn" id="${containerId}-replayBtn">
+                                        <i class="fas fa-redo"></i>
+                                    </button>
+                                    <div class="volume-control">
+                                        <button class="control-btn" id="${containerId}-volumeBtn">
+                                            <i class="fas fa-volume-up"></i>
+                                        </button>
+                                        <div class="volume-slider" id="${containerId}-volume-slider">
+                                            <div class="volume-level" id="${containerId}-volume-level"></div>
+                                        </div>
+                                    </div>
+                                    <span class="time-display" id="${containerId}-time">0:00 / 0:00</span>
+                                </div>
+                                <div class="control-group">
+                                    <button class="control-btn" id="${containerId}-fullscreenBtn">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -339,14 +546,26 @@
             youtubePlayers[containerId] = player;
             
             // 绑定控件事件
+            bindControlEvents(containerId, player);
+        }
+        
+        // 绑定控制事件
+        function bindControlEvents(containerId, player) {
             const playPauseBtn = document.getElementById(`${containerId}-playPauseBtn`);
             const replayBtn = document.getElementById(`${containerId}-replayBtn`);
             const fullscreenBtn = document.getElementById(`${containerId}-fullscreenBtn`);
+            const progressContainer = document.getElementById(`${containerId}-progress-container`);
+            const volumeBtn = document.getElementById(`${containerId}-volumeBtn`);
+            const volumeSlider = document.getElementById(`${containerId}-volume-slider`);
+            const overlay = document.getElementById(`${containerId}-overlay`);
+            const overlayToggle = document.getElementById(`${containerId}-overlay-toggle`);
             
+            // 播放/暂停
             playPauseBtn.addEventListener('click', () => {
                 togglePlayPause(containerId);
             });
             
+            // 重新播放
             replayBtn.addEventListener('click', () => {
                 if (player) {
                     player.seekTo(0);
@@ -355,9 +574,78 @@
                 }
             });
             
+            // 全屏
             fullscreenBtn.addEventListener('click', () => {
                 toggleFullscreen(containerId);
             });
+            
+            // 进度条点击
+            progressContainer.addEventListener('click', (e) => {
+                if (!player || !player.getDuration) return;
+                
+                const rect = progressContainer.getBoundingClientRect();
+                const percent = (e.clientX - rect.left) / rect.width;
+                const newTime = player.getDuration() * percent;
+                
+                player.seekTo(newTime);
+                updateProgressBar(containerId);
+            });
+            
+            // 音量控制
+            let isMuted = false;
+            let lastVolume = 100;
+            
+            volumeBtn.addEventListener('click', () => {
+                if (isMuted) {
+                    player.unMute();
+                    player.setVolume(lastVolume);
+                    isMuted = false;
+                    updateVolumeUI(containerId, lastVolume);
+                } else {
+                    lastVolume = player.getVolume();
+                    player.mute();
+                    isMuted = true;
+                    updateVolumeUI(containerId, 0);
+                }
+            });
+            
+            volumeSlider.addEventListener('click', (e) => {
+                if (!player) return;
+                
+                const rect = volumeSlider.getBoundingClientRect();
+                const percent = (e.clientX - rect.left) / rect.width;
+                const volume = Math.max(0, Math.min(100, Math.round(percent * 100)));
+                
+                player.setVolume(volume);
+                player.unMute();
+                isMuted = false;
+                updateVolumeUI(containerId, volume);
+            });
+            
+            // 为覆盖层添加点击事件 - 实现点击视频区域播放/暂停
+            overlay.addEventListener('click', () => {
+                togglePlayPause(containerId);
+            });
+            
+            // 阻止覆盖层上的右键菜单
+            overlay.addEventListener('contextmenu', (e) => {
+                e.preventDefault();
+                return false;
+            });
+            
+            // 覆盖层开关控制
+            if (overlayToggle) {
+                overlayToggle.addEventListener('change', (e) => {
+                    if (e.target.checked) {
+                        overlay.classList.add('active');
+                    } else {
+                        overlay.classList.remove('active');
+                    }
+                });
+                
+                // 默认启用覆盖层
+                overlay.classList.add('active');
+            }
         }
         
         // 切换播放/暂停
@@ -376,24 +664,47 @@
         function updatePlayPauseButton(containerId, state) {
             const button = document.getElementById(`${containerId}-playPauseBtn`);
             const icon = button.querySelector('i');
-            const text = button.querySelector('span') || document.createElement('span');
             
             if (state === YT.PlayerState.PLAYING) {
                 icon.className = 'fas fa-pause';
-                text.textContent = ' 暂停';
             } else {
                 icon.className = 'fas fa-play';
-                text.textContent = ' 播放';
             }
+        }
+        
+        // 更新进度条
+        function updateProgressBar(containerId) {
+            const player = youtubePlayers[containerId];
+            if (!player || !player.getDuration || !player.getCurrentTime) return;
             
-            if (!button.contains(text)) {
-                button.appendChild(text);
+            const progressBar = document.getElementById(`${containerId}-progress-bar`);
+            const duration = player.getDuration();
+            const current = player.getCurrentTime();
+            const percent = (current / duration) * 100;
+            
+            progressBar.style.width = `${percent}%`;
+        }
+        
+        // 更新音量UI
+        function updateVolumeUI(containerId, volume) {
+            const volumeLevel = document.getElementById(`${containerId}-volume-level`);
+            const volumeBtn = document.getElementById(`${containerId}-volumeBtn`);
+            const icon = volumeBtn.querySelector('i');
+            
+            volumeLevel.style.width = `${volume}%`;
+            
+            if (volume === 0) {
+                icon.className = 'fas fa-volume-mute';
+            } else if (volume < 50) {
+                icon.className = 'fas fa-volume-down';
+            } else {
+                icon.className = 'fas fa-volume-up';
             }
         }
         
         // 切换全屏
         function toggleFullscreen(containerId) {
-            const container = document.querySelector(`#${containerId} .youtube-player-container`);
+            const container = document.getElementById(`${containerId}-container`);
             const fullscreenBtn = document.getElementById(`${containerId}-fullscreenBtn`);
             const icon = fullscreenBtn.querySelector('i');
             
@@ -408,7 +719,6 @@
                 }
                 
                 icon.className = 'fas fa-compress';
-                fullscreenBtn.innerHTML = '<i class="fas fa-compress"></i> 退出全屏';
             } else {
                 // 退出全屏
                 if (document.exitFullscreen) {
@@ -420,7 +730,6 @@
                 }
                 
                 icon.className = 'fas fa-expand';
-                fullscreenBtn.innerHTML = '<i class="fas fa-expand"></i> 全屏';
             }
         }
         
@@ -428,11 +737,23 @@
         function onPlayerReady(event, containerId) {
             console.log(`播放器 ${containerId} 准备就绪`);
             updateTimeDisplay(containerId);
+            updateProgressBar(containerId);
+            
+            // 初始化音量
+            const player = youtubePlayers[containerId];
+            if (player && player.getVolume) {
+                updateVolumeUI(containerId, player.getVolume());
+            }
         }
         
         // 播放器状态改变回调
         function onPlayerStateChange(event, containerId) {
             updatePlayPauseButton(containerId, event.data);
+            
+            // 如果视频结束，重置播放按钮
+            if (event.data === YT.PlayerState.ENDED) {
+                updatePlayPauseButton(containerId, YT.PlayerState.PAUSED);
+            }
         }
         
         // 更新时间显示
@@ -446,6 +767,9 @@
             const formatTime = (t) => `${Math.floor(t / 60)}:${Math.floor(t % 60).toString().padStart(2, '0')}`;
             timeElem.textContent = `${formatTime(current)} / ${formatTime(duration)}`;
             
+            // 更新进度条
+            updateProgressBar(containerId);
+            
             // 定期更新
             setTimeout(() => updateTimeDisplay(containerId), 500);
         }
@@ -454,7 +778,7 @@
         window.addEventListener('DOMContentLoaded', () => {
             // 示例：创建两个播放器
             createYouTubePlayer(
-                "https://www.youtube.com/watch?v=IpVUNNaZLHw&list=RDIpVUNNaZLHw&index=1", 
+                "https://www.youtube.com/watch?v=WSETfNmy8o8", 
                 "player1"
             );
             
@@ -470,16 +794,13 @@
         document.addEventListener('msfullscreenchange', handleFullscreenChange);
         
         function handleFullscreenChange() {
-            const players = document.querySelectorAll('.youtube-player-container');
-            players.forEach(container => {
-                const containerId = container.closest('[id]').id;
+            // 更新所有播放器的全屏按钮状态
+            Object.keys(youtubePlayers).forEach(containerId => {
                 const fullscreenBtn = document.getElementById(`${containerId}-fullscreenBtn`);
-                
                 if (fullscreenBtn) {
                     const icon = fullscreenBtn.querySelector('i');
                     if (!document.fullscreenElement) {
                         icon.className = 'fas fa-expand';
-                        fullscreenBtn.innerHTML = '<i class="fas fa-expand"></i> 全屏';
                     }
                 }
             });
