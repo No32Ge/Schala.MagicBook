@@ -55,17 +55,13 @@
             const match = url.match(/[?&]v=([^&]+)/i);
             const videoId = match ? match[1] : null;
             player = new YT.Player('player', {
-                height: '315',
-                width: '560',
-                videoId: videoId, // 替换为你的视频ID
+                videoId: "WSETfNmy8o8",
                 playerVars: {
-                    'controls': 0,   // 隐藏默认控件
-                    'rel': 0,
-                    'modestbranding': 1
-                },
-                events: {
-                    'onReady': onPlayerReady,
-                    'onStateChange': onPlayerStateChange
+                    controls: 0,        // 无控件
+                    modestbranding: 1,  // 无Logo
+                    rel: 0,             // 禁推送推荐视频
+                    fs: 0,              // 关全屏按钮
+                    iv_load_policy: 3   // 禁注释、提示
                 }
             });
         }
