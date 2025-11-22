@@ -15148,5 +15148,974 @@
                 "cn": "句子"
             }
         }
+    },
+    {
+        "id": "wonder_excerpt_pictures",
+        "title": "Pictures",
+        "info": {
+            "author": "R.J. Palacio",
+            "source": "Wonder",
+            "level": "B2",
+            "tags": [
+                "acceptance",
+                "friendship",
+                "graduation",
+                "family",
+                "photography",
+                "epiphany"
+            ],
+            "link": "https://example.com/original-source",
+            "variants": null
+        },
+        "paras": [
+            {
+                "id": 1,
+                "en": "Afterward there was a reception for the fifth and sixth graders under a huge white tent in the back of the school. All the kids found their parents, and I didn't mind at all when Mom and Dad hugged me like crazy, or when Via wrapped her arms around me and swung me left and right about twenty times. Then Poppa and Tata hugged me, and Aunt Kate and Uncle Po, and Uncle Ben—everyone kind of teary-eyed and wet-cheeked. But Miranda was the funniest: she was crying more than anyone and squeezed me so tight that Via had to practically pry her off of me, which made them both laugh.",
+                "cn": "之后，在学校后面的一个巨大白色帐篷下为五年级和六年级的学生举行了一个招待会。所有的孩子都找到了他们的父母，当爸爸妈妈疯狂地拥抱我时，我一点也不介意，当维娅用双臂环绕着我，把我左右摇晃了大约二十次时，我也不介意。然后波帕和塔塔拥抱了我，还有凯特姑姑和波叔叔，还有本叔叔——每个人都有点眼含泪水，脸颊湿润。但米兰达最搞笑：她比任何人都哭得厉害，把我抱得那么紧，以至于维娅几乎要把她从我身上撬开，这让她们俩都笑了。",
+                "vocab": [
+                    {
+                        "word": "reception",
+                        "ph": "/rɪˈsepʃn/",
+                        "pos": "n",
+                        "mean": "招待会",
+                        "ex": "There will be a small reception after the wedding ceremony."
+                    },
+                    {
+                        "word": "like crazy",
+                        "ph": "/laɪk ˈkreɪzi/",
+                        "pos": "idiom",
+                        "mean": "疯狂地",
+                        "ex": "He was working like crazy to finish the project on time."
+                    },
+                    {
+                        "word": "swing",
+                        "ph": "/swɪŋ/",
+                        "pos": "v",
+                        "mean": "摇摆",
+                        "ex": "The child loved to swing on the playground."
+                    },
+                    {
+                        "word": "teary-eyed",
+                        "ph": "/ˈtɪəri aɪd/",
+                        "pos": "adj",
+                        "mean": "眼含泪水的",
+                        "ex": "She became teary-eyed during the sad movie."
+                    },
+                    {
+                        "word": "wet-cheeked",
+                        "ph": "/wet tʃiːkt/",
+                        "pos": "adj",
+                        "mean": "脸颊湿润的（因流泪）",
+                        "ex": "The little girl was wet-cheeked after her fall, but she was okay."
+                    },
+                    {
+                        "word": "squeeze",
+                        "ph": "/skwiːz/",
+                        "pos": "v",
+                        "mean": "紧抱；挤压",
+                        "ex": "She gave her old friend a tight squeeze when she saw her."
+                    },
+                    {
+                        "word": "pry someone off",
+                        "ph": "/praɪ ˈsʌmwʌn ɔːf/",
+                        "pos": "phr v",
+                        "mean": "把某人撬开/掰开",
+                        "ex": "The puppy was clinging to my leg, and I had to gently pry it off."
+                    }
+                ],
+                "gram": [
+                    {
+                        "id": "so_tight_that",
+                        "name": "so... that... 结果状语从句",
+                        "category": "C",
+                        "level": "B2",
+                        "pattern": "so + adj/adv + that + result clause",
+                        "components": [
+                            {
+                                "slot": "so",
+                                "role": "程度副词",
+                                "pos": [
+                                    "adv"
+                                ]
+                            },
+                            {
+                                "slot": "that",
+                                "role": "连词",
+                                "pos": [
+                                    "conj"
+                                ]
+                            }
+                        ],
+                        "function": "用于强调程度之深以至于产生了某种结果。'...squeezed me so tight that Via had to practically pry her off...' 强调了拥抱的力度及其导致的后果。",
+                        "example": {
+                            "en": "The music was so loud that we couldn't hear each other speak.",
+                            "cn": "音乐声太大了，我们都听不清对方说话。"
+                        },
+                        "variants": null,
+                        "constraints": "是一种非常常见的因果关系表达方式。"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "en": "Everyone started taking pictures of me and pulling out their Flips, and then Dad got me, Summer, and Jack together for a group shot. We put our arms around each other's shoulders, and for the first time I can remember, I wasn't even thinking about my face. I was just smiling a big fat happy smile for all the different cameras clicking away at me. Flash, flash, click, click : smiling away as Jack's parents and Summer's mom started clicking. Then Reid and Maya came over. Flash, flash, click, click. And then Charlotte came over and asked if she could take a picture with us, and we were like, \"Sure, of course!\" And then Charlotte's parents were snapping away at our little group along with everyone else's parents.",
+                "cn": "每个人都开始给我拍照，并拿出他们的Flip摄像机，然后爸爸把我和萨默、杰克聚在一起拍了张合影。我们互相搭着对方的肩膀，在我记忆中，这是第一次，我甚至没有在想我的脸。我只是为所有对着我咔嚓作响的相机露出了一个大大的、幸福的笑容。闪光，闪光，咔嚓，咔嚓：在杰克的父母和萨默的妈妈开始按快门时，我一直微笑着。然后里德和玛雅过来了。闪光，闪光，咔嚓，咔嚓。接着夏洛特走过来问她是否能和我们合影，我们就说：“当然，当然可以！” 然后夏洛特的父母和其他所有人的父母一起，对着我们这个小团体不停地拍照。",
+                "vocab": [
+                    {
+                        "word": "pull out",
+                        "ph": "/pʊl aʊt/",
+                        "pos": "phr v",
+                        "mean": "拿出",
+                        "ex": "He pulled out his wallet to pay for the coffee."
+                    },
+                    {
+                        "word": "group shot",
+                        "ph": "/ɡruːp ʃɒt/",
+                        "pos": "n phr",
+                        "mean": "合影",
+                        "ex": "Let's get everyone together for a group shot before we leave."
+                    },
+                    {
+                        "word": "big fat",
+                        "ph": "/bɪɡ fæt/",
+                        "pos": "adj phr",
+                        "mean": "（非正式，用于强调）大大的",
+                        "ex": "After winning, he had a big fat smile on his face all day."
+                    },
+                    {
+                        "word": "click away",
+                        "ph": "/klɪk əˈweɪ/",
+                        "pos": "phr v",
+                        "mean": "不停地按快门",
+                        "ex": "The photographers were clicking away as the celebrity walked down the red carpet."
+                    },
+                    {
+                        "word": "snap away",
+                        "ph": "/snæp əˈweɪ/",
+                        "pos": "phr v",
+                        "mean": "不停地拍照",
+                        "ex": "She was snapping away with her new camera all through the vacation."
+                    }
+                ],
+                "gram": [
+                    {
+                        "id": "onomatopoeia_and_repetition_for_atmosphere",
+                        "name": "用于营造氛围的拟声词与重复",
+                        "category": "R",
+                        "level": "B2",
+                        "pattern": "Repetition of sound words.",
+                        "components": [
+                            {
+                                "slot": "sound words",
+                                "role": "拟声词",
+                                "pos": [
+                                    "n"
+                                ]
+                            }
+                        ],
+                        "function": "通过重复使用拟声词 'Flash, flash, click, click'，作者生动地再现了被众多相机拍摄的场景。这种手法不仅模仿了相机的声音，还创造了一种快速、兴奋、如同明星走红毯般的气氛，突显了主角此刻作为焦点的、积极的体验。",
+                        "example": {
+                            "en": "Drip, drip, drip. The sound of the leaky faucet kept him awake all night.",
+                            "cn": "滴，滴，滴。漏水的水龙头声让他整夜未眠。"
+                        },
+                        "variants": null,
+                        "constraints": "是一种通过声音来构建场景和氛围的有效技巧。"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "en": "And the next thing I knew, the two Maxes had come over, and Henry and Miles, and Savanna. Then Amos came over, and Ximena. And we were all in this big tight huddle as parents clicked away like we were on a red carpet somewhere. Luca. Isaiah. Nino. Pablo. Tristan. Ellie. I lost track of who else came over. Everybody, practically. All I knew for sure is that we were all laughing and squeezing in tight against each other, and no one seemed to care if it was my face that was next to theirs or not. In fact, and I don't mean to brag here, but it kind of felt like everyone wanted to get close to me.",
+                "cn": "接着我一转眼，那两个麦克斯过来了，还有亨利和迈尔斯，以及萨凡纳。然后阿莫斯过来了，还有西梅纳。我们所有人都挤在一个紧密的大圈子里，家长们不停地按着快门，就像我们在某个红毯上一样。卢卡。以赛亚。尼诺。巴勃罗。特里斯坦。艾莉。我都记不清还有谁过来了。几乎是所有人。我唯一确定的是，我们都在大笑，紧紧地挤在一起，似乎没有人介意紧挨着他们的是不是我的脸。事实上，我不是想在这里吹牛，但感觉就像每个人都想靠近我一样。",
+                "vocab": [
+                    {
+                        "word": "the next thing I knew",
+                        "ph": "/ðə nekst θɪŋ aɪ njuː/",
+                        "pos": "idiom",
+                        "mean": "接着我一转眼；紧接着",
+                        "ex": "I was walking down the street, and the next thing I knew, I was on the ground."
+                    },
+                    {
+                        "word": "huddle",
+                        "ph": "/ˈhʌdl/",
+                        "pos": "n",
+                        "mean": "挤在一起的一群人",
+                        "ex": "The players gathered in a huddle to discuss their strategy."
+                    },
+                    {
+                        "word": "red carpet",
+                        "ph": "/red ˈkɑːrpɪt/",
+                        "pos": "n phr",
+                        "mean": "红地毯（象征名流场合）",
+                        "ex": "The movie stars walked down the red carpet at the premiere."
+                    },
+                    {
+                        "word": "lose track of",
+                        "ph": "/luːz træk əv/",
+                        "pos": "phr v",
+                        "mean": "搞不清；忘记",
+                        "ex": "There were so many people at the party, I lost track of who I had spoken to."
+                    },
+                    {
+                        "word": "practically",
+                        "ph": "/ˈpræktɪkli/",
+                        "pos": "adv",
+                        "mean": "几乎",
+                        "ex": "The room was so crowded that we were practically sitting on top of each other."
+                    },
+                    {
+                        "word": "squeeze in",
+                        "ph": "/skwiːz ɪn/",
+                        "pos": "phr v",
+                        "mean": "挤进去",
+                        "ex": "We all had to squeeze in to fit in the small elevator."
+                    },
+                    {
+                        "word": "brag",
+                        "ph": "/bræɡ/",
+                        "pos": "v",
+                        "mean": "吹牛",
+                        "ex": "He's always bragging about how much money he makes."
+                    }
+                ],
+                "gram": [
+                    {
+                        "id": "final_epiphany_of_acceptance",
+                        "name": "关于接纳的最终顿悟",
+                        "category": "R",
+                        "level": "C1",
+                        "pattern": "A concluding statement of realization, softened by a disclaimer.",
+                        "components": [
+                            {
+                                "slot": "disclaimer",
+                                "role": "免责声明",
+                                "pos": [
+                                    "phr"
+                                ]
+                            },
+                            {
+                                "slot": "realization",
+                                "role": "顿悟",
+                                "pos": [
+                                    "S"
+                                ]
+                            }
+                        ],
+                        "function": "这个段落的结尾是全书最重要的顿悟时刻之一。叙述者首先用 'I don't mean to brag' 来表现自己的谦虚和对这一新体验的难以置信，然后才说出核心感受：'...it kind of felt like everyone wanted to get close to me'。这标志着他社会地位的彻底逆转，从一个被排斥的对象，变成了一个被渴望接近的中心。这个顿悟是他自我接纳和被社会接纳的最终证明。",
+                        "example": {
+                            "en": "I don't mean to sound arrogant, but for the first time, I felt like I was the best player on the team.",
+                            "cn": "我不是想听起来自大，但这是我第一次感觉自己是队里最棒的球员。"
+                        },
+                        "variants": null,
+                        "constraints": "是一种通过温和的措辞来表达一个深刻、颠覆性认识的有效技巧。"
+                    }
+                ]
+            }
+        ],
+        "gram_types": {
+            "S": {
+                "en": "Sentence Structure",
+                "cn": "句子结构"
+            },
+            "T": {
+                "en": "Tense",
+                "cn": "时态"
+            },
+            "C": {
+                "en": "Clause",
+                "cn": "从句"
+            },
+            "P": {
+                "en": "Punctuation",
+                "cn": "标点"
+            },
+            "W": {
+                "en": "Word Form / Morphology",
+                "cn": "词形变化"
+            },
+            "F": {
+                "en": "Figurative Language",
+                "cn": "修辞"
+            },
+            "R": {
+                "en": "Rhetoric",
+                "cn": "修辞手法"
+            },
+            "O": {
+                "en": "Others",
+                "cn": "其他"
+            }
+        },
+        "pos_types": {
+            "n": {
+                "en": "noun",
+                "cn": "名词"
+            },
+            "v": {
+                "en": "verb",
+                "cn": "动词"
+            },
+            "adj": {
+                "en": "adjective",
+                "cn": "形容词"
+            },
+            "adv": {
+                "en": "adverb",
+                "cn": "副词"
+            },
+            "prep": {
+                "en": "preposition",
+                "cn": "介词"
+            },
+            "conj": {
+                "en": "conjunction",
+                "cn": "连词"
+            },
+            "pron": {
+                "en": "pronoun",
+                "cn": "代词"
+            },
+            "det": {
+                "en": "determiner",
+                "cn": "限定词"
+            },
+            "int": {
+                "en": "interjection",
+                "cn": "感叹词"
+            },
+            "phr": {
+                "en": "phrase",
+                "cn": "短语"
+            },
+            "phr v": {
+                "en": "phrasal verb",
+                "cn": "动词短语"
+            },
+            "n phr": {
+                "en": "noun phrase",
+                "cn": "名词短语"
+            },
+            "adj phr": {
+                "en": "adjective phrase",
+                "cn": "形容词短语"
+            },
+            "modal v": {
+                "en": "modal verb",
+                "cn": "情态动词"
+            },
+            "idiom": {
+                "en": "idiom",
+                "cn": "习语"
+            },
+            "S": {
+                "en": "sentence",
+                "cn": "句子"
+            }
+        }
+    },
+    {
+        "id": "wonder_excerpt_the_walk_home",
+        "title": "The Walk Home",
+        "info": {
+            "author": "R.J. Palacio",
+            "source": "Wonder",
+            "level": "B2",
+            "tags": [
+                "gratitude",
+                "family",
+                "friendship",
+                "happiness",
+                "reflection"
+            ],
+            "link": "https://example.com/original-source",
+            "variants": null
+        },
+        "paras": [
+            {
+                "id": 1,
+                "en": "We walked to our house for cake and ice cream after the reception. Jack and his parents and his little brother, Jamie. Summer and her mother. Uncle Po and Aunt Kate. Uncle Ben, Tata and Poppa. Justin and Via and Miranda. Mom and Dad.",
+                "cn": "招待会结束后，我们走回家吃蛋糕和冰淇淋。有杰克和他的父母以及他的小弟弟杰米。萨默和她的妈妈。波叔叔和凯特姑姑。本叔叔、塔塔和波帕。贾斯汀、维娅和米兰达。爸爸和妈妈。",
+                "vocab": [
+                    {
+                        "word": "reception",
+                        "ph": "/rɪˈsepʃn/",
+                        "pos": "n",
+                        "mean": "招待会",
+                        "ex": "There will be a small reception after the wedding ceremony."
+                    }
+                ],
+                "gram": [
+                    {
+                        "id": "asyndeton_for_listing",
+                        "name": "连接词省略（用于列举）",
+                        "category": "R",
+                        "level": "B2",
+                        "pattern": "A list of noun phrases without conjunctions.",
+                        "components": [
+                            {
+                                "slot": "noun phrase",
+                                "role": "名词短语",
+                                "pos": [
+                                    "n phr"
+                                ]
+                            }
+                        ],
+                        "function": "作者通过一系列不使用连词（如 'and'）的、独立的句子片段来列举参加聚会的人。这种被称为“连接词省略”（asyndeton）的修辞手法，创造了一种快速、包罗万象的节奏，有效地传达了一个庞大、快乐、紧密联系的团体感。",
+                        "example": {
+                            "en": "He packed his bag with clothes, books, a camera, his passport.",
+                            "cn": "他把衣服、书、相机、护照都装进了包里。"
+                        },
+                        "variants": null,
+                        "constraints": "是一种通过省略来增强节奏感和画面感的文学技巧。"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "en": "It was one of those great June days when the sky is completely blue and the sun is shining but it isn't so hot that you wish you were on the beach instead. It was just the perfect day. Everyone was happy. I still felt like I was floating, the Star Wars hero music in my head.",
+                "cn": "那是六月里那种很棒的日子之一，天空湛蓝，阳光明媚，但又不会热到让你宁愿待在海滩上。那真是完美的一天。每个人都很开心。我仍然感觉自己像在漂浮，脑海里响着《星球大战》的英雄音乐。",
+                "vocab": [
+                    {
+                        "word": "one of those days",
+                        "ph": "/wʌn əv ðoʊz deɪz/",
+                        "pos": "idiom",
+                        "mean": "那种日子（指某种典型的、可意会不可言传的日子）",
+                        "ex": "It was one of those days when everything just seemed to go right."
+                    },
+                    {
+                        "word": "perfect",
+                        "ph": "/ˈpɜːrfɪkt/",
+                        "pos": "adj",
+                        "mean": "完美的",
+                        "ex": "This is the perfect spot for a picnic."
+                    },
+                    {
+                        "word": "float",
+                        "ph": "/floʊt/",
+                        "pos": "v",
+                        "mean": "漂浮",
+                        "ex": "He felt so happy he was practically floating on air."
+                    }
+                ],
+                "gram": [
+                    {
+                        "id": "simile_to_express_euphoria",
+                        "name": "用于表达欣快感的明喻",
+                        "category": "F",
+                        "level": "B1",
+                        "pattern": "feel like + clause",
+                        "components": [
+                            {
+                                "slot": "feel like",
+                                "role": "明喻结构",
+                                "pos": [
+                                    "phr"
+                                ]
+                            }
+                        ],
+                        "function": "通过一个简单的明喻 'I still felt like I was floating'，作者生动地传达了主角内心的极度快乐和轻盈感。这种“漂浮感”是幸福感的一种常见比喻，能让读者立刻理解角色的欣快情绪。",
+                        "example": {
+                            "en": "After winning the award, she felt like she was walking on clouds.",
+                            "cn": "获奖之后，她感觉自己像走在云端。"
+                        },
+                        "variants": null,
+                        "constraints": "是一种通过比喻来表达强烈情感的有效方式。"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "en": "I walked with Summer and Jack, and we just couldn't stop cracking up. Everything made us laugh. We were in that giggly kind of mood where all someone has to do is look at you and you start laughing.",
+                "cn": "我和萨默、杰克一起走，我们就是忍不住地大笑。任何事都能让我们发笑。我们当时就处于那种傻笑的情绪中，只要有人看你一眼，你就会开始笑。",
+                "vocab": [
+                    {
+                        "word": "crack up",
+                        "ph": "/kræk ʌp/",
+                        "pos": "phr v",
+                        "mean": "（非正式）大笑起来",
+                        "ex": "His funny story made everyone in the room crack up."
+                    },
+                    {
+                        "word": "giggly",
+                        "ph": "/ˈɡɪɡli/",
+                        "pos": "adj",
+                        "mean": "咯咯笑的；傻笑的",
+                        "ex": "The children were tired and getting giggly."
+                    },
+                    {
+                        "word": "mood",
+                        "ph": "/muːd/",
+                        "pos": "n",
+                        "mean": "情绪；心情",
+                        "ex": "He's in a good mood today because his team won."
+                    }
+                ],
+                "gram": [
+                    {
+                        "id": "defining_relative_clause_for_abstract_noun",
+                        "name": "用于抽象名词的限定性定语从句",
+                        "category": "C",
+                        "level": "B2",
+                        "pattern": "Noun + where + clause",
+                        "components": [
+                            {
+                                "slot": "Noun",
+                                "role": "先行词",
+                                "pos": [
+                                    "n"
+                                ]
+                            },
+                            {
+                                "slot": "where",
+                                "role": "关系副词",
+                                "pos": [
+                                    "adv"
+                                ]
+                            }
+                        ],
+                        "function": "使用一个由 'where' 引导的定语从句来为一个抽象的名词（'mood'）提供一个具体的、情境化的定义。'...that giggly kind of mood where all someone has to do is look at you...' 准确地描述了一种非常具体且可意会的“傻笑情绪状态”。",
+                        "example": {
+                            "en": "It was that awkward stage of the party where no one knows what to say.",
+                            "cn": "那是派对上那种没人知道该说什么的尴尬阶段。"
+                        },
+                        "variants": null,
+                        "constraints": "'where' 在这里指代一种抽象的“状态”或“情境”。"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "en": "I heard Dad's voice up ahead and looked up. He was telling everyone a funny story as they walked down Amesfort Avenue. The grown-ups were all laughing, too. It was like Mom always said: Dad could be a comedian.",
+                "cn": "我听到前面传来爸爸的声音，于是抬起头。他们走在艾姆斯福特大道上，他正在给大家讲一个有趣的故事。大人们也都在笑。就像妈妈常说的那样：爸爸可以当个喜剧演员。",
+                "vocab": [
+                    {
+                        "word": "up ahead",
+                        "ph": "/ʌp əˈhed/",
+                        "pos": "adv phr",
+                        "mean": "在前面",
+                        "ex": "I can see a gas station up ahead on the right."
+                    },
+                    {
+                        "word": "grown-up",
+                        "ph": "/ˈɡroʊn ʌp/",
+                        "pos": "n",
+                        "mean": "大人",
+                        "ex": "The party was for grown-ups only, no kids allowed."
+                    },
+                    {
+                        "word": "comedian",
+                        "ph": "/kəˈmiːdiən/",
+                        "pos": "n",
+                        "mean": "喜剧演员",
+                        "ex": "The comedian told a series of hilarious jokes."
+                    }
+                ],
+                "gram": [
+                    {
+                        "id": "validation_of_a_repeated_saying",
+                        "name": "对常言的验证",
+                        "category": "R",
+                        "level": "B1",
+                        "pattern": "It was like [someone] always said: [the saying].",
+                        "components": [
+                            {
+                                "slot": "It was like",
+                                "role": "引导短语",
+                                "pos": [
+                                    "phr"
+                                ]
+                            },
+                            {
+                                "slot": "the saying",
+                                "role": "常说的话",
+                                "pos": [
+                                    "S"
+                                ]
+                            }
+                        ],
+                        "function": "通过将当前的观察（爸爸逗乐了大家）与一个过去反复出现的评论（'Mom always said: Dad could be a comedian'）联系起来，作者不仅描绘了当时的场景，还为爸爸的性格提供了更深层次的背景。这个结构起到了验证和强化的作用。",
+                        "example": {
+                            "en": "He fixed the broken chair with just a paperclip. It was like his grandfather always said: he could fix anything.",
+                            "cn": "他只用一个回形针就修好了坏掉的椅子。就像他祖父常说的那样：他什么都能修好。"
+                        },
+                        "variants": null,
+                        "constraints": "是一种通过连接过去和现在来丰富角色刻画的技巧。"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "en": "I noticed Mom wasn't walking with the group of grown-ups, so I looked behind me. She was hanging back a bit, smiling to herself like she was thinking of something sweet. She seemed happy.",
+                "cn": "我注意到妈妈没有和大人们一起走，所以我朝身后看去。她稍微落在后面一点，自顾自地微笑着，好像在想什么甜蜜的事情。她看起来很开心。",
+                "vocab": [
+                    {
+                        "word": "hang back",
+                        "ph": "/hæŋ bæk/",
+                        "pos": "phr v",
+                        "mean": "（因害羞或不确定而）落在后面",
+                        "ex": "While the other kids ran to play, the shy boy decided to hang back."
+                    },
+                    {
+                        "word": "smile to oneself",
+                        "ph": "/smaɪl tuː wʌnˈself/",
+                        "pos": "idiom",
+                        "mean": "自顾自地微笑",
+                        "ex": "He was reading the letter and smiling to himself."
+                    },
+                    {
+                        "word": "sweet",
+                        "ph": "/swiːt/",
+                        "pos": "adj",
+                        "mean": "甜蜜的；美好的",
+                        "ex": "She has many sweet memories of her childhood."
+                    }
+                ],
+                "gram": [
+                    {
+                        "id": "describing_a_private_moment",
+                        "name": "描述私密时刻",
+                        "category": "R",
+                        "level": "B2",
+                        "pattern": "Using participles and similes to describe subtle actions.",
+                        "components": [
+                            {
+                                "slot": "participle",
+                                "role": "分词",
+                                "pos": [
+                                    "v-ing"
+                                ]
+                            },
+                            {
+                                "slot": "simile",
+                                "role": "明喻",
+                                "pos": [
+                                    "F"
+                                ]
+                            }
+                        ],
+                        "function": "通过一系列细腻的观察（'hanging back', 'smiling to herself'）和一个温柔的比喻（'like she was thinking of something sweet'），作者捕捉到了一个属于妈妈的、私密的快乐瞬间。这种对细微表情和动作的描绘，让角色的情感显得更加真实和深刻。",
+                        "example": {
+                            "en": "He stood by the window, staring out at the rain, like he was lost in another world.",
+                            "cn": "他站在窗边，凝视着外面的雨，仿佛迷失在另一个世界。"
+                        },
+                        "variants": null,
+                        "constraints": "是一种通过细致观察来揭示角色内心世界的写作技巧。"
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "en": "I took a few steps back and surprised her by hugging her as she walked. She put her arm around me and gave me a squeeze. \"Thank you for making me go to school,\" I said quietly.",
+                "cn": "我后退了几步，在她走路时抱住她，给了她一个惊喜。她用胳膊搂住我，轻轻捏了我一下。“谢谢你让我去上学，” 我轻声说。",
+                "vocab": [
+                    {
+                        "word": "surprise someone by",
+                        "ph": "/sərˈpraɪz ˈsʌmwʌn baɪ/",
+                        "pos": "phr v",
+                        "mean": "通过…给某人惊喜",
+                        "ex": "He surprised his wife by booking a trip to Paris for their anniversary."
+                    },
+                    {
+                        "word": "put one's arm around",
+                        "ph": "/pʊt wʌnz ɑːrm əˈraʊnd/",
+                        "pos": "phr v",
+                        "mean": "用胳膊搂住",
+                        "ex": "He put his arm around his friend to comfort her."
+                    },
+                    {
+                        "word": "squeeze",
+                        "ph": "/skwiːz/",
+                        "pos": "n",
+                        "mean": "捏；握",
+                        "ex": "She gave my arm a gentle squeeze to get my attention."
+                    },
+                    {
+                        "word": "make someone do something",
+                        "ph": "/meɪk ˈsʌmwʌn duː ˈsʌmθɪŋ/",
+                        "pos": "phr v",
+                        "mean": "让（使）某人做某事",
+                        "ex": "His jokes always make me laugh."
+                    }
+                ],
+                "gram": [
+                    {
+                        "id": "direct_expression_of_gratitude",
+                        "name": "直接表达感激",
+                        "category": "R",
+                        "level": "B2",
+                        "pattern": "A simple, direct statement of thanks for a transformative action.",
+                        "components": [
+                            {
+                                "slot": "statement",
+                                "role": "陈述",
+                                "pos": [
+                                    "S"
+                                ]
+                            }
+                        ],
+                        "function": "这句话是全书最重要的情感转折点之一。主角直接、真诚地为当初自己极力抗拒的事情（上学）向妈妈道谢。这个简单的句子，标志着他从恐惧走向接纳的完整旅程，是他真正成长的证明，并肯定了妈妈当初艰难决定的正确性。",
+                        "example": {
+                            "en": "After years of training, he told his coach, 'Thank you for pushing me so hard.'",
+                            "cn": "经过多年的训练，他对教练说：‘谢谢你对我那么严厉。’"
+                        },
+                        "variants": null,
+                        "constraints": "是一种在叙事中创造情感高潮和角色顿悟的有力技巧。"
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "en": "She hugged me close and leaned down and kissed the top of my head. \"Thank you, Auggie,\" she answered softly.",
+                "cn": "她把我紧紧抱住，俯下身，亲吻我的头顶。“谢谢你，奥吉，” 她轻柔地回答。",
+                "vocab": [
+                    {
+                        "word": "hug close",
+                        "ph": "/hʌɡ kloʊs/",
+                        "pos": "phr v",
+                        "mean": "紧紧拥抱",
+                        "ex": "She hugged her child close and whispered a bedtime story."
+                    },
+                    {
+                        "word": "lean down",
+                        "ph": "/liːn daʊn/",
+                        "pos": "phr v",
+                        "mean": "俯下身",
+                        "ex": "The tall man had to lean down to hear what the child was saying."
+                    },
+                    {
+                        "word": "softly",
+                        "ph": "/ˈsɔːftli/",
+                        "pos": "adv",
+                        "mean": "轻柔地",
+                        "ex": "She closed the door softly so as not to wake the baby."
+                    }
+                ],
+                "gram": [
+                    {
+                        "id": "reciprocal_gratitude",
+                        "name": "相互的感激",
+                        "category": "R",
+                        "level": "C1",
+                        "pattern": "An expression of thanks is met with a returned expression of thanks.",
+                        "components": [
+                            {
+                                "slot": "gratitude",
+                                "role": "感激之情",
+                                "pos": [
+                                    "S"
+                                ]
+                            }
+                        ],
+                        "function": "妈妈没有说“不客气”，而是用一句同样充满情感的“谢谢你”来回应。这种相互的感激，将他们的关系从单向的“父母照顾孩子”提升到了一个更深层次的、相互给予和相互成就的层面。这表明，孩子的成长和存在本身，也是对父母的一种馈赠。",
+                        "example": {
+                            "en": "A: \"Thank you for always being there for me.\" B: \"No, thank you for letting me be a part of your life.\"",
+                            "cn": "A：“谢谢你一直在我身边。” B：“不，谢谢你让我成为你生命的一部分。”"
+                        },
+                        "variants": null,
+                        "constraints": "是一种在对话中表现深刻情感联系的高级技巧。"
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "en": "\"For what?\" \"For everything you've given us,\" she said. \"For coming into our lives. For being you.\"",
+                "cn": "“为什么？” “为所有你给予我们的，” 她说。“为走进我们的生命。为你自己。”",
+                "vocab": [
+                    {
+                        "word": "for what?",
+                        "ph": "/fɔːr wɒt/",
+                        "pos": "phr",
+                        "mean": "为什么？",
+                        "ex": "A: \"Thank you.\" B: \"For what?\"",
+                        "cn": "A：“谢谢你。” B：“为什么？”"
+                    },
+                    {
+                        "word": "for being you",
+                        "ph": "/fɔːr ˈbiːɪŋ juː/",
+                        "pos": "phr",
+                        "mean": "为你自己；因为你是你",
+                        "ex": "I love you just for being you."
+                    }
+                ],
+                "gram": [
+                    {
+                        "id": "anaphora_for_emotional_climax",
+                        "name": "用于情感高潮的首语重复法",
+                        "category": "R",
+                        "level": "C1",
+                        "pattern": "Repetition of a prepositional phrase ('For...').",
+                        "components": [
+                            {
+                                "slot": "For...",
+                                "role": "重复的短语",
+                                "pos": [
+                                    "phr"
+                                ]
+                            }
+                        ],
+                        "function": "通过重复介词短语 'For...'，妈妈用一种充满诗意和情感的排比，层层递进地解释了她感激的原因。这个结构从具体（给予我们的）上升到存在层面（走进我们的生命），最终达到顶峰（为你自己），将对孩子的爱升华到一种无条件的、对其本质的接纳和珍视。",
+                        "example": {
+                            "en": "I am thankful for my family, for my friends, for my health.",
+                            "cn": "我感谢我的家人，感谢我的朋友，感谢我的健康。"
+                        },
+                        "variants": null,
+                        "constraints": "是一种在情感表达中极具力量的修辞手法。"
+                    }
+                ]
+            },
+            {
+                "id": 9,
+                "en": "She bent down and whispered in my ear. \"You really are a wonder, Auggie. You are a wonder.\"",
+                "cn": "她弯下腰，在我耳边低语。“你真的是一个奇迹，奥吉。你是一个奇迹。”",
+                "vocab": [
+                    {
+                        "word": "bend down",
+                        "ph": "/bend daʊn/",
+                        "pos": "phr v",
+                        "mean": "弯下腰",
+                        "ex": "He had to bend down to pick up the coin from the floor."
+                    },
+                    {
+                        "word": "whisper",
+                        "ph": "/ˈwɪspər/",
+                        "pos": "v",
+                        "mean": "低语",
+                        "ex": "He leaned in to whisper a secret in her ear."
+                    },
+                    {
+                        "word": "wonder",
+                        "ph": "/ˈwʌndər/",
+                        "pos": "n",
+                        "mean": "奇迹；奇观",
+                        "ex": "The Grand Canyon is one of the natural wonders of the world."
+                    }
+                ],
+                "gram": [
+                    {
+                        "id": "epizeuxis_for_ultimate_affirmation",
+                        "name": "同语重复 (Epizeuxis)",
+                        "category": "R",
+                        "level": "C1",
+                        "pattern": "Immediate repetition of a word or phrase for emphasis.",
+                        "components": [
+                            {
+                                "slot": "repeated phrase",
+                                "role": "重复的短语",
+                                "pos": [
+                                    "S"
+                                ]
+                            }
+                        ],
+                        "function": "通过立即重复核心句子 'You are a wonder.'，作者使用了“同语重复”（epizeuxis）这一修辞手法。这种重复没有任何修饰，以最直接、最有力的方式强调了这个最终的、充满爱意的肯定。它不仅是妈妈对儿子的最高赞美，也点明了书名，为整个故事提供了最终的情感和主题落点。",
+                        "example": {
+                            "en": "Alone, alone, all, all alone, alone on a wide wide sea!",
+                            "cn": "孤独，孤独，全然的，全然的孤独，独自在广阔无垠的海上！"
+                        },
+                        "variants": null,
+                        "constraints": "是一种通过纯粹的重复来达到最强强调效果的修辞手法。"
+                    }
+                ]
+            }
+        ],
+        "gram_types": {
+            "S": {
+                "en": "Sentence Structure",
+                "cn": "句子结构"
+            },
+            "T": {
+                "en": "Tense",
+                "cn": "时态"
+            },
+            "C": {
+                "en": "Clause",
+                "cn": "从句"
+            },
+            "P": {
+                "en": "Punctuation",
+                "cn": "标点"
+            },
+            "W": {
+                "en": "Word Form / Morphology",
+                "cn": "词形变化"
+            },
+            "F": {
+                "en": "Figurative Language",
+                "cn": "修辞"
+            },
+            "R": {
+                "en": "Rhetoric",
+                "cn": "修辞手法"
+            },
+            "O": {
+                "en": "Others",
+                "cn": "其他"
+            }
+        },
+        "pos_types": {
+            "n": {
+                "en": "noun",
+                "cn": "名词"
+            },
+            "v": {
+                "en": "verb",
+                "cn": "动词"
+            },
+            "adj": {
+                "en": "adjective",
+                "cn": "形容词"
+            },
+            "adv": {
+                "en": "adverb",
+                "cn": "副词"
+            },
+            "prep": {
+                "en": "preposition",
+                "cn": "介词"
+            },
+            "conj": {
+                "en": "conjunction",
+                "cn": "连词"
+            },
+            "pron": {
+                "en": "pronoun",
+                "cn": "代词"
+            },
+            "det": {
+                "en": "determiner",
+                "cn": "限定词"
+            },
+            "int": {
+                "en": "interjection",
+                "cn": "感叹词"
+            },
+            "phr": {
+                "en": "phrase",
+                "cn": "短语"
+            },
+            "phr v": {
+                "en": "phrasal verb",
+                "cn": "动词短语"
+            },
+            "n phr": {
+                "en": "noun phrase",
+                "cn": "名词短语"
+            },
+            "adj phr": {
+                "en": "adjective phrase",
+                "cn": "形容词短语"
+            },
+            "modal v": {
+                "en": "modal verb",
+                "cn": "情态动词"
+            },
+            "idiom": {
+                "en": "idiom",
+                "cn": "习语"
+            },
+            "S": {
+                "en": "sentence",
+                "cn": "句子"
+            }
+        }
     }
 ]

@@ -1,10 +1,12 @@
 
+
 onCustomEvent("doSomething", ({ doWhat, who }) => {
     console.log("开始运行函数");
     if (typeof doWhat === "function") {
         doWhat(who);
     }
 });
+
 import { TextAnalyzer } from './js/textAnalyzer.js';
 import { initMenuDev } from "./component/floatingMenu.js";
 import { importArticlesModal } from "./component/importArticlesFromFile.js"
@@ -17,6 +19,10 @@ import { getLibraryItemWithChapters } from "./res/articles/importArticles.js";
 import { initProgress } from "./component/progress.js";
 import FloatingBall from "./component/common/floatingBall.js"
 import { initArtcleData } from "./article/articleInit.js"
+
+export function ready(data) {
+  console.log("模块被调用：", data);
+}
 
 
 const testData = await getLibraryItemWithChapters("/mb/library/index/libraryIndex.json", "wonder", (done, tol, url, res) => {
