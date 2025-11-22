@@ -490,12 +490,11 @@ function onYouTubeIframeAPIReady() {
             container.style.padding = '10px';
             container.style.borderRadius = '8px';
             container.style.boxShadow = '0 4px 12px rgba(0,0,0,0.3)';
-            
             document.body.appendChild(container);
             
             // 创建播放器实例
             const player = new YouTubePlayer('youtube-player-container', 'https://www.youtube.com/watch?v=IpVUNNaZLHw');
-            console.log('YouTube播放器已自动注入');
+        
         }
     }
 
@@ -1113,7 +1112,7 @@ function onYouTubeIframeAPIReady() {
 
     window.customPlaylist = [
                 { title: "last fall - lil peep", url: "https://www.youtube.com/watch?v=IpVUNNaZLHw&list=RDIpVUNNaZLHw&start_radio=1" },
-                { title: "Rap說唱 穷人脾气大—俊毅，淩飛（附歌词）", url: "https://www.youtube.com/watch?v=tBF6EK70vaQ&list=RDtBF6EK70vaQ&start_radio=1" },
+                { title: "Rap說唱 穷人脾气大—俊毅，淩飛（附歌词）", url: "https://www.youtube.com/watch?v=4Jgu4DRVxFU" },
                 { title: "wonder part 1", url: "https://www.youtube.com/watch?v=r0EZ1rjk25w&t=9s" },
                 { title: "SCHALA'S Magic Book主题", url: "https://www.youtube.com/watch?v=bQ6kaNcsw4Q&list=RDbQ6kaNcsw4Q&start_radio=1" }
             ];

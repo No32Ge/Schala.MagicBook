@@ -1835,6 +1835,9 @@
         <!-- 添加导入导出菜单项 -->
         <div class="menu-section">
             <div class="menu-section-title">数据管理</div>
+            <button class="menu-item" id="dynamic-import-btn">
+                <i class="bi bi-box-arrow-in-down"></i> <strong>动态导入</strong>
+            </button>
             <button class="menu-item" id="import-articles-btn">
                 <i class="bi bi-download"></i> 导入文章
             </button>
@@ -1842,9 +1845,7 @@
                 <i class="bi bi-upload"></i> 导出文章
             </button>
             <!-- 在现有的导入导出按钮后面添加 -->
-            <button class="menu-item" id="dynamic-import-btn">
-                <i class="bi bi-box-arrow-in-down"></i> 动态导入JS
-            </button>
+
         </div>
 
         <div class="menu-section">
@@ -2136,7 +2137,7 @@
                     <label class="form-label required-field">JS文件URL</label>
                     <input type="text" class="form-input" id="js-file-url"
                         placeholder="例如: https://example.com/articles.js">
-                    <div class="field-note">支持本地文件或远程JS文件，文件应导出文章数组</div>
+                    <div class="field-note">支持本地文件或远程JS文件，文件应导出文章数组(这种方式已被废弃)</div>
                 </div>
 
                 <!-- 预设的基础文章库 -->
@@ -2145,22 +2146,22 @@
                     <div class="preset-libraries">
                         <div class="preset-item">
                             <button type="button" class="btn btn-outline-primary btn-sm preset-btn"
-                                data-url="https://ge32english.com/ge32/labs/GeSeed/v1/article-repo/basic-articles.js">
-                                基础英语文章库 (100篇)
+                                data-url="https://english.ge32.site/mb/b1/article-repo/basic-artcles.js">
+                                Wonder合集文章库 (122篇)
                             </button>
                             <span class="preset-description">包含100篇基础英语学习文章</span>
                         </div>
                         <div class="preset-item">
                             <button type="button" class="btn btn-outline-primary btn-sm preset-btn"
-                                data-url="https://ge32english.com/ge32/labs/GeSeed/v1/article-repo/advanced-articles.js">
-                                进阶英语文章库 (150篇)
+                                data-url="https://english.ge32.site/mb/b1/article-repo/advanced-articles.js">
+                                进阶英语文章库 (1篇)
                             </button>
                             <span class="preset-description">包含150篇进阶英语学习文章</span>
                         </div>
                         <div class="preset-item">
                             <button type="button" class="btn btn-outline-primary btn-sm preset-btn"
                                 data-url="https://ge32english.com/ge32/labs/GeSeed/v1/article-repo/business-articles.js">
-                                商务英语文章库 (80篇)
+                                该版本已经停止维护
                             </button>
                             <span class="preset-description">包含80篇商务英语文章</span>
                         </div>
@@ -2247,265 +2248,189 @@
         // 多篇文章数据 - 新格式
         const articlesData = [
             {
-                "id": "failure",
-                "title": "The Value of Failure",
+                "id": "version_info",
+                "title": "使用说明",
                 "info": {
-                    "author": "David Sedaris",
-                    "source": "Me Talk Pretty One Day",
-                    "level": "B2",
-                    "tags": ["learning", "motivation"],
-                    "link": "[https://example.com/original](https://example.com/original)",
+                    "author": "Ge32",
+                    "source": "System",
+                    "level": "A2",
+                    "tags": ["version 1", "usage", "notes"],
+                    "link": null,
                     "variants": null
                 },
                 "paras": [
                     {
                         "id": 1,
-                        "en": "Failure is not the opposite of success; it is part of success.",
-                        "cn": "失败并不是成功的反面；它是成功的一部分。",
+                        "en": "This version loads the fastest, but it has the least complete features. The articles still work — you just need to import them manually each time.",
+                        "cn": "<div style = 'margin: 0px;padding: 10px;box-sizing: border-box;font-family: &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif;background: white;font-size: 17px;border-radius: 20px;border-color: rgb(67, 97, 238);border-style: solid;border-width: 1px;border-image: none 100% / 1 / 0 stretch;font-weight: 500;color: rgb(67, 97, 238);box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px;'>这个版本加载速度最快，但功能最不完善。文章仍然可以正常使用——只是每次都需要你手动导入。</div>",
                         "vocab": [
                             {
-                                "word": "failure",
-                                "ph": "/ˈfeɪljər/",
-                                "pos": "n",
-                                "mean": "失败",
-                                "ex": "He learned a lot from his failure."
+                                "word": "load",
+                                "ph": "/loʊd/",
+                                "pos": "v",
+                                "mean": "加载；装入",
+                                "ex": "The page loads quickly."
                             },
                             {
-                                "word": "opposite of",
-                                "ph": "/ˈɒpəzɪt/",
-                                "pos": "phr",
-                                "mean": "相反的事物",
-                                "ex": "Love is the opposite of hate."
+                                "word": "feature",
+                                "ph": "/ˈfiːtʃər/",
+                                "pos": "n",
+                                "mean": "功能；特性",
+                                "ex": "This app has many useful features."
+                            },
+                            {
+                                "word": "manually",
+                                "ph": "/ˈmænjuəli/",
+                                "pos": "adv",
+                                "mean": "手动地",
+                                "ex": "You need to enter the data manually."
                             }
                         ],
                         "gram": [
                             {
-                                "id": "not_but_structure",
-                                "name": "not ... but ... 结构",
+                                "id": "but_contrast",
+                                "name": "but 表示转折",
                                 "category": "S",
-                                "level": "B1",
-                                "pattern": "SUBJ + be + not + X + but + Y",
+                                "level": "A2",
+                                "pattern": "clause + but + clause",
                                 "components": [
-                                    { "slot": "SUBJ", "role": "主语", "pos": ["n", "pron", "phr"] },
-                                    { "slot": "be", "role": "系动词", "pos": ["v"] },
-                                    { "slot": "not", "role": "否定词", "pos": ["adv"] },
-                                    { "slot": "X", "role": "否定内容", "pos": ["n", "adj", "phr"] },
-                                    { "slot": "but", "role": "转折连词", "pos": ["conj"] },
-                                    { "slot": "Y", "role": "肯定内容", "pos": ["n", "adj", "phr"] }
+                                    { "slot": "clause1", "role": "前半句", "pos": ["clause"] },
+                                    { "slot": "but", "role": "连接词", "pos": ["conj"] },
+                                    { "slot": "clause2", "role": "后半句", "pos": ["clause"] }
                                 ],
-                                "function": "用于表达'不是……而是……'，强调两者对比，否定前者肯定后者。",
+                                "function": "表示两个句子之间的转折关系。",
                                 "example": {
-                                    "en": "She is not lazy but tired.",
-                                    "cn": "她不是懒惰而是累了。"
+                                    "en": "It loads fast, but it lacks features.",
+                                    "cn": "它加载快，但缺少功能。"
                                 },
-                                "variants": [
-                                    "SUBJ + do/does/did + not + VERB + but + VERB",
-                                    "SUBJ + be (past) + not + X + but + Y"
-                                ],
-                                "constraints": "X 与 Y 必须为语法功能一致（都为名词或都为形容词类）；but 前后保持平行结构。"
+                                "variants": null,
+                                "constraints": null
                             }
                         ]
                     },
                     {
                         "id": 2,
-                        "en": "Each mistake teaches you what not to do next time. When you try and fail, you collect information — sometimes small, sometimes decisive — that shapes your next attempt.",
-                        "cn": "每一次错误都会告诉你下一次不要怎么做。尝试并失败时，你会收集信息——有时是微小的，有时是决定性的——这些信息会影响你下一次的尝试。",
+                        "en": "It’s possible to use localStorage to store data, but it’s not worth the trouble since the next two versions don’t support data storage either.",
+                        "cn": "<div style='margin: 0px;padding: 30px;box-sizing: border-box;font-family: &quot;Segoe UI&quot;, Tahoma, Geneva, Verdana, sans-serif;background: rgba(227, 242, 253, 0.7);border-radius: 15px;box-shadow: rgba(33, 150, 243, 0.15) 0px 12px 25px;border-width: 1px;border-style: solid;border-color: rgb(187, 222, 251);overflow: hidden;transition: 0.4s;z-index: 1;text-align: center;transform: translateY(-5px);'>可以使用 localStorage 来存储数据，但不太值得，因为后两个版本也不支持数据存储。</div>",
                         "vocab": [
                             {
-                                "word": "mistake",
-                                "ph": "/mɪˈsteɪk/",
-                                "pos": "n",
-                                "mean": "错误；失误",
-                                "ex": "A small mistake cost them the game."
+                                "word": "store",
+                                "ph": "/stɔːr/",
+                                "pos": "v",
+                                "mean": "储存",
+                                "ex": "You can store files on the cloud."
                             },
                             {
-                                "word": "decisive",
-                                "ph": "/dɪˈsaɪsɪv/",
+                                "word": "worth",
+                                "ph": "/wɜːrθ/",
                                 "pos": "adj",
-                                "mean": "决定性的；关键的",
-                                "ex": "A decisive victory ended the season early."
+                                "mean": "值得的",
+                                "ex": "It's not worth the effort."
                             },
                             {
-                                "word": "attempt",
-                                "ph": "/əˈtempt/",
-                                "pos": "n",
-                                "mean": "尝试",
-                                "ex": "Her first attempt failed, but she tried again."
+                                "word": "support",
+                                "ph": "/səˈpɔːrt/",
+                                "pos": "v",
+                                "mean": "支持",
+                                "ex": "This version supports dark mode."
                             }
                         ],
-                        "gram": [
-                            {
-                                "id": "present_participle_clause",
-                                "name": "现在分词短语作伴随状语",
-                                "category": "S",
-                                "level": "B2",
-                                "pattern": "VERB-ing + , + main clause",
-                                "components": [
-                                    { "slot": "VERB-ing", "role": "现在分词短语", "pos": ["v-ing"] },
-                                    { "slot": "main clause", "role": "主句", "pos": ["clause"] }
-                                ],
-                                "function": "表示两个动作同时发生或伴随发生，简化句子结构，常用于书面语。",
-                                "example": {
-                                    "en": "Trying and failing, he learned what to change.",
-                                    "cn": "尝试并失败的过程中，他学会了要改变什么。"
-                                },
-                                "variants": null,
-                                "constraints": "主语要一致，避免造成悬垂分词。"
-                            }
-                        ]
+                        "gram": []
                     },
                     {
                         "id": 3,
-                        "en": "Successful people often have long lists of failures behind them. They simply see those failures as experiments that didn't produce the intended result — data, not judgment.",
-                        "cn": "成功的人通常背后有一长串失败。他们只是把那些失败看作未能产生预期结果的实验——是数据，不是评判。",
+                        "en": "To use it, click the blue ball. When the menu appears, select Dynamic Import to load the articles.",
+                        "cn": `<strong style="font-size:32px;">使用方法：点击蓝色的球。当菜单出现时，选择动态导入即可加载文章，或者<span style="color:red;" onclick='importArticles()'>点这里 ( + )</span>也可以加载文章。</strong> `,
+                        'js':"function importArticles() {document.getElementById('dynamic-import-modal').classList.add('show')}",
                         "vocab": [
                             {
-                                "word": "successful",
-                                "ph": "/səkˈsesfəl/",
-                                "pos": "adj",
-                                "mean": "成功的",
-                                "ex": "She is a successful engineer."
+                                "word": "click",
+                                "ph": "/klɪk/",
+                                "pos": "v",
+                                "mean": "点击",
+                                "ex": "Click the button to continue."
                             },
                             {
-                                "word": "experiment",
-                                "ph": "/ɪkˈsperɪmənt/",
-                                "pos": "n",
-                                "mean": "实验；尝试",
-                                "ex": "The scientists ran the experiment twice."
+                                "word": "appear",
+                                "ph": "/əˈpɪr/",
+                                "pos": "v",
+                                "mean": "出现",
+                                "ex": "A message appeared on the screen."
                             },
                             {
-                                "word": "judgment",
-                                "ph": "/ˈdʒʌdʒmənt/",
-                                "pos": "n",
-                                "mean": "评判；判断",
-                                "ex": "Try to avoid harsh judgment of yourself."
+                                "word": "select",
+                                "ph": "/sɪˈlekt/",
+                                "pos": "v",
+                                "mean": "选择",
+                                "ex": "Select your language."
                             }
                         ],
                         "gram": [
                             {
-                                "id": "noun_phrase_apposition",
-                                "name": "名词短语同位语",
-                                "category": "P",
-                                "level": "B2",
-                                "pattern": "noun + , + appositive phrase + ,",
+                                "id": "when_time_clause",
+                                "name": "when 引导的时间状语从句",
+                                "category": "S",
+                                "level": "A2",
+                                "pattern": "When + clause, main clause",
                                 "components": [
-                                    { "slot": "noun", "role": "名词", "pos": ["n"] },
-                                    { "slot": "appositive phrase", "role": "同位语", "pos": ["phr"] }
+                                    { "slot": "when_clause", "role": "时间从句", "pos": ["clause"] },
+                                    { "slot": "main_clause", "role": "主句", "pos": ["clause"] }
                                 ],
-                                "function": "提供额外信息或解释，常用逗号隔开。",
+                                "function": "表示某事发生时触发另一动作。",
                                 "example": {
-                                    "en": "They, experiments that failed, provided useful lessons.",
-                                    "cn": "那些失败的实验为他们提供了有用的教训。"
+                                    "en": "When it appears, select it.",
+                                    "cn": "当它出现时，选择它。"
                                 },
-                                "variants": [
-                                    "noun + — + appositive phrase + —",
-                                    "noun (that + clause) as apposition"
-                                ],
-                                "constraints": "同位语与名词在意义上应指向同一概念。"
+                                "variants": null,
+                                "constraints": null
                             }
                         ]
                     },
                     {
                         "id": 4,
-                        "en": "The emotional part of failure — shame, disappointment, embarrassment — is real and must be acknowledged. But treating emotions as the whole story prevents you from extracting the lessons.",
-                        "cn": "失败的情感部分——羞耻、失望、尴尬——是真实存在且必须承认的。但把情绪当成全部故事会阻止你提取教训。",
+                        "en": "Each time you refresh the page, you will need to load everything again because this is the first-generation version.",
+                        "cn": "每次你刷新页面，都必须重新加载所有内容，因为这是初代版本。",
                         "vocab": [
                             {
-                                "word": "shame",
-                                "ph": "/ʃeɪm/",
-                                "pos": "n",
-                                "mean": "羞耻；惭愧",
-                                "ex": "He felt shame after the mistake."
-                            },
-                            {
-                                "word": "embarrassment",
-                                "ph": "/ɪmˈbærəsmənt/",
-                                "pos": "n",
-                                "mean": "窘迫；尴尬",
-                                "ex": "There was some embarrassment at the meeting."
-                            },
-                            {
-                                "word": "acknowledge",
-                                "ph": "/əkˈnɒlɪdʒ/",
+                                "word": "refresh",
+                                "ph": "/rɪˈfreʃ/",
                                 "pos": "v",
-                                "mean": "承认；认可",
-                                "ex": "You should acknowledge your progress."
+                                "mean": "刷新",
+                                "ex": "Refresh the page to update the content."
+                            },
+                            {
+                                "word": "generation",
+                                "ph": "/ˌdʒenəˈreɪʃən/",
+                                "pos": "n",
+                                "mean": "代；版本",
+                                "ex": "This is the first generation of the product."
                             }
                         ],
                         "gram": [
                             {
-                                "id": "list_commas",
-                                "name": "并列名词或短语的列举（逗号）",
+                                "id": "each_time_clause",
+                                "name": "each time 引导时间从句",
                                 "category": "S",
                                 "level": "B1",
-                                "pattern": "item1, item2, item3",
+                                "pattern": "Each time + clause, main clause",
                                 "components": [
-                                    { "slot": "item", "role": "列表项", "pos": ["n", "phr"] }
+                                    { "slot": "time_clause", "role": "时间条件", "pos": ["clause"] },
+                                    { "slot": "main_clause", "role": "主句", "pos": ["clause"] }
                                 ],
-                                "function": "用逗号或破折号连接多个并列项，强调累积或并列的概念。",
+                                "function": "表示每次都发生的重复动作。",
                                 "example": {
-                                    "en": "Shame, disappointment, embarrassment — they all hurt.",
-                                    "cn": "羞耻、失望、尴尬——它们都会令人痛苦。"
+                                    "en": "Each time you refresh it, it reloads.",
+                                    "cn": "每次你刷新，它都会重新加载。"
                                 },
                                 "variants": null,
-                                "constraints": "最后两个项之间通常用 and 或者破折号来终结并列。"
-                            }
-                        ]
-                    },
-                    {
-                        "id": 5,
-                        "en": "What matters is the habit you build after failure: analyze honestly, adapt quickly, and try again. That habit turns temporary setbacks into long-term progress.",
-                        "cn": "关键是你在失败之后养成的习惯：诚实分析、快速调整并再次尝试。这个习惯会把暂时的挫折变成长期的进步。",
-                        "vocab": [
-                            {
-                                "word": "analyze",
-                                "ph": "/ˈænəlaɪz/",
-                                "pos": "v",
-                                "mean": "分析",
-                                "ex": "Analyze the results before deciding."
-                            },
-                            {
-                                "word": "adapt",
-                                "ph": "/əˈdæpt/",
-                                "pos": "v",
-                                "mean": "适应；调整",
-                                "ex": "You must adapt your plan to new information."
-                            },
-                            {
-                                "word": "setback",
-                                "ph": "/ˈsetbæk/",
-                                "pos": "n",
-                                "mean": "挫折；倒退",
-                                "ex": "The delay was only a temporary setback."
-                            }
-                        ],
-                        "gram": [
-                            {
-                                "id": "imperative_sequence",
-                                "name": "祈使句序列",
-                                "category": "S",
-                                "level": "B2",
-                                "pattern": "Verb, Verb, and Verb.",
-                                "components": [
-                                    { "slot": "Verb", "role": "动词原形（祈使）", "pos": ["v"] }
-                                ],
-                                "function": "用来列举指导步骤或建议，常见于说明文和指示性语言。",
-                                "example": {
-                                    "en": "Analyze honestly, adapt quickly, and try again.",
-                                    "cn": "诚实分析、迅速调整并再次尝试。"
-                                },
-                                "variants": [
-                                    "Verb + ing, Verb + ing, and Verb + ing.",
-                                    "Verb + , + Verb + ; + Verb."
-                                ],
-                                "constraints": "各项应保持语法平行。"
+                                "constraints": null
                             }
                         ]
                     }
                 ]
             }
+        ]
 
-        ];
 
 
         // 词性类型映射
@@ -2714,7 +2639,7 @@
                     injectedElements: new Map(),
                     instanceIds: new Set(),
                     dirty: false,
-                    active: false // ✅ 新增：标记是否已启用（是否页面存在匹配元素）
+                    active: false //  新增：标记是否已启用（是否页面存在匹配元素）
                 };
                 window.__styleMakerRegistry.set(registryKey, registryEntry);
             }
@@ -2730,7 +2655,7 @@
                 Object.entries(obj).map(([k, v]) => `${kebabCase(k)}: ${addImportant(v)};`).join(' ');
 
             const renderNow = () => {
-                // ✅ 若页面中没有对应 class，且没有任何元素被注入，则不渲染
+                //  若页面中没有对应 class，且没有任何元素被注入，则不渲染
                 if (!registryEntry.active && !document.querySelector(`.${config.prefix}${clsName}`)) {
                     registryEntry.styleEl.textContent = '';
                     return;
@@ -2785,7 +2710,7 @@
                 }
 
                 registryEntry.injectedElements.set(element, classSet);
-                registryEntry.active = true; // ✅ 有元素注入时标记激活
+                registryEntry.active = true; //  有元素注入时标记激活
                 scheduleRender();
                 return element;
             };
@@ -2934,7 +2859,7 @@
                 get isDestroyed() { return destroyed; }
             };
 
-            // ✅ 自动检测 DOM 是否有匹配元素，若有才激活样式
+            //  自动检测 DOM 是否有匹配元素，若有才激活样式
             if (config.autoInject) {
                 const checkElements = () => {
                     const found = document.querySelector(`.${config.prefix}${clsName}`);
@@ -3449,6 +3374,12 @@
 
                 // 处理英文文本，使单词和短语都可点击
                 let processedText = paragraph.en;
+                let jsinJson = paragraph.js;
+                if(jsinJson) {
+                    const jscode =  document.createElement("script");
+                    jscode.innerText = jsinJson;
+                    document.body.appendChild(jscode);
+                }
 
                 // 按照词汇表中的短语长度从长到短排序，优先匹配长短语
                 const vocabWords = paragraph.vocab ?
@@ -3551,7 +3482,8 @@
                 if (paragraph.cn && paragraph.cn.trim()) {
                     const chineseText = document.createElement('div');
                     chineseText.className = 'chinese-text';
-                    chineseText.textContent = paragraph.cn;
+                    // 中文可以增加样式
+                    chineseText.innerHTML = paragraph.cn;
                     paragraphElement.appendChild(chineseText);
                 }
                 // ========== 添加结束 ==========

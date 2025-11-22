@@ -461,7 +461,7 @@ function renderCpoyBtn(text) {
 
     // 将样式应用到元素
     copyBtnStyle.inject(copy);
-    copy.innerHTML = `${"暂时不要图标"}`;
+    copy.innerHTML = `${"[复制]"}`;
 
 
     copy.addEventListener('click', async function () {
