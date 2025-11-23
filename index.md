@@ -1,6 +1,3 @@
-这是中英文混合版本的页面内容：
-
-```markdown
 ---
 title: "Schala's Magic Book / 莎拉的魔法书"
 layout: default
