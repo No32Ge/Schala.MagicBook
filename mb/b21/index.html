@@ -680,10 +680,10 @@
             window.YouTubePlayer = YouTubePlayer;
 
             window.customPlaylist = [
-                
+
                 { title: "lofi hip hop radio 📚 beats to relax/study to", url: "https://www.youtube.com/watch?v=jfKfPfyJRdk" },
                 { title: "synthwave radio 🌌 beats to chill/game to", url: "https://www.youtube.com/watch?v=4xDzrJKXOOY" },
-                { title: "SCHALA'S Magic Book主题", url: "https://www.youtube.com/watch?v=bQ6kaNcsw4Q&list=RDbQ6kaNcsw4Q&start_radio=1"},
+                { title: "SCHALA'S Magic Book主题", url: "https://www.youtube.com/watch?v=bQ6kaNcsw4Q&list=RDbQ6kaNcsw4Q&start_radio=1" },
                 { title: "last fall - lil peep(我喜欢的歌)", url: "https://www.youtube.com/watch?v=IpVUNNaZLHw&list=RDIpVUNNaZLHw&start_radio=1" },
             ];
 
@@ -732,8 +732,8 @@
                 autoInject();
             }
 
-            console.log('%cGE32 YouTube播放器脚本插件',"font-size: 30px; color: green; font-weight: bold;");
-            console.log('%c作者公众号 ： Ge32',"font-size: 30px; color: black; font-weight: bold;");
+            console.log('%cGE32 YouTube播放器脚本插件', "font-size: 30px; color: green; font-weight: bold;");
+            console.log('%c作者公众号 ： Ge32', "font-size: 30px; color: black; font-weight: bold;");
         })();
     </script>
     <script>
@@ -807,9 +807,36 @@
             }
         })();
     </script>
+    <script>
+        let fontSize = 20; // 初始大小（自己改）
+        const MIN_SIZE = 12;
+        const MAX_SIZE = 32;
 
+        document.addEventListener('keydown', (e) => {
+            // 必须按住 Shift
+            if (!e.shiftKey) return;
 
+            // + 键（有些键盘是 '=+'）
+            if (e.key === '+' || (e.key === '=' && e.shiftKey)) {
+                fontSize = Math.min(fontSize + 1, MAX_SIZE);
+                applyFontSize();
+            }
+
+            // - 键
+            if (e.key === '_') { // shift + -
+                fontSize = Math.max(fontSize - 1, MIN_SIZE);
+                applyFontSize();
+            }
+        });
+
+        function applyFontSize() {
+            document.querySelectorAll('.english-text').forEach(el => {
+                el.style.fontSize = fontSize + 'px';
+            });
+        }
     </script>
+
+
 </body>
 
 </html>
