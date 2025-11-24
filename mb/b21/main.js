@@ -53,7 +53,7 @@ document.addEventListener('keydown', (e) => {
 
 function applyFontSize() {
     document.querySelectorAll('.english-text').forEach(el => {
-        el.style.fontSize = fontSize + 'px';
+        el.style.fontSize = englishTextSize + 'px';
     });
 }
 
