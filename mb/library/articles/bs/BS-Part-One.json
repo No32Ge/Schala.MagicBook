@@ -1,0 +1,989 @@
+[
+  {
+    "id": "nobs_podcast_epiphany",
+    "title": "The Epiphany on Discipline and Comfort",
+    "info": {
+      "author": "BS (NoBS podcast)",
+      "source": "Podcast Transcript",
+      "level": "C1",
+      "tags": [
+        "motivation",
+        "discipline",
+        "psychology",
+        "self-improvement",
+        "emotions"
+      ],
+      "link": "https://example.com/nobs-podcast",
+      "variants": null
+    },
+    "paras": [
+      {
+        "id": 1,
+        "en": "Hi, hello, welcome to the NoBS podcast. I'm your host BS and I have had multiple epiphanies recently. We know that I miss who I used to be. We know that I miss being a ballerina. This isn't new news. I miss being a ballerina. The reason that I don't feel like myself and the reason that I miss my old self and the reason that I feel like I don't have an identity is because in the least cocky way possible, I used to have Goggins like determination. I was crazy obsessive like whiplash and black swan and I do not know where that part of me went. I do not know where that determination and that endless motivation in me went.",
+        "cn": "嗨，你好，欢迎来到 NoBS 播客。我是你们的主持人BS，我最近有了好几次顿悟。我们知道我怀念过去的我。我们知道我怀念当芭蕾舞演员的日子。这不是什么新鲜事。我怀念当芭蕾舞演员。我感觉不像自己的原因，我怀念旧我的原因，以及我感觉没有身份认同的原因是，以最不自大的方式来说，我过去曾拥有像戈金斯一样的决心。我曾像《爆裂鼓手》和《黑天鹅》里那样疯狂地执着，我不知道我那一部分去哪儿了。我不知道我内心的那份决心和无尽的动力去哪儿了。",
+        "vocab": [
+          {
+            "word": "epiphany",
+            "ph": "/ɪˈpɪfəni/",
+            "pos": "n",
+            "mean": "（对事物的）顿悟",
+            "ex": "After weeks of confusion, he had a sudden epiphany about how to solve the problem."
+          },
+          {
+            "word": "cocky",
+            "ph": "/ˈkɒki/",
+            "pos": "adj",
+            "mean": "骄傲自大的",
+            "ex": "He's a talented player, but he can be a bit cocky."
+          },
+          {
+            "word": "Goggins like",
+            "ph": "/ˈɡɒɡɪnz laɪk/",
+            "pos": "adj phr",
+            "mean": "像（大卫·）戈金斯一样的（指极度的精神韧性和决心）",
+            "ex": "To finish that marathon in the snow, you need a Goggins like mindset."
+          },
+          {
+            "word": "obsessive",
+            "ph": "/əbˈsesɪv/",
+            "pos": "adj",
+            "mean": "执着的；着迷的",
+            "ex": "She has an obsessive attention to detail in her work."
+          },
+          {
+            "word": "whiplash / black swan",
+            "ph": "/ˈwɪplæʃ / blæk swɒn/",
+            "pos": "n phr",
+            "mean": "（电影名，比喻对完美的极端、痛苦的追求）",
+            "ex": "His training regimen was like something out of Whiplash, totally brutal."
+          },
+          {
+            "word": "determination",
+            "ph": "/dɪˌtɜːrmɪˈneɪʃn/",
+            "pos": "n",
+            "mean": "决心",
+            "ex": "With great determination, she completed the race despite her injury."
+          }
+        ],
+        "gram": [
+          {
+            "id": "anaphora_for_emotional_emphasis",
+            "name": "首语重复法（用于强调情感）",
+            "category": "R",
+            "level": "B2",
+            "pattern": "Repetition of a phrase at the beginning of successive clauses.",
+            "components": [
+              {
+                "slot": "repeated phrase",
+                "role": "重复的短语",
+                "pos": [
+                  "phr"
+                ]
+              }
+            ],
+            "function": "通过重复 'I miss...' 和 'the reason that I...'，说话者建立了一种强烈的节奏感，并有力地强调了她内心的失落感和对当前状态的困惑。这种首语重复法（anaphora）是口语中表达强烈情感的常见方式。",
+            "example": {
+              "en": "I want to succeed. I want to be happy. I want to make a difference.",
+              "cn": "我想成功。我想快乐。我想有所作为。"
+            },
+            "variants": null,
+            "constraints": "是一种通过重复来增强说服力和情感的修辞手法。"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "en": "I tell myself to go a day without eating junk food and I can't even do that. And I don't want to call myself a loser right now because that's never good to do and it's never good to call yourself names or anything, but a little tough love here. I feel like a loser because where did that version of me go? Like did she just dissipate into the ether? Where the fuck is she? And I do not know how to get her back until I had an epiphany today about it because I have goals. I have things I want to reach. I have places I want to reach too, but it's like I can't seem to get myself to get my ass up and start working towards that full force.",
+        "cn": "我告诉自己一天不吃垃圾食品，我甚至都做不到。我现在不想说自己是个失败者，因为那么做永远不好，骂自己什么的也不好，但这里需要一点严厉的爱。我感觉像个失败者，因为我那个版本去哪儿了？她就这样消散在虚空中了吗？她他妈的到底在哪儿？我不知道怎么把她找回来，直到今天我对此有了一个顿悟，因为我有目标。我有想达到的事情。我也有想去的地方，但就好像我无法让自己振作起来，开始全力以赴地为此努力。",
+        "vocab": [
+          {
+            "word": "call someone names",
+            "ph": "/kɔːl ˈsʌmwʌn neɪmz/",
+            "pos": "idiom",
+            "mean": "辱骂某人",
+            "ex": "It's wrong to call people names just because you disagree with them."
+          },
+          {
+            "word": "tough love",
+            "ph": "/tʌf lʌv/",
+            "pos": "n phr",
+            "mean": "严厉的爱",
+            "ex": "Sometimes, what a person needs is a bit of tough love to face reality."
+          },
+          {
+            "word": "dissipate into the ether",
+            "ph": "/ˈdɪsɪpeɪt ˈɪntuː ði ˈiːθər/",
+            "pos": "idiom",
+            "mean": "消散在虚空中",
+            "ex": "All his great ideas seemed to dissipate into the ether without any action."
+          },
+          {
+            "word": "get her back",
+            "ph": "/ɡet hər bæk/",
+            "pos": "phr v",
+            "mean": "把她找回来",
+            "ex": "After their argument, he did everything he could to get her back."
+          },
+          {
+            "word": "get my ass up",
+            "ph": "/ɡet maɪ æs ʌp/",
+            "pos": "idiom",
+            "mean": "（粗俗俚语）让自己振作起来；行动起来",
+            "ex": "I need to get my ass up and start studying for the exam."
+          },
+          {
+            "word": "full force",
+            "ph": "/fʊl fɔːrs/",
+            "pos": "adv phr",
+            "mean": "全力以赴地",
+            "ex": "The team went after the championship full force."
+          }
+        ],
+        "gram": [
+          {
+            "id": "escalating_rhetorical_questions",
+            "name": "逐步升级的反问句",
+            "category": "R",
+            "level": "C1",
+            "pattern": "A series of questions that increase in emotional intensity.",
+            "components": [
+              {
+                "slot": "question",
+                "role": "问句",
+                "pos": [
+                  "S"
+                ]
+              }
+            ],
+            "function": "说话者通过一系列逐步升级的、情绪越来越激烈的反问句（'...where did that version of me go?' -> '...did she just dissipate...?' -> 'Where the fuck is she?'），生动地展现了她从困惑到绝望再到愤怒的内心挣扎过程。",
+            "example": {
+              "en": "Why did this happen? How could it happen? What in the world am I going to do now?",
+              "cn": "为什么会发生这种事？怎么会发生这种事？我现在到底该怎么办？"
+            },
+            "variants": null,
+            "constraints": "是一种在独白中表现强烈情感递进的有效技巧。"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "en": "It feels like there's like this wall in front of me where every time I try to push or every time I try to be consistent. I just stop and I have this moment of like, what's the point of doing this? What's the point of pushing yourself? What's the point of going that extra mile? Why not just live a life of comfort and be okay with that till you die?",
+        "cn": "感觉就像我面前有一堵墙，每次我试图推动或每次我试图保持一致时，我就是会停下来，然后会有那么一个瞬间，就像，做这个有什么意义？逼自己一把有什么意义？多付出一英里有什么意义？为什么不就过一种舒适的生活，然后心安理得地直到死去呢？",
+        "vocab": [
+          {
+            "word": "consistent",
+            "ph": "/kənˈsɪstənt/",
+            "pos": "adj",
+            "mean": "坚持的；一致的",
+            "ex": "To see results, you need to be consistent with your workout routine."
+          },
+          {
+            "word": "what's the point of",
+            "ph": "/wɒts ðə pɔɪnt əv/",
+            "pos": "phr",
+            "mean": "…有什么意义？",
+            "ex": "What's the point of arguing about something so trivial?"
+          },
+          {
+            "word": "go the extra mile",
+            "ph": "/ɡoʊ ði ˈekstrə maɪl/",
+            "pos": "idiom",
+            "mean": "多付出一份努力",
+            "ex": "She always goes the extra mile to help her students succeed."
+          }
+        ],
+        "gram": [
+          {
+            "id": "anaphora_for_expressing_despair",
+            "name": "用于表达绝望的首语重复法",
+            "category": "R",
+            "level": "B2",
+            "pattern": "Repetition of 'What's the point of...' to show hopelessness.",
+            "components": [
+              {
+                "slot": "What's the point of...",
+                "role": "重复的短语",
+                "pos": [
+                  "phr"
+                ]
+              }
+            ],
+            "function": "通过重复反问句 'What's the point of...'，说话者强调了她深刻的无力感和对努力的质疑。这种首语重复法有力地传达了她在“墙”面前的绝望和自我怀疑。",
+            "example": {
+              "en": "What's the use of trying? What's the use of caring? It all ends the same way.",
+              "cn": "尝试有什么用？在乎有什么用？结局都一样。"
+            },
+            "variants": null,
+            "constraints": "是一种通过重复来增强情感和论点的修辞手法。"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "en": "And here's where my epiphany comes in. When you are disciplined, it strips you of your comfort and when your comfort gets stripped away, you are left with some very raw emotions to feel because comfort is kind of like a blanket that lays over your emotions that pads it somehow. So where when you are comfortable, when you are in bed scrolling, when you're eating your comfort foods and you're you know, in bed and you're cozy and you're constantly watching movies and you're distracting yourself, it acts as this blanket on your emotions. So it's easier not to feel, it's easier not to come face to face with what's been haunting you, it's easier not to come face to face with memories that you forgot, it's easier not to come face to face with the things you know that you should be feeling and thinking and processing, but you're not.",
+        "cn": "我的顿悟就在这里。当你自律时，它会剥夺你的舒适感，而当你的舒适感被剥夺时，你就会剩下一些非常原始的情绪去感受，因为舒适感有点像覆盖在你情绪上的一条毯子，以某种方式缓冲了它。所以，当你舒适时，当你在床上刷手机时，当你吃着你的安慰食物，而且你知道，在床上，你很舒适，你不停地看电影，你在分散自己的注意力，它就像你情绪上的一条毯子。所以不感受会更容易，不直面一直困扰你的东西会更容易，不直面你忘记的记忆会更容易，不直面那些你知道你应该感受、思考和处理但你没有的事情会更容易。",
+        "vocab": [
+          {
+            "word": "epiphany",
+            "ph": "/ɪˈpɪfəni/",
+            "pos": "n",
+            "mean": "顿悟",
+            "ex": "After weeks of confusion, he had a sudden epiphany about how to solve the problem."
+          },
+          {
+            "word": "strip away",
+            "ph": "/strɪp əˈweɪ/",
+            "pos": "phr v",
+            "mean": "剥去；除去",
+            "ex": "The investigation stripped away the lies to reveal the truth."
+          },
+          {
+            "word": "raw emotions",
+            "ph": "/rɔː ɪˈmoʊʃnz/",
+            "pos": "n phr",
+            "mean": "原始的情绪",
+            "ex": "The film was praised for its portrayal of raw human emotions."
+          },
+          {
+            "word": "pad",
+            "ph": "/pæd/",
+            "pos": "v",
+            "mean": "垫；缓冲",
+            "ex": "He used a pillow to pad the hard chair."
+          },
+          {
+            "word": "scrolling",
+            "ph": "/ˈskroʊlɪŋ/",
+            "pos": "v",
+            "mean": "（在屏幕上）滚动，刷（手机）",
+            "ex": "He spent hours just scrolling through social media."
+          },
+          {
+            "word": "comfort food",
+            "ph": "/ˈkʌmfərt fuːd/",
+            "pos": "n phr",
+            "mean": "安慰食物",
+            "ex": "Macaroni and cheese is her favorite comfort food."
+          },
+          {
+            "word": "cozy",
+            "ph": "/ˈkoʊzi/",
+            "pos": "adj",
+            "mean": "舒适的；惬意的",
+            "ex": "She loves to get cozy by the fire with a good book."
+          },
+          {
+            "word": "come face to face with",
+            "ph": "/kʌm feɪs tuː feɪs wɪθ/",
+            "pos": "idiom",
+            "mean": "直面",
+            "ex": "Sooner or later, you have to come face to face with your fears."
+          },
+          {
+            "word": "haunt",
+            "ph": "/hɔːnt/",
+            "pos": "v",
+            "mean": "（思想、回忆等）萦绕于心",
+            "ex": "The memory of the accident continued to haunt him."
+          }
+        ],
+        "gram": [
+          {
+            "id": "extended_metaphor_comfort_as_blanket",
+            "name": "扩展隐喻（舒适感如毯子）",
+            "category": "F",
+            "level": "C1",
+            "pattern": "Developing a single metaphor or analogy at length.",
+            "components": [
+              {
+                "slot": "metaphor",
+                "role": "隐喻",
+                "pos": [
+                  "F"
+                ]
+              }
+            ],
+            "function": "说话者引入了一个核心隐喻：“舒适感像一条毯子”。然后，她通过列举具体的“舒适”行为（刷手机、吃东西、看电影）来扩展这个隐喻，解释这条“毯子”是如何起到缓冲和麻痹情绪的作用的。这个扩展使得抽象的心理概念变得具体、可感。",
+            "example": {
+              "en": "Fear is a prison. It locks you in, keeps you from exploring, and limits your world to a tiny cell.",
+              "cn": "恐惧是一座监狱。它把你锁在里面，阻止你去探索，把你的世界限制在一个小小的牢房里。"
+            },
+            "variants": null,
+            "constraints": "是一种通过发展核心比喻来深化论点的高级技巧。"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "en": "And so I had a moment at the restaurant where today I woke up really early, I woke up at like 5 or 6 a.m. and I did a workout and I studied and I read and I meditated and I ate as healthy as I could and and I ate healthy and I didn't drink too much caffeine and I was standing there at the restaurant and I was exhausted. I was exhausted and I was hungry and I was tired and I felt uncomfortable and I was like why the fuck does anyone do this? What is the point of putting yourself in this place? And it was like the universe just whispered in my ear, the more uncomfortable you are, the easier it is to feel.",
+        "cn": "所以我在餐厅有了一个时刻，今天我起得很早，大概早上5、6点就醒了，我做了锻炼，学习了，阅读了，冥想了，我尽可能地吃得健康，而且我吃了健康的食物，没喝太多咖啡因，我站在餐厅那里，我筋疲力尽。我筋疲力尽，又饿又累，感觉不舒服，我当时就想，他妈的为什么会有人这么做？把自己置于这种境地有什么意义？然后就好像宇宙在我耳边低语：你越不舒服，就越容易去感受。",
+        "vocab": [
+          {
+            "word": "workout",
+            "ph": "/ˈwɜːrkaʊt/",
+            "pos": "n",
+            "mean": "锻炼",
+            "ex": "He does a one-hour workout at the gym every morning."
+          },
+          {
+            "word": "meditate",
+            "ph": "/ˈmedɪteɪt/",
+            "pos": "v",
+            "mean": "冥想",
+            "ex": "She likes to meditate for ten minutes each day to clear her mind."
+          },
+          {
+            "word": "caffeine",
+            "ph": "/ˈkæfiːn/",
+            "pos": "n",
+            "mean": "咖啡因",
+            "ex": "Coffee and tea both contain caffeine."
+          },
+          {
+            "word": "exhausted",
+            "ph": "/ɪɡˈzɔːstɪd/",
+            "pos": "adj",
+            "mean": "筋疲力尽的",
+            "ex": "After running the marathon, she was completely exhausted."
+          }
+        ],
+        "gram": [
+          {
+            "id": "polysyndeton_for_listing_actions",
+            "name": "连接词叠用（用于列举）",
+            "category": "R",
+            "level": "C1",
+            "pattern": "A and B and C and D...",
+            "components": [
+              {
+                "slot": "and",
+                "role": "连词",
+                "pos": [
+                  "conj"
+                ]
+              }
+            ],
+            "function": "通过在列举一系列自律行为时反复使用连词 'and'（'I did a workout and I studied and I read and I meditated...'），作者创造了一种连绵不绝的、强调累积效果的节奏。这种“连接词叠用”（Polysyndeton）的手法，突出了她当天付出的巨大努力，为她随后的“筋疲力尽”做了铺垫。",
+            "example": {
+              "en": "For dinner we had soup and salad and pasta and dessert.",
+              "cn": "晚餐我们吃了汤、沙拉、意大利面和甜点。"
+            },
+            "variants": null,
+            "constraints": "是一种通过重复连词来改变句子节奏和强调累积感的修辞技巧。"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "en": "And I turned to myself and I was like if I strip away all of my comfort, I finally have to come face to face with everything I have been avoiding, everything I've been running from, everything I have been processed, everything that is sitting right here on my heart. And it's all these thoughts of like will I ever be enough? Will I ever be loved? Will I ever be cared for the way that I want to be? But also I deal with repressed memories, so all of these memories of like things that happen to me that I forgot just coming flooding to the surface and it's like when you are starved of comfort, your mind becomes very sharp.",
+        "cn": "我转向自己，心想，如果我剥去所有舒适，我最终必须直面我一直在逃避的一切，我一直在逃离的一切，我处理过的一切，所有压在我心头的东西。都是些这样的想法，比如我会有足够好的那一天吗？我会得到爱吗？我会得到我想要的那种关怀吗？但同时我也要处理被压抑的记忆，所以所有这些我已忘记的、发生在我身上的事情的记忆，就这样涌上心头，就好像当你被剥夺了舒适时，你的头脑会变得非常敏锐。",
+        "vocab": [
+          {
+            "word": "come face to face with",
+            "ph": "/kʌm feɪs tuː feɪs wɪθ/",
+            "pos": "idiom",
+            "mean": "直面",
+            "ex": "Sooner or later, you have to come face to face with your fears."
+          },
+          {
+            "word": "repressed memories",
+            "ph": "/rɪˈprest ˈmeməriz/",
+            "pos": "n phr",
+            "mean": "被压抑的记忆",
+            "ex": "Therapy can sometimes help people deal with repressed memories from their childhood."
+          },
+          {
+            "word": "flood to the surface",
+            "ph": "/flʌd tuː ðə ˈsɜːrfɪs/",
+            "pos": "idiom",
+            "mean": "涌上心头",
+            "ex": "As he listened to the old song, memories of his youth came flooding to the surface."
+          },
+          {
+            "word": "be starved of",
+            "ph": "/biː stɑːrvd əv/",
+            "pos": "phr",
+            "mean": "被剥夺；渴望",
+            "ex": "After weeks of hard work, he was starved of any social interaction."
+          },
+          {
+            "word": "sharp",
+            "ph": "/ʃɑːrp/",
+            "pos": "adj",
+            "mean": "敏锐的",
+            "ex": "She has a sharp mind and can solve problems quickly."
+          }
+        ],
+        "gram": [
+          {
+            "id": "parallelism_with_everything_i_have_been",
+            "name": "用于列举的平行结构",
+            "category": "S",
+            "level": "B2",
+            "pattern": "A list of phrases starting with 'everything...'",
+            "components": [
+              {
+                "slot": "everything...",
+                "role": "平行结构单位",
+                "pos": [
+                  "phr"
+                ]
+              }
+            ],
+            "function": "通过重复 'everything I have been...' 的结构，说话者列举了她在剥夺舒适感后必须面对的一系列内心挣扎。这种排比结构有力地强调了她所逃避事物的广度和深度。",
+            "example": {
+              "en": "She remembered everything he had said, everything he had done, everything he had promised.",
+              "cn": "她记得他所说的一切，他所做的一切，他所承诺的一切。"
+            },
+            "variants": null,
+            "constraints": "平行结构中的各项应在语法上保持一致。"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "en": "It starts to focus on everything that has hurt it, everything that could hurt it. It starts to process all your emotions so fast and it's such a speed that you have no choice but to feel. You can't avoid it anymore. It's happening. You are feeling it and you can't stop feeling it. And the reason that I'm having such a problem being disciplined isn't because I'm a lazy sack of shit. It's because there's so much that I refuse to feel that comes up when I am disciplined because it makes me so raw and it makes me so real with myself that one, all the noise of the world is blocked out.",
+        "cn": "它开始关注所有伤害过它的事，所有可能伤害它的事。它开始以如此快的速度处理你所有的情绪，速度快到你别无选择，只能去感受。你再也无法逃避了。它正在发生。你正在感受它，而且你无法停止感受它。而我自律如此困难的原因，不是因为我是一坨懒惰的屎。而是因为有太多的东西我拒绝去感受，而这些东西在我自律时就会浮现，因为它让我变得如此原始，让我对自己如此真实，以至于，第一，世界上所有的噪音都被屏蔽了。",
+        "vocab": [
+          {
+            "word": "have no choice but to",
+            "ph": "/hæv noʊ tʃɔɪs bʌt tuː/",
+            "pos": "idiom",
+            "mean": "别无选择，只能…",
+            "ex": "The road was blocked, so we had no choice but to turn back."
+          },
+          {
+            "word": "lazy sack of shit",
+            "ph": "/ˈleɪzi sæk əv ʃɪt/",
+            "pos": "n phr",
+            "mean": "（粗俗俚语）一坨懒惰的屎；极其懒惰的人",
+            "ex": "He called himself a lazy sack of shit for spending the whole day on the couch."
+          },
+          {
+            "word": "raw",
+            "ph": "/rɔː/",
+            "pos": "adj",
+            "mean": "原始的；未经掩饰的",
+            "ex": "The documentary offered a raw look at the realities of war."
+          },
+          {
+            "word": "block out",
+            "ph": "/blɒk aʊt/",
+            "pos": "phr v",
+            "mean": "屏蔽；挡住",
+            "ex": "Use these earplugs to block out the noise while you sleep."
+          }
+        ],
+        "gram": [
+          {
+            "id": "short_sentences_for_immediacy",
+            "name": "用于营造即时感的短句",
+            "category": "R",
+            "level": "B2",
+            "pattern": "A series of short, emphatic sentences.",
+            "components": [
+              {
+                "slot": "short sentence",
+                "role": "短句",
+                "pos": [
+                  "S"
+                ]
+              }
+            ],
+            "function": "在一系列复杂的解释之后，使用一连串非常简短、有力的句子（'You can't avoid it anymore. It's happening. You are feeling it...'），创造了一种强烈的即时感和不可避免性。这种节奏上的突然变化，让读者能感受到情绪来临时那种无法抗拒的、压倒性的体验。",
+            "example": {
+              "en": "He saw the wave coming. It was huge. There was no escape. It was over.",
+              "cn": "他看到浪头来了。它巨大无比。无处可逃。一切都结束了。"
+            },
+            "variants": null,
+            "constraints": "是一种通过改变句子长度来控制叙事节奏和情感强度的有效技巧。"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "en": "Like when I'm in that state where I am tired and I'm exhausted and I have been disciplined with myself and I've done everything that I need to, I can't hear the world. Like I don't care what anyone thinks of me in that moment. I don't have the energy to care what anyone thinks of me in that moment. And I'm so connected with myself for just a second that it's like I can finally feel my heart and soul screaming at me what it's been trying to get me to feel.",
+        "cn": "比如当我处于那种又累又筋疲力尽、对自己严格自律、并且做完了我需要做的一切的状态时，我听不见世界的声音。就像那一刻我不在乎任何人对我的看法。那一刻我没有精力去在乎任何人对我的看法。而且有那么一瞬间我与自己如此紧密地连接，就好像我终于能感觉到我的内心和灵魂在对我尖叫，尖叫着它一直试图让我去感受的东西。",
+        "vocab": [
+          {
+            "word": "state",
+            "ph": "/steɪt/",
+            "pos": "n",
+            "mean": "状态",
+            "ex": "He has been in a state of confusion all day."
+          },
+          {
+            "word": "exhausted",
+            "ph": "/ɪɡˈzɔːstɪd/",
+            "pos": "adj",
+            "mean": "筋疲力尽的",
+            "ex": "After running the marathon, she was completely exhausted."
+          },
+          {
+            "word": "connected with",
+            "ph": "/kəˈnektɪd wɪθ/",
+            "pos": "adj phr",
+            "mean": "与…连接的",
+            "ex": "She felt deeply connected with nature while hiking in the mountains."
+          },
+          {
+            "word": "scream at",
+            "ph": "/skriːm æt/",
+            "pos": "phr v",
+            "mean": "对…尖叫",
+            "ex": "The coach was screaming at the players to run faster."
+          }
+        ],
+        "gram": [
+          {
+            "id": "personification_of_heart_and_soul",
+            "name": "内心与灵魂的拟人化",
+            "category": "F",
+            "level": "C1",
+            "pattern": "Giving human actions to abstract concepts of self.",
+            "components": [
+              {
+                "slot": "abstract concept",
+                "role": "抽象概念",
+                "pos": [
+                  "n"
+                ]
+              },
+              {
+                "slot": "human action",
+                "role": "人类行为",
+                "pos": [
+                  "v-ing"
+                ]
+              }
+            ],
+            "function": "通过将“内心和灵魂”拟人化，赋予其“尖叫”（screaming）这一人类行为，作者生动地描绘了一种强烈的内在冲动。这个比喻将那些被压抑的情感和直觉，塑造成了一个有自己意志、迫切需要被听到的实体，突显了自我连接的重要性。",
+            "example": {
+              "en": "His conscience was screaming at him not to lie.",
+              "cn": "他的良心在对他尖叫，让他不要撒谎。"
+            },
+            "variants": null,
+            "constraints": "是一种将内在冲突外化、形象化的文学技巧。"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "en": "And I went off into a little corner for just a second because it was really slow. So I was able to just go off in a corner for a second. And I was like, just feel it Bailey. Feel all the loss. Feel all the jealousy. Feel all the pain. Feel all the noise. Feel all the overthinking. Feel all the anxiety. Feel all of the moments that you wish to forget. Feel them now. And I just sat there and I started crying like crazy. And I was like, what is wrong with me? But I was finally so raw. And so I don't want to say broken down, but so tired that the versions of me that I had been portraying. The versions of me that have been pretending that everything is okay. The versions of me that said that they are okay with a mediocre life. The versions of me that said that they were okay with living a life of comfort. I didn't have the energy to play those characters anymore. And it was just me. My real and true me. And real and true me had a lot to feel.",
+        "cn": "我走到一个小角落里待了一会儿，因为当时真的很闲。所以我能去角落里待一会儿。我当时就想，感受它吧，贝莉。感受所有的失落。感受所有的嫉妒。感受所有的痛苦。感受所有的噪音。感受所有的胡思乱想。感受所有的焦虑。感受所有你希望忘记的时刻。现在就感受它们。我只是坐在那里，然后开始疯狂地哭泣。我心想，我这是怎么了？但我终于变得如此原始。我不想说是崩溃了，而是如此疲惫，以至于我一直在扮演的那些版本的我，那些一直假装一切都好的版本的我，那些说自己对平庸生活没意见的版本的我，那些说自己对过舒适生活没意见的版本的我，我再也没有精力去扮演那些角色了。只剩下我了。我真实的我。而真实的我有很多东西需要去感受。",
+        "vocab": [
+          {
+            "word": "go off",
+            "ph": "/ɡoʊ ɔːf/",
+            "pos": "phr v",
+            "mean": "走开",
+            "ex": "He went off to get some coffee."
+          },
+          {
+            "word": "overthinking",
+            "ph": "/ˌoʊvərˈθɪŋkɪŋ/",
+            "pos": "n",
+            "mean": "过度思考；胡思乱想",
+            "ex": "His tendency for overthinking often leads to anxiety."
+          },
+          {
+            "word": "raw",
+            "ph": "/rɔː/",
+            "pos": "adj",
+            "mean": "原始的；未经掩饰的",
+            "ex": "The documentary offered a raw look at the realities of war."
+          },
+          {
+            "word": "broken down",
+            "ph": "/ˈbroʊkən daʊn/",
+            "pos": "adj",
+            "mean": "（精神）崩溃的",
+            "ex": "After hearing the news, he was completely broken down."
+          },
+          {
+            "word": "portray",
+            "ph": "/pɔːrˈtreɪ/",
+            "pos": "v",
+            "mean": "扮演；描绘",
+            "ex": "The actor portrayed the king with great dignity."
+          },
+          {
+            "word": "mediocre",
+            "ph": "/ˌmiːdiˈoʊkər/",
+            "pos": "adj",
+            "mean": "平庸的",
+            "ex": "He was a mediocre student who never excelled at anything."
+          }
+        ],
+        "gram": [
+          {
+            "id": "anaphora_with_imperatives_feel",
+            "name": "首语重复法 (Feel...)",
+            "category": "R",
+            "level": "C1",
+            "pattern": "Repetition of an imperative verb to list items.",
+            "components": [
+              {
+                "slot": "Feel...",
+                "role": "重复的祈使句",
+                "pos": [
+                  "S"
+                ]
+              }
+            ],
+            "function": "通过在列举一系列负面情绪和记忆时，反复使用祈使动词 'Feel'，说话者将一种被动的、被情绪淹没的状态，转变为一种主动的、有意识的“感受”行为。这是一种自我指令，标志着她从逃避转向直面，是整个顿悟的核心行动。",
+            "example": {
+              "en": "Remember the good times. Remember the laughter. Remember the love.",
+              "cn": "记住那些美好时光。记住那些欢笑。记住那份爱。"
+            },
+            "variants": null,
+            "constraints": "是一种非常强有力的、用于自我激励或自我指令的修辞手法。"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "en": "And at the end of that, I collected myself. I wiped my tears and I went back to work. But there was like this renewed sense of courage that like, if I have the courage to feel those emotions, I can do anything. And the reason that I'm not motivated and not disciplined isn't because I don't want to do the actions or I'm lazy. But it's because feeling those emotions are so intense that I want to avoid that forever. But you know what that's going to do? That's going to eat away at me on my insides till I die. That's going to make me ruin my life and never go for the things that I want because I'm too scared to feel.",
+        "cn": "在那之后，我整理了一下情绪。我擦干眼泪，回去工作了。但内心仿佛有了一种重生的勇气，就像，如果我有勇气去感受那些情绪，我就能做任何事。而我没有动力、不自律的原因，不是因为我不想采取行动，或者我懒。而是因为感受那些情绪是如此强烈，以至于我想永远逃避。但你知道那会带来什么后果吗？那会从内到外地吞噬我，直到我死去。那会让我毁掉我的生活，永远不去追求我想要的东西，因为我太害怕去感受了。",
+        "vocab": [
+          {
+            "word": "collect oneself",
+            "ph": "/kəˈlekt wʌnˈself/",
+            "pos": "idiom",
+            "mean": "整理情绪；恢复镇定",
+            "ex": "After the emotional outburst, she took a moment to collect herself."
+          },
+          {
+            "word": "renewed sense of",
+            "ph": "/rɪˈnuːd sens əv/",
+            "pos": "phr",
+            "mean": "重新的…感",
+            "ex": "After the vacation, he returned to work with a renewed sense of purpose."
+          },
+          {
+            "word": "intense",
+            "ph": "/ɪnˈtens/",
+            "pos": "adj",
+            "mean": "强烈的",
+            "ex": "The final minutes of the game were incredibly intense."
+          },
+          {
+            "word": "eat away at",
+            "ph": "/iːt əˈweɪ æt/",
+            "pos": "phr v",
+            "mean": "（从内部）侵蚀；使烦恼",
+            "ex": "His guilt was eating away at him."
+          },
+          {
+            "word": "go for",
+            "ph": "/ɡoʊ fɔːr/",
+            "pos": "phr v",
+            "mean": "争取；追求",
+            "ex": "Are you going to go for that promotion at work?"
+          }
+        ],
+        "gram": [
+          {
+            "id": "not_because_but_because_clarification",
+            "name": "not because... but because... (澄清结构)",
+            "category": "S",
+            "level": "B2",
+            "pattern": "isn't because [reason A]... But it's because [reason B].",
+            "components": [
+              {
+                "slot": "isn't because",
+                "role": "否定的原因",
+                "pos": [
+                  "phr"
+                ]
+              },
+              {
+                "slot": "But it's because",
+                "role": "肯定的原因",
+                "pos": [
+                  "phr"
+                ]
+              }
+            ],
+            "function": "用于澄清一个行为背后的真正原因，否定一个普遍或错误的解释，并提出一个新的、更深层次的解释。说话者用这个结构来反驳“懒惰”是她缺乏动力的原因，而揭示出“害怕感受强烈情绪”才是根本问题。",
+            "example": {
+              "en": "He's quiet not because he's unfriendly, but because he's shy.",
+              "cn": "他安静不是因为他不友好，而是因为他害羞。"
+            },
+            "variants": null,
+            "constraints": "是一种非常有效的自我分析和澄清的论证结构。"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "en": "And I feel as though a weight has lifted off my shoulders in the sense that I know that I'm one step closer to being that old, disciplined, dedicated individual that I used to be. I just need to stop running from that. I need to stop running from all the things that I refuse to feel. And I just need to sit for a moment and feel that. And I need to acknowledge that when I am disciplined, these emotions are going to come up. Everything I've been avoiding is going to come to the surface. And that's what I'm terrified about. Meeting myself, again, my broken self, my shadow self, that version of me that is so scared and alone and afraid. Everything that I haven't processed is going to come to the surface. And I think that's what I'm scared for. Feeling that. I'm scared to feel that. And that's the reason why it's so hard to be disciplined because I know that's going to come.",
+        "cn": "我觉得仿佛一个重担从我肩上卸下了，因为我知道我离成为过去那个自律、专注的自己又近了一步。我只需要停止逃避。我需要停止逃避所有我拒绝感受的事情。我只需要坐一会儿，去感受它。我需要承认，当我自律时，这些情绪就会出现。我一直在逃避的一切都会浮出水面。而那正是我所恐惧的。再次遇见我自己，我破碎的自我，我的阴暗面，那个如此害怕、孤独和恐惧的版本的我。我所有未曾处理过的一切都会浮出水面。我想那才是我害怕的。去感受它。我害怕去感受它。而这就是为什么自律如此困难的原因，因为我知道那会到来。",
+        "vocab": [
+          {
+            "word": "a weight has lifted off one's shoulders",
+            "ph": "/ə weɪt hæz ˈlɪftɪd ɔːf wʌnz ˈʃoʊldərz/",
+            "pos": "idiom",
+            "mean": "如释重负",
+            "ex": "After confessing the truth, he felt as if a weight had been lifted off his shoulders."
+          },
+          {
+            "word": "disciplined",
+            "ph": "/ˈdɪsəplɪnd/",
+            "pos": "adj",
+            "mean": "自律的",
+            "ex": "He is a very disciplined athlete who trains every day."
+          },
+          {
+            "word": "dedicated",
+            "ph": "/ˈdedɪkeɪtɪd/",
+            "pos": "adj",
+            "mean": "专注的；献身的",
+            "ex": "She is a dedicated teacher who truly cares about her students."
+          },
+          {
+            "word": "run from",
+            "ph": "/rʌn frəm/",
+            "pos": "phr v",
+            "mean": "逃避",
+            "ex": "You can't run from your problems forever."
+          },
+          {
+            "word": "acknowledge",
+            "ph": "/əkˈnɒlɪdʒ/",
+            "pos": "v",
+            "mean": "承认",
+            "ex": "It's important to acknowledge your feelings instead of ignoring them."
+          },
+          {
+            "word": "come to the surface",
+            "ph": "/kʌm tuː ðə ˈsɜːrfɪs/",
+            "pos": "idiom",
+            "mean": "浮出水面；显露出来",
+            "ex": "During therapy, many old memories came to the surface."
+          },
+          {
+            "word": "terrified about",
+            "ph": "/ˈterɪfaɪd əˈbaʊt/",
+            "pos": "adj phr",
+            "mean": "对…感到恐惧",
+            "ex": "He is terrified about his upcoming surgery."
+          },
+          {
+            "word": "shadow self",
+            "ph": "/ˈʃædoʊ self/",
+            "pos": "n phr",
+            "mean": "阴暗面；自我阴影（心理学术语）",
+            "ex": "Facing one's shadow self is a crucial part of personal growth."
+          }
+        ],
+        "gram": [
+          {
+            "id": "appositive_for_clarification",
+            "name": "同位语（用于澄清）",
+            "category": "S",
+            "level": "C1",
+            "pattern": "Noun, + Noun Phrase, + Noun Phrase, + that-clause",
+            "components": [
+              {
+                "slot": "appositive phrase",
+                "role": "同位语",
+                "pos": [
+                  "n phr"
+                ]
+              }
+            ],
+            "function": "通过一连串的同位语（'my broken self, my shadow self, that version of me that...'），说话者对 'myself' 这个概念进行了层层递进的、具体的解释。这种结构清晰地揭示了她所害怕面对的到底是她自己的哪些方面。",
+            "example": {
+              "en": "He returned to his hometown, a small village by the sea, a place he hadn't seen in twenty years.",
+              "cn": "他回到了他的家乡，一个海边的小村庄，一个他二十年未见的地方。"
+            },
+            "variants": null,
+            "constraints": "是一种通过补充说明来丰富核心名词内涵的有效方式。"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "en": "But that was my epiphany that I had. That it's not that I need more discipline. It's that I need to stop being afraid of my own feelings. I also need to stop lying to myself and telling myself that it's okay to be comfortable. The more I'm comfortable, the more I play as this character, I don't actually want this. I don't want to sit in bed, scrolling on my phone, eating junk food for the rest of my life. I want to get my ass out there. I want to get some shit done. But there's so many feelings I have to come to terms with and let go of. So that this emotional wall that's keeping me from discipline, that's keeping me from motivation, just falls apart like Jenga.",
+        "cn": "但那就是我的顿悟。不是我需要更多的自律。而是我需要停止害怕自己的感受。我也需要停止对自己撒谎，告诉自己安于舒适是没关系的。我越是舒适，就越是扮演这个角色，我其实不想要这个。我不想余生都坐在床上，刷着手机，吃着垃圾食品。我想走出去。我想干点实事。但有太多的感受我必须去接受和放下。这样，那堵阻碍我自律、阻碍我动力的情感之墙，才能像叠叠乐一样轰然倒塌。",
+        "vocab": [
+          {
+            "word": "play as a character",
+            "ph": "/pleɪ æz ə ˈkærəktər/",
+            "pos": "phr",
+            "mean": "扮演一个角色",
+            "ex": "She felt like she was always playing a character at work, never being her true self."
+          },
+          {
+            "word": "junk food",
+            "ph": "/dʒʌŋk fuːd/",
+            "pos": "n phr",
+            "mean": "垃圾食品",
+            "ex": "Eating too much junk food is bad for your health."
+          },
+          {
+            "word": "get some shit done",
+            "ph": "/ɡet sʌm ʃɪt dʌn/",
+            "pos": "idiom",
+            "mean": "（粗俗俚语）干点实事",
+            "ex": "I need to stop procrastinating and get some shit done."
+          },
+          {
+            "word": "come to terms with",
+            "ph": "/kʌm tuː tɜːrmz wɪθ/",
+            "pos": "idiom",
+            "mean": "（对不愉快的事）妥协；接受",
+            "ex": "He is still trying to come to terms with his father's death."
+          },
+          {
+            "word": "let go of",
+            "ph": "/let ɡoʊ əv/",
+            "pos": "phr v",
+            "mean": "放下",
+            "ex": "It's time to let go of the past and move on."
+          },
+          {
+            "word": "fall apart",
+            "ph": "/fɔːl əˈpɑːrt/",
+            "pos": "phr v",
+            "mean": "散架；崩溃",
+            "ex": "The old book was so fragile that it started to fall apart in my hands."
+          },
+          {
+            "word": "Jenga",
+            "ph": "/ˈdʒeŋɡə/",
+            "pos": "n",
+            "mean": "叠叠乐（一种桌游）",
+            "ex": "The tension was high as she carefully pulled a block from the Jenga tower."
+          }
+        ],
+        "gram": [
+          {
+            "id": "anaphora_with_i_want_i_don_t_want",
+            "name": "用于表达决心的首语重复法",
+            "category": "R",
+            "level": "B2",
+            "pattern": "Repetition of 'I don't want...' and 'I want...'",
+            "components": [
+              {
+                "slot": "I don't want / I want",
+                "role": "重复的短语",
+                "pos": [
+                  "phr"
+                ]
+              }
+            ],
+            "function": "通过先用 'I don't want...' 否定自己不想要的生活方式，再用 'I want...' 肯定自己想要采取的行动，说话者创造了一种强烈的对比，有力地表达了她新获得的决心和清晰的目标。",
+            "example": {
+              "en": "I don't want to be afraid anymore. I want to be brave.",
+              "cn": "我不想再害怕了。我想变得勇敢。"
+            },
+            "variants": null,
+            "constraints": "是一种通过对比来强调意愿和决心的有效修辞手法。"
+          }
+        ]
+      }
+    ],
+    "gram_types": {
+      "S": {
+        "en": "Sentence Structure",
+        "cn": "句子结构"
+      },
+      "T": {
+        "en": "Tense",
+        "cn": "时态"
+      },
+      "C": {
+        "en": "Clause",
+        "cn": "从句"
+      },
+      "P": {
+        "en": "Punctuation",
+        "cn": "标点"
+      },
+      "W": {
+        "en": "Word Form / Morphology",
+        "cn": "词形变化"
+      },
+      "F": {
+        "en": "Figurative Language",
+        "cn": "修辞"
+      },
+      "R": {
+        "en": "Rhetoric",
+        "cn": "修辞手法"
+      },
+      "O": {
+        "en": "Others",
+        "cn": "其他"
+      }
+    },
+    "pos_types": {
+      "n": {
+        "en": "noun",
+        "cn": "名词"
+      },
+      "v": {
+        "en": "verb",
+        "cn": "动词"
+      },
+      "adj": {
+        "en": "adjective",
+        "cn": "形容词"
+      },
+      "adv": {
+        "en": "adverb",
+        "cn": "副词"
+      },
+      "prep": {
+        "en": "preposition",
+        "cn": "介词"
+      },
+      "conj": {
+        "en": "conjunction",
+        "cn": "连词"
+      },
+      "pron": {
+        "en": "pronoun",
+        "cn": "代词"
+      },
+      "det": {
+        "en": "determiner",
+        "cn": "限定词"
+      },
+      "int": {
+        "en": "interjection",
+        "cn": "感叹词"
+      },
+      "phr": {
+        "en": "phrase",
+        "cn": "短语"
+      },
+      "phr v": {
+        "en": "phrasal verb",
+        "cn": "动词短语"
+      },
+      "n phr": {
+        "en": "noun phrase",
+        "cn": "名词短语"
+      },
+      "adj phr": {
+        "en": "adjective phrase",
+        "cn": "形容词短语"
+      },
+      "modal v": {
+        "en": "modal verb",
+        "cn": "情态动词"
+      },
+      "idiom": {
+        "en": "idiom",
+        "cn": "习语"
+      },
+      "S": {
+        "en": "sentence",
+        "cn": "句子"
+      }
+    }
+  }
+]

@@ -40,13 +40,13 @@ document.addEventListener('keydown', (e) => {
 
     // + 键（有些键盘是 '=+'）
     if (e.key === '+' || (e.key === '=' && e.shiftKey)) {
-        englishTextSize = Math.min(fontSize + 1, MAX_SIZE);
+        window.englishTextSize = Math.min(fontSize + 1, MAX_SIZE);
         applyFontSize();
     }
 
     // - 键
     if (e.key === '_') { // shift + -
-        englishTextSize = Math.max(fontSize - 1, MIN_SIZE);
+        window.englishTextSize = Math.max(fontSize - 1, MIN_SIZE);
         applyFontSize();
     }
 });
