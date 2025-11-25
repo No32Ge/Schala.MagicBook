@@ -16,7 +16,7 @@
         "source": {
             "catalog": "wonder",
             "subPrefix": "Wonder-Part-",
-            "baseURL": "/mb/library/articles",
+            "baseURL": "https://gist.githubusercontent.com/No32Ge/f0596fc85482e18c48743ca8d9cfed63/raw/b9a0982ce1d9154e8c3cab2b252de72402bf7468/",
             "chapterCount": 8
         }
     }
