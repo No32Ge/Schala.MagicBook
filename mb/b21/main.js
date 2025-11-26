@@ -24,7 +24,6 @@ export function ready(data) {
     console.log("模块被调用：", data);
 }
 
-
 const testData = await getLibraryItemWithChapters("/mb/library/index/libraryIndex.json", "wonder", (done, tol, url, res) => {
     document.dispatchEvent(new CustomEvent('initStep', { detail: `加载文章数据 <br>共(${done}/${tol}) ${url} ${res.ok ? "加载成功" : "<span style = 'color:red;'>res.error.errorMessage</span>"}` }));
 })
@@ -58,8 +57,6 @@ function applyFontSize() {
 }
 
 // -----------------------------------------
-
-
 
 
 function initNode() {
@@ -412,16 +409,24 @@ function getCurrentArticle() {
 function buildWordDictionary() {
     appState.wordDictionary = {};
     const currentArticle = getCurrentArticle();
+
     currentArticle.paras.forEach(para => {
         if (para.vocab) {
             para.vocab.forEach(vocab => {
-                // 将短语转换为小写作为键，同时保留原始大小写信息
+                // 先存 word
                 appState.wordDictionary[vocab.word.toLowerCase()] = vocab;
+
+                // 再存 match 数组里的短语
+                if (vocab.match) {
+                    const matches = Array.isArray(vocab.match) ? vocab.match : [vocab.match];
+                    matches.forEach(m => {
+                        appState.wordDictionary[m.toLowerCase()] = vocab;
+                    });
+                }
             });
         }
     });
 }
-
 
 // 切换文章
 function switchArticle(articleId) {
@@ -573,9 +578,15 @@ function renderPage() {
         let processedText = paragraph.en;
 
         // 按照词汇表中的短语长度从长到短排序，优先匹配长短语
-        const vocabWords = paragraph.vocab ?
-            paragraph.vocab.map(v => v.word).sort((a, b) => b.split(' ').length - a.split(' ').length)
-            : [];
+        const vocabWords = paragraph.vocab
+            .flatMap(v => {
+                if (v.match) {
+                    return Array.isArray(v.match) ? v.match : [v.match]; // 确保是数组
+                } else {
+                    return [v.word]; // 兼容旧字段
+                }
+            })
+            .sort((a, b) => b.split(' ').length - a.split(' ').length);
 
         // 先处理短语，再处理单个单词
         vocabWords.forEach(vocabWord => {
@@ -2703,58 +2714,6 @@ function createLoadingStatus(message) {
         <div>${message}</div>
     `;
     return status;
-}
-
-// 批量导入示例函数（用于测试）
-function demoBatchImport() {
-    // 这是一个示例函数，展示如何批量导入
-    const demoArticles = [
-        {
-            "id": "demo_1",
-            "title": "示例文章 1",
-            "info": {
-                "author": "系统",
-                "source": "示例库",
-                "level": "B1",
-                "tags": ["示例"]
-            },
-            "gram_types": {
-                "S": "Sentence Structure",
-                "T": "Tense",
-                "C": "Clause",
-                "P": "Punctuation",
-                "W": "Word Form / Morphology",
-                "O": "Others"
-            },
-            "paras": [
-                {
-                    "id": 1,
-                    "en": "This is a demo paragraph for testing.",
-                    "cn": "这是一个用于测试的示例段落。",
-                    "vocab": [
-                        {
-                            "word": "demo",
-                            "ph": "/ˈdeməʊ/",
-                            "mean": "演示",
-                            "ex": "This is just a demo version."
-                        }
-                    ],
-                    "gram": [
-                        {
-                            "rule": "simple present tense",
-                            "cat": "T",
-                            "desc": "一般现在时用法",
-                            "ex": "I work every day."
-                        }
-                    ]
-                }
-            ],
-            "note": "这是一个示例文章"
-        }
-        // 可以添加更多示例文章...
-    ];
-
-    return processDynamicImport(demoArticles, true, true);
 }
 
 // 文章目录功能
