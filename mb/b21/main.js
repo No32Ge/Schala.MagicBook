@@ -1213,7 +1213,6 @@ function showTemporaryMessage(message) {
 }
 
 // 添加单词功能
-// 添加单词功能
 function addVocabItem(word, pos, pronunciation, meaning, example, isQuickAdd = false) {
     if (!currentParagraphForModal) return false;
 
@@ -1246,7 +1245,8 @@ function addVocabItem(word, pos, pronunciation, meaning, example, isQuickAdd = f
         pos: isQuickAdd ? "n" : (pos || "n"), // 默认词性为名词
         ph: isQuickAdd ? "Undefined" : (pronunciation.trim() || "Undefined"),
         mean: isQuickAdd ? "Undefined" : (meaning.trim() || "Undefined"),
-        ex: isQuickAdd ? "Undefined" : (example.trim() || "Undefined")
+        ex: isQuickAdd ? "Undefined" : (example.trim() || "Undefined"),
+        
     });
 
     // 重新构建词典并渲染页面
@@ -1360,6 +1360,7 @@ function batchAddVocabItems(jsonData) {
 
             // 添加新单词
             paragraph.vocab.push({
+                ...item,
                 word: item.word.trim(),
                 pos: item.pos && item.pos.trim() ? item.pos.trim() : "n",
                 ph: item.ph && item.ph.trim() ? item.ph.trim() : "Undefined",

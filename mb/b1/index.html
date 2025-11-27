@@ -4712,15 +4712,17 @@
                         return;
                     }
 
-                    // 添加新单词
-                    paragraph.vocab.push({
+                    // 添加新单词，保留原始所有字段，同时设置默认值
+                    const newVocab = {
+                        ...item, // 保留 JSON 中的所有字段
                         word: item.word.trim(),
                         pos: item.pos && item.pos.trim() ? item.pos.trim() : "n",
                         ph: item.ph && item.ph.trim() ? item.ph.trim() : "Undefined",
                         mean: item.mean && item.mean.trim() ? item.mean.trim() : "Undefined",
                         ex: item.ex && item.ex.trim() ? item.ex.trim() : "Undefined"
-                    });
+                    };
 
+                    paragraph.vocab.push(newVocab);
                     successCount++;
                 });
 
@@ -4744,6 +4746,7 @@
                 };
             }
         }
+        
         // 批量添加语法功能
         function batchAddGrammarItems(jsonData) {
             if (!currentParagraphForModal) return { success: 0, total: 0, errors: [] };
