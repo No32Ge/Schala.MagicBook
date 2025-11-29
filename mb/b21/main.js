@@ -692,9 +692,9 @@ function renderPage() {
                     if (!highlightLoaded) loadHighlightAssets()
                     const codeDiv = document.createElement('pre');      // 外层 pre
                     const codeElem = document.createElement('code');    // 内层 code
-                    codeElem.textContent = paragraph.blocks.content;   // 直接文本，不经过 innerHTML
-                    if (paragraph.blocks.language) {
-                        codeElem.className = paragraph.blocks.language; // 高亮语言
+                    codeElem.textContent = el.content;   // 直接文本，不经过 innerHTML
+                    if (el.language) {
+                        codeElem.className = el.language; // 高亮语言
                     }
 
                     // 高亮
