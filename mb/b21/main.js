@@ -799,7 +799,7 @@ function renderPage() {
 
 
         if (paragraph.blocks) {
-            if (addp) addp(); // 加载依赖
+            if (addp) addhighlight(); // 加载依赖
             if (paragraph.blocks.type === "code") {
                 const codeDiv = document.createElement('pre');
                 const codeElem = document.createElement('code');
