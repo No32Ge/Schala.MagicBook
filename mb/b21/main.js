@@ -686,6 +686,23 @@ function renderPage() {
 
         paragraphElement.appendChild(englishText);
 
+        if (paragraph.blocks && paragraph.blocks.type === "code") {
+            if (!highlightLoaded) loadHighlightAssets()
+            const codeDiv = document.createElement('pre');      // 外层 pre
+            const codeElem = document.createElement('code');    // 内层 code
+            codeElem.textContent = paragraph.blocks.content;   // 直接文本，不经过 innerHTML
+            if (paragraph.blocks.language) {
+                codeElem.className = paragraph.blocks.language; // 高亮语言
+            }
+
+            // 高亮
+            if (window.hljs) {
+                hljs.highlightElement(codeElem);
+            }
+            codeDiv.appendChild(codeElem);
+            paragraphElement.appendChild(codeDiv);
+        }
+
         // ========== 添加中文文本 ==========
         // 添加中文翻译
         if (paragraph.cn && paragraph.cn.trim()) {
@@ -798,22 +815,7 @@ function renderPage() {
         }
 
 
-        if (paragraph.blocks && paragraph.blocks.type === "code") {
-            if(addp) addhighlight()
-            const codeDiv = document.createElement('pre');      // 外层 pre
-            const codeElem = document.createElement('code');    // 内层 code
-            codeElem.textContent = paragraph.blocks.content;   // 直接文本，不经过 innerHTML
-            if (paragraph.blocks.language) {
-                codeElem.className = paragraph.blocks.language; // 高亮语言
-            }
-            
-            // 高亮
-            if (window.hljs) {
-                hljs.highlightElement(codeElem);
-            }
-            codeDiv.appendChild(codeElem);
-            paragraphElement.appendChild(codeDiv);
-        }
+
 
         contentArea.appendChild(paragraphElement);
     });
@@ -842,19 +844,23 @@ function renderPage() {
 }
 
 
-let addp = true;
-function addhighlight() {
-    if (!addp) return;
-    addp = false;
+let highlightLoaded = false;
 
+function loadHighlightAssets() {
+    if (highlightLoaded) return;  // 避免重复加载
+    highlightLoaded = true;
+
+    // 加载 CSS
     const link = document.createElement('link');
     link.rel = 'stylesheet';
     link.href = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css';
     document.head.appendChild(link);
 
-    const scriptHL = document.createElement('script');
-    scriptHL.src = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js';
-    document.head.appendChild(scriptHL);
+    // 加载 JS
+    const script = document.createElement('script');
+    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js';
+    script.onload = () => console.log('Highlight.js 已加载');
+    document.head.appendChild(script);
 }
 
 // 切换解析显示状态
