@@ -879,5 +879,822 @@
         ]
       }
     ]
+  },
+  {
+    "id": "python_invoking_interpreter",
+    "title": "Invoking the Interpreter",
+    "info": {
+      "author": "Python Documentation",
+      "source": "Official Tutorial",
+      "level": "C1",
+      "tags": [
+        "python",
+        "programming",
+        "command line",
+        "interpreter",
+        "environment"
+      ],
+      "link": "https://docs.python.org/3/tutorial/interpreter.html",
+      "variants": null
+    },
+    "paras": [
+      {
+        "id": 1,
+        "en": "The Python interpreter is usually installed as /usr/local/bin/python3.11 on those machines where it is available; putting /usr/local/bin in your Unix shell’s search path makes it possible to start it by typing the command:\n\n...to the shell. [1] Since the choice of the directory where the interpreter lives is an installation option, other places are possible; check with your local Python guru or system administrator. (E.g., /usr/local/python is a popular alternative location.)",
+        "cn": "Python 解释器通常安装在可用机器的 /usr/local/bin/python3.11 路径下；将 /usr/local/bin 放入你的 Unix shell 搜索路径中，就可以通过在 shell 中键入以下命令来启动它：\n\n……[1] 由于解释器所在的目录选择是一个安装选项，其他位置也是可能的；请咨询你本地的 Python 大师或系统管理员。（例如，/usr/local/python 是一个流行的备选位置。）",
+        "vocab": [
+          {
+            "word": "interpreter",
+            "ph": "/ɪnˈtɜːrprɪtər/",
+            "pos": "n",
+            "mean": "解释器",
+            "ex": "The Python interpreter executes code line by line.",
+            "tr": "Python 解释器逐行执行代码。",
+            "match": [
+              "interpreter"
+            ]
+          },
+          {
+            "word": "search path",
+            "ph": "/sɜːrtʃ pæθ/",
+            "pos": "n phr",
+            "mean": "搜索路径",
+            "ex": "You need to add the program's directory to your system's search path to run it from anywhere.",
+            "tr": "你需要将该程序的目录添加到系统的搜索路径中，才能从任何地方运行它。",
+            "match": [
+              "search path"
+            ]
+          },
+          {
+            "word": "guru",
+            "ph": "/ˈɡuːruː/",
+            "pos": "n",
+            "mean": "大师；专家",
+            "ex": "He is considered a marketing guru in the industry.",
+            "tr": "他被认为是行业内的营销大师。",
+            "match": [
+              "guru"
+            ]
+          },
+          {
+            "word": "alternative",
+            "ph": "/ɔːlˈtɜːrnətɪv/",
+            "pos": "adj",
+            "mean": "备选的",
+            "ex": "If the main road is closed, we'll have to find an alternative route.",
+            "tr": "如果主路关闭，我们将不得不寻找一条备用路线。",
+            "match": [
+              "alternative"
+            ]
+          }
+        ],
+        "blocks": [
+          {
+            "type": "code",
+            "content": "python3.11",
+            "language": "shell"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "en": "On Windows machines where you have installed Python from the Microsoft Store, the python3.11 command will be available. If you have the py.exe launcher installed, you can use the py command. See Excursus: Setting environment variables for other ways to launch Python.",
+        "cn": "在从 Microsoft Store 安装了 Python 的 Windows 机器上，python3.11 命令将可用。如果你安装了 py.exe 启动器，你可以使用 py 命令。有关启动 Python 的其他方法，请参阅附录：设置环境变量。",
+        "vocab": [
+          {
+            "word": "launcher",
+            "ph": "/ˈlɔːntʃər/",
+            "pos": "n",
+            "mean": "启动器",
+            "ex": "The new game launcher provides a better user experience.",
+            "tr": "新的游戏启动器提供了更好的用户体验。",
+            "match": [
+              "launcher"
+            ]
+          },
+          {
+            "word": "excursus",
+            "ph": "/ɪkˈskɜːrsəs/",
+            "pos": "n",
+            "mean": "（书中的）附录；离题的详细说明",
+            "ex": "The author included an excursus on the historical context of the novel.",
+            "tr": "作者加入了一段关于小说历史背景的附录。",
+            "match": [
+              "Excursus"
+            ]
+          },
+          {
+            "word": "environment variable",
+            "ph": "/ɪnˈvaɪrənmənt ˈveriəbl/",
+            "pos": "n phr",
+            "mean": "环境变量",
+            "ex": "You may need to set an environment variable to configure the software.",
+            "tr": "你可能需要设置一个环境变量来配置该软件。",
+            "match": [
+              "environment variables"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "en": "Typing an end-of-file character (Control-D on Unix, Control-Z on Windows) at the primary prompt causes the interpreter to exit with a zero exit status. If that doesn’t work, you can exit the interpreter by typing the following command: quit().",
+        "cn": "在主提示符下键入文件结束符（Unix 上是 Control-D，Windows 上是 Control-Z）会导致解释器以零退出状态退出。如果这不起作用，你可以通过键入以下命令来退出解释器：quit()。",
+        "vocab": [
+          {
+            "word": "end-of-file",
+            "ph": "/ˌend əv ˈfaɪl/",
+            "pos": "n phr",
+            "mean": "文件结束符",
+            "ex": "The program stopped reading when it reached the end-of-file character.",
+            "tr": "程序在到达文件结束符时停止了读取。",
+            "match": [
+              "end-of-file"
+            ]
+          },
+          {
+            "word": "prompt",
+            "ph": "/prɒmpt/",
+            "pos": "n",
+            "mean": "（命令行）提示符",
+            "ex": "The command line showed a blinking cursor after the prompt.",
+            "tr": "命令行在提示符后显示一个闪烁的光标。",
+            "match": [
+              "prompt"
+            ]
+          },
+          {
+            "word": "exit status",
+            "ph": "/ˈeksɪt ˈstætəs/",
+            "pos": "n phr",
+            "mean": "退出状态",
+            "ex": "A zero exit status usually indicates that the program ran successfully.",
+            "tr": "零退出状态通常表示程序成功运行。",
+            "match": [
+              "exit status"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "en": "The interpreter’s line-editing features include interactive editing, history substitution and code completion on systems that support the GNU Readline library. Perhaps the quickest check to see whether command line editing is supported is typing Control-P to the first Python prompt you get. If it beeps, you have command line editing; see Appendix Interactive Input Editing and History Substitution for an introduction to the keys. If nothing appears to happen, or if ^P is echoed, command line editing isn’t available; you’ll only be able to use backspace to remove characters from the current line.",
+        "cn": "解释器的行编辑功能包括在支持 GNU Readline 库的系统上的交互式编辑、历史替换和代码补全。也许检查是否支持命令行编辑的最快方法是在你得到的第一个 Python 提示符下键入 Control-P。如果它发出蜂鸣声，你就有命令行编辑功能；请参阅附录“交互式输入编辑和历史替换”以了解按键的介绍。如果似乎什么也没发生，或者回显了^P，则命令行编辑不可用；你将只能使用退格键来删除当前行的字符。",
+        "vocab": [
+          {
+            "word": "line-editing",
+            "ph": "/laɪn ˈedɪtɪŋ/",
+            "pos": "n",
+            "mean": "行编辑",
+            "ex": "Modern command shells offer powerful line-editing features.",
+            "tr": "现代的命令行外壳提供了强大的行编辑功能。",
+            "match": [
+              "line-editing"
+            ]
+          },
+          {
+            "word": "history substitution",
+            "ph": "/ˈhɪstəri ˌsʌbstɪˈtjuːʃn/",
+            "pos": "n phr",
+            "mean": "历史替换",
+            "ex": "Using history substitution can save you a lot of typing in the terminal.",
+            "tr": "在终端中使用历史替换可以为你节省大量打字时间。",
+            "match": [
+              "history substitution"
+            ]
+          },
+          {
+            "word": "code completion",
+            "ph": "/koʊd kəmˈpliːʃn/",
+            "pos": "n phr",
+            "mean": "代码补全",
+            "ex": "An integrated development environment (IDE) usually provides code completion to speed up programming.",
+            "tr": "集成开发环境（IDE）通常提供代码补全以加快编程速度。",
+            "match": [
+              "code completion"
+            ]
+          },
+          {
+            "word": "echo",
+            "ph": "/ˈekoʊ/",
+            "pos": "v",
+            "mean": "回显",
+            "ex": "The terminal will echo each character you type.",
+            "tr": "终端会回显你输入的每个字符。",
+            "match": [
+              "echoed"
+            ]
+          },
+          {
+            "word": "backspace",
+            "ph": "/ˈbækspeɪs/",
+            "pos": "n",
+            "mean": "退格键",
+            "ex": "He used the backspace key to delete the typo.",
+            "tr": "他用退格键删除了那个打字错误。",
+            "match": [
+              "backspace"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "en": "The interpreter operates somewhat like the Unix shell: when called with standard input connected to a tty device, it reads and executes commands interactively; when called with a file name argument or with a file as standard input, it reads and executes a script from that file.",
+        "cn": "解释器的操作有点像 Unix shell：当调用时标准输入连接到 tty 设备，它会交互式地读取和执行命令；当调用时带有文件名参数或以文件作为标准输入，它会从该文件读取并执行脚本。",
+        "vocab": [
+          {
+            "word": "operate",
+            "ph": "/ˈɒpəreɪt/",
+            "pos": "v",
+            "mean": "操作；运行",
+            "ex": "You need to learn how to operate this machine safely.",
+            "tr": "你需要学习如何安全地操作这台机器。",
+            "match": [
+              "operates"
+            ]
+          },
+          {
+            "word": "standard input",
+            "ph": "/ˈstændərd ˈɪnpʊt/",
+            "pos": "n phr",
+            "mean": "标准输入",
+            "ex": "By default, the program reads data from the standard input.",
+            "tr": "默认情况下，该程序从标准输入读取数据。",
+            "match": [
+              "standard input"
+            ]
+          },
+          {
+            "word": "tty device",
+            "ph": "/ˌtiː tiː ˈwaɪ dɪˈvaɪs/",
+            "pos": "n phr",
+            "mean": "终端设备",
+            "ex": "The program's output was directed to a tty device.",
+            "tr": "程序的输出被定向到一个终端设备。",
+            "match": [
+              "tty device"
+            ]
+          },
+          {
+            "word": "execute",
+            "ph": "/ˈeksɪkjuːt/",
+            "pos": "v",
+            "mean": "执行",
+            "ex": "Double-click the icon to execute the program.",
+            "tr": "双击图标以执行该程序。",
+            "match": [
+              "executes"
+            ]
+          },
+          {
+            "word": "script",
+            "ph": "/skrɪpt/",
+            "pos": "n",
+            "mean": "脚本",
+            "ex": "He wrote a Python script to automate the data backup process.",
+            "tr": "他写了一个Python脚本来自动化数据备份过程。",
+            "match": [
+              "script"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "en": "A second way of starting the interpreter is python -c command [arg] ..., which executes the statement(s) in command, analogous to the shell’s -c option. Since Python statements often contain spaces or other characters that are special to the shell, it is usually advised to quote command in its entirety.",
+        "cn": "启动解释器的第二种方法是 python -c command [arg] ...，它会执行 command 中的语句，类似于 shell 的 -c 选项。由于 Python 语句通常包含空格或其他对 shell 而言特殊的字符，通常建议将 command 完整地用引号引起来。",
+        "vocab": [
+          {
+            "word": "analogous to",
+            "ph": "/əˈnæləɡəs tuː/",
+            "pos": "adj",
+            "mean": "类似于",
+            "ex": "The human brain is sometimes said to be analogous to a computer.",
+            "tr": "人脑有时被说成类似于一台电脑。",
+            "match": [
+              "analogous to"
+            ]
+          },
+          {
+            "word": "quote",
+            "ph": "/kwoʊt/",
+            "pos": "v",
+            "mean": "用引号引起来",
+            "ex": "You should quote the entire string to avoid errors.",
+            "tr": "你应该将整个字符串用引号引起来以避免错误。",
+            "match": [
+              "quote"
+            ]
+          },
+          {
+            "word": "in its entirety",
+            "ph": "/ɪn ɪts ɪnˈtaɪərəti/",
+            "pos": "phr",
+            "mean": "完整地",
+            "ex": "Please read the document in its entirety before signing.",
+            "tr": "请在签署前完整地阅读该文件。",
+            "match": [
+              "in its entirety"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "en": "Some Python modules are also useful as scripts. These can be invoked using python -m module [arg] ..., which executes the source file for module as if you had spelled out its full name on the command line. When a script file is used, it is sometimes useful to be able to run the script and enter interactive mode afterwards. This can be done by passing -i before the script.",
+        "cn": "一些 Python 模块也可以作为脚本使用。可以使用 python -m module [arg] ... 来调用它们，这会执行 module 的源文件，就像你在命令行上拼写出它的全名一样。当使用脚本文件时，有时能够在运行脚本后进入交互模式会很有用。这可以通过在脚本前传递 -i 来实现。",
+        "vocab": [
+          {
+            "word": "invoke",
+            "ph": "/ɪnˈvoʊk/",
+            "pos": "v",
+            "mean": "调用",
+            "ex": "You can invoke the function by calling its name with the required arguments.",
+            "tr": "你可以通过用所需参数调用函数名来调用该函数。",
+            "match": [
+              "invoked"
+            ]
+          },
+          {
+            "word": "spell out",
+            "ph": "/spel aʊt/",
+            "pos": "phr v",
+            "mean": "拼写出；详细说明",
+            "ex": "Could you spell out your last name for me, please?",
+            "tr": "能请你为我拼一下你的姓吗？",
+            "match": [
+              "spelled out"
+            ]
+          },
+          {
+            "word": "afterwards",
+            "ph": "/ˈæftərwərdz/",
+            "pos": "adv",
+            "mean": "之后",
+            "ex": "Let's have dinner first and go to the movies afterwards.",
+            "tr": "我们先吃晚饭，之后再去看电影。",
+            "match": [
+              "afterwards"
+            ]
+          },
+          {
+            "word": "pass",
+            "ph": "/pæs/",
+            "pos": "v",
+            "mean": "传递（参数）",
+            "ex": "You need to pass the correct arguments to the function.",
+            "tr": "你需要向函数传递正确的参数。",
+            "match": [
+              "passing"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "en": "All command line options are described in Command line and environment.",
+        "cn": "所有的命令行选项都在“命令行和环境”中有描述。",
+        "vocab": [
+          {
+            "word": "command line",
+            "ph": "/kəˈmænd laɪn/",
+            "pos": "n phr",
+            "mean": "命令行",
+            "ex": "Many developers prefer using the command line for its power and flexibility.",
+            "tr": "许多开发者因其功能强大和灵活性而偏爱使用命令行。",
+            "match": [
+              "command line"
+            ]
+          },
+          {
+            "word": "option",
+            "ph": "/ˈɒpʃn/",
+            "pos": "n",
+            "mean": "选项",
+            "ex": "The program has several command line options to customize its behavior.",
+            "tr": "该程序有几个命令行选项来定制其行为。",
+            "match": [
+              "options"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "en": "When known to the interpreter, the script name and additional arguments thereafter are turned into a list of strings and assigned to the argv variable in the sys module. You can access this list by executing import sys. The length of the list is at least one; when no script and no arguments are given, sys.argv[0] is an empty string. When the script name is given as '-' (meaning standard input), sys.argv[0] is set to '-'. When -c command is used, sys.argv[0] is set to '-c'. When -m module is used, sys.argv[0] is set to the full name of the located module. Options found after -c command or -m module are not consumed by the Python interpreter’s option processing but left in sys.argv for the command or module to handle.",
+        "cn": "当解释器知道脚本名和其后的附加参数时，它们会被转换成一个字符串列表，并赋给 sys 模块中的 argv 变量。你可以通过执行 import sys 来访问这个列表。该列表的长度至少为一；当没有给出脚本和参数时，sys.argv[0] 是一个空字符串。当脚本名被指定为'-'（表示标准输入）时，sys.argv[0] 被设置为'-'。当使用 -c command 时，sys.argv[0] 被设置为'-c'。当使用 -m module 时，sys.argv[0] 被设置为所定位模块的全名。在 -c command 或 -m module 之后找到的选项不会被 Python 解释器的选项处理过程消耗，而是留在 sys.argv 中供命令或模块处理。",
+        "vocab": [
+          {
+            "word": "argument",
+            "ph": "/ˈɑːrɡjumənt/",
+            "pos": "n",
+            "mean": "（命令行、函数）参数",
+            "ex": "The script requires at least one command line argument to run.",
+            "tr": "该脚本需要至少一个命令行参数才能运行。",
+            "match": [
+              "arguments"
+            ]
+          },
+          {
+            "word": "assign to",
+            "ph": "/əˈsaɪn tuː/",
+            "pos": "phr v",
+            "mean": "赋给",
+            "ex": "You need to assign a value to the variable before you can use it.",
+            "tr": "在使用变量前，你需要先给它赋一个值。",
+            "match": [
+              "assigned to"
+            ]
+          },
+          {
+            "word": "variable",
+            "ph": "/ˈveriəbl/",
+            "pos": "n",
+            "mean": "变量",
+            "ex": "In algebra, 'x' is often used as a variable.",
+            "tr": "在代数中，'x' 常用作变量。",
+            "match": [
+              "variable"
+            ]
+          },
+          {
+            "word": "consume",
+            "ph": "/kənˈsuːm/",
+            "pos": "v",
+            "mean": "消耗",
+            "ex": "The program will consume the input data and produce a result.",
+            "tr": "该程序将消耗输入数据并产生一个结果。",
+            "match": [
+              "consumed"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "en": "When commands are read from a tty, the interpreter is said to be in interactive mode. In this mode it prompts for the next command with the primary prompt, usually three greater-than signs (>>>); for continuation lines it prompts with the secondary prompt, by default three dots (...). The interpreter prints a welcome message stating its version number and a copyright notice before printing the first prompt:",
+        "cn": "当命令从 tty 读取时，解释器被称为处于交互模式。在这种模式下，它用主提示符（通常是三个大于号 >>>）来提示下一个命令；对于续行，它用次提示符（默认为三个点 ...）来提示。解释器在打印第一个提示符之前会打印一条欢迎信息，说明其版本号和版权声明：",
+        "vocab": [
+          {
+            "word": "interactive mode",
+            "ph": "/ˌɪntərˈæktɪv moʊd/",
+            "pos": "n phr",
+            "mean": "交互模式",
+            "ex": "The interpreter's interactive mode is great for testing small code snippets.",
+            "tr": "解释器的交互模式非常适合测试小的代码片段。",
+            "match": [
+              "interactive mode"
+            ]
+          },
+          {
+            "word": "primary prompt",
+            "ph": "/ˈpraɪmeri prɒmpt/",
+            "pos": "n phr",
+            "mean": "主提示符",
+            "ex": "After launching the shell, you will see the primary prompt.",
+            "tr": "启动shell后，你会看到主提示符。",
+            "match": [
+              "primary prompt"
+            ]
+          },
+          {
+            "word": "continuation line",
+            "ph": "/kənˌtɪnjuˈeɪʃn laɪn/",
+            "pos": "n phr",
+            "mean": "续行",
+            "ex": "When you enter a multi-line statement, the interpreter will show a prompt for each continuation line.",
+            "tr": "当你输入一个多行语句时，解释器会为每个续行显示一个提示符。",
+            "match": [
+              "continuation lines"
+            ]
+          },
+          {
+            "word": "secondary prompt",
+            "ph": "/ˈsekənderi prɒmpt/",
+            "pos": "n phr",
+            "mean": "次提示符",
+            "ex": "The secondary prompt in Python is typically '...'.",
+            "tr": "Python中的次提示符通常是‘...’。",
+            "match": [
+              "secondary prompt"
+            ]
+          },
+          {
+            "word": "by default",
+            "ph": "/baɪ dɪˈfɔːlt/",
+            "pos": "phr",
+            "mean": "默认情况下",
+            "ex": "By default, the software saves files in the 'Documents' folder.",
+            "tr": "默认情况下，该软件将文件保存在“文档”文件夹中。",
+            "match": [
+              "by default"
+            ]
+          }
+        ],
+        "blocks": [
+          {
+            "type": "code",
+            "content": "python3.11\nPython 3.11 (default, April 4 2021, 09:25:04)\n[GCC 10.2.0] on linux\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.",
+            "language": "shell"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "en": "Continuation lines are needed when entering a multi-line construct. As an example, take a look at this if statement:\n\nFor more on interactive mode, see Interactive Mode.",
+        "cn": "在输入多行结构时需要续行。举个例子，看看这个 if 语句：\n\n有关交互模式的更多信息，请参阅“交互模式”。",
+        "vocab": [
+          {
+            "word": "multi-line",
+            "ph": "/ˈmʌlti laɪn/",
+            "pos": "adj",
+            "mean": "多行的",
+            "ex": "He copied the multi-line error message and sent it to the support team.",
+            "tr": "他复制了那条多行的错误信息，并将其发送给了支持团队。",
+            "match": [
+              "multi-line"
+            ]
+          },
+          {
+            "word": "construct",
+            "ph": "/ˈkɒnstrʌkt/",
+            "pos": "n",
+            "mean": "（编程）结构",
+            "ex": "The 'for' loop is a common programming construct for iteration.",
+            "tr": "‘for’循环是用于迭代的常见编程结构。",
+            "match": [
+              "construct"
+            ]
+          }
+        ],
+        "blocks": [
+          {
+            "type": "code",
+            "content": ">>> the_world_is_flat = True\n>>> if the_world_is_flat:\n...     print(\"Be careful not to fall off!\")\n...\nBe careful not to fall off!",
+            "language": "python"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "en": "By default, Python source files are treated as encoded in UTF-8. In that encoding, characters of most languages in the world can be used simultaneously in string literals, identifiers and comments — although the standard library only uses ASCII characters for identifiers, a convention that any portable code should follow. To display all these characters properly, your editor must recognize that the file is UTF-8, and it must use a font that supports all the characters in the file.",
+        "cn": "默认情况下，Python 源文件被视为以 UTF-8 编码。在该编码中，世界上大多数语言的字符可以同时用于字符串字面量、标识符和注释中——尽管标准库只对标识符使用 ASCII 字符，这是任何可移植代码都应遵循的约定。要正确显示所有这些字符，你的编辑器必须能识别文件是 UTF-8 编码的，并且必须使用支持文件中所有字符的字体。",
+        "vocab": [
+          {
+            "word": "source file",
+            "ph": "/sɔːrs faɪl/",
+            "pos": "n phr",
+            "mean": "源文件",
+            "ex": "The programmer edited the source file to fix a bug.",
+            "tr": "程序员编辑了源文件以修复一个错误。",
+            "match": [
+              "source files"
+            ]
+          },
+          {
+            "word": "encode",
+            "ph": "/ɪnˈkoʊd/",
+            "pos": "v",
+            "mean": "编码",
+            "ex": "You need to encode the data before sending it over the network.",
+            "tr": "在通过网络发送数据之前，你需要对数据进行编码。",
+            "match": [
+              "encoded",
+              "encoding"
+            ]
+          },
+          {
+            "word": "simultaneously",
+            "ph": "/ˌsaɪmlˈteɪniəsli/",
+            "pos": "adv",
+            "mean": "同时地",
+            "ex": "He can't listen to music and study simultaneously.",
+            "tr": "他不能同时听音乐和学习。",
+            "match": [
+              "simultaneously"
+            ]
+          },
+          {
+            "word": "string literal",
+            "ph": "/strɪŋ ˈlɪtərəl/",
+            "pos": "n phr",
+            "mean": "字符串字面量",
+            "ex": "In Python, a string literal is created by enclosing text in quotes.",
+            "tr": "在Python中，通过将文本放在引号中来创建字符串字面量。",
+            "match": [
+              "string literals"
+            ]
+          },
+          {
+            "word": "identifier",
+            "ph": "/aɪˈdentɪfaɪər/",
+            "pos": "n",
+            "mean": "标识符",
+            "ex": "A variable name is a type of identifier in programming.",
+            "tr": "变量名是编程中一种标识符。",
+            "match": [
+              "identifiers"
+            ]
+          },
+          {
+            "word": "convention",
+            "ph": "/kənˈvenʃn/",
+            "pos": "n",
+            "mean": "惯例",
+            "ex": "It's a common convention to name constant variables in all capital letters.",
+            "tr": "用全大写字母命名常量变量是一个常见的惯例。",
+            "match": [
+              "convention"
+            ]
+          },
+          {
+            "word": "portable",
+            "ph": "/ˈpɔːrtəbl/",
+            "pos": "adj",
+            "mean": "可移植的",
+            "ex": "Writing portable code allows it to run on different operating systems without modification.",
+            "tr": "编写可移植的代码可以让它在不同操作系统上运行而无需修改。",
+            "match": [
+              "portable"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "en": "To declare an encoding other than the default one, a special comment line should be added as the first line of the file. The syntax is as follows:",
+        "cn": "要声明一个不同于默认值的编码，应在文件的第一行添加一条特殊的注释行。语法如下：",
+        "vocab": [
+          {
+            "word": "declare",
+            "ph": "/dɪˈkler/",
+            "pos": "v",
+            "mean": "声明",
+            "ex": "In some languages, you must declare a variable before using it.",
+            "tr": "在某些语言中，你必须在使用变量前先声明它。",
+            "match": [
+              "declare"
+            ]
+          },
+          {
+            "word": "syntax",
+            "ph": "/ˈsɪntæks/",
+            "pos": "n",
+            "mean": "语法",
+            "ex": "A small syntax error can prevent the entire program from running.",
+            "tr": "一个小的语法错误就能阻止整个程序运行。",
+            "match": [
+              "syntax"
+            ]
+          }
+        ],
+        "blocks": [
+          {
+            "type": "code",
+            "content": "# -*- coding: <encoding name> -*-",
+            "language": "python"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "en": "where encoding is one of the valid codecs supported by Python. For example, to declare that Windows-1252 encoding is to be used, the first line of your source code file should be:",
+        "cn": "其中 encoding 是 Python 支持的有效编解码器之一。例如，要声明使用 Windows-1252 编码，你的源代码文件的第一行应为：",
+        "vocab": [
+          {
+            "word": "valid",
+            "ph": "/ˈvælɪd/",
+            "pos": "adj",
+            "mean": "有效的",
+            "ex": "You must enter a valid email address to register.",
+            "tr": "你必须输入一个有效的电子邮件地址才能注册。",
+            "match": [
+              "valid"
+            ]
+          },
+          {
+            "word": "codec",
+            "ph": "/ˈkoʊdek/",
+            "pos": "n",
+            "mean": "编解码器",
+            "ex": "You might need to install a new codec to play this video file.",
+            "tr": "你可能需要安装一个新的编解码器才能播放这个视频文件。",
+            "match": [
+              "codecs"
+            ]
+          }
+        ],
+        "blocks": [
+          {
+            "type": "code",
+            "content": "# -*- coding: cp1252 -*-",
+            "language": "python"
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "en": "One exception to the first line rule is when the source code starts with a UNIX “shebang” line. In this case, the encoding declaration should be added as the second line of the file. For example:",
+        "cn": "第一行规则的一个例外是当源代码以 UNIX 的 “shebang” 行开头时。在这种情况下，编码声明应作为文件的第二行添加。例如：",
+        "vocab": [
+          {
+            "word": "exception",
+            "ph": "/ɪkˈsepʃn/",
+            "pos": "n",
+            "mean": "例外",
+            "ex": "Everyone must attend the meeting; there are no exceptions.",
+            "tr": "每个人都必须参加会议，没有例外。",
+            "match": [
+              "exception"
+            ]
+          },
+          {
+            "word": "shebang",
+            "ph": "/ʃəˈbæŋ/",
+            "pos": "n",
+            "mean": "（Unix脚本的）释伴行（#!）",
+            "ex": "A Python script on Linux often starts with a shebang line like '#!/usr/bin/env python'.",
+            "tr": "Linux上的Python脚本通常以像'#!/usr/bin/env python'这样的释伴行开头。",
+            "match": [
+              "shebang"
+            ]
+          }
+        ],
+        "blocks": [
+          {
+            "type": "code",
+            "content": "#!/usr/bin/env python3\n# -*- coding: cp1252 -*-",
+            "language": "python"
+          }
+        ]
+      }
+    ],
+    "pos_types": {
+      "n": {
+        "en": "noun",
+        "cn": "名词"
+      },
+      "v": {
+        "en": "verb",
+        "cn": "动词"
+      },
+      "adj": {
+        "en": "adjective",
+        "cn": "形容词"
+      },
+      "adv": {
+        "en": "adverb",
+        "cn": "副词"
+      },
+      "prep": {
+        "en": "preposition",
+        "cn": "介词"
+      },
+      "conj": {
+        "en": "conjunction",
+        "cn": "连词"
+      },
+      "pron": {
+        "en": "pronoun",
+        "cn": "代词"
+      },
+      "det": {
+        "en": "determiner",
+        "cn": "限定词"
+      },
+      "int": {
+        "en": "interjection",
+        "cn": "感叹词"
+      },
+      "phr": {
+        "en": "phrase",
+        "cn": "短语"
+      },
+      "phr v": {
+        "en": "phrasal verb",
+        "cn": "动词短语"
+      },
+      "n phr": {
+        "en": "noun phrase",
+        "cn": "名词短语"
+      },
+      "adj phr": {
+        "en": "adjective phrase",
+        "cn": "形容词短语"
+      },
+      "modal v": {
+        "en": "modal verb",
+        "cn": "情态动词"
+      },
+      "idiom": {
+        "en": "idiom",
+        "cn": "习语"
+      },
+      "S": {
+        "en": "sentence",
+        "cn": "句子"
+      }
+    }
   }
 ]
