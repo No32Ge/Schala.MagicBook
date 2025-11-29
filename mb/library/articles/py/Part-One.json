@@ -1,0 +1,883 @@
+[
+  {
+    "id": "python_introduction",
+    "title": "Introduction to Python",
+    "info": {
+      "author": "Python Documentation",
+      "source": "Official Tutorial",
+      "level": "B2",
+      "tags": [
+        "programming",
+        "python",
+        "learning",
+        "development",
+        "efficiency"
+      ],
+      "link": "https://docs.python.org/3/tutorial/index.html",
+      "variants": null
+    },
+    "paras": [
+      {
+        "id": 1,
+        "en": "If you do much work on computers, eventually you find that there’s some task you’d like to automate. For example, you may wish to perform a search-and-replace over a large number of text files, or rename and rearrange a bunch of photo files in a complicated way. Perhaps you’d like to write a small custom database, or a specialized GUI application, or a simple game.",
+        "cn": "如果你在电脑上做了很多工作，最终你会发现有些任务是你想要自动化的。例如，你可能希望在一个大批量的文本文件上执行搜索和替换，或者以复杂的方式重命名和重新排列一堆照片文件。也许你想编写一个小型自定义数据库，或者一个专门的GUI应用程序，或者一个简单的游戏。",
+        "vocab": [
+          {
+            "word": "automate",
+            "ph": "/ˈɔːtəmeɪt/",
+            "pos": "v",
+            "mean": "使自动化",
+            "ex": "The factory uses robots to automate the assembly line.",
+            "tr": "工厂使用机器人来自动化装配线。",
+            "match": [
+              "automate"
+            ]
+          },
+          {
+            "word": "search-and-replace",
+            "ph": "/ˈsɜːrtʃ ænd rɪˈpleɪs/",
+            "pos": "n phr",
+            "mean": "搜索和替换",
+            "ex": "Most word processors have a search-and-replace function.",
+            "tr": "大多数文字处理器都有搜索和替换功能。",
+            "match": [
+              "search-and-replace"
+            ]
+          },
+          {
+            "word": "rearrange",
+            "ph": "/ˌriːəˈreɪndʒ/",
+            "pos": "v",
+            "mean": "重新安排",
+            "ex": "Can you rearrange the furniture in this room to make it look bigger?",
+            "tr": "你能重新摆放这个房间里的家具，让它看起来更大吗？",
+            "match": [
+              "rearrange"
+            ]
+          },
+          {
+            "word": "custom",
+            "ph": "/ˈkʌstəm/",
+            "pos": "adj",
+            "mean": "定制的",
+            "ex": "The tailor made a custom suit for the client.",
+            "tr": "裁缝为客户量身定做了一套西装。",
+            "match": [
+              "custom"
+            ]
+          },
+          {
+            "word": "specialized",
+            "ph": "/ˈspeʃəlaɪzd/",
+            "pos": "adj",
+            "mean": "专门的",
+            "ex": "She has specialized knowledge in the field of artificial intelligence.",
+            "tr": "她在人工智能领域拥有专业知识。",
+            "match": [
+              "specialized"
+            ]
+          },
+          {
+            "word": "GUI application",
+            "ph": "/ˌdʒiː juː ˈaɪ æplɪˈkeɪʃn/",
+            "pos": "n phr",
+            "mean": "图形用户界面应用程序",
+            "ex": "Most modern software has a graphical user interface (GUI) application.",
+            "tr": "大多数现代软件都有图形用户界面（GUI）应用程序。",
+            "match": [
+              "GUI application"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "en": "If you’re a professional software developer, you may have to work with several C/C++/Java libraries but find the usual write/compile/test/re-compile cycle is too slow. Perhaps you’re writing a test suite for such a library and find writing the testing code a tedious task. Or maybe you’ve written a program that could use an extension language, and you don’t want to design and implement a whole new language for your application.",
+        "cn": "如果你是一名专业的软件开发人员，你可能不得不使用多个 C/C++/Java 库，但发现通常的编写/编译/测试/重新编译周期太慢了。也许你正在为一个这样的库编写测试套件，并发现编写测试代码是一项繁琐的任务。或者你可能已经编写了一个可以使用扩展语言的程序，而你又不想为你的应用程序设计和实现全新的语言。",
+        "vocab": [
+          {
+            "word": "professional",
+            "ph": "/prəˈfeʃənl/",
+            "pos": "adj",
+            "mean": "专业的",
+            "ex": "He is a professional programmer who works for a large tech company.",
+            "tr": "他是一名专业的程序员，为一家大科技公司工作。",
+            "match": [
+              "professional"
+            ]
+          },
+          {
+            "word": "library",
+            "ph": "/ˈlaɪbrəri/",
+            "pos": "n",
+            "mean": "（编程）库",
+            "ex": "Programmers often use pre-written libraries to speed up development.",
+            "tr": "程序员经常使用预先编写的库来加速开发。",
+            "match": [
+              "libraries"
+            ]
+          },
+          {
+            "word": "compile",
+            "ph": "/kəmˈpaɪl/",
+            "pos": "v",
+            "mean": "编译",
+            "ex": "The C++ code needs to be compiled before it can be run.",
+            "tr": "C++代码在运行之前需要编译。",
+            "match": [
+              "compile"
+            ]
+          },
+          {
+            "word": "cycle",
+            "ph": "/ˈsaɪkl/",
+            "pos": "n",
+            "mean": "周期；循环",
+            "ex": "The write/compile/test/re-compile cycle can be time-consuming.",
+            "tr": "编写/编译/测试/重新编译的周期可能会耗费大量时间。",
+            "match": [
+              "cycle"
+            ]
+          },
+          {
+            "word": "tedious",
+            "ph": "/ˈtiːdiəs/",
+            "pos": "adj",
+            "mean": "乏味的；冗长枯燥的",
+            "ex": "Testing code manually can be a tedious task.",
+            "tr": "手动测试代码是一项乏味的任务。",
+            "match": [
+              "tedious"
+            ]
+          },
+          {
+            "word": "extension language",
+            "ph": "/ɪkˈstenʃn ˈlæŋɡwɪdʒ/",
+            "pos": "n phr",
+            "mean": "扩展语言",
+            "ex": "Many applications allow integration with an extension language for customization.",
+            "tr": "许多应用程序允许与扩展语言集成以进行自定义。",
+            "match": [
+              "extension language"
+            ]
+          },
+          {
+            "word": "implement",
+            "ph": "/ˈɪmplɪment/",
+            "pos": "v",
+            "mean": "实现；执行",
+            "ex": "The developers decided to implement a new feature for the software.",
+            "tr": "开发人员决定为该软件实现一项新功能。",
+            "match": [
+              "implement"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "en": "Python is just the language for you.",
+        "cn": "Python 就是为你而生的语言。",
+        "vocab": [
+          {
+            "word": "just the language",
+            "ph": "/dʒʌst ðə ˈlæŋɡwɪdʒ/",
+            "pos": "phr",
+            "mean": "就是那种语言",
+            "ex": "If you want to learn about data science, Python is just the language for you.",
+            "tr": "如果你想学习数据科学，Python就是为你而生的语言。",
+            "match": [
+              "just the language"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "en": "You could write a Unix shell script or Windows batch files for some of these tasks, but shell scripts are best at moving around files and changing text data, not well-suited for GUI applications or games. You could write a C/C++/Java program, but it can take a lot of development time to get even a first-draft program. Python is simpler to use, available on Windows, macOS, and Unix operating systems, and will help you get the job done more quickly.",
+        "cn": "你可以为其中一些任务编写Unix shell脚本或Windows批处理文件，但shell脚本最擅长移动文件和更改文本数据，不适合GUI应用程序或游戏。你可以编写C/C++/Java程序，但即使是初稿程序也可能需要大量的开发时间。Python更简单易用，在Windows、macOS和Unix操作系统上都可用，并且能帮助你更快地完成工作。",
+        "vocab": [
+          {
+            "word": "Unix shell script",
+            "ph": "/ˈjuːnɪks ʃel skrɪpt/",
+            "pos": "n phr",
+            "mean": "Unix Shell脚本",
+            "ex": "Many system administrators use Unix shell scripts to automate tasks.",
+            "tr": "许多系统管理员使用Unix Shell脚本来自动化任务。",
+            "match": [
+              "Unix shell script"
+            ]
+          },
+          {
+            "word": "batch file",
+            "ph": "/bætʃ faɪl/",
+            "pos": "n phr",
+            "mean": "批处理文件",
+            "ex": "Windows batch files can be used to run a sequence of commands.",
+            "tr": "Windows批处理文件可用于运行一系列命令。",
+            "match": [
+              "Windows batch files"
+            ]
+          },
+          {
+            "word": "well-suited",
+            "ph": "/wel ˈsuːtɪd/",
+            "pos": "adj",
+            "mean": "非常适合",
+            "ex": "This language is well-suited for rapid application development.",
+            "tr": "这种语言非常适合快速应用程序开发。",
+            "match": [
+              "well-suited"
+            ]
+          },
+          {
+            "word": "GUI application",
+            "ph": "/ˌdʒiː juː ˈaɪ æplɪˈkeɪʃn/",
+            "pos": "n phr",
+            "mean": "图形用户界面应用程序",
+            "ex": "Most modern software has a graphical user interface (GUI) application.",
+            "tr": "大多数现代软件都有图形用户界面（GUI）应用程序。",
+            "match": [
+              "GUI application"
+            ]
+          },
+          {
+            "word": "development time",
+            "ph": "/dɪˈveləpmənt taɪm/",
+            "pos": "n phr",
+            "mean": "开发时间",
+            "ex": "The development time for this project was much longer than expected.",
+            "tr": "这个项目的开发时间比预期的要长得多。",
+            "match": [
+              "development time"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "en": "Python is simple to use, but it is a real programming language, offering much more structure and support for large programs than shell scripts or batch files can offer. On the other hand, Python also offers much more error checking than C, and, being a very-high-level language, it has high-level data types built in, such as flexible arrays and dictionaries. Because of its more general data types Python is applicable to a much larger problem domain than Awk or even Perl, yet many things are at least as easy in Python as in those languages.",
+        "cn": "Python易于使用，但它是一门真正的编程语言，比shell脚本或批处理文件提供更多的结构和对大型程序的更多支持。另一方面，Python还提供了比C语言多得多的错误检查，并且，作为一门非常高级的语言，它内置了高级数据类型，如灵活的数组和字典。由于其更通用的数据类型，Python比Awk甚至Perl更适用于更广泛的问题领域，但许多事情在Python中至少与那些语言一样容易。",
+        "vocab": [
+          {
+            "word": "structure",
+            "ph": "/ˈstrʌktʃər/",
+            "pos": "n",
+            "mean": "结构",
+            "ex": "The programming language offers more structure and support for large programs.",
+            "tr": "该编程语言为大型程序提供了更多的结构和支持。",
+            "match": [
+              "structure"
+            ]
+          },
+          {
+            "word": "error checking",
+            "ph": "/ˈerər ˈtʃekɪŋ/",
+            "pos": "n phr",
+            "mean": "错误检查",
+            "ex": "Python offers much more error checking than C.",
+            "tr": "Python提供比C语言更多的错误检查。",
+            "match": [
+              "error checking"
+            ]
+          },
+          {
+            "word": "high-level",
+            "ph": "/haɪ ˈlevl/",
+            "pos": "adj",
+            "mean": "高级的（指离人类语言近，远离机器语言）",
+            "ex": "Python is a high-level language that is easy to read and write.",
+            "tr": "Python是一门高级语言，易于阅读和编写。",
+            "match": [
+              "high-level"
+            ]
+          },
+          {
+            "word": "data type",
+            "ph": "/ˈdeɪtə taɪp/",
+            "pos": "n phr",
+            "mean": "数据类型",
+            "ex": "Common data types include integers, strings, and booleans.",
+            "tr": "常见的数据类型包括整数、字符串和布尔值。",
+            "match": [
+              "data types"
+            ]
+          },
+          {
+            "word": "flexible",
+            "ph": "/ˈfleksəbl/",
+            "pos": "adj",
+            "mean": "灵活的",
+            "ex": "Python's flexible arrays and dictionaries are very useful.",
+            "tr": "Python灵活的数组和字典非常有用。",
+            "match": [
+              "flexible"
+            ]
+          },
+          {
+            "word": "applicable",
+            "ph": "/əˈplɪkəbl/",
+            "pos": "adj",
+            "mean": "适用的",
+            "ex": "This software is applicable to a wide range of industries.",
+            "tr": "这款软件适用于广泛的行业。",
+            "match": [
+              "applicable"
+            ]
+          },
+          {
+            "word": "problem domain",
+            "ph": "/ˈprɒbləm doʊˈmeɪn/",
+            "pos": "n phr",
+            "mean": "问题域",
+            "ex": "The programming language is suitable for a broad problem domain.",
+            "tr": "该编程语言适用于广泛的问题领域。",
+            "match": [
+              "problem domain"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "en": "Python allows you to split your program into modules that can be reused in other Python programs. It comes with a large collection of standard modules that you can use as the basis of your programs — or as examples to start learning to program in Python. Some of these modules provide things like file I/O, system calls, sockets, and even interfaces to graphical user interface toolkits like Tk.",
+        "cn": "Python允许你将程序分割成可以在其他Python程序中重用的模块。它附带了一个庞大的标准模块集合，你可以用它们作为你程序的基石——或者作为开始学习Python编程的例子。其中一些模块提供了文件I/O、系统调用、套接字，甚至像Tk这样的图形用户界面工具包的接口。",
+        "vocab": [
+          {
+            "word": "split",
+            "ph": "/splɪt/",
+            "pos": "v",
+            "mean": "分割",
+            "ex": "You can split your program into smaller, reusable modules.",
+            "tr": "你可以将程序分割成更小的、可重用的模块。",
+            "match": [
+              "split"
+            ]
+          },
+          {
+            "word": "module",
+            "ph": "/ˈmɒdjuːl/",
+            "pos": "n",
+            "mean": "模块",
+            "ex": "A program can be broken down into several modules for better organization.",
+            "tr": "程序可以分解成几个模块以获得更好的组织。",
+            "match": [
+              "modules"
+            ]
+          },
+          {
+            "word": "reuse",
+            "ph": "/ˌriːˈjuːz/",
+            "pos": "v",
+            "mean": "重用",
+            "ex": "Writing modular code allows modules to be reused in different projects.",
+            "tr": "编写模块化代码可以允许在不同项目中重用模块。",
+            "match": [
+              "reused"
+            ]
+          },
+          {
+            "word": "collection",
+            "ph": "/kəˈlekʃn/",
+            "pos": "n",
+            "mean": "集合",
+            "ex": "The library has a large collection of books on various subjects.",
+            "tr": "图书馆藏有各种学科的大量书籍。",
+            "match": [
+              "collection"
+            ]
+          },
+          {
+            "word": "basis",
+            "ph": "/ˈbeɪsɪs/",
+            "pos": "n",
+            "mean": "基础",
+            "ex": "These examples can serve as the basis for learning new concepts.",
+            "tr": "这些例子可以作为学习新概念的基础。",
+            "match": [
+              "basis"
+            ]
+          },
+          {
+            "word": "file I/O",
+            "ph": "/faɪl aɪ ˈoʊ/",
+            "pos": "n phr",
+            "mean": "文件输入/输出",
+            "ex": "File I/O operations are fundamental to most programming tasks.",
+            "tr": "文件I/O操作是大多数编程任务的基础。",
+            "match": [
+              "file I/O"
+            ]
+          },
+          {
+            "word": "system call",
+            "ph": "/ˈsɪstəm kɔːl/",
+            "pos": "n phr",
+            "mean": "系统调用",
+            "ex": "Operating systems use system calls to interact with hardware.",
+            "tr": "操作系统使用系统调用与硬件交互。",
+            "match": [
+              "system calls"
+            ]
+          },
+          {
+            "word": "socket",
+            "ph": "/ˈsɒkɪt/",
+            "pos": "n",
+            "mean": "（网络）套接字",
+            "ex": "Network programs use sockets to communicate over the internet.",
+            "tr": "网络程序使用套接字在互联网上进行通信。",
+            "match": [
+              "sockets"
+            ]
+          },
+          {
+            "word": "interface",
+            "ph": "/ˈɪntərfeɪs/",
+            "pos": "n",
+            "mean": "接口",
+            "ex": "The software provides an interface to access the database.",
+            "tr": "该软件提供了一个访问数据库的接口。",
+            "match": [
+              "interfaces"
+            ]
+          },
+          {
+            "word": "toolkit",
+            "ph": "/ˈtuːlkɪt/",
+            "pos": "n",
+            "mean": "工具集",
+            "ex": "The programming language comes with a standard GUI toolkit.",
+            "tr": "这门编程语言附带了一个标准的GUI工具集。",
+            "match": [
+              "toolkits"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "en": "Python is an interpreted language, which can save you considerable time during program development because no compilation and linking is necessary. The interpreter can be used interactively, which makes it easy to experiment with features of the language, to write throw-away programs, or to test functions during bottom-up program development. It is also a handy desk calculator.",
+        "cn": "Python是一种解释型语言，可以在程序开发过程中为您节省大量时间，因为无需进行编译和链接。解释器可以交互式使用，这使得您可以轻松地试验该语言的功能，编写一次性程序，或者在自下而上的程序开发过程中测试函数。它也是一个方便的桌面计算器。",
+        "vocab": [
+          {
+            "word": "interpreted",
+            "ph": "/ɪnˈtɜːrprɪtɪd/",
+            "pos": "adj",
+            "mean": "解释型的",
+            "ex": "Unlike compiled languages like C++, Python is an interpreted language.",
+            "tr": "与C++等编译型语言不同，Python是一种解释型语言。",
+            "match": [
+              "interpreted"
+            ]
+          },
+          {
+            "word": "considerable",
+            "ph": "/kənˈsɪdərəbl/",
+            "pos": "adj",
+            "mean": "相当大的；可观的",
+            "ex": "Learning a new language requires considerable time and effort.",
+            "tr": "学习一门新语言需要大量的时间和精力。",
+            "match": [
+              "considerable"
+            ]
+          },
+          {
+            "word": "compilation",
+            "ph": "/ˌkɒmpɪˈleɪʃn/",
+            "pos": "n",
+            "mean": "编译",
+            "ex": "The compilation process converts source code into executable code.",
+            "tr": "编译过程将源代码转换为可执行代码。",
+            "match": [
+              "compilation"
+            ]
+          },
+          {
+            "word": "linking",
+            "ph": "/ˈlɪŋkɪŋ/",
+            "pos": "n",
+            "mean": "链接",
+            "ex": "Linking is the process of combining compiled code modules into an executable program.",
+            "tr": "链接是将编译后的代码模块组合成可执行程序的过程。",
+            "match": [
+              "linking"
+            ]
+          },
+          {
+            "word": "interactively",
+            "ph": "/ˌɪntərækˈtɪvli/",
+            "pos": "adv",
+            "mean": "交互式地",
+            "ex": "The interpreter can be used interactively, making it easy to experiment with the language.",
+            "tr": "解释器可以交互式使用，从而可以轻松地试验该语言。",
+            "match": [
+              "interactively"
+            ]
+          },
+          {
+            "word": "throw-away",
+            "ph": "/ˈθroʊ əweɪ/",
+            "pos": "adj",
+            "mean": "一次性的；用完即弃的",
+            "ex": "He wrote several throw-away scripts for testing small ideas.",
+            "tr": "他写了几个一次性的脚本来测试小想法。",
+            "match": [
+              "throw-away"
+            ]
+          },
+          {
+            "word": "bottom-up",
+            "ph": "/ˈbɒtəm ʌp/",
+            "pos": "adj",
+            "mean": "自下而上的",
+            "ex": "The team used a bottom-up approach to build the software.",
+            "tr": "团队采用自下而上的方法来构建软件。",
+            "match": [
+              "bottom-up"
+            ]
+          },
+          {
+            "word": "handy",
+            "ph": "/ˈhændi/",
+            "pos": "adj",
+            "mean": "方便的",
+            "ex": "A good dictionary is a handy tool for any language learner.",
+            "tr": "一本好的词典是任何语言学习者的便利工具。",
+            "match": [
+              "handy"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "en": "Python enables programs to be written compactly and readably. Programs written in Python are typically much shorter than equivalent C, C++, or Java programs, for several reasons:\n\n- the high-level data types allow you to express complex operations in a single statement;\n- statement grouping is done by indentation instead of beginning and ending brackets;\n- no variable or argument declarations are necessary.",
+        "cn": "Python 可以使程序以紧凑且可读的方式编写。Python 程序通常比等效的 C、C++ 或 Java 程序短得多，原因有几个：\n\n- 高级数据类型允许您用单个语句表达复杂的操作；\n- 语句分组是通过缩进完成的，而不是通过开始和结束括号；\n- 不需要变量或参数声明。",
+        "vocab": [
+          {
+            "word": "compactly",
+            "ph": "/kəmˈpæktli/",
+            "pos": "adv",
+            "mean": "紧凑地",
+            "ex": "The presentation was delivered in a compact and informative way.",
+            "tr": "演示以紧凑而信息丰富的方式进行。",
+            "match": [
+              "compactly"
+            ]
+          },
+          {
+            "word": "readably",
+            "ph": "/ˈriːdəbli/",
+            "pos": "adv",
+            "mean": "易读地",
+            "ex": "The code was written in a clear and readable style.",
+            "tr": "代码以清晰易读的风格编写。",
+            "match": [
+              "readably"
+            ]
+          },
+          {
+            "word": "typically",
+            "ph": "/ˈtɪpɪkli/",
+            "pos": "adv",
+            "mean": "通常",
+            "ex": "This error typically occurs when the software is outdated.",
+            "tr": "当软件过时时，通常会发生此错误。",
+            "match": [
+              "typically"
+            ]
+          },
+          {
+            "word": "equivalent",
+            "ph": "/ɪˈkwɪvələnt/",
+            "pos": "adj",
+            "mean": "等效的",
+            "ex": "The C++ program performs a similar function to the Python script.",
+            "tr": "C++程序执行的功能与Python脚本类似。",
+            "match": [
+              "equivalent"
+            ]
+          },
+          {
+            "word": "indentation",
+            "ph": "/ˌɪndenˈteɪʃn/",
+            "pos": "n",
+            "mean": "缩进",
+            "ex": "Python uses indentation to group statements instead of curly braces.",
+            "tr": "Python使用缩进来对语句进行分组，而不是使用花括号。",
+            "match": [
+              "indentation"
+            ]
+          },
+          {
+            "word": "declaration",
+            "ph": "/ˌdekləˈreɪʃn/",
+            "pos": "n",
+            "mean": "声明；宣告",
+            "ex": "In Python, you don't need variable declarations; you can just start using them.",
+            "tr": "在Python中，你不需要变量声明；你可以直接开始使用它们。",
+            "match": [
+              "declarations"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "en": "Python is extensible: if you know how to program in C it is easy to add a new built-in function or module to the interpreter, either to perform critical operations at maximum speed, or to link Python programs to libraries that may only be available in binary form (such as a vendor-specific graphics library). Once you are really hooked, you can link the Python interpreter into an application written in C and use it as an extension or command language for that application.",
+        "cn": "Python是可扩展的：如果你知道如何用C语言编程，那么很容易就能为解释器添加一个新的内置函数或模块，以最高速度执行关键操作，或者将Python程序链接到可能仅以二进制形式提供的库（如供应商特定的图形库）。一旦你真正入迷了，你就可以将Python解释器链接到用C语言编写的应用程序中，并将其用作该应用程序的扩展或命令语言。",
+        "vocab": [
+          {
+            "word": "extensible",
+            "ph": "/ɪkˈstensəbl/",
+            "pos": "adj",
+            "mean": "可扩展的",
+            "ex": "Python is extensible, allowing developers to add new functionality.",
+            "tr": "Python是可扩展的，允许开发人员添加新功能。",
+            "match": [
+              "extensible"
+            ]
+          },
+          {
+            "word": "built-in",
+            "ph": "/ˈbɪlt ɪn/",
+            "pos": "adj",
+            "mean": "内置的",
+            "ex": "Python has many built-in data types like lists and dictionaries.",
+            "tr": "Python拥有许多内置数据类型，如列表和字典。",
+            "match": [
+              "built-in"
+            ]
+          },
+          {
+            "word": "critical operations",
+            "ph": "/ˈkrɪtɪkl ˌɒpəˈreɪʃnz/",
+            "pos": "n phr",
+            "mean": "关键操作",
+            "ex": "This operation is critical for the system's performance.",
+            "tr": "这个操作对系统的性能至关重要。",
+            "match": [
+              "critical operations"
+            ]
+          },
+          {
+            "word": "binary form",
+            "ph": "/ˈbaɪnəri fɔːrm/",
+            "pos": "n phr",
+            "mean": "二进制形式",
+            "ex": "Compiled programs are typically distributed in binary form.",
+            "tr": "编译后的程序通常以二进制形式分发。",
+            "match": [
+              "binary form"
+            ]
+          },
+          {
+            "word": "hooked",
+            "ph": "/hʊkt/",
+            "pos": "adj",
+            "mean": "（非正式）着迷的",
+            "ex": "He got hooked on video games after trying one for the first time.",
+            "tr": "他第一次尝试了视频游戏后就沉迷其中了。",
+            "match": [
+              "hooked"
+            ]
+          },
+          {
+            "word": "extension language",
+            "ph": "/ɪkˈstenʃn ˈlæŋɡwɪdʒ/",
+            "pos": "n phr",
+            "mean": "扩展语言",
+            "ex": "Many applications allow integration with an extension language for customization.",
+            "tr": "许多应用程序允许与扩展语言集成以进行自定义。",
+            "match": [
+              "extension language"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "en": "By the way, the language is named after the BBC show “Monty Python’s Flying Circus” and has nothing to do with reptiles. Making references to Monty Python skits in documentation is not only allowed, it is encouraged!",
+        "cn": "顺便说一下，这门语言是以BBC的节目《蒙提·派森的飞行马戏团》命名的，与爬行动物毫无关系。在文档中引用蒙提·派森的短剧不仅是被允许的，而且是被鼓励的！",
+        "vocab": [
+          {
+            "word": "by the way",
+            "ph": "/baɪ ðə weɪ/",
+            "pos": "phr",
+            "mean": "顺便说一下",
+            "ex": "By the way, did you finish your homework?"
+          },
+          {
+            "word": "reptile",
+            "ph": "/ˈreptəl/",
+            "pos": "n",
+            "mean": "爬行动物",
+            "ex": "Snakes, lizards, and crocodiles are all reptiles."
+          },
+          {
+            "word": "reference",
+            "ph": "/ˈrefərəns/",
+            "pos": "n",
+            "mean": "引用",
+            "ex": "The author made several references to historical events in his novel."
+          },
+          {
+            "word": "skit",
+            "ph": "/skɪt/",
+            "pos": "n",
+            "mean": "（喜剧）短剧",
+            "ex": "The comedy show featured several popular Monty Python skits."
+          },
+          {
+            "word": "encouraged",
+            "ph": "/ɪnˈkʌrɪdʒd/",
+            "pos": "adj",
+            "mean": "被鼓励的",
+            "ex": "Students are encouraged to ask questions during the lecture."
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "en": "Now that you are all excited about Python, you’ll want to examine it in some more detail. Since the best way to learn a language is to use it, the tutorial invites you to play with the Python interpreter as you read.",
+        "cn": "现在你们都对Python感到兴奋了，你们会想更详细地研究它。既然学习一门语言最好的方法是使用它，那么本教程就邀请你在阅读的同时，玩转Python解释器。",
+        "vocab": [
+          {
+            "word": "examine",
+            "ph": "/ɪɡˈzæmɪn/",
+            "pos": "v",
+            "mean": "检查；研究",
+            "ex": "Please examine the documents carefully before signing them."
+          },
+          {
+            "word": "interpreter",
+            "ph": "/ɪnˈtɜːrprɪtər/",
+            "pos": "n",
+            "mean": "解释器",
+            "ex": "The Python interpreter executes code line by line."
+          },
+          {
+            "word": "interactively",
+            "ph": "/ˌɪntərækˈtɪvli/",
+            "pos": "adv",
+            "mean": "交互式地",
+            "ex": "The software allows users to interactively explore the data."
+          },
+          {
+            "word": "throw-away",
+            "ph": "/ˈθroʊ əweɪ/",
+            "pos": "adj",
+            "mean": "一次性的；用完即弃的",
+            "ex": "He wrote several throw-away scripts for testing small ideas."
+          },
+          {
+            "word": "bottom-up",
+            "ph": "/ˈbɒtəm ʌp/",
+            "pos": "adj",
+            "mean": "自下而上的",
+            "ex": "The team used a bottom-up approach to build the software."
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "en": "In the next chapter, the mechanics of using the interpreter are explained. This is rather mundane information, but essential for trying out the examples shown later.",
+        "cn": "在下一章中，将解释使用解释器的机械原理。这些信息相当平凡，但对于尝试后面所示的示例至关重要。",
+        "vocab": [
+          {
+            "word": "mechanics",
+            "ph": "/məˈkænɪks/",
+            "pos": "n",
+            "mean": "（事物的）原理；机制",
+            "ex": "I need to understand the mechanics of how this machine works."
+          },
+          {
+            "word": "mundane",
+            "ph": "/mʌnˈdeɪn/",
+            "pos": "adj",
+            "mean": "平凡的；世俗的",
+            "ex": "We discussed the mundane details of the project."
+          },
+          {
+            "word": "essential",
+            "ph": "/ɪˈsenʃl/",
+            "pos": "adj",
+            "mean": "必不可少的",
+            "ex": "It's essential to get enough sleep for good health."
+          },
+          {
+            "word": "try out",
+            "ph": "/traɪ aʊt/",
+            "pos": "phr v",
+            "mean": "尝试",
+            "ex": "Can you try out this new software?"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "en": "The rest of the tutorial introduces various features of the Python language and system through examples, beginning with simple expressions, statements and data types, through functions and modules, and finally touching upon advanced concepts like exceptions and user-defined classes.",
+        "cn": "教程的其余部分将通过示例介绍Python语言和系统的各种功能，从简单的表达式、语句和数据类型开始，到函数和模块，最后涉及到高级概念，如异常和用户定义类。",
+        "vocab": [
+          {
+            "word": "introduce",
+            "ph": "/ˌɪntrəˈduːs/",
+            "pos": "v",
+            "mean": "介绍",
+            "ex": "This chapter will introduce you to the basic concepts of Python programming."
+          },
+          {
+            "word": "expression",
+            "ph": "/ɪkˈspreʃn/",
+            "pos": "n",
+            "mean": "表达式",
+            "ex": "In programming, an expression is a combination of values, variables, and operators."
+          },
+          {
+            "word": "statement",
+            "ph": "/ˈsteɪtmənt/",
+            "pos": "n",
+            "mean": "语句",
+            "ex": "A Python statement typically ends with a newline character."
+          },
+          {
+            "word": "data type",
+            "ph": "/ˈdeɪtə taɪp/",
+            "pos": "n phr",
+            "mean": "数据类型",
+            "ex": "Common data types include integers, strings, and booleans."
+          },
+          {
+            "word": "module",
+            "ph": "/ˈmɒdjuːl/",
+            "pos": "n",
+            "mean": "模块",
+            "ex": "A program can be split into several modules for better organization."
+          },
+          {
+            "word": "exception",
+            "ph": "/ɪkˈsepʃn/",
+            "pos": "n",
+            "mean": "异常（编程术语）",
+            "ex": "Error handling in Python often involves try-except blocks to manage exceptions."
+          },
+          {
+            "word": "user-defined",
+            "ph": "/ˈjuːzər dɪˈfaɪnd/",
+            "pos": "adj",
+            "mean": "用户定义的",
+            "ex": "The programmer created several user-defined functions for specific tasks."
+          },
+          {
+            "word": "class",
+            "ph": "/klæs/",
+            "pos": "n",
+            "mean": "类（编程术语）",
+            "ex": "Object-oriented programming uses classes to create objects."
+          }
+        ]
+      }
+    ]
+  }
+]

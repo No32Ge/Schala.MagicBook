@@ -797,8 +797,30 @@ function renderPage() {
             }
         }
 
+
+        if (paragraph.blocks) {
+            if (addp) addp(); // 加载依赖
+            if (paragraph.blocks.type === "code") {
+                const codeDiv = document.createElement('pre');
+                const codeElem = document.createElement('code');
+                codeElem.textContent = paragraph.blocks.content; // 直接文本，不经过 Markdown
+                if (paragraph.blocks.language) {
+                    codeElem.className = paragraph.blocks.language; // 高亮语言
+                }
+                codeDiv.appendChild(codeElem);
+                paragraphElement.appendChild(codeDiv);
+
+                // 高亮
+                if (window.hljs) {
+                    hljs.highlightElement(codeElem);
+                }
+            }
+        }
+
         contentArea.appendChild(paragraphElement);
     });
+
+
 
     // 添加备注部分
     if (currentArticle.note) {
@@ -814,9 +836,27 @@ function renderPage() {
         noteContent.className = 'note-content';
         noteContent.textContent = currentArticle.note;
         noteSection.appendChild(noteContent);
-
         contentArea.appendChild(noteSection);
     }
+
+
+
+}
+
+
+let addp = true;
+function addhighlight() {
+    if (!addp) return;
+    addp = false;
+
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css';
+    document.head.appendChild(link);
+
+    const scriptHL = document.createElement('script');
+    scriptHL.src = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js';
+    document.head.appendChild(scriptHL);
 }
 
 // 切换解析显示状态
@@ -1246,7 +1286,7 @@ function addVocabItem(word, pos, pronunciation, meaning, example, isQuickAdd = f
         ph: isQuickAdd ? "Undefined" : (pronunciation.trim() || "Undefined"),
         mean: isQuickAdd ? "Undefined" : (meaning.trim() || "Undefined"),
         ex: isQuickAdd ? "Undefined" : (example.trim() || "Undefined"),
-        
+
     });
 
     // 重新构建词典并渲染页面

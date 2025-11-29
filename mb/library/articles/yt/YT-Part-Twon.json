@@ -1,0 +1,1820 @@
+[
+  {
+    "id": "cybersecurity_from_scratch_guide",
+    "title": "Starting Cybersecurity From Scratch: A NoBS Guide",
+    "info": {
+      "author": "Maddie",
+      "source": "Video Transcript",
+      "level": "C1",
+      "tags": [
+        "cybersecurity",
+        "career advice",
+        "certifications",
+        "networking",
+        "personal branding"
+      ],
+      "link": "https://example.com/original-source",
+      "variants": null
+    },
+    "paras": [
+      {
+        "id": 1,
+        "en": "If I had to start cybersecurity from scratch, what would I do? Now for me, I learned the extremely hard way. I was actually unemployed for about a year and a half. I did everything I could to try and land a job in cybersecurity, and then I finally landed one—and I didn't even apply.",
+        "cn": "如果我必须从零开始学习网络安全，我会怎么做？对我来说，我学得异常艰难。我实际上失业了大约一年半。我尽我所能地去尝试，想在网络安全领域找到一份工作，然后我最终找到了一份——而且我甚至都没有申请。",
+        "vocab": [
+          {
+            "word": "from scratch",
+            "ph": "/frəm skrætʃ/",
+            "pos": "idiom",
+            "mean": "从零开始",
+            "ex": "He built his successful business from scratch.",
+            "tr": "他白手起家，建立了他成功的企业。",
+            "match": [
+              "from scratch"
+            ]
+          },
+          {
+            "word": "the hard way",
+            "ph": "/ðə hɑːrd weɪ/",
+            "pos": "idiom",
+            "mean": "通过艰难的方式",
+            "ex": "Some people have to learn lessons the hard way, through their own mistakes.",
+            "tr": "有些人必须通过自己的错误，以艰难的方式吸取教训。",
+            "match": [
+              "the extremely hard way"
+            ]
+          },
+          {
+            "word": "unemployed",
+            "ph": "/ˌʌnɪmˈplɔɪd/",
+            "pos": "adj",
+            "mean": "失业的",
+            "ex": "After the factory closed, many workers in the town were unemployed.",
+            "tr": "工厂关闭后，镇上许多工人都失业了。",
+            "match": [
+              "unemployed"
+            ]
+          },
+          {
+            "word": "land a job",
+            "ph": "/lænd ə dʒɒb/",
+            "pos": "idiom",
+            "mean": "找到一份工作",
+            "ex": "It took him six months, but he finally managed to land a job in his field.",
+            "tr": "花了他六个月时间，但他最终还是设法在自己的领域找到了一份工作。",
+            "match": [
+              "land a job",
+              "landed one"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "en": "So here are some things I would do if I could start over and maybe speed up the unemployment journey for past me—and maybe for current you.",
+        "cn": "所以，如果我能重新来过，这里有一些我会做的事情，也许能为过去的我——也可能为现在的你——加速失业之旅的进程。",
+        "vocab": [
+          {
+            "word": "start over",
+            "ph": "/stɑːrt ˈoʊvər/",
+            "pos": "phr v",
+            "mean": "重新开始",
+            "ex": "After the project failed, the team had to start over from the beginning.",
+            "tr": "项目失败后，团队不得不从头开始。",
+            "match": [
+              "start over"
+            ]
+          },
+          {
+            "word": "speed up",
+            "ph": "/spiːd ʌp/",
+            "pos": "phr v",
+            "mean": "加速",
+            "ex": "Can you try to speed up the process? We're running out of time.",
+            "tr": "你能试着加速这个过程吗？我们快没时间了。",
+            "match": [
+              "speed up"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "en": "I have a bachelor's degree in cybersecurity, a boot camp certificate, Security+, and A+. I got all that and then landed a job. After landing the job, I got AZ-900 and Network+. I skipped Network+ in the beginning because I hated networking, and I was doing cybersecurity stuff without even knowing what a subnet was. So, yeah—definitely don’t skip networking. More on that in a second.",
+        "cn": "我有一个网络安全学士学位，一个训练营证书，Security+和A+。我拿到了所有这些，然后找到了一份工作。找到工作后，我又考了AZ-900和Network+。我一开始跳过了Network+，因为我讨厌网络，而且我当时甚至不知道子网是什么就在做网络安全方面的事情。所以，是的——绝对不要跳过网络。稍后会详细说明。",
+        "vocab": [
+          {
+            "word": "bachelor's degree",
+            "ph": "/ˈbætʃələrz dɪˈɡriː/",
+            "pos": "n phr",
+            "mean": "学士学位",
+            "ex": "She earned a bachelor's degree in economics from a top university.",
+            "tr": "她在一所顶尖大学获得了经济学学士学位。",
+            "match": [
+              "bachelor's degree"
+            ]
+          },
+          {
+            "word": "boot camp",
+            "ph": "/ˈbuːt kæmp/",
+            "pos": "n",
+            "mean": "（编程、技能）训练营",
+            "ex": "He attended a coding boot camp to switch careers and become a developer.",
+            "tr": "他参加了一个编程训练营以转换职业，成为一名开发人员。",
+            "match": [
+              "boot camp"
+            ]
+          },
+          {
+            "word": "skip",
+            "ph": "/skɪp/",
+            "pos": "v",
+            "mean": "跳过",
+            "ex": "If you don't like a chapter, you can just skip it and move to the next one.",
+            "tr": "如果你不喜欢某一章，你可以直接跳过它，进入下一章。",
+            "match": [
+              "skipped",
+              "skip"
+            ]
+          },
+          {
+            "word": "subnet",
+            "ph": "/ˈsʌbnet/",
+            "pos": "n",
+            "mean": "子网",
+            "ex": "The network administrator divided the large network into several smaller subnets.",
+            "tr": "网络管理员将大型网络分成了几个较小的子网。",
+            "match": [
+              "subnet"
+            ]
+          },
+          {
+            "word": "more on that in a second",
+            "ph": "/mɔːr ɒn ðæt ɪn ə ˈsekənd/",
+            "pos": "phr",
+            "mean": "稍后会详细说明",
+            "ex": "I have a big announcement, but more on that in a second.",
+            "tr": "我有一个重大宣布，但稍后会详细说明。",
+            "match": [
+              "More on that in a second"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "en": "To get into cybersecurity, you don’t really need a degree necessarily. If I could go back and do it, I would not do a boot camp, and I would not get a bachelor’s degree. The things they teach you in cybersecurity in college are very outdated and are, in my opinion, a bit of a waste of time—but that’s just me.",
+        "cn": "要进入网络安全领域，你不一定真的需要一个学位。如果我能回去重来，我不会去训练营，也不会去读学士学位。他们在大学里教你的网络安全知识非常过时，在我看来，有点浪费时间——但这只是我个人的看法。",
+        "vocab": [
+          {
+            "word": "necessarily",
+            "ph": "/ˌnesəˈserəli/",
+            "pos": "adv",
+            "mean": "必然地；必定（常用于否定句）",
+            "ex": "A higher price doesn't necessarily mean higher quality.",
+            "tr": "更高的价格并不一定意味着更高的质量。",
+            "match": [
+              "necessarily"
+            ]
+          },
+          {
+            "word": "outdated",
+            "ph": "/ˌaʊtˈdeɪtɪd/",
+            "pos": "adj",
+            "mean": "过时的",
+            "ex": "The company's technology is severely outdated and needs an upgrade.",
+            "tr": "公司的技术严重过时，需要升级。",
+            "match": [
+              "outdated"
+            ]
+          },
+          {
+            "word": "a waste of time",
+            "ph": "/ə weɪst əv taɪm/",
+            "pos": "idiom",
+            "mean": "浪费时间",
+            "ex": "Waiting in that long line was a complete waste of time.",
+            "tr": "在那么长的队伍里等待完全是浪费时间。",
+            "match": [
+              "a waste of time"
+            ]
+          },
+          {
+            "word": "that's just me",
+            "ph": "/ðæts dʒʌst miː/",
+            "pos": "phr",
+            "mean": "那只是我个人的看法",
+            "ex": "I don't enjoy big parties, but that's just me.",
+            "tr": "我不喜欢大型派对，但这只是我个人的看法。",
+            "match": [
+              "that’s just me"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "en": "So you’re like, “Maddie, college—ew. Boot camps—ew. What do I do then?” Well, I’ll show you.",
+        "cn": "所以你可能会想：“麦迪，大学——恶心。训练营——恶心。那我该怎么办？” 嗯，我来告诉你。",
+        "vocab": [
+          {
+            "word": "ew",
+            "ph": "/iːuː/",
+            "pos": "int",
+            "mean": "（表示厌恶）恶心",
+            "ex": "Ew, there's a spider in my shoe!",
+            "tr": "恶心，我鞋里有只蜘蛛！",
+            "match": [
+              "ew"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "en": "This is the cybersecurity roadmap. It’s on roadmap.sh—just look up “cybersecurity roadmap” in your browser and you’ll see it. Literally following this exactly and checking things off one by one is going to get you really far, in my opinion. This has the same concepts as Security+, but laid out visually.",
+        "cn": "这就是网络安全路线图。它在roadmap.sh上——只要在你的浏览器里查一下“cybersecurity roadmap”你就能看到。在我看来，完全精确地遵循这个路线图，并逐一完成事项，会让你走得很远。这包含了和Security+相同的概念，但是是可视化地呈现出来的。",
+        "vocab": [
+          {
+            "word": "roadmap",
+            "ph": "/ˈroʊdmæp/",
+            "pos": "n",
+            "mean": "路线图",
+            "ex": "The company presented its product roadmap for the next five years.",
+            "tr": "该公司展示了其未来五年的产品路线图。",
+            "match": [
+              "roadmap"
+            ]
+          },
+          {
+            "word": "look up",
+            "ph": "/lʊk ʌp/",
+            "pos": "phr v",
+            "mean": "查找",
+            "ex": "If you don't know the word, you should look it up in a dictionary.",
+            "tr": "如果你不认识这个词，你应该在字典里查一下。",
+            "match": [
+              "look up"
+            ]
+          },
+          {
+            "word": "check things off",
+            "ph": "/tʃek θɪŋz ɔːf/",
+            "pos": "phr v",
+            "mean": "（在清单上）勾掉",
+            "ex": "It's so satisfying to check things off your to-do list.",
+            "tr": "在待办事项清单上勾掉项目是件非常令人满足的事。",
+            "match": [
+              "checking things off"
+            ]
+          },
+          {
+            "word": "one by one",
+            "ph": "/wʌn baɪ wʌn/",
+            "pos": "phr",
+            "mean": "逐一地",
+            "ex": "The teacher called the students' names one by one.",
+            "tr": "老师逐一地叫了学生们的名字。",
+            "match": [
+              "one by one"
+            ]
+          },
+          {
+            "word": "get you far",
+            "ph": "/ɡet juː fɑːr/",
+            "pos": "phr v",
+            "mean": "让你走得远；让你取得很大成功",
+            "ex": "Hard work and a positive attitude will get you far in life.",
+            "tr": "努力工作和积极的态度会让你在生活中走得很远。",
+            "match": [
+              "get you really far"
+            ]
+          },
+          {
+            "word": "lay out",
+            "ph": "/leɪ aʊt/",
+            "pos": "phr v",
+            "mean": "布置；呈现",
+            "ex": "The report lays out the company's financial performance in detail.",
+            "tr": "该报告详细地呈现了公司的财务表现。",
+            "match": [
+              "laid out"
+            ]
+          },
+          {
+            "word": "visually",
+            "ph": "/ˈvɪʒuəli/",
+            "pos": "adv",
+            "mean": "可视化地",
+            "ex": "The data was presented visually using charts and graphs.",
+            "tr": "数据通过图表被可视化地呈现出来。",
+            "match": [
+              "visually"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "en": "If you want to delay getting Security+, or just want to dip your toe in, I’d definitely recommend following this roadmap. Not to say you don’t need Security+—you do, for HR and to get past non-technical hiring managers—but literally all of this is awesome foundation.",
+        "cn": "如果你想延迟考取Security+，或者只是想浅尝辄止，我绝对推荐遵循这个路线图。不是说你不需要Security+——你需要，为了应付人力资源和通过非技术背景的招聘经理——但说真的，所有这些都是极好的基础。",
+        "vocab": [
+          {
+            "word": "delay",
+            "ph": "/dɪˈleɪ/",
+            "pos": "v",
+            "mean": "延迟",
+            "ex": "We had to delay our trip due to bad weather.",
+            "tr": "由于天气不好，我们不得不延迟我们的旅行。",
+            "match": [
+              "delay"
+            ]
+          },
+          {
+            "word": "dip one's toe in",
+            "ph": "/dɪp wʌnz toʊ ɪn/",
+            "pos": "idiom",
+            "mean": "浅尝辄止；初步尝试",
+            "ex": "He decided to dip his toe in the stock market by investing a small amount of money.",
+            "tr": "他决定通过投资少量资金来初步尝试一下股市。",
+            "match": [
+              "dip your toe in"
+            ]
+          },
+          {
+            "word": "not to say",
+            "ph": "/nɒt tuː seɪ/",
+            "pos": "phr",
+            "mean": "不是说",
+            "ex": "He's a bit quiet, not to say he's unfriendly.",
+            "tr": "他有点安静，但不是说他不友好。",
+            "match": [
+              "Not to say"
+            ]
+          },
+          {
+            "word": "get past",
+            "ph": "/ɡet pæst/",
+            "pos": "phr v",
+            "mean": "通过；越过",
+            "ex": "You need a special keycard to get past this security door.",
+            "tr": "你需要一张特殊的钥匙卡才能通过这扇安全门。",
+            "match": [
+              "get past"
+            ]
+          },
+          {
+            "word": "foundation",
+            "ph": "/faʊnˈdeɪʃn/",
+            "pos": "n",
+            "mean": "基础",
+            "ex": "This course provides a solid foundation in mathematics.",
+            "tr": "这门课程为数学打下了坚实的基础。",
+            "match": [
+              "foundation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "en": "So we have: - Cybersecurity fundamental IT skills - Computer hardware components - Connection types and their functions - OS-independent troubleshooting - Understand basics of popular suites - Basics of computer networking (which I said is very important)",
+        "cn": "所以我们有：- 网络安全基础IT技能 - 计算机硬件组件 - 连接类型及其功能 - 独立于操作系统的故障排除 - 理解流行套件的基础知识 - 计算机网络基础（我说过这个非常重要）",
+        "vocab": [
+          {
+            "word": "fundamental",
+            "ph": "/ˌfʌndəˈmentl/",
+            "pos": "adj",
+            "mean": "基础的",
+            "ex": "Understanding the fundamental principles is crucial for mastering any subject.",
+            "tr": "理解基本原理对于掌握任何学科都至关重要。",
+            "match": [
+              "fundamental"
+            ]
+          },
+          {
+            "word": "component",
+            "ph": "/kəmˈpoʊnənt/",
+            "pos": "n",
+            "mean": "组件",
+            "ex": "He learned how to assemble all the different components of the computer.",
+            "tr": "他学会了如何组装电脑的所有不同组件。",
+            "match": [
+              "components"
+            ]
+          },
+          {
+            "word": "OS-independent",
+            "ph": "/ˌoʊˈes ˌɪndɪˈpendənt/",
+            "pos": "adj",
+            "mean": "独立于操作系统的",
+            "ex": "The new software is OS-independent and can run on both Windows and MacOS.",
+            "tr": "这款新软件独立于操作系统，可以在Windows和MacOS上运行。",
+            "match": [
+              "OS-independent"
+            ]
+          },
+          {
+            "word": "troubleshooting",
+            "ph": "/ˈtrʌblʃuːtɪŋ/",
+            "pos": "n",
+            "mean": "故障排除",
+            "ex": "He's very good at troubleshooting computer problems.",
+            "tr": "他非常擅长排除电脑故障。",
+            "match": [
+              "troubleshooting"
+            ]
+          },
+          {
+            "word": "suite",
+            "ph": "/swiːt/",
+            "pos": "n",
+            "mean": "（软件）套件",
+            "ex": "He installed the new office suite on his computer.",
+            "tr": "他在电脑上安装了新的办公套件。",
+            "match": [
+              "suites"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "en": "And then for networking, we have: - Basics of subnetting (very important—I didn’t know subnetting myself, even with a cybersecurity degree, which shows how weird college is) - Public vs. private IP addresses - Local hosts, subnet mask, default gateway, CIDR - Understanding terminology: DHCP, DNS, IP, NAT, VLAN, router vs. switch - Really good to know: network topologies, how packets are made, how each layer stacks upon itself within the OSI model",
+        "cn": "然后是网络方面，我们有：- 子网划分基础（非常重要——我自己都不懂子网划分，即使有网络安全学位，这显示了大学有多奇怪）- 公网 vs. 私网IP地址 - 本地主机、子网掩码、默认网关、CIDR - 理解术语：DHCP、DNS、IP、NAT、VLAN、路由器 vs. 交换机 - 最好了解：网络拓扑、数据包如何生成、OSI模型中每一层如何相互堆叠",
+        "vocab": [
+          {
+            "word": "subnetting",
+            "ph": "/ˈsʌbnetɪŋ/",
+            "pos": "n",
+            "mean": "子网划分",
+            "ex": "Subnetting is an essential skill for any network administrator.",
+            "tr": "子网划分是任何网络管理员的必备技能。",
+            "match": [
+              "subnetting"
+            ]
+          },
+          {
+            "word": "IP address",
+            "ph": "/ˌaɪˈpiː əˈdres/",
+            "pos": "n phr",
+            "mean": "IP地址",
+            "ex": "Every device connected to the internet has a unique IP address.",
+            "tr": "每个连接到互联网的设备都有一个唯一的IP地址。",
+            "match": [
+              "IP addresses",
+              "IP"
+            ]
+          },
+          {
+            "word": "gateway",
+            "ph": "/ˈɡeɪtweɪ/",
+            "pos": "n",
+            "mean": "网关",
+            "ex": "The default gateway is the router that connects your local network to the internet.",
+            "tr": "默认网关是连接你本地网络到互联网的路由器。",
+            "match": [
+              "gateway"
+            ]
+          },
+          {
+            "word": "terminology",
+            "ph": "/ˌtɜːrmɪˈnɒlədʒi/",
+            "pos": "n",
+            "mean": "术语",
+            "ex": "It's important to understand the basic terminology of any new field you study.",
+            "tr": "理解你所学的任何新领域的基本术语是很重要的。",
+            "match": [
+              "terminology"
+            ]
+          },
+          {
+            "word": "topology",
+            "ph": "/təˈpɒlədʒi/",
+            "pos": "n",
+            "mean": "拓扑",
+            "ex": "A star network topology connects all devices to a central hub.",
+            "tr": "星型网络拓扑将所有设备连接到一个中心集线器。",
+            "match": [
+              "topologies"
+            ]
+          },
+          {
+            "word": "packet",
+            "ph": "/ˈpækɪt/",
+            "pos": "n",
+            "mean": "（数据）包",
+            "ex": "Information is sent over the internet in small units called packets.",
+            "tr": "信息通过互联网以称为数据包的小单位发送。",
+            "match": [
+              "packets"
+            ]
+          },
+          {
+            "word": "OSI model",
+            "ph": "/ˌoʊ es ˈaɪ ˈmɒdl/",
+            "pos": "n phr",
+            "mean": "OSI模型（开放系统互连模型）",
+            "ex": "The OSI model is a conceptual framework that standardizes the functions of a telecommunication system.",
+            "tr": "OSI模型是一个将电信系统功能标准化的概念框架。",
+            "match": [
+              "OSI model"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "en": "The OSI model comes in extremely clutch when you’re trying to understand all these concepts. And it’s actually down below under “Understanding the OSI Model”—yes, very important. Over here we have troubleshooting tools—very important—like `ipconfig`, `ping`, `dig`. That stuff is really important in troubleshooting. I hope that stuff really comes in clutch—not to say “clutch” again, that’s kind of cringe—but it does.",
+        "cn": "当你想理解所有这些概念时，OSI模型会非常管用。它实际上就在下面的“理解OSI模型”部分——是的，非常重要。这边我们有故障排除工具——非常重要——比如`ipconfig`、`ping`、`dig`。那些东西在故障排除中非常重要。我希望那些东西真的能派上大用场——不想再说“管用”了，那有点尬——但它确实管用。",
+        "vocab": [
+          {
+            "word": "come in clutch",
+            "ph": "/kʌm ɪn klʌtʃ/",
+            "pos": "idiom",
+            "mean": "（俚语）在关键时刻派上用场",
+            "ex": "My backup battery really came in clutch when my phone died.",
+            "tr": "我手机没电时，我的备用电池真的在关键时刻派上了用场。",
+            "match": [
+              "comes in extremely clutch",
+              "comes in clutch"
+            ]
+          },
+          {
+            "word": "down below",
+            "ph": "/daʊn bɪˈloʊ/",
+            "pos": "phr",
+            "mean": "在下面",
+            "ex": "You'll find the contact information down below in the description box.",
+            "tr": "你可以在下面的描述框里找到联系信息。",
+            "match": [
+              "down below"
+            ]
+          },
+          {
+            "word": "troubleshooting",
+            "ph": "/ˈtrʌblʃuːtɪŋ/",
+            "pos": "n",
+            "mean": "故障排除",
+            "ex": "He's very good at troubleshooting computer problems.",
+            "tr": "他非常擅长排除电脑故障。",
+            "match": [
+              "troubleshooting"
+            ]
+          },
+          {
+            "word": "cringe",
+            "ph": "/krɪndʒ/",
+            "pos": "adj",
+            "mean": "（俚语）尴尬的；令人不适的",
+            "ex": "His attempt at stand-up comedy was so bad it was cringe.",
+            "tr": "他的单口喜剧表演太差了，简直令人尴尬。",
+            "match": [
+              "cringe"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "en": "And then: - Authentication methodologies: Kerberos, LDAP, SSO, RADIUS (also really important). Once you keep scrolling down, you get into more security-focused stuff: - DDoS, Evil Twin, Deauth attacks, SIEM, Yara rules, Kali, Kill Chain, Diamond Model—things of that nature.",
+        "cn": "然后是：- 身份验证方法论：Kerberos、LDAP、SSO、RADIUS（也非常重要）。一旦你继续向下滚动，你就会进入更侧重于安全的东西：- DDoS、邪恶双胞胎、Deauth攻击、SIEM、Yara规则、Kali、杀伤链、钻石模型——诸如此类的东西。",
+        "vocab": [
+          {
+            "word": "authentication",
+            "ph": "/ɔːˌθentɪˈkeɪʃn/",
+            "pos": "n",
+            "mean": "身份验证",
+            "ex": "Two-factor authentication adds an extra layer of security to your account.",
+            "tr": "双因素认证为你的账户增加了一层额外的安全保障。",
+            "match": [
+              "Authentication"
+            ]
+          },
+          {
+            "word": "methodology",
+            "ph": "/ˌmeθəˈdɒlədʒi/",
+            "pos": "n",
+            "mean": "方法论",
+            "ex": "The research paper clearly explains the methodology used in the study.",
+            "tr": "该研究论文清楚地解释了研究中使用的方法论。",
+            "match": [
+              "methodologies"
+            ]
+          },
+          {
+            "word": "get into",
+            "ph": "/ɡet ˈɪntuː/",
+            "pos": "phr v",
+            "mean": "进入（某个主题或领域）",
+            "ex": "The conversation started with small talk, but then we got into deeper topics.",
+            "tr": "对话以闲聊开始，但后来我们进入了更深层次的话题。",
+            "match": [
+              "get into"
+            ]
+          },
+          {
+            "word": "security-focused",
+            "ph": "/sɪˈkjʊərəti ˈfoʊkəst/",
+            "pos": "adj",
+            "mean": "侧重于安全的",
+            "ex": "The company is hiring for a new, security-focused software development role.",
+            "tr": "该公司正在招聘一个新的、侧重于安全的软件开发职位。",
+            "match": [
+              "security-focused"
+            ]
+          },
+          {
+            "word": "things of that nature",
+            "ph": "/θɪŋz əv ðæt ˈneɪtʃər/",
+            "pos": "phr",
+            "mean": "诸如此类的东西",
+            "ex": "The museum displays old tools, pottery, and other things of that nature.",
+            "tr": "博物馆展出古老的工具、陶器和诸如此类的其他东西。",
+            "match": [
+              "things of that nature"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "en": "So I’d just say, go through literally all of this. Cloud concepts—super good: S3, Dropbox, Google Drive, OneDrive, AWS, GCP, Azure. I’d just go through this and check everything off as you’re learning.",
+        "cn": "所以我只想说，把所有这些都过一遍。云概念——超级棒：S3、Dropbox、Google Drive、OneDrive、AWS、GCP、Azure。我建议你把这个过一遍，边学边把每样东西都勾掉。",
+        "vocab": [
+          {
+            "word": "go through",
+            "ph": "/ɡoʊ θruː/",
+            "pos": "phr v",
+            "mean": "过一遍；完成",
+            "ex": "Let's go through the checklist one more time to make sure we haven't forgotten anything.",
+            "tr": "我们再把清单过一遍，确保没有忘记任何东西。",
+            "match": [
+              "go through"
+            ]
+          },
+          {
+            "word": "concept",
+            "ph": "/ˈkɒnsept/",
+            "pos": "n",
+            "mean": "概念",
+            "ex": "The concept of infinity can be difficult to grasp.",
+            "tr": "无穷大的概念可能很难理解。",
+            "match": [
+              "concepts"
+            ]
+          },
+          {
+            "word": "check off",
+            "ph": "/tʃek ɔːf/",
+            "pos": "phr v",
+            "mean": "（在清单上）勾掉",
+            "ex": "It's so satisfying to check off items on your to-do list.",
+            "tr": "在待办事项清单上勾掉项目是件非常令人满足的事。",
+            "match": [
+              "check everything off"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "en": "You can go to roadmap.sh and click it—it takes you to a bunch of roadmaps for roles, which is very useful: AI engineer, software architect, game developer, technical writer… and then skill-based roadmaps. Yeah, I’d definitely recommend this.",
+        "cn": "你可以去roadmap.sh然后点击它——它会带你到一大堆针对不同角色的路线图，这非常有用：AI工程师、软件架构师、游戏开发者、技术文档撰写人……然后还有基于技能的路线图。是的，我绝对推荐这个。",
+        "vocab": [
+          {
+            "word": "a bunch of",
+            "ph": "/ə bʌntʃ əv/",
+            "pos": "phr",
+            "mean": "（非正式）一大堆",
+            "ex": "I have a bunch of emails to answer before I can leave.",
+            "tr": "我走之前有一大堆邮件要回复。",
+            "match": [
+              "a bunch of"
+            ]
+          },
+          {
+            "word": "role",
+            "ph": "/roʊl/",
+            "pos": "n",
+            "mean": "角色；职位",
+            "ex": "She was recently promoted to a leadership role in the company.",
+            "tr": "她最近被提升到公司的一个领导职位。",
+            "match": [
+              "roles"
+            ]
+          },
+          {
+            "word": "architect",
+            "ph": "/ˈɑːrkɪtekt/",
+            "pos": "n",
+            "mean": "架构师",
+            "ex": "As a software architect, he designs the overall structure of the application.",
+            "tr": "作为一名软件架构师，他设计应用程序的整体结构。",
+            "match": [
+              "architect"
+            ]
+          },
+          {
+            "word": "skill-based",
+            "ph": "/skɪl beɪst/",
+            "pos": "adj",
+            "mean": "基于技能的",
+            "ex": "The company is moving towards a more skill-based hiring process.",
+            "tr": "该公司正转向一个更基于技能的招聘流程。",
+            "match": [
+              "skill-based"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "en": "Now for certifications, I’d highly recommend Security+ as your base. Definitely get Security+. Go back and get Network+ if you want, but if you can actually prove you know the foundational stuff of networking and OSs, then I think you’re pretty much golden as long as you have Security+.",
+        "cn": "现在说到证书，我强烈推荐Security+作为你的基础。一定要考到Security+。如果你想，可以回头去考Network+，但如果你能真正证明你懂网络和操作系统的基础知识，那么我认为只要你有了Security+，你就基本稳了。",
+        "vocab": [
+          {
+            "word": "certification",
+            "ph": "/ˌsɜːrtɪfɪˈkeɪʃn/",
+            "pos": "n",
+            "mean": "认证；证书",
+            "ex": "He earned a certification in project management.",
+            "tr": "他获得了项目管理方面的认证。",
+            "match": [
+              "certifications"
+            ]
+          },
+          {
+            "word": "base",
+            "ph": "/beɪs/",
+            "pos": "n",
+            "mean": "基础",
+            "ex": "A strong understanding of the basics provides a good base for advanced learning.",
+            "tr": "对基础知识的扎实理解为高级学习提供了良好的基础。",
+            "match": [
+              "base"
+            ]
+          },
+          {
+            "word": "prove",
+            "ph": "/pruːv/",
+            "pos": "v",
+            "mean": "证明",
+            "ex": "You need to prove your identity with a valid ID card.",
+            "tr": "你需要用有效的身份证件来证明你的身份。",
+            "match": [
+              "prove"
+            ]
+          },
+          {
+            "word": "foundational",
+            "ph": "/faʊnˈdeɪʃənl/",
+            "pos": "adj",
+            "mean": "基础的",
+            "ex": "This course covers the foundational concepts of programming.",
+            "tr": "这门课程涵盖了编程的基础概念。",
+            "match": [
+              "foundational"
+            ]
+          },
+          {
+            "word": "pretty much",
+            "ph": "/ˈprɪti mʌtʃ/",
+            "pos": "phr",
+            "mean": "几乎；差不多",
+            "ex": "I'm pretty much done with my work for today.",
+            "tr": "我今天的活儿差不多干完了。",
+            "match": [
+              "pretty much"
+            ]
+          },
+          {
+            "word": "golden",
+            "ph": "/ˈɡoʊldən/",
+            "pos": "adj",
+            "mean": "（俚语）稳了的；处境极好的",
+            "ex": "Once you pass this final exam, you're golden for graduation.",
+            "tr": "一旦你通过了这场期末考试，你毕业就稳了。",
+            "match": [
+              "golden"
+            ]
+          },
+          {
+            "word": "as long as",
+            "ph": "/æz lɔːŋ æz/",
+            "pos": "conj",
+            "mean": "只要",
+            "ex": "You can go to the party, as long as you finish your homework first.",
+            "tr": "你可以去派对，只要你先完成作业。",
+            "match": [
+              "as long as"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "en": "One thing I believe people in the cybersecurity industry and community really don’t speak up enough about is how much you need to know M365 administration. At least in my experience—not to burst your bubble—but you’ll probably have to do help desk before getting into cybersecurity. Cybersecurity is not an entry-level job, contrary to what everyone tells you.",
+        "cn": "我认为网络安全行业和社区的人们有一件事说得不够多，那就是你需要多么了解M365管理。至少在我的经验里是这样——不是要给你泼冷水——但在进入网络安全领域之前，你可能得先做服务台。与大家告诉你的相反，网络安全不是一个入门级的工作。",
+        "vocab": [
+          {
+            "word": "speak up about",
+            "ph": "/spiːk ʌp əˈbaʊt/",
+            "pos": "phr v",
+            "mean": "公开谈论",
+            "ex": "It's important to speak up about issues you care about.",
+            "tr": "公开谈论你关心的问题是很重要的。",
+            "match": [
+              "speak up enough about"
+            ]
+          },
+          {
+            "word": "administration",
+            "ph": "/ədˌmɪnɪˈstreɪʃn/",
+            "pos": "n",
+            "mean": "管理",
+            "ex": "Network administration requires a lot of technical skill.",
+            "tr": "网络管理需要大量的技术技能。",
+            "match": [
+              "administration"
+            ]
+          },
+          {
+            "word": "burst your bubble",
+            "ph": "/bɜːrst jɔːr ˈbʌbl/",
+            "pos": "idiom",
+            "mean": "给你泼冷水；打破你的幻想",
+            "ex": "I hate to burst your bubble, but Santa Claus isn't real.",
+            "tr": "我不想给你泼冷水，但圣诞老人不是真的。",
+            "match": [
+              "burst your bubble"
+            ]
+          },
+          {
+            "word": "entry-level job",
+            "ph": "/ˈentri ˈlevl dʒɒb/",
+            "pos": "n phr",
+            "mean": "入门级工作",
+            "ex": "He's looking for an entry-level job in the tech industry.",
+            "tr": "他正在科技行业寻找一份入门级的工作。",
+            "match": [
+              "entry-level job"
+            ]
+          },
+          {
+            "word": "contrary to",
+            "ph": "/ˈkɒntrəri tuː/",
+            "pos": "prep",
+            "mean": "与…相反",
+            "ex": "Contrary to popular belief, tomatoes are actually fruits.",
+            "tr": "与普遍看法相反，西红柿其实是水果。",
+            "match": [
+              "contrary to"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "en": "So M365 administration: everyone has M365, everyone needs to provision users, groups, distribution lists, reset passwords, investigate phishing emails. Literally, it’s all very, very boring, but it’s a very good way to get your foot in the door.",
+        "cn": "所以M365管理：每个人都有M365，每个人都需要配置用户、组、分发列表、重置密码、调查网络钓鱼邮件。说真的，这一切都非常非常无聊，但这是你踏入这个行业的一个非常好的方式。",
+        "vocab": [
+          {
+            "word": "provision",
+            "ph": "/prəˈvɪʒn/",
+            "pos": "v",
+            "mean": "（IT术语）配置；预备",
+            "ex": "The IT department needs to provision a new virtual machine for the project.",
+            "tr": "IT部门需要为该项目配置一台新的虚拟机。",
+            "match": [
+              "provision"
+            ]
+          },
+          {
+            "word": "distribution list",
+            "ph": "/ˌdɪstrɪˈbjuːʃn lɪst/",
+            "pos": "n phr",
+            "mean": "（邮件）分发列表",
+            "ex": "Please add the new employee to the marketing distribution list.",
+            "tr": "请将新员工添加到市场营销分发列表中。",
+            "match": [
+              "distribution lists"
+            ]
+          },
+          {
+            "word": "investigate",
+            "ph": "/ɪnˈvestɪɡeɪt/",
+            "pos": "v",
+            "mean": "调查",
+            "ex": "The police are investigating the cause of the accident.",
+            "tr": "警方正在调查事故原因。",
+            "match": [
+              "investigate"
+            ]
+          },
+          {
+            "word": "phishing",
+            "ph": "/ˈfɪʃɪŋ/",
+            "pos": "n",
+            "mean": "网络钓鱼",
+            "ex": "Never click on suspicious links in emails; it could be a phishing attempt.",
+            "tr": "切勿点击邮件中的可疑链接，那可能是网络钓鱼企图。",
+            "match": [
+              "phishing"
+            ]
+          },
+          {
+            "word": "get your foot in the door",
+            "ph": "/ɡet jɔːr fʊt ɪn ðə dɔːr/",
+            "pos": "idiom",
+            "mean": "（在公司或行业中）获得初步的立足点；迈出第一步",
+            "ex": "An internship is a great way to get your foot in the door of a competitive industry.",
+            "tr": "实习是在一个竞争激烈的行业中迈出第一步的好方法。",
+            "match": [
+              "get your foot in the door"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "en": "I’d highly recommend getting a Microsoft certification—like an Azure certification or something. This one’s good—I haven’t taken it myself because I’ve done M365 administration a lot, so I have the work experience. But if you don’t, or even if you do and just want a cert, the Microsoft 365 Administrator exam seems like something you’d take if you need to prove your M365 admin skills.",
+        "cn": "我强烈推荐考一个微软认证——比如Azure认证之类的。这个就很好——我自己没考过，因为我已经做过很多M365管理了，所以我有工作经验。但如果你没有，或者即使你有但只是想要个证书，微软365管理员考试似乎就是你需要考的东西，如果你需要证明你的M365管理技能的话。",
+        "vocab": [
+          {
+            "word": "highly recommend",
+            "ph": "/ˈhaɪli ˌrekəˈmend/",
+            "pos": "phr v",
+            "mean": "强烈推荐",
+            "ex": "I highly recommend this book; it's one of the best I've ever read.",
+            "tr": "我强烈推荐这本书；它是我读过的最好的书之一。",
+            "match": [
+              "highly recommend"
+            ]
+          },
+          {
+            "word": "cert",
+            "ph": "/sɜːrt/",
+            "pos": "n",
+            "mean": "（非正式）证书 (certification)",
+            "ex": "He just got a new cert in cloud computing.",
+            "tr": "他刚拿到了一个云计算方面的新证书。",
+            "match": [
+              "cert"
+            ]
+          },
+          {
+            "word": "admin",
+            "ph": "/ˈædmɪn/",
+            "pos": "n",
+            "mean": "（非正式）管理 (administration)",
+            "ex": "He works in network admin for a large company.",
+            "tr": "他在一家大公司从事网络管理工作。",
+            "match": [
+              "admin"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "en": "If anyone else has better certification suggestions, put them in the comments. And maybe you’re thinking, “Maddie, why haven’t you mentioned A+?” Well, it’s vendor-agnostic, and everyone uses Microsoft—at least in my experience. I haven’t taken A+. My old boss suggested I take A+ while I was analyzing logs, manually threat hunting, and doing sysadmin work, and I was like, “Why would I take that if I’m already doing the work?”",
+        "cn": "如果其他人有更好的证书建议，请把它们写在评论里。也许你在想：“麦迪，你为什么没提A+？” 嗯，它是厂商中立的，而每个人都在用微软——至少在我的经验里是这样。我没考过A+。我以前的老板在我分析日志、手动进行威胁搜寻和做系统管理工作时建议我考A+，我当时就想：“如果我已经在了做这些工作，我为什么还要考那个？”",
+        "vocab": [
+          {
+            "word": "suggestion",
+            "ph": "/səˈdʒestʃən/",
+            "pos": "n",
+            "mean": "建议",
+            "ex": "Do you have any suggestions for a good place to eat?",
+            "tr": "你有什么好吃的地方推荐吗？",
+            "match": [
+              "suggestions"
+            ]
+          },
+          {
+            "word": "vendor-agnostic",
+            "ph": "/ˈvendər æɡˈnɒstɪk/",
+            "pos": "adj",
+            "mean": "厂商中立的（不依赖于特定供应商的技术）",
+            "ex": "The certification is vendor-agnostic, which makes it valuable across many different systems.",
+            "tr": "该认证是厂商中立的，这使得它在许多不同系统中都很有价值。",
+            "match": [
+              "vendor-agnostic"
+            ]
+          },
+          {
+            "word": "threat hunting",
+            "ph": "/θret ˈhʌntɪŋ/",
+            "pos": "n phr",
+            "mean": "威胁搜寻",
+            "ex": "Proactive threat hunting is crucial for identifying advanced cyber attacks.",
+            "tr": "主动的威胁搜寻对于识别高级网络攻击至关重要。",
+            "match": [
+              "threat hunting"
+            ]
+          },
+          {
+            "word": "sysadmin",
+            "ph": "/ˈsɪsædmɪn/",
+            "pos": "n",
+            "mean": "（非正式）系统管理员",
+            "ex": "If you can't log in, you should contact the sysadmin.",
+            "tr": "如果你无法登录，你应该联系系统管理员。",
+            "match": [
+              "sysadmin"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "en": "So yeah—vendor-agnostic. You can go through Professor Messer—you all should know that man by now, he’s a G. He has videos on A+, Security+, Network+, things like that. So if you want to go through A+, watch his videos, take notes—but I wouldn’t suggest wasting your money on the A+. My personal opinion.",
+        "cn": "所以，是的——厂商中立。你可以去看Messer教授的视频——你们现在都应该知道那个人了，他是个大佬。他有关于A+、Security+、Network+之类的视频。所以如果你想学A+，看他的视频，做笔记——但我不会建议你在A+上浪费钱。我个人意见。",
+        "vocab": [
+          {
+            "word": "go through",
+            "ph": "/ɡoʊ θruː/",
+            "pos": "phr v",
+            "mean": "过一遍；学习",
+            "ex": "Let's go through the checklist one more time.",
+            "tr": "我们再把清单过一遍。",
+            "match": [
+              "go through"
+            ]
+          },
+          {
+            "word": "by now",
+            "ph": "/baɪ naʊ/",
+            "pos": "phr",
+            "mean": "到如今；到现在",
+            "ex": "You should know the rules by now; you've been here long enough.",
+            "tr": "你到现在应该知道规则了；你已经在这里待了足够长的时间。",
+            "match": [
+              "by now"
+            ]
+          },
+          {
+            "word": "G",
+            "ph": "/dʒiː/",
+            "pos": "n",
+            "mean": "（俚语）大佬； gangster (黑帮分子) 的缩写",
+            "ex": "He's a true G in the music industry, respected by everyone.",
+            "tr": "他是音乐界的真大佬，受到所有人的尊重。",
+            "match": [
+              "G"
+            ]
+          },
+          {
+            "word": "take notes",
+            "ph": "/teɪk noʊts/",
+            "pos": "phr v",
+            "mean": "做笔记",
+            "ex": "It's a good idea to take notes during the lecture.",
+            "tr": "在讲座期间做笔记是个好主意。",
+            "match": [
+              "take notes"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "en": "Another platform I’d suggest learning on is TryHackMe. TryHackMe is awesome—they’ve sponsored me before; this one isn’t sponsored, I’m just shouting them out because they’re cool. Cybersecurity training platform—you can go through lessons, do CTFs (which stand for Capture the Flag), really hone your cybersecurity skills, and you get these little certifications to prove you’ve completed a learning path. It’s cool.",
+        "cn": "另一个我建议的学习平台是TryHackMe。TryHackMe超棒——他们以前赞助过我；这次没有赞助，我只是给他们打个广告，因为他们很酷。一个网络安全培训平台——你可以上课、做CTF（夺旗赛的缩写）、真正磨练你的网络安全技能，而且你还能得到这些小证书来证明你完成了一个学习路径。很酷。",
+        "vocab": [
+          {
+            "word": "sponsor",
+            "ph": "/ˈspɒnsər/",
+            "pos": "v",
+            "mean": "赞助",
+            "ex": "The local company agreed to sponsor our soccer team.",
+            "tr": "当地公司同意赞助我们的足球队。",
+            "match": [
+              "sponsored"
+            ]
+          },
+          {
+            "word": "shout out",
+            "ph": "/ʃaʊt aʊt/",
+            "pos": "n/phr v",
+            "mean": "（公开）致意；点名感谢",
+            "ex": "I want to give a quick shout out to my parents for all their support.",
+            "tr": "我想简单地向我的父母致意，感谢他们所有的支持。",
+            "match": [
+              "shouting them out"
+            ]
+          },
+          {
+            "word": "CTF (Capture the Flag)",
+            "ph": "/ˌsiː tiː ˈef/",
+            "pos": "n",
+            "mean": "夺旗赛（一种网络安全竞赛）",
+            "ex": "He improved his hacking skills by participating in online CTF competitions.",
+            "tr": "他通过参加在线CTF竞赛提高了他的黑客技能。",
+            "match": [
+              "CTFs"
+            ]
+          },
+          {
+            "word": "hone",
+            "ph": "/hoʊn/",
+            "pos": "v",
+            "mean": "磨练",
+            "ex": "She practiced every day to hone her skills as a pianist.",
+            "tr": "她每天练习，以磨练她作为钢琴家的技巧。",
+            "match": [
+              "hone"
+            ]
+          },
+          {
+            "word": "learning path",
+            "ph": "/ˈlɜːrnɪŋ pæθ/",
+            "pos": "n phr",
+            "mean": "学习路径",
+            "ex": "The online course offers a structured learning path for beginners.",
+            "tr": "该在线课程为初学者提供了一个结构化的学习路径。",
+            "match": [
+              "learning path"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "en": "There’s also Hack The Box—a very good cybersecurity training platform as well, kind of similar to TryHackMe, but a little more advanced in the CTF and learning department. I’d definitely do TryHackMe for beginners just starting out into intermediate, then transition over to Hack The Box once you get the hang of things.",
+        "cn": "还有Hack The Box——也是一个非常好的网络安全培训平台，有点像TryHackMe，但在CTF和学习部门方面更高级一些。我绝对会推荐初学者刚开始向中级过渡时用TryHackMe，一旦你掌握了窍门，再转到Hack The Box。",
+        "vocab": [
+          {
+            "word": "advanced",
+            "ph": "/ədˈvænst/",
+            "pos": "adj",
+            "mean": "高级的",
+            "ex": "This is an advanced course for students who have already mastered the basics.",
+            "tr": "这是一门为已经掌握了基础知识的学生设计的高级课程。",
+            "match": [
+              "advanced"
+            ]
+          },
+          {
+            "word": "department",
+            "ph": "/dɪˈpɑːrtmənt/",
+            "pos": "n",
+            "mean": "部门；方面",
+            "ex": "He's not very skilled in the creativity department.",
+            "tr": "他在创造力方面不太擅长。",
+            "match": [
+              "department"
+            ]
+          },
+          {
+            "word": "starting out",
+            "ph": "/ˈstɑːrtɪŋ aʊt/",
+            "pos": "phr v",
+            "mean": "刚开始",
+            "ex": "When you're just starting out in your career, it's important to be willing to learn.",
+            "tr": "当你刚开始你的职业生涯时，愿意学习是很重要的。",
+            "match": [
+              "starting out"
+            ]
+          },
+          {
+            "word": "intermediate",
+            "ph": "/ˌɪntərˈmiːdiət/",
+            "pos": "n/adj",
+            "mean": "中级（的）",
+            "ex": "This class is for students at an intermediate level of English.",
+            "tr": "这个班是为中级英语水平的学生开设的。",
+            "match": [
+              "intermediate"
+            ]
+          },
+          {
+            "word": "transition over to",
+            "ph": "/trænˈzɪʃn ˈoʊvər tuː/",
+            "pos": "phr v",
+            "mean": "过渡到",
+            "ex": "After mastering the basics, you can transition over to more advanced topics.",
+            "tr": "掌握了基础知识后，你就可以过渡到更高级的主题了。",
+            "match": [
+              "transition over to"
+            ]
+          },
+          {
+            "word": "get the hang of",
+            "ph": "/ɡet ðə hæŋ əv/",
+            "pos": "idiom",
+            "mean": "掌握…的窍门",
+            "ex": "It took me a while, but I finally got the hang of using the new software.",
+            "tr": "花了我一点时间，但我最终还是掌握了使用新软件的窍门。",
+            "match": [
+              "get the hang of"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "en": "I do have a link—I’ll put it in the description—to sign up for Hack The Box. If you use my link and sign up and subscribe to one of the tiers, I do get a little kickback. So if you were going to sign up anyway, use my link—I’d really appreciate it.",
+        "cn": "我确实有一个链接——我会把它放在描述里——用于注册Hack The Box。如果你用我的链接注册并订阅了其中一个等级，我确实能得到一点回扣。所以如果你反正都要注册，就用我的链接吧——我会非常感激的。",
+        "vocab": [
+          {
+            "word": "description",
+            "ph": "/dɪˈskrɪpʃn/",
+            "pos": "n",
+            "mean": "（视频下的）描述区",
+            "ex": "You can find all the product links in the video description below.",
+            "tr": "你可以在下方视频描述区找到所有产品链接。",
+            "match": [
+              "description"
+            ]
+          },
+          {
+            "word": "sign up",
+            "ph": "/saɪn ʌp/",
+            "pos": "phr v",
+            "mean": "注册",
+            "ex": "You need to sign up for an account to use the service.",
+            "tr": "你需要注册一个账户才能使用该服务。",
+            "match": [
+              "sign up"
+            ]
+          },
+          {
+            "word": "tier",
+            "ph": "/tɪər/",
+            "pos": "n",
+            "mean": "（订阅的）等级",
+            "ex": "The streaming service offers several subscription tiers with different features.",
+            "tr": "该流媒体服务提供几种具有不同功能的订阅等级。",
+            "match": [
+              "tiers"
+            ]
+          },
+          {
+            "word": "kickback",
+            "ph": "/ˈkɪkbæk/",
+            "pos": "n",
+            "mean": "回扣",
+            "ex": "The salesperson received a kickback for every new client he brought in.",
+            "tr": "那位销售员每带来一个新客户都能收到一笔回扣。",
+            "match": [
+              "kickback"
+            ]
+          },
+          {
+            "word": "anyway",
+            "ph": "/ˈeniweɪ/",
+            "pos": "adv",
+            "mean": "反正",
+            "ex": "I know it's late, but I'm going to finish this book anyway.",
+            "tr": "我知道很晚了，但我反正要读完这本书。",
+            "match": [
+              "anyway"
+            ]
+          },
+          {
+            "word": "appreciate",
+            "ph": "/əˈpriːʃieɪt/",
+            "pos": "v",
+            "mean": "感激",
+            "ex": "I really appreciate all your help and support.",
+            "tr": "我真的很感激你所有的帮助和支持。",
+            "match": [
+              "appreciate"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "en": "Another thing I’d do if I was starting over: you’re learning, you’ve got the fundamentals down, you’ve got some certs, you’re doing labs, you’re taking notes—big one there: take notes of everything you do. After you have all your learnings and notes, I would post them onto LinkedIn and your own blog. I was posting what I was learning on LinkedIn—things I was learning in cybersecurity, Hack The Box, TryHackMe badges, certifications I got. I was literally posting anything and everything cybersecurity, and people started following along for the journey.",
+        "cn": "如果我重新开始，我还会做另一件事：你在学习，你掌握了基础，你拿了些证书，你在做实验，你在做笔记——这点很重要：把你做的每件事都记下来。在你有了所有学到的东西和笔记之后，我会把它们发布到领英和你自己的博客上。我当时就在领英上发布我正在学的东西——我在网络安全、Hack The Box、TryHackMe徽章、我获得的证书中学到的东西。我简直是在发布任何和所有关于网络安全的东西，人们开始关注我的这段旅程。",
+        "vocab": [
+          {
+            "word": "get something down",
+            "ph": "/ɡet ˈsʌmθɪŋ daʊn/",
+            "pos": "phr v",
+            "mean": "掌握",
+            "ex": "Once you get the basics down, the rest will be much easier.",
+            "tr": "一旦你掌握了基础，剩下的就会容易得多。",
+            "match": [
+              "got the fundamentals down"
+            ]
+          },
+          {
+            "word": "big one",
+            "ph": "/bɪɡ wʌn/",
+            "pos": "n phr",
+            "mean": "（非正式）重要的一点",
+            "ex": "Remember to be on time. That's a big one for this new boss.",
+            "tr": "记住要准时。这对新老板来说是重要的一点。",
+            "match": [
+              "big one"
+            ]
+          },
+          {
+            "word": "badge",
+            "ph": "/bædʒ/",
+            "pos": "n",
+            "mean": "徽章",
+            "ex": "After completing the course, he earned a digital badge for his profile.",
+            "tr": "完成课程后，他为自己的个人资料赢得了一枚数字徽章。",
+            "match": [
+              "badges"
+            ]
+          },
+          {
+            "word": "anything and everything",
+            "ph": "/ˈeniθɪŋ ænd ˈevriθɪŋ/",
+            "pos": "phr",
+            "mean": "任何及所有东西",
+            "ex": "The museum has anything and everything related to local history.",
+            "tr": "该博物馆拥有任何及所有与当地历史相关的东西。",
+            "match": [
+              "anything and everything"
+            ]
+          },
+          {
+            "word": "follow along",
+            "ph": "/ˈfɒloʊ əˈlɒŋ/",
+            "pos": "phr v",
+            "mean": "关注；跟随",
+            "ex": "Thousands of fans followed along as he documented his journey on social media.",
+            "tr": "成千上万的粉丝关注着他在社交媒体上记录的旅程。",
+            "match": [
+              "following along"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "en": "Long story short—I have a longer video on my channel, I’ll link it in the description if you want the full story—but I got the attention of a CEO, and he was like, “Hey, I love your blog, I love your write-ups, your TTPs, your projects, your home lab. Do you want to interview for this position?” And that’s actually how I got my first cybersecurity job. I didn’t apply; I didn’t go through the standard process. I was found on social media.",
+        "cn": "长话短说——我频道里有个更长的视频，如果你想知道完整故事，我会把链接放在描述里——但我引起了一位CEO的注意，他当时就说：“嘿，我喜欢你的博客，我喜欢你的文章、你的TTP、你的项目、你的家庭实验室。你想面试这个职位吗？” 我实际上就是这样得到我的第一份网络安全工作的。我没有申请；我没有走标准流程。我是在社交媒体上被发现的。",
+        "vocab": [
+          {
+            "word": "long story short",
+            "ph": "/lɔːŋ ˈstɔːri ʃɔːrt/",
+            "pos": "idiom",
+            "mean": "长话短说",
+            "ex": "We had a lot of issues, but long story short, we made it.",
+            "tr": "我们遇到了很多问题，但长话短说，我们成功了。",
+            "match": [
+              "Long story short"
+            ]
+          },
+          {
+            "word": "write-up",
+            "ph": "/ˈraɪt ʌp/",
+            "pos": "n",
+            "mean": "（详细的）书面报告；文章",
+            "ex": "He published a detailed write-up of his research findings on his blog.",
+            "tr": "他在博客上发表了一份关于他研究发现的详细报告。",
+            "match": [
+              "write-ups"
+            ]
+          },
+          {
+            "word": "TTP (Tactics, Techniques, and Procedures)",
+            "ph": "/ˌtiː tiː ˈpiː/",
+            "pos": "n",
+            "mean": "战术、技术和程序（网络安全术语）",
+            "ex": "Analyzing the attacker's TTPs can help predict future threats.",
+            "tr": "分析攻击者的TTP有助于预测未来的威胁。",
+            "match": [
+              "TTPs"
+            ]
+          },
+          {
+            "word": "home lab",
+            "ph": "/hoʊm læb/",
+            "pos": "n phr",
+            "mean": "家庭实验室",
+            "ex": "He built a small home lab to practice his cybersecurity skills.",
+            "tr": "他建了一个小型的家庭实验室来练习他的网络安全技能。",
+            "match": [
+              "home lab"
+            ]
+          },
+          {
+            "word": "standard process",
+            "ph": "/ˈstændərd ˈproʊses/",
+            "pos": "n phr",
+            "mean": "标准流程",
+            "ex": "Applicants must go through the standard process of submitting a resume and attending an interview.",
+            "tr": "申请人必须经过提交简历和参加面试的标准流程。",
+            "match": [
+              "standard process"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "en": "If you don’t post what you know, others will not know that you know it. You have to be loud. You have to be like, “Hey, I know this stuff, I’m doing this stuff, look at what I’m learning—isn’t this so cool? You can learn it too—here’s the write-up, here’s the walkthrough.” Knowledge share, and you’ll garner the attention of recruiters, hiring managers, CEOs. Like, everyone and their mother is—unfortunately—on LinkedIn, so that’s where you have to be posting your content.",
+        "cn": "如果你不把你所知道的发布出来，别人就不会知道你知道它。你必须大声说出来。你必须像是说：“嘿，我懂这些东西，我在做这些东西，看我在学什么——这不是很酷吗？你也可以学——这是文章，这是演练。” 知识分享，你就会吸引招聘人员、招聘经理、CEO的注意。就像，每个人和他妈的都在——不幸的是——在领英上，所以你必须在那里发布你的内容。",
+        "vocab": [
+          {
+            "word": "loud",
+            "ph": "/laʊd/",
+            "pos": "adj",
+            "mean": "（比喻）引人注目的；高调的",
+            "ex": "To get noticed in a crowded market, your brand has to be loud.",
+            "tr": "要在拥挤的市场中被注意到，你的品牌必须高调。",
+            "match": [
+              "loud"
+            ]
+          },
+          {
+            "word": "walkthrough",
+            "ph": "/ˈwɔːkθruː/",
+            "pos": "n",
+            "mean": "（分步）演练；攻略",
+            "ex": "He posted a video walkthrough of the difficult game level on YouTube.",
+            "tr": "他在YouTube上发布了一个关于那个困难游戏关卡的视频攻略。",
+            "match": [
+              "walkthrough"
+            ]
+          },
+          {
+            "word": "garner",
+            "ph": "/ˈɡɑːrnər/",
+            "pos": "v",
+            "mean": "获得（支持、关注）",
+            "ex": "Her new book has garnered a lot of positive reviews.",
+            "tr": "她的新书获得了很多好评。",
+            "match": [
+              "garner"
+            ]
+          },
+          {
+            "word": "recruiter",
+            "ph": "/rɪˈkruːtər/",
+            "pos": "n",
+            "mean": "招聘人员",
+            "ex": "A recruiter from a top tech company contacted him on LinkedIn.",
+            "tr": "一位顶尖科技公司的招聘人员在领英上联系了他。",
+            "match": [
+              "recruiters"
+            ]
+          },
+          {
+            "word": "everyone and their mother",
+            "ph": "/ˈevriwʌn ænd ðer ˈmʌðər/",
+            "pos": "idiom",
+            "mean": "（夸张）每个人；几乎所有人",
+            "ex": "It seemed like everyone and their mother was at the concert last night.",
+            "tr": "昨晚的音乐会好像所有人都去了。",
+            "match": [
+              "everyone and their mother"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "en": "Having a blog also helps. I actually started posting on Medium—it’s a write-up blog hosting platform. It’s free to sign up, create an account, and start posting your CTF write-ups, your projects, anything. Post about it on LinkedIn: “Hey, here’s this project, here’s the link to my blog,” things like that.",
+        "cn": "拥有一个博客也有帮助。我实际上是在Medium上开始发布的——它是一个文章博客托管平台。注册、创建账户，然后开始发布你的CTF文章、你的项目，任何东西，都是免费的。在领英上发帖宣传：“嘿，这是这个项目，这是我博客的链接，”诸如此类。",
+        "vocab": [
+          {
+            "word": "hosting platform",
+            "ph": "/ˈhoʊstɪŋ ˈplætfɔːrm/",
+            "pos": "n phr",
+            "mean": "托管平台",
+            "ex": "He chose a reliable hosting platform for his new website.",
+            "tr": "他为他的新网站选择了一个可靠的托管平台。",
+            "match": [
+              "hosting platform"
+            ]
+          },
+          {
+            "word": "sign up",
+            "ph": "/saɪn ʌp/",
+            "pos": "phr v",
+            "mean": "注册",
+            "ex": "You need to sign up for an account to use the service.",
+            "tr": "你需要注册一个账户才能使用该服务。",
+            "match": [
+              "sign up"
+            ]
+          },
+          {
+            "word": "CTF (Capture the Flag)",
+            "ph": "/ˌsiː tiː ˈef/",
+            "pos": "n",
+            "mean": "夺旗赛",
+            "ex": "He improved his hacking skills by participating in online CTF competitions.",
+            "tr": "他通过参加在线CTF竞赛提高了他的黑客技能。",
+            "match": [
+              "CTF"
+            ]
+          },
+          {
+            "word": "things like that",
+            "ph": "/θɪŋz laɪk ðæt/",
+            "pos": "phr",
+            "mean": "诸如此类",
+            "ex": "I enjoy outdoor activities like hiking, camping, and things like that.",
+            "tr": "我喜欢户外活动，比如徒步、露营之类的。",
+            "match": [
+              "things like that"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "en": "Another thing you need to do—and what I would do if I could start all over again—is network more. Network online, on Discord, at conferences—literally network your ass off. Network like your job depends on it, because it literally does. I have never gotten a single job by applying. It’s always been through either online networking, social media, referrals, or in-person networking. Literally, it’s all been through human connection. So that is a must when trying to get a job in cybersecurity.",
+        "cn": "你需要做的另一件事——也是如果我能重新来过我会做的事——就是多社交。在线上、在Discord上、在会议上社交——真的要拼了命地去社交。像你的工作取决于它一样去社交，因为它真的取决于此。我从来没有通过申请得到过任何一份工作。总是通过线上社交、社交媒体、推荐，或线下社交。真的，全都通过人际关系。所以当你想在网络安全领域找到工作时，这是必须的。",
+        "vocab": [
+          {
+            "word": "network",
+            "ph": "/ˈnetwɜːrk/",
+            "pos": "v",
+            "mean": "建立人脉；社交",
+            "ex": "It's important to network with people in your industry.",
+            "tr": "与你行业内的人建立人脉很重要。",
+            "match": [
+              "network"
+            ]
+          },
+          {
+            "word": "network your ass off",
+            "ph": "/ˈnetwɜːrk jɔːr æs ɔːf/",
+            "pos": "idiom",
+            "mean": "（粗俗俚语）拼了命地社交",
+            "ex": "To build his business, he had to network his ass off at every industry event.",
+            "tr": "为了建立他的生意，他不得不在每个行业活动中拼了命地社交。",
+            "match": [
+              "network your ass off"
+            ]
+          },
+          {
+            "word": "depend on",
+            "ph": "/dɪˈpend ɒn/",
+            "pos": "phr v",
+            "mean": "取决于",
+            "ex": "Our picnic plan will depend on the weather.",
+            "tr": "我们的野餐计划将取决于天气。",
+            "match": [
+              "depends on"
+            ]
+          },
+          {
+            "word": "referral",
+            "ph": "/rɪˈfɜːrəl/",
+            "pos": "n",
+            "mean": "推荐；介绍",
+            "ex": "He got the job through a referral from a former colleague.",
+            "tr": "他通过一位前同事的推荐得到了这份工作。",
+            "match": [
+              "referrals"
+            ]
+          },
+          {
+            "word": "in-person",
+            "ph": "/ɪn ˈpɜːrsn/",
+            "pos": "adj",
+            "mean": "线下的；亲自的",
+            "ex": "After a year of online meetings, they finally had an in-person conference.",
+            "tr": "经过一年的在线会议，他们终于举行了一场线下会议。",
+            "match": [
+              "in-person"
+            ]
+          },
+          {
+            "word": "human connection",
+            "ph": "/ˈhjuːmən kəˈnekʃn/",
+            "pos": "n phr",
+            "mean": "人际关系；人与人之间的联系",
+            "ex": "In a world of technology, she valued genuine human connection.",
+            "tr": "在科技的世界里，她珍视真诚的人际联系。",
+            "match": [
+              "human connection"
+            ]
+          },
+          {
+            "word": "a must",
+            "ph": "/ə mʌst/",
+            "pos": "n",
+            "mean": "必须做的事",
+            "ex": "If you visit Paris, seeing the Eiffel Tower is a must.",
+            "tr": "如果你去巴黎，看埃菲尔铁塔是必须的。",
+            "match": [
+              "a must"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 28,
+        "en": "Go to DEF CON—that’s a big one—or your local BSides. Literally, any way you can get out, network with people, talk about passion, make connections. That’s going to take you farther than any resume.",
+        "cn": "去DEF CON——那是个大活动——或者你本地的BSides。真的，任何你能走出去的方式，和人们社交，谈论热情，建立联系。那会比任何简历都让你走得更远。",
+        "vocab": [
+          {
+            "word": "a big one",
+            "ph": "/ə bɪɡ wʌn/",
+            "pos": "n phr",
+            "mean": "一个大的/重要的（活动等）",
+            "ex": "The final exam is coming up; that's the big one.",
+            "tr": "期末考试要来了，那可是个大头。",
+            "match": [
+              "a big one"
+            ]
+          },
+          {
+            "word": "local",
+            "ph": "/ˈloʊkl/",
+            "pos": "adj",
+            "mean": "本地的",
+            "ex": "We prefer to support local businesses.",
+            "tr": "我们更愿意支持本地企业。",
+            "match": [
+              "local"
+            ]
+          },
+          {
+            "word": "get out",
+            "ph": "/ɡet aʊt/",
+            "pos": "phr v",
+            "mean": "走出去",
+            "ex": "You've been inside all day; you need to get out and get some fresh air.",
+            "tr": "你在室内待了一整天了，你需要出去呼吸点新鲜空气。",
+            "match": [
+              "get out"
+            ]
+          },
+          {
+            "word": "passion",
+            "ph": "/ˈpæʃn/",
+            "pos": "n",
+            "mean": "热情",
+            "ex": "She has a real passion for painting.",
+            "tr": "她对绘画有真正的热情。",
+            "match": [
+              "passion"
+            ]
+          },
+          {
+            "word": "take you farther",
+            "ph": "/teɪk juː ˈfɑːrðər/",
+            "pos": "phr v",
+            "mean": "让你走得更远",
+            "ex": "A good attitude will take you farther in life than just talent alone.",
+            "tr": "良好的态度会比单有才能让你在生活中走得更远。",
+            "match": [
+              "take you farther"
+            ]
+          },
+          {
+            "word": "resume",
+            "ph": "/ˈrezəmeɪ/",
+            "pos": "n",
+            "mean": "简历",
+            "ex": "He updated his resume before applying for the new job.",
+            "tr": "在申请新工作前，他更新了他的简历。",
+            "match": [
+              "resume"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "en": "If I had to start all over in cybersecurity from scratch, I would: - Post everything I was doing - Focus more on actual skills that will help me get into cybersecurity - Not focus too much on pen testing or red teaming—that’s not very practical when you’re trying to get in - Focus more on help desk and M365 administration, hardening Windows security, AD security—things like that—to prove you know security - Be kind of like a sysadmin, then work your way up to a more cybersecurity-focused role - And networking—again, very important. Network as much as possible. Put yourself out there, because you never know who might see your stuff.",
+        "cn": "如果我必须从零开始重新学习网络安全，我会：- 发布我做的所有事情 - 更专注于能帮我进入网络安全领域的实际技能 - 不太专注于渗透测试或红队——当你试图入行时那不太实际 - 更专注于服务台和M365管理、加固Windows安全、AD安全——诸如此类——来证明你懂安全 - 有点像个系统管理员，然后逐步晋升到更侧重于网络安全的职位 - 还有社交——再次强调，非常重要。尽可能多地社交。把自己展示出去，因为你永远不知道谁会看到你的东西。",
+        "vocab": [
+          {
+            "word": "all over again",
+            "ph": "/ɔːl ˈoʊvər əˈɡen/",
+            "pos": "phr",
+            "mean": "重新来过",
+            "ex": "I made a mistake on the last step, so I have to start all over again.",
+            "tr": "我在最后一步上犯了个错，所以我得重新来过。",
+            "match": [
+              "all over again"
+            ]
+          },
+          {
+            "word": "pen testing (penetration testing)",
+            "ph": "/pen ˈtestɪŋ/",
+            "pos": "n",
+            "mean": "渗透测试",
+            "ex": "The company hired a specialist to conduct regular pen testing on their systems.",
+            "tr": "公司雇佣了一位专家对他们的系统进行定期的渗透测试。",
+            "match": [
+              "pen testing"
+            ]
+          },
+          {
+            "word": "red teaming",
+            "ph": "/red ˈtiːmɪŋ/",
+            "pos": "n",
+            "mean": "红队演练",
+            "ex": "Red teaming involves simulating an attack to test an organization's defenses.",
+            "tr": "红队演练包括模拟一次攻击来测试一个组织的防御能力。",
+            "match": [
+              "red teaming"
+            ]
+          },
+          {
+            "word": "practical",
+            "ph": "/ˈpræktɪkl/",
+            "pos": "adj",
+            "mean": "实际的",
+            "ex": "She gave me some practical advice on how to save money.",
+            "tr": "她给了我一些关于如何省钱的实用建议。",
+            "match": [
+              "practical"
+            ]
+          },
+          {
+            "word": "hardening",
+            "ph": "/ˈhɑːrdnɪŋ/",
+            "pos": "n",
+            "mean": "加固",
+            "ex": "System hardening is the process of securing a system by reducing its surface of vulnerability.",
+            "tr": "系统加固是通过减少其漏洞表面来保护系统的过程。",
+            "match": [
+              "hardening"
+            ]
+          },
+          {
+            "word": "work your way up",
+            "ph": "/wɜːrk jɔːr weɪ ʌp/",
+            "pos": "phr v",
+            "mean": "逐步晋升",
+            "ex": "She started as an intern and worked her way up to become the CEO.",
+            "tr": "她从实习生做起，一步步晋升为CEO。",
+            "match": [
+              "work your way up"
+            ]
+          },
+          {
+            "word": "put yourself out there",
+            "ph": "/pʊt jɔːrˈself aʊt ðer/",
+            "pos": "idiom",
+            "mean": "把自己展示出去",
+            "ex": "If you want to be a successful artist, you have to put yourself out there and show your work.",
+            "tr": "如果你想成为一个成功的艺术家，你必须走出去，展示你的作品。",
+            "match": [
+              "Put yourself out there"
+            ]
+          },
+          {
+            "word": "you never know",
+            "ph": "/juː ˈnevər noʊ/",
+            "pos": "phr",
+            "mean": "你永远不知道（世事难料）",
+            "ex": "You should apply for the job; you never know, you might get it!",
+            "tr": "你应该申请那份工作；世事难料，说不定你就得到了呢！",
+            "match": [
+              "you never know"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "en": "Anyway, that is it for the video. Make sure to like, subscribe, punch all the buttons in the face, and I will see you in the next one.",
+        "cn": "总之，本期视频就到这里。确保点赞、订阅、把所有按钮都给捶一遍，我们下个视频见。",
+        "vocab": [
+          {
+            "word": "that is it for",
+            "ph": "/ðæt ɪz ɪt fɔːr/",
+            "pos": "phr",
+            "mean": "…就到这里",
+            "ex": "That is it for today's lesson. Class dismissed.",
+            "tr": "今天的课就到这里。下课。",
+            "match": [
+              "that is it for"
+            ]
+          },
+          {
+            "word": "punch in the face",
+            "ph": "/pʌntʃ ɪn ðə feɪs/",
+            "pos": "idiom",
+            "mean": "（夸张俚语）猛击",
+            "ex": "He was so frustrated with the vending machine that he wanted to punch it in the face.",
+            "tr": "他对那台自动售货机感到非常沮沮丧，很想给它一拳。",
+            "match": [
+              "punch all the buttons in the face"
+            ]
+          },
+          {
+            "word": "see you in the next one",
+            "ph": "/siː juː ɪn ðə nekst wʌn/",
+            "pos": "phr",
+            "mean": "下个（视频）见",
+            "ex": "Thanks for watching, and I'll see you in the next one.",
+            "tr": "感谢收看，我们下个视频见。",
+            "match": [
+              "see you in the next one"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

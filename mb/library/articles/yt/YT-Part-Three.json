@@ -1,0 +1,1305 @@
+[
+  {
+    "id": "you_are_not_late",
+    "title": "You Are Not Late, You Are Loading",
+    "info": {
+      "author": "Unknown",
+      "source": "Motivational Speech Transcript",
+      "level": "C1",
+      "tags": [
+        "motivation",
+        "perspective",
+        "success",
+        "self-improvement",
+        "psychology"
+      ],
+      "link": "https://example.com/original-source",
+      "variants": null
+    },
+    "paras": [
+      {
+        "id": 1,
+        "en": "You ever notice how no one says it directly? But somehow the world makes you feel like if you didn't make it by 30, your life is basically a discount sale. It's like society has this invisible scoreboard. And the moment you cross 30, the referee blows a whistle like, \"Alright buddy, time's up. Hand in your dreams.\"",
+        "cn": "你有没有注意到，没有人会直说？但不知何故，这个世界让你觉得，如果你30岁还没成功，你的人生基本上就是一场清仓大甩卖。就好像社会有一个无形的记分牌。一旦你过了30岁，裁判就会吹响哨子，好像在说：‘好了，伙计，时间到。交出你的梦想吧。’",
+        "vocab": [
+          {
+            "word": "make it",
+            "ph": "/meɪk ɪt/",
+            "pos": "idiom",
+            "mean": "成功",
+            "ex": "After years of hard work, she finally made it as a successful novelist.",
+            "tr": "经过多年的努力，她终于成功地成为了一名成功的小说家。",
+            "match": [
+              "make it"
+            ]
+          },
+          {
+            "word": "discount sale",
+            "ph": "/ˈdɪskaʊnt seɪl/",
+            "pos": "n phr",
+            "mean": "清仓大甩卖",
+            "ex": "I bought this jacket for half price at a huge discount sale.",
+            "tr": "我是在一次大型清仓大甩卖时半价买的这件夹克。",
+            "match": [
+              "discount sale"
+            ]
+          },
+          {
+            "word": "invisible",
+            "ph": "/ɪnˈvɪzəbl/",
+            "pos": "adj",
+            "mean": "无形的",
+            "ex": "He felt like he was fighting against an invisible enemy.",
+            "tr": "他感觉自己仿佛在与一个无形的敌人战斗。",
+            "match": [
+              "invisible"
+            ]
+          },
+          {
+            "word": "scoreboard",
+            "ph": "/ˈskɔːrbɔːrd/",
+            "pos": "n",
+            "mean": "记分牌",
+            "ex": "The final score was displayed on the giant scoreboard.",
+            "tr": "最终比分显示在巨大的记分牌上。",
+            "match": [
+              "scoreboard"
+            ]
+          },
+          {
+            "word": "referee",
+            "ph": "/ˌrefəˈriː/",
+            "pos": "n",
+            "mean": "裁判",
+            "ex": "The referee blew his whistle to signal the end of the game.",
+            "tr": "裁判吹响哨子，示意比赛结束。",
+            "match": [
+              "referee"
+            ]
+          },
+          {
+            "word": "time's up",
+            "ph": "/taɪmz ʌp/",
+            "pos": "idiom",
+            "mean": "时间到",
+            "ex": "The teacher announced, 'Time's up, please put your pens down.'",
+            "tr": "老师宣布：‘时间到，请放下你们的笔。’",
+            "match": [
+              "time's up"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "en": "But here's the plot twist no one expects: You're not late. You're just early in a different story. Let me explain.",
+        "cn": "但这是一个没人预料到的剧情反转：你没有迟到。你只是在另一个故事里来得早了。我来解释一下。",
+        "vocab": [
+          {
+            "word": "plot twist",
+            "ph": "/plɒt twɪst/",
+            "pos": "n phr",
+            "mean": "剧情反转",
+            "ex": "The movie's plot twist at the end shocked the entire audience.",
+            "tr": "电影结尾的剧情反转震惊了所有观众。",
+            "match": [
+              "plot twist"
+            ]
+          },
+          {
+            "word": "expect",
+            "ph": "/ɪkˈspekt/",
+            "pos": "v",
+            "mean": "预料",
+            "ex": "I didn't expect to see you here today!",
+            "tr": "我没预料到今天会在这里见到你！",
+            "match": [
+              "expects"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "en": "We live in a world where someone becomes famous at 19 for eating spicy noodles on camera. And suddenly everyone else feels like they've failed at life. Like, bro, I can't even handle mild spice. How was I supposed to compete?",
+        "cn": "我们生活在一个19岁的人因为在镜头前吃辣面而出名的世界。然后突然之间，其他所有人都感觉自己的人生失败了。就像，哥们，我连微辣都受不了。我该怎么竞争？",
+        "vocab": [
+          {
+            "word": "spicy",
+            "ph": "/ˈspaɪsi/",
+            "pos": "adj",
+            "mean": "辣的",
+            "ex": "He challenged himself to eat the restaurant's spiciest noodles.",
+            "tr": "他挑战自己去吃那家餐厅最辣的面条。",
+            "match": [
+              "spicy"
+            ]
+          },
+          {
+            "word": "fail at life",
+            "ph": "/feɪl æt laɪf/",
+            "pos": "phr",
+            "mean": "人生失败",
+            "ex": "Just because you lost your job doesn't mean you've failed at life.",
+            "tr": "你丢了工作不代表你的人生就失败了。",
+            "match": [
+              "failed at life"
+            ]
+          },
+          {
+            "word": "bro",
+            "ph": "/broʊ/",
+            "pos": "n",
+            "mean": "（俚语）哥们",
+            "ex": "Hey bro, can you help me with this?",
+            "tr": "嘿，哥们，能帮我一下这个吗？",
+            "match": [
+              "bro"
+            ]
+          },
+          {
+            "word": "handle",
+            "ph": "/ˈhændl/",
+            "pos": "v",
+            "mean": "处理；应对",
+            "ex": "She knows how to handle difficult customers with patience.",
+            "tr": "她知道如何有耐心地应对难缠的顾客。",
+            "match": [
+              "handle"
+            ]
+          },
+          {
+            "word": "mild",
+            "ph": "/maɪld/",
+            "pos": "adj",
+            "mean": "温和的",
+            "ex": "I prefer my food with just a mild spice.",
+            "tr": "我更喜欢我的食物只带一点微辣。",
+            "match": [
+              "mild"
+            ]
+          },
+          {
+            "word": "compete",
+            "ph": "/kəmˈpiːt/",
+            "pos": "v",
+            "mean": "竞争",
+            "ex": "She had to compete against hundreds of other applicants for the job.",
+            "tr": "她必须和几百名其他申请者竞争这份工作。",
+            "match": [
+              "compete"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "en": "Every time you scroll, it feels like the entire planet is winning except you. Someone your age bought a house. Someone younger than you bought two houses. And you're sitting there proud because you finally fixed your sleep schedule for one day.",
+        "cn": "每次你刷手机，都感觉好像除了你，整个地球都在赢。一个和你同龄的人买了房子。一个比你年轻的人买了两套房子。而你却坐在那里，因为终于把自己的睡眠时间调整好了一天而感到自豪。",
+        "vocab": [
+          {
+            "word": "scroll",
+            "ph": "/skroʊl/",
+            "pos": "v",
+            "mean": "（在屏幕上）滚动，刷（手机）",
+            "ex": "He spent hours just scrolling through social media.",
+            "tr": "他花了好几个小时就在刷社交媒体。",
+            "match": [
+              "scroll"
+            ]
+          },
+          {
+            "word": "sleep schedule",
+            "ph": "/sliːp ˈskedʒuːl/",
+            "pos": "n phr",
+            "mean": "睡眠时间表",
+            "ex": "Maintaining a consistent sleep schedule is important for your health.",
+            "tr": "保持一个固定的睡眠时间表对你的健康很重要。",
+            "match": [
+              "sleep schedule"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "en": "But here's the truth: You didn't miss your moment. Your moment is being built quietly.",
+        "cn": "但真相是：你没有错过你的时刻。你的时刻正在被悄悄地构建。",
+        "vocab": [
+          {
+            "word": "miss one's moment",
+            "ph": "/mɪs wʌnz ˈmoʊmənt/",
+            "pos": "phr",
+            "mean": "错过时机",
+            "ex": "He hesitated for too long and missed his moment to ask her out.",
+            "tr": "他犹豫了太久，错过了约她出去的时机。",
+            "match": [
+              "miss your moment"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "en": "Behind all the comparison and noise, see, we were trained to think speed equals success. That if you're not fast, you're finished. But speed is just a flex. Depth is the real power.",
+        "cn": "在所有比较和噪音的背后，你看，我们被训练去认为速度等于成功。如果你不够快，你就完蛋了。但速度只是一种炫耀。深度才是真正的力量。",
+        "vocab": [
+          {
+            "word": "comparison",
+            "ph": "/kəmˈpærɪsn/",
+            "pos": "n",
+            "mean": "比较",
+            "ex": "Constant comparison with others can lead to unhappiness.",
+            "tr": "不断地与他人比较会导致不快乐。",
+            "match": [
+              "comparison"
+            ]
+          },
+          {
+            "word": "equal",
+            "ph": "/ˈiːkwəl/",
+            "pos": "v",
+            "mean": "等于",
+            "ex": "In this equation, X equals Y plus Z.",
+            "tr": "在这个等式中，X等于Y加Z。",
+            "match": [
+              "equals"
+            ]
+          },
+          {
+            "word": "flex",
+            "ph": "/fleks/",
+            "pos": "n",
+            "mean": "（俚语）炫耀",
+            "ex": "Buying that expensive car was just a flex to show off his wealth.",
+            "tr": "买那辆昂贵的车只是为了炫耀他的财富。",
+            "match": [
+              "flex"
+            ]
+          },
+          {
+            "word": "depth",
+            "ph": "/depθ/",
+            "pos": "n",
+            "mean": "深度",
+            "ex": "His new book has a surprising emotional depth.",
+            "tr": "他的新书有着令人惊讶的情感深度。",
+            "match": [
+              "Depth"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "en": "Think about it. When you were younger, you wanted everything fast. Fast results. Fast money. Fast answers. Fast Wi-Fi. (Still valid today.) But fast success is like fast food. Looks good, feels good, but collapses under pressure.",
+        "cn": "想想看。你年轻的时候，什么都想要快的。快的结果。快的钱。快的答案。快的Wi-Fi。（今天仍然有效。）但快速的成功就像快餐。看起来不错，感觉很好，但在压力下就会崩溃。",
+        "vocab": [
+          {
+            "word": "result",
+            "ph": "/rɪˈzʌlt/",
+            "pos": "n",
+            "mean": "结果",
+            "ex": "The final result of the experiment was unexpected.",
+            "tr": "实验的最终结果出人意料。",
+            "match": [
+              "results"
+            ]
+          },
+          {
+            "word": "valid",
+            "ph": "/ˈvælɪd/",
+            "pos": "adj",
+            "mean": "有效的；有根据的",
+            "ex": "Your passport is no longer valid; you need to renew it.",
+            "tr": "你的护照不再有效了；你需要更新它。",
+            "match": [
+              "valid"
+            ]
+          },
+          {
+            "word": "collapse under pressure",
+            "ph": "/kəˈlæps ˈʌndər ˈpreʃər/",
+            "pos": "idiom",
+            "mean": "在压力下崩溃",
+            "ex": "The young athlete collapsed under the pressure of the championship match.",
+            "tr": "那位年轻运动员在冠军赛的压力下崩溃了。",
+            "match": [
+              "collapses under pressure"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "en": "Real success? It cooks slow. Like those dishes your mom makes that take hours. But slap 100 times harder. You are that dish.",
+        "cn": "真正的成功？它是慢炖出来的。就像你妈妈做的那些需要花好几个小时的菜。但味道要好上100倍。你就是那道菜。",
+        "vocab": [
+          {
+            "word": "cook slow",
+            "ph": "/kʊk sloʊ/",
+            "pos": "phr",
+            "mean": "慢炖",
+            "ex": "To make the meat really tender, you have to cook it slow for several hours.",
+            "tr": "为了让肉变得非常嫩，你必须慢炖好几个小时。",
+            "match": [
+              "cooks slow"
+            ]
+          },
+          {
+            "word": "slap",
+            "ph": "/slæp/",
+            "pos": "v",
+            "mean": "（俚语，用于食物）味道极好；超赞",
+            "ex": "This pizza is amazing; it really slaps.",
+            "tr": "这个披萨太棒了，味道超赞。",
+            "match": [
+              "slap"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "en": "And here's another thing no one talks about: Nobody tells you how many people peak early and then fall flat because their confidence was built on applause, not on identity.",
+        "cn": "还有一件没人谈论的事：没人告诉你，有多少人年少成名，然后一败涂地，因为他们的自信是建立在掌声之上，而不是身份认同之上。",
+        "vocab": [
+          {
+            "word": "peak early",
+            "ph": "/piːk ˈɜːrli/",
+            "pos": "phr v",
+            "mean": "过早达到顶峰",
+            "ex": "Many child actors peak early and struggle to find success as adults.",
+            "tr": "许多童星过早达到顶峰，成年后却难以找到成功。",
+            "match": [
+              "peak early"
+            ]
+          },
+          {
+            "word": "fall flat",
+            "ph": "/fɔːl flæt/",
+            "pos": "idiom",
+            "mean": "彻底失败",
+            "ex": "His attempt at a joke completely fell flat; no one laughed.",
+            "tr": "他想讲个笑话，但彻底失败了，没人笑。",
+            "match": [
+              "fall flat"
+            ]
+          },
+          {
+            "word": "applause",
+            "ph": "/əˈplɔːz/",
+            "pos": "n",
+            "mean": "掌声",
+            "ex": "The audience gave the performers a long round of applause.",
+            "tr": "观众为表演者们献上了长久的一轮掌声。",
+            "match": [
+              "applause"
+            ]
+          },
+          {
+            "word": "identity",
+            "ph": "/aɪˈdentəti/",
+            "pos": "n",
+            "mean": "身份认同",
+            "ex": "Finding your own identity is an important part of growing up.",
+            "tr": "找到你自己的身份认同是成长的重要部分。",
+            "match": [
+              "identity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "en": "Life is not a race. It's a rhythm. And yours is not late. It's layered.",
+        "cn": "人生不是一场赛跑。它是一种节奏。而你的节奏不是晚了。它是富有层次的。",
+        "vocab": [
+          {
+            "word": "race",
+            "ph": "/reɪs/",
+            "pos": "n",
+            "mean": "赛跑",
+            "ex": "He tried to turn his career into a race against his colleagues.",
+            "tr": "他试图把自己的职业生涯变成一场与同事的赛跑。",
+            "match": [
+              "race"
+            ]
+          },
+          {
+            "word": "rhythm",
+            "ph": "/ˈrɪðəm/",
+            "pos": "n",
+            "mean": "节奏",
+            "ex": "It's important to find your own working rhythm and not compare yourself to others.",
+            "tr": "重要的是找到你自己的工作节奏，而不是和别人比较。",
+            "match": [
+              "rhythm"
+            ]
+          },
+          {
+            "word": "layered",
+            "ph": "/ˈleɪərd/",
+            "pos": "adj",
+            "mean": "有层次的",
+            "ex": "Her personality is very layered; there's more to her than you first see.",
+            "tr": "她的个性非常富有层次；她比你初见时要复杂得多。",
+            "match": [
+              "layered"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "en": "Let me give you a simple example. Have you ever tried to open a stubborn jar? You twist it, twist it again. Nothing. Someone else comes, taps it twice, opens it easily. And you feel weak like, \"Wow. Okay.\"",
+        "cn": "我给你举个简单的例子。你试过打开一个拧不开的罐子吗？你拧它，再拧一次。没用。别人过来，敲两下，轻松打开了。然后你感觉自己很弱，心想：“哇。好吧。”",
+        "vocab": [
+          {
+            "word": "stubborn",
+            "ph": "/ˈstʌbərn/",
+            "pos": "adj",
+            "mean": "顽固的；拧不开的",
+            "ex": "I couldn't open the stubborn lid of the jar.",
+            "tr": "我打不开那个拧不开的罐子盖。",
+            "match": [
+              "stubborn"
+            ]
+          },
+          {
+            "word": "jar",
+            "ph": "/dʒɑːr/",
+            "pos": "n",
+            "mean": "罐子",
+            "ex": "She opened a jar of pickles.",
+            "tr": "她打开了一罐泡菜。",
+            "match": [
+              "jar"
+            ]
+          },
+          {
+            "word": "twist",
+            "ph": "/twɪst/",
+            "pos": "v",
+            "mean": "拧",
+            "ex": "You need to twist the cap to open the bottle.",
+            "tr": "你需要拧一下瓶盖才能打开瓶子。",
+            "match": [
+              "twist"
+            ]
+          },
+          {
+            "word": "tap",
+            "ph": "/tæp/",
+            "pos": "v",
+            "mean": "轻敲",
+            "ex": "She was tapping her fingers on the desk impatiently.",
+            "tr": "她不耐烦地用手指敲着桌子。",
+            "match": [
+              "taps"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "en": "But you know what actually happened? All the work was done by you. They just showed up at the right moment. That's your life. You've been building pressure, strength, experience, depth. You're not stuck. You're marinating.",
+        "cn": "但你知道实际发生了什么吗？所有的工作都是你做的。他们只是在正确的时刻出现而已。那就是你的人生。你一直在积累压力、力量、经验、深度。你没有停滞不前。你正在腌制入味。",
+        "vocab": [
+          {
+            "word": "show up",
+            "ph": "/ʃoʊ ʌp/",
+            "pos": "phr v",
+            "mean": "出现",
+            "ex": "He didn't show up for the meeting, and no one knew why.",
+            "tr": "他没有出席会议，没人知道为什么。",
+            "match": [
+              "showed up"
+            ]
+          },
+          {
+            "word": "depth",
+            "ph": "/depθ/",
+            "pos": "n",
+            "mean": "深度",
+            "ex": "His new book has a surprising emotional depth.",
+            "tr": "他的新书有着令人惊讶的情感深度。",
+            "match": [
+              "depth"
+            ]
+          },
+          {
+            "word": "stuck",
+            "ph": "/stʌk/",
+            "pos": "adj",
+            "mean": "卡住的；停滞不前的",
+            "ex": "I feel stuck in this boring job and need a change.",
+            "tr": "我感觉被困在这份无聊的工作里，需要改变。",
+            "match": [
+              "stuck"
+            ]
+          },
+          {
+            "word": "marinate",
+            "ph": "/ˈmærɪneɪt/",
+            "pos": "v",
+            "mean": "腌制（此处比喻酝酿、准备）",
+            "ex": "Instead of rushing, he let the ideas marinate in his mind for a few days.",
+            "tr": "他没有急于求成，而是让那些想法在他的脑海里酝酿了好几天。",
+            "match": [
+              "marinating"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "en": "You know who wasn't late? Colonel Sanders, 65 when KFC took off. Vera Wang, 40 when she designed her first dress. Morgan Freeman, 52 when he got his first breakout role. Imagine if they said, \"Nah, it's too late. Pass me the remote.\"",
+        "cn": "你知道谁不晚吗？桑德斯上校，65岁时肯德基才起飞。王薇薇，40岁时设计了她的第一件婚纱。摩根·弗里曼，52岁时才得到他第一个突破性的角色。想象一下，如果他们说：“算了，太晚了。把遥控器给我吧。”",
+        "vocab": [
+          {
+            "word": "take off",
+            "ph": "/teɪk ɔːf/",
+            "pos": "phr v",
+            "mean": "（事业）起飞；大获成功",
+            "ex": "Her acting career really took off after that movie.",
+            "tr": "那部电影之后，她的演艺事业真正起飞了。",
+            "match": [
+              "took off"
+            ]
+          },
+          {
+            "word": "breakout role",
+            "ph": "/ˈbreɪkaʊt roʊl/",
+            "pos": "n phr",
+            "mean": "突破性的角色",
+            "ex": "That was the breakout role that made him a Hollywood star.",
+            "tr": "那是让他成为好莱坞明星的那个突破性角色。",
+            "match": [
+              "breakout role"
+            ]
+          },
+          {
+            "word": "nah",
+            "ph": "/næ/",
+            "pos": "int",
+            "mean": "（非正式）不",
+            "ex": "A: 'Want to go to the movies?' B: 'Nah, I'm too tired.'",
+            "tr": "A：“想去看电影吗？” B：“不了，我太累了。”",
+            "match": [
+              "Nah"
+            ]
+          },
+          {
+            "word": "remote",
+            "ph": "/rɪˈmoʊt/",
+            "pos": "n",
+            "mean": "遥控器",
+            "ex": "Can you pass me the TV remote?",
+            "tr": "能把电视遥控器递给我吗？",
+            "match": [
+              "remote"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "en": "They didn't bloom late. They bloomed when they were finally ready. And maybe that's you. Maybe you had to go through all that confusion. All those wrong turns. All those silent years, not because you were failing, but because life was preparing you for something bigger than what your 20-year-old self could handle.",
+        "cn": "他们不是开花晚了。他们是在他们终于准备好时才开花的。也许你也是这样。也许你必须经历所有那些困惑。所有那些弯路。所有那些沉寂的岁月，不是因为你在失败，而是因为生活在为你准备一些比你20岁的自己所能承受的更宏大的事情。",
+        "vocab": [
+          {
+            "word": "bloom",
+            "ph": "/bluːm/",
+            "pos": "v",
+            "mean": "开花（此处比喻成功）",
+            "ex": "She was a talented artist who didn't truly bloom until she was in her fifties.",
+            "tr": "她是一位才华横溢的艺术家，直到五十多岁才真正大放异彩。",
+            "match": [
+              "bloom",
+              "bloomed"
+            ]
+          },
+          {
+            "word": "confusion",
+            "ph": "/kənˈfjuːʒn/",
+            "pos": "n",
+            "mean": "困惑",
+            "ex": "There was a lot of confusion about the new rules.",
+            "tr": "关于新规则有很多困惑。",
+            "match": [
+              "confusion"
+            ]
+          },
+          {
+            "word": "wrong turn",
+            "ph": "/rɔːŋ tɜːrn/",
+            "pos": "n phr",
+            "mean": "弯路；错误的转折",
+            "ex": "Taking that job was a wrong turn in his career.",
+            "tr": "接受那份工作是他职业生涯中的一个弯路。",
+            "match": [
+              "wrong turns"
+            ]
+          },
+          {
+            "word": "handle",
+            "ph": "/ˈhændl/",
+            "pos": "v",
+            "mean": "处理；承受",
+            "ex": "She knows how to handle difficult customers with patience.",
+            "tr": "她知道如何有耐心地应对难缠的顾客。",
+            "match": [
+              "handle"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "en": "You ever noticed people who succeed early get shaken by the smallest failure? One bad comment and they spiral. One bad day and they vanish. But you? You've already lived through storms. You don't break easily. You bend, you complain, you eat biryani, but you come back. That's your superpower.",
+        "cn": "你有没有注意到那些早早成功的人，会被最小的失败所动摇？一句差评，他们就陷入螺旋。糟糕的一天，他们就消失了。但你呢？你已经经历过风暴了。你不会轻易被打垮。你会弯曲，你会抱怨，你会吃印度香饭，但你会回来。那就是你的超能力。",
+        "vocab": [
+          {
+            "word": "shaken",
+            "ph": "/ˈʃeɪkən/",
+            "pos": "adj",
+            "mean": "被动摇的",
+            "ex": "He was visibly shaken after the accident.",
+            "tr": "事故过后，他显然受到了惊吓。",
+            "match": [
+              "shaken"
+            ]
+          },
+          {
+            "word": "spiral",
+            "ph": "/ˈspaɪrəl/",
+            "pos": "v",
+            "mean": "（情绪）螺旋式恶化",
+            "ex": "After losing his job, he started to spiral into depression.",
+            "tr": "失业后，他开始螺旋式地陷入抑郁。",
+            "match": [
+              "spiral"
+            ]
+          },
+          {
+            "word": "vanish",
+            "ph": "/ˈvænɪʃ/",
+            "pos": "v",
+            "mean": "消失",
+            "ex": "The magician made the rabbit vanish in a puff of smoke.",
+            "tr": "魔术师让兔子在一阵烟雾中消失了。",
+            "match": [
+              "vanish"
+            ]
+          },
+          {
+            "word": "bend",
+            "ph": "/bend/",
+            "pos": "v",
+            "mean": "弯曲",
+            "ex": "The strong winds made the trees bend.",
+            "tr": "强风使树木弯曲。",
+            "match": [
+              "bend"
+            ]
+          },
+          {
+            "word": "superpower",
+            "ph": "/ˈsuːpərpaʊər/",
+            "pos": "n",
+            "mean": "超能力",
+            "ex": "If you could have any superpower, what would it be?",
+            "tr": "如果你能拥有任何超能力，你想要什么？",
+            "match": [
+              "superpower"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "en": "Here's something funny. When we think we're behind, we start acting like life is a race against our own imagination. A fictional version of ourselves we created at 17. \"I should have been rich by now. I should have figured it out. I should have been in a different place.\"",
+        "cn": "有件好笑的事。当我们认为自己落后时，我们就开始表现得好像人生是一场与我们自己想象力的赛跑。一个我们在17岁时创造出来的虚构版本的自己。“我现在本该有钱了。我本该搞定一切了。我本该在另一个地方了。”",
+        "vocab": [
+          {
+            "word": "be behind",
+            "ph": "/biː bɪˈhaɪnd/",
+            "pos": "phr",
+            "mean": "落后",
+            "ex": "He felt like he was falling behind in his studies.",
+            "tr": "他感觉自己在学业上落后了。",
+            "match": [
+              "behind"
+            ]
+          },
+          {
+            "word": "fictional",
+            "ph": "/ˈfɪkʃənl/",
+            "pos": "adj",
+            "mean": "虚构的",
+            "ex": "Sherlock Holmes is a famous fictional detective.",
+            "tr": "夏洛克·福尔摩斯是一位著名的虚构侦探。",
+            "match": [
+              "fictional"
+            ]
+          },
+          {
+            "word": "figure it out",
+            "ph": "/ˈfɪɡjər ɪt aʊt/",
+            "pos": "phr v",
+            "mean": "搞定；弄明白",
+            "ex": "Don't worry, we'll figure it out together.",
+            "tr": "别担心，我们会一起搞定的。",
+            "match": [
+              "figured it out"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "en": "Says who? 17-year-old you? The same person who thought they would grow up and buy a Lamborghini with 200 rupees? Let that version go.",
+        "cn": "谁说的？17岁的你？那个以为自己长大后能用200卢比买一辆兰博基尼的同一个人？放过那个版本的自己吧。",
+        "vocab": [
+          {
+            "word": "says who?",
+            "ph": "/sez huː/",
+            "pos": "idiom",
+            "mean": "（用于挑衅）谁说的？你算老几？",
+            "ex": "\"You can't do that!\" \"Says who?\"",
+            "tr": "“你不能那么做！”“谁说的？”",
+            "match": [
+              "Says who?"
+            ]
+          },
+          {
+            "word": "rupee",
+            "ph": "/ˈruːpiː/",
+            "pos": "n",
+            "mean": "卢比（印度等国货币单位）",
+            "ex": "A cup of chai on the street costs only a few rupees.",
+            "tr": "街边的一杯印度奶茶只需要几个卢比。",
+            "match": [
+              "rupees"
+            ]
+          },
+          {
+            "word": "let go",
+            "ph": "/let ɡoʊ/",
+            "pos": "phr v",
+            "mean": "放手；放过",
+            "ex": "It's time to let go of the past and focus on the future.",
+            "tr": "是时候放下过去，专注于未来了。",
+            "match": [
+              "Let that version go"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "en": "Because here's the truth: You don't owe anything to the person you used to be. But you owe everything to the person you're becoming. And that person is waking up.",
+        "cn": "因为真相是：你对过去的自己不亏欠任何东西。但你对正在成为的自己亏欠一切。而那个人正在醒来。",
+        "vocab": [
+          {
+            "word": "owe",
+            "ph": "/oʊ/",
+            "pos": "v",
+            "mean": "亏欠",
+            "ex": "I feel like I owe you an apology for what I said.",
+            "tr": "我觉得我为我说的话亏欠你一个道歉。",
+            "match": [
+              "owe"
+            ]
+          },
+          {
+            "word": "wake up",
+            "ph": "/weɪk ʌp/",
+            "pos": "phr v",
+            "mean": "醒来（此处比喻觉醒）",
+            "ex": "It's time for people to wake up and see what's really happening.",
+            "tr": "是时候人们该觉醒，看看真正发生了什么。",
+            "match": [
+              "waking up"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "en": "But there's one thing you must understand, and no one likes hearing this: Environment wins over willpower. You can read the best books, follow all the gurus, watch motivational videos every morning. But if every time you sit with people who tell you, \"Be realistic, it's too late. You should stop dreaming,\" then you're basically charging your phone with 1% battery and calling it progress.",
+        "cn": "但有一件事你必须明白，而且没人喜欢听这个：环境胜过意志力。你可以读最好的书，关注所有的大师，每天早上看励志视频。但如果每次你都和那些告诉你“现实点，太晚了。你应该别做梦了”的人坐在一起，那么你基本上就是在用1%的电量给手机充电，还称之为进步。",
+        "vocab": [
+          {
+            "word": "willpower",
+            "ph": "/ˈwɪlpaʊər/",
+            "pos": "n",
+            "mean": "意志力",
+            "ex": "It takes a lot of willpower to quit smoking.",
+            "tr": "戒烟需要很大的意志力。",
+            "match": [
+              "willpower"
+            ]
+          },
+          {
+            "word": "guru",
+            "ph": "/ˈɡuːruː/",
+            "pos": "n",
+            "mean": "（某一领域的）大师；专家",
+            "ex": "He is considered a marketing guru in the industry.",
+            "tr": "他被认为是行业内的营销大师。",
+            "match": [
+              "gurus"
+            ]
+          },
+          {
+            "word": "motivational",
+            "ph": "/ˌmoʊtɪˈveɪʃənl/",
+            "pos": "adj",
+            "mean": "励志的",
+            "ex": "She starts her day by listening to a motivational podcast.",
+            "tr": "她以听一个励志播客开始她的一天。",
+            "match": [
+              "motivational"
+            ]
+          },
+          {
+            "word": "realistic",
+            "ph": "/ˌriːəˈlɪstɪk/",
+            "pos": "adj",
+            "mean": "现实的",
+            "ex": "You need to set realistic goals that you can actually achieve.",
+            "tr": "你需要设定你能够真正实现的现实目标。",
+            "match": [
+              "realistic"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "en": "Your environment is programming you. Softly, quietly, repeatedly, like a leaking tap shaping a stone. You don't have to cut people off. You just have to choose whose voice enters your mind. If someone constantly tells you your dreams are unrealistic, just smile politely and remember: They're not talking about your limits. They're talking about theirs.",
+        "cn": "你的环境正在编程你。轻柔地，安静地，重复地，就像漏水的水龙头塑造一块石头。你不必切断与人的联系。你只需要选择谁的声音能进入你的思想。如果有人不断告诉你你的梦想不现实，只需礼貌地微笑，并记住：他们不是在谈论你的极限。他们是在谈论他们的。",
+        "vocab": [
+          {
+            "word": "program",
+            "ph": "/ˈproʊɡræm/",
+            "pos": "v",
+            "mean": "编程；设定",
+            "ex": "Society can program us to believe certain things from a young age.",
+            "tr": "社会可以从我们年幼时就编程我们去相信某些事情。",
+            "match": [
+              "programming"
+            ]
+          },
+          {
+            "word": "leaking tap",
+            "ph": "/ˈliːkɪŋ tæp/",
+            "pos": "n phr",
+            "mean": "漏水的水龙头",
+            "ex": "The constant drip of the leaking tap drove him crazy.",
+            "tr": "漏水的水龙头持续的滴水声让他快疯了。",
+            "match": [
+              "leaking tap"
+            ]
+          },
+          {
+            "word": "cut someone off",
+            "ph": "/kʌt ˈsʌmwʌn ɔːf/",
+            "pos": "phr v",
+            "mean": "与某人断绝来往",
+            "ex": "Sometimes, for your own mental health, you have to cut off toxic people.",
+            "tr": "有时候，为了你自己的心理健康，你必须与有毒的人切断联系。",
+            "match": [
+              "cut people off"
+            ]
+          },
+          {
+            "word": "unrealistic",
+            "ph": "/ˌʌnrɪəˈlɪstɪk/",
+            "pos": "adj",
+            "mean": "不现实的",
+            "ex": "Setting a goal to become a millionaire in one month is unrealistic.",
+            "tr": "设定一个月内成为百万富翁的目标是不现实的。",
+            "match": [
+              "unrealistic"
+            ]
+          },
+          {
+            "word": "limit",
+            "ph": "/ˈlɪmɪt/",
+            "pos": "n",
+            "mean": "极限",
+            "ex": "He's always testing the limits of his own physical endurance.",
+            "tr": "他总是在测试自己身体耐力的极限。",
+            "match": [
+              "limits"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "en": "Here's what nobody tells you about real transformation: It happens quietly. No applause, no spotlight, no \"bro you're changing.\" Nothing. It's that boring part of the movie where the hero trains alone. Fails alone, gets back up alone. But when he returns, he's unrecognizable.",
+        "cn": "关于真正的转变，没人告诉你的是：它悄然发生。没有掌声，没有聚光灯，没有“哥们你变了”。什么都没有。就像电影里英雄独自训练的那个无聊部分。独自失败，独自站起来。但当他回归时，他已判若两人。",
+        "vocab": [
+          {
+            "word": "transformation",
+            "ph": "/ˌtrænsfərˈmeɪʃn/",
+            "pos": "n",
+            "mean": "转变",
+            "ex": "The city has undergone a complete transformation in the last decade.",
+            "tr": "在过去十年里，这座城市经历了彻底的转变。",
+            "match": [
+              "transformation"
+            ]
+          },
+          {
+            "word": "applause",
+            "ph": "/əˈplɔːz/",
+            "pos": "n",
+            "mean": "掌声",
+            "ex": "The audience gave the performers a long round of applause.",
+            "tr": "观众为表演者们献上了长久的一轮掌声。",
+            "match": [
+              "applause"
+            ]
+          },
+          {
+            "word": "spotlight",
+            "ph": "/ˈspɒtlaɪt/",
+            "pos": "n",
+            "mean": "聚光灯",
+            "ex": "As a famous actor, he was always in the public spotlight.",
+            "tr": "作为一名著名演员，他总是在公众的聚光灯下。",
+            "match": [
+              "spotlight"
+            ]
+          },
+          {
+            "word": "get back up",
+            "ph": "/ɡet bæk ʌp/",
+            "pos": "phr v",
+            "mean": "（跌倒后）重新站起来",
+            "ex": "Life will knock you down, but the important thing is to always get back up.",
+            "tr": "生活会把你击倒，但重要的是要永远重新站起来。",
+            "match": [
+              "gets back up"
+            ]
+          },
+          {
+            "word": "unrecognizable",
+            "ph": "/ˌʌnrekəɡˈnaɪzəbl/",
+            "pos": "adj",
+            "mean": "认不出的；判若两人的",
+            "ex": "After losing so much weight, he was almost unrecognizable to his old friends.",
+            "tr": "减了那么多体重后，他的老朋友们几乎都认不出他了。",
+            "match": [
+              "unrecognizable"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "en": "That's you right now. You feel invisible? Good. You feel lost? Perfect. You feel like no one sees your effort? Even better. Because silence is where legends are built. The world celebrates the breakthrough. But it ignores the rebuilding. What you're doing now, this messy, confusing, unglamorous inner work—that's the real transformation.",
+        "cn": "那就是现在的你。你感觉自己被无视？很好。你感觉迷失？完美。你感觉没人看到你的努力？甚至更好。因为寂静是传奇诞生的地方。世界庆祝突破。但它忽略了重建。你现在所做的，这凌乱、困惑、毫无光彩的内在功课——那才是真正的转变。",
+        "vocab": [
+          {
+            "word": "invisible",
+            "ph": "/ɪnˈvɪzəbl/",
+            "pos": "adj",
+            "mean": "无形的；被无视的",
+            "ex": "As a new employee, she often felt invisible in large meetings.",
+            "tr": "作为一名新员工，她在大хing会议中常常感觉自己被无视。",
+            "match": [
+              "invisible"
+            ]
+          },
+          {
+            "word": "legend",
+            "ph": "/ˈledʒənd/",
+            "pos": "n",
+            "mean": "传奇",
+            "ex": "He is a living legend in the world of basketball.",
+            "tr": "他是篮球界一个活着的传奇。",
+            "match": [
+              "legends"
+            ]
+          },
+          {
+            "word": "breakthrough",
+            "ph": "/ˈbreɪkθruː/",
+            "pos": "n",
+            "mean": "突破",
+            "ex": "The scientist's discovery was a major breakthrough in cancer research.",
+            "tr": "那位科学家的发现在癌症研究领域是一个重大突破。",
+            "match": [
+              "breakthrough"
+            ]
+          },
+          {
+            "word": "messy",
+            "ph": "/ˈmesi/",
+            "pos": "adj",
+            "mean": "凌乱的",
+            "ex": "The process of learning can often be messy and nonlinear.",
+            "tr": "学习的过程常常可能是凌乱和非线性的。",
+            "match": [
+              "messy"
+            ]
+          },
+          {
+            "word": "unglamorous",
+            "ph": "/ʌnˈɡlæmərəs/",
+            "pos": "adj",
+            "mean": "没有魅力的；平凡的",
+            "ex": "Cleaning the house is an unglamorous but necessary chore.",
+            "tr": "打扫房子是一件平凡但必要的家务。",
+            "match": [
+              "unglamorous"
+            ]
+          },
+          {
+            "word": "inner work",
+            "ph": "/ˈɪnər wɜːrk/",
+            "pos": "n phr",
+            "mean": "内在功课；内心修行",
+            "ex": "Therapy and meditation are important parts of his inner work.",
+            "tr": "心理治疗和冥想是他内心修行的重要部分。",
+            "match": [
+              "inner work"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "en": "So if you feel like you're late, let me say this clearly: You are not late. You are loading. And when you return, you're not going to come back as who you were. You're going to come back as someone even you won't recognize.",
+        "cn": "所以如果你感觉自己晚了，让我清楚地说明：你没有晚。你正在加载。而当你回归时，你不会再是过去的那个你。你将会以一个连你自己都认不出的身份回归。",
+        "vocab": [
+          {
+            "word": "clearly",
+            "ph": "/ˈklɪərli/",
+            "pos": "adv",
+            "mean": "清楚地",
+            "ex": "He explained the instructions so clearly that everyone understood.",
+            "tr": "他把说明解释得非常清楚，每个人都听懂了。",
+            "match": [
+              "clearly"
+            ]
+          },
+          {
+            "word": "loading",
+            "ph": "/ˈloʊdɪŋ/",
+            "pos": "v",
+            "mean": "加载（此处比喻准备、积蓄力量）",
+            "ex": "Please wait a moment while the game is loading.",
+            "tr": "请稍等片刻，游戏正在加载。",
+            "match": [
+              "loading"
+            ]
+          },
+          {
+            "word": "come back as",
+            "ph": "/kʌm bæk æz/",
+            "pos": "phr v",
+            "mean": "以…的身份回归",
+            "ex": "After his long journey, he came back as a changed man.",
+            "tr": "长途旅行归来后，他判若两人。",
+            "match": [
+              "come back as"
+            ]
+          },
+          {
+            "word": "recognize",
+            "ph": "/ˈrekəɡnaɪz/",
+            "pos": "v",
+            "mean": "认出",
+            "ex": "I didn't recognize him at first with his new haircut.",
+            "tr": "他剪了新发型，我第一眼没认出他。",
+            "match": [
+              "recognize"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "en": "Not louder. Deeper. Not faster. Stronger. Not desperate. Destined.",
+        "cn": "不是更响亮。而是更深沉。不是更快。而是更强壮。不是绝望。而是注定。",
+        "vocab": [
+          {
+            "word": "deeper",
+            "ph": "/ˈdiːpər/",
+            "pos": "adj",
+            "mean": "更深的",
+            "ex": "His understanding of the subject became deeper after years of study.",
+            "tr": "经过多年的学习，他对这门学科的理解变得更深了。",
+            "match": [
+              "Deeper"
+            ]
+          },
+          {
+            "word": "stronger",
+            "ph": "/ˈstrɔːŋɡər/",
+            "pos": "adj",
+            "mean": "更强壮的",
+            "ex": "Regular exercise will make your muscles stronger.",
+            "tr": "定期锻炼会让你的肌肉更强壮。",
+            "match": [
+              "Stronger"
+            ]
+          },
+          {
+            "word": "desperate",
+            "ph": "/ˈdespərət/",
+            "pos": "adj",
+            "mean": "绝望的",
+            "ex": "After losing his job, he felt desperate and alone.",
+            "tr": "失业后，他感到绝望和孤独。",
+            "match": [
+              "desperate"
+            ]
+          },
+          {
+            "word": "destined",
+            "ph": "/ˈdestɪnd/",
+            "pos": "adj",
+            "mean": "命中注定的",
+            "ex": "From a young age, it was clear she was destined for greatness.",
+            "tr": "从小时候起，就很明显她注定会成就一番伟业。",
+            "match": [
+              "Destined"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "en": "Your story doesn't end in the dark. It begins there. And when you rise, you won't need to announce it. The world will notice. Because some people succeed early, but the ones who succeed later? They don't just rise. They redefine the entire game.",
+        "cn": "你的故事不会在黑暗中结束。它从那里开始。而当你崛起时，你不需要宣告。世界会注意到。因为有些人成功得早，但那些后来成功的人呢？他们不止是崛起。他们重新定义了整个游戏。",
+        "vocab": [
+          {
+            "word": "rise",
+            "ph": "/raɪz/",
+            "pos": "v",
+            "mean": "崛起；升起",
+            "ex": "After years of struggle, she finally began to rise in her profession.",
+            "tr": "经过多年的奋斗，她终于在自己的专业领域开始崛起。",
+            "match": [
+              "rise"
+            ]
+          },
+          {
+            "word": "announce",
+            "ph": "/əˈnaʊns/",
+            "pos": "v",
+            "mean": "宣告",
+            "ex": "The company will announce its quarterly earnings next week.",
+            "tr": "该公司将于下周公布其季度收益。",
+            "match": [
+              "announce"
+            ]
+          },
+          {
+            "word": "redefine",
+            "ph": "/ˌriːdɪˈfaɪn/",
+            "pos": "v",
+            "mean": "重新定义",
+            "ex": "Her groundbreaking research helped to redefine the field of physics.",
+            "tr": "她开创性的研究帮助重新定义了物理学领域。",
+            "match": [
+              "redefine"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "en": "And that might be exactly who you are.",
+        "cn": "而那可能正是你的本色。",
+        "vocab": [
+          {
+            "word": "exactly",
+            "ph": "/ɪɡˈzæktli/",
+            "pos": "adv",
+            "mean": "确切地；正是",
+            "ex": "That's exactly what I was trying to say!",
+            "tr": "那正是我刚才想说的！",
+            "match": [
+              "exactly"
+            ]
+          }
+        ]
+      }
+    ],
+    "pos_types": {
+      "n": {
+        "en": "noun",
+        "cn": "名词"
+      },
+      "v": {
+        "en": "verb",
+        "cn": "动词"
+      },
+      "adj": {
+        "en": "adjective",
+        "cn": "形容词"
+      },
+      "adv": {
+        "en": "adverb",
+        "cn": "副词"
+      },
+      "prep": {
+        "en": "preposition",
+        "cn": "介词"
+      },
+      "conj": {
+        "en": "conjunction",
+        "cn": "连词"
+      },
+      "pron": {
+        "en": "pronoun",
+        "cn": "代词"
+      },
+      "det": {
+        "en": "determiner",
+        "cn": "限定词"
+      },
+      "int": {
+        "en": "interjection",
+        "cn": "感叹词"
+      },
+      "phr": {
+        "en": "phrase",
+        "cn": "短语"
+      },
+      "phr v": {
+        "en": "phrasal verb",
+        "cn": "动词短语"
+      },
+      "n phr": {
+        "en": "noun phrase",
+        "cn": "名词短语"
+      },
+      "adj phr": {
+        "en": "adjective phrase",
+        "cn": "形容词短语"
+      },
+      "modal v": {
+        "en": "modal verb",
+        "cn": "情态动词"
+      },
+      "idiom": {
+        "en": "idiom",
+        "cn": "习语"
+      },
+      "S": {
+        "en": "sentence",
+        "cn": "句子"
+      }
+    }
+  }
+]

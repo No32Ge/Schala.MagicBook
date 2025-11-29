@@ -14,14 +14,7 @@ async function copyToClipboard(id) {
         showMessage("复制失败，格式有误");
         return;
     }
-
-
-
     const htmlContent = filter(output.innerHTML.replace(/\s+/g, ' ').trim());
-
-
-
-    
 
     console.log("测试导出", htmlContent)
 
@@ -100,7 +93,7 @@ function filter(html) {
  
     outer.appendChild(container);
 
-    return outer.outerHTML; // 改成 outerHTML
+    return outer.outerHTML; 
 }
 
 
