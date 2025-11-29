@@ -798,22 +798,19 @@ function renderPage() {
         }
 
 
-        if (paragraph.blocks) {
-            if (addp) addhighlight(); // 加载依赖
-            if (paragraph.blocks.type === "code") {
-                const codeDiv = document.createElement('pre');
-                const codeElem = document.createElement('code');
-                codeElem.textContent = paragraph.blocks.content; // 直接文本，不经过 Markdown
-                if (paragraph.blocks.language) {
-                    codeElem.className = paragraph.blocks.language; // 高亮语言
-                }
-                codeDiv.appendChild(codeElem);
-                paragraphElement.appendChild(codeDiv);
+        if (paragraph.blocks && paragraph.blocks.type === "code") {
+            const codeDiv = document.createElement('pre');      // 外层 pre
+            const codeElem = document.createElement('code');    // 内层 code
+            codeElem.textContent = paragraph.blocks.content;   // 直接文本，不经过 innerHTML
+            if (paragraph.blocks.language) {
+                codeElem.className = paragraph.blocks.language; // 高亮语言
+            }
+            codeDiv.appendChild(codeElem);
+            paragraphElement.appendChild(codeDiv);
 
-                // 高亮
-                if (window.hljs) {
-                    hljs.highlightElement(codeElem);
-                }
+            // 高亮
+            if (window.hljs) {
+                hljs.highlightElement(codeElem);
             }
         }
 
