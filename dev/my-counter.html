@@ -1,0 +1,109 @@
+<!-- [约定] 1. 样式只在当前组件内生效，不会污染全局 -->
+<style>
+    .counter-card {
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 20px;
+        width: 300px;
+        background: #f9f9f9;
+        font-family: Arial, sans-serif;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    .display-area {
+        font-size: 2em;
+        text-align: center;
+        margin: 15px 0;
+        color: #333;
+    }
+
+    .btn-group {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    button {
+        padding: 8px 16px;
+        cursor: pointer;
+        background: #3498db;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        transition: background 0.2s;
+    }
+
+    button:hover { background: #2980b9; }
+
+    .input-group { margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px; }
+    input { padding: 5px; width: 100%; box-sizing: border-box; }
+    
+    .warning { color: red; font-size: 0.9em; text-align: center; margin-top: 5px; }
+</style>
+
+<!-- [约定] 2. template 标签包裹 HTML 结构 -->
+<template>
+    <div class="counter-card">
+        <h3>📊 响应式计数器</h3>
+        
+        <div class="display-area">
+            <!-- [约定] s-text="变量名": 只要 $state.count 变了，这里的数字自动变 -->
+            Count: <span s-text="count">0</span>
+        </div>
+
+        <!-- [约定] s-show="变量名": 如果 $state.isHigh 为 true，则显示，否则隐藏 -->
+        <div class="warning" s-show="isHigh">
+            ⚠️ 警告：数值过高！
+        </div>
+
+        <div class="btn-group">
+            <!-- [约定] s-on="事件名:方法名": 点击时调用 $state.decrement -->
+            <button s-on="click:decrement">- 减少</button>
+            <button s-on="click:increment">+ 增加</button>
+        </div>
+
+        <div class="input-group">
+            <p>备注信息: <span s-text="note" style="font-weight:bold"></span></p>
+            <!-- [约定] s-model="变量名": 双向绑定，输入框变 -> 变量变 -> s-text 也变 -->
+            <input type="text" s-model="note" placeholder="在这里输入，上方会自动同步">
+        </div>
+    </div>
+</template>
+
+<!-- [约定] 3. script 编写逻辑 -->
+<script>
+    // [约定] $scope: 代表当前组件的 ShadowRoot (类似 document)
+    // [约定] $host: 代表当前组件标签本身 <my-counter>
+    // [约定] $state: 最重要的对象！所有数据和方法都要挂载到它上面
+
+    // 1. 初始化数据
+    $state.count = 0;
+    $state.note = 'Hello World';
+    $state.isHigh = false;
+
+    // 2. 定义方法 (对应 s-on)
+    $state.increment = () => {
+        $state.count++; // 直接修改属性，界面自动更新
+        checkValue();
+    };
+
+    $state.decrement = () => {
+        $state.count--;
+        checkValue();
+    };
+
+    // 内部逻辑
+    function checkValue() {
+        // 修改 isHigh，界面上的 s-show 会自动处理显示隐藏
+        $state.isHigh = $state.count >= 5;
+        
+        // 甚至可以操作原生 DOM 修改样式
+        if ($state.count < 0) {
+            $scope.querySelector('.display-area').style.color = 'red';
+        } else {
+            $scope.querySelector('.display-area').style.color = '#333';
+        }
+    }
+
+    console.log('组件逻辑已加载');
+</script>

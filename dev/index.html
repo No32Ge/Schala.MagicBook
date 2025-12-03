@@ -1,20 +1,59 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <title>父子组件示例</title>
+    <meta charset="UTF-8">
+    <title>全场景导入演示</title>
+    <style>
+        body { font-family: sans-serif; background: #f4f6f8; padding: 40px; }
+        h1 { color: #333; margin-bottom: 30px; }
+        .grid { display: flex; gap: 20px; flex-wrap: wrap; }
+        
+        #banner-container {
+            width: 100%; max-width: 620px;
+        }
+    </style>
 </head>
 <body>
-  <my-parent></my-parent>
 
-  <script type="module">
-    import { registerComponent } from './ComponentLoader.js';
+    <h1>Component Loader 全场景演示</h1>
 
-    // 注册子组件
-    registerComponent('my-counter', './counter.html');
+    <div class="grid">
+        <!-- [演示] 场景 1: 使用 Web Component -->
+        <!-- 这里的 <user-card> 内部还自动导入了 <status-badge> -->
+        <user-card name="Alice" job="前端架构师"></user-card>
+        
+        <!-- 复用 -->
+        <user-card name="Bob" job="产品经理"></user-card>
+    </div>
 
-    // 注册父组件
-    registerComponent('my-parent', './parent.html');
-  </script>
+    <!-- [演示] 场景 2: 这是一个普通的 div，我们将把原生模板导入到这里 -->
+    <div id="banner-container"></div>
+
+    <!-- 脚本区域 -->
+    <script type="module">
+        // 导入工具
+        import { registerComponent, importHtml } from './ComponentLoader.js';
+
+        // --- 动作 A: 注册 Web Component ---
+        // 只要注册了，页面上所有的 <user-card> 就会自动变成组件
+        // 注意：我们只注册了父组件，子组件 status-badge 是在 user-card 内部注册的
+        registerComponent('user-card', './user-card.html');
+
+        // --- 动作 B: 导入原生 HTML 片段 (非组件) ---
+        // 适用于你需要手动控制何时、何地插入一段 HTML
+        async function loadBanner() {
+            // 1. 获取 DOM 节点 (Fragment)
+            const bannerNode = await importHtml('./daily-banner.html');
+            
+            // 2. 手动添加到页面指定位置
+            document.getElementById('banner-container').appendChild(bannerNode);
+            
+            console.log("原生 Banner 已插入页面");
+        }
+
+        // 执行动作 B
+        loadBanner();
+
+    </script>
 </body>
 </html>
