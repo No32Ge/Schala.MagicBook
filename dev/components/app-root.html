@@ -1,0 +1,105 @@
+<style>
+    :host { display: block; max-width: 800px; margin: 0 auto; min-height: 100vh; display: flex; flex-direction: column; }
+    .main-content { flex: 1; padding: 20px; }
+    .fab { 
+        position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; border-radius: 50%; 
+        background: #4f46e5; color: white; font-size: 30px; border: none; cursor: pointer;
+        box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.4); display: flex; align-items: center; justify-content: center;
+    }
+</style>
+
+<layout-header title="VocabMaster Pro"></layout-header>
+
+<div class="main-content">
+    <!-- 列表视图：将数据转为 JSON 字符串传递 -->
+    <view-list s-bind:list-data="jsonWords" s-on="delete:onDelete" s-on="edit:onEdit"></view-list>
+    
+    <!-- 空状态：当没有数据时显示 -->
+    <view-empty s-show="isEmpty"></view-empty>
+</div>
+
+<!-- 新增/编辑弹窗 -->
+<ui-modal s-show="showModal" title="单词编辑">
+    <!-- 插槽：放入表单组件 -->
+    <ui-form s-bind:form-data="currentEditJson" s-on="submit:onFormSubmit" s-on="cancel:closeModal"></ui-form>
+</ui-modal>
+
+<!-- 悬浮新增按钮 -->
+<button class="fab" s-on="click:openAddModal">+</button>
+
+<!-- 页脚容器 -->
+<div id="footer-slot"></div>
+
+<script>
+    // 1. 注册子组件
+    const comps = ['layout-header', 'view-list', 'view-empty', 'ui-modal', 'ui-form'];
+    comps.forEach(c => $loader.registerComponent(c, `./components/${c}.html`));
+
+    // 2. 初始数据 (模拟数据库)
+    const initialData = [
+        { id: 1, word: 'Ephemeral', trans: '短暂的', sentence: 'Fashions are ephemeral.', note: 'GRE核心词汇' },
+        { id: 2, word: 'Serendipity', trans: '意外发现珍宝的运气', sentence: '', note: '' }
+    ];
+
+    $state.rawWords = initialData;
+    $state.jsonWords = JSON.stringify(initialData); // 传递给子组件需序列化
+    $state.isEmpty = false;
+    $state.showModal = false;
+    $state.currentEditJson = "{}";
+
+    // 3. 业务逻辑
+    $methods.openAddModal = () => {
+        $state.currentEditJson = JSON.stringify({ id: null, word: '', trans: '', sentence: '', note: '' });
+        $state.showModal = true;
+    };
+
+    $methods.closeModal = () => {
+        $state.showModal = false;
+    };
+
+    $methods.onEdit = (e) => {
+        // 接收子组件传来的 ID，查找数据并打开模态框
+        const item = $state.rawWords.find(w => w.id == e.detail);
+        if(item) {
+            $state.currentEditJson = JSON.stringify(item);
+            $state.showModal = true;
+        }
+    };
+
+    $methods.onDelete = (e) => {
+        if(confirm('确定删除这个单词卡片吗？')) {
+            $state.rawWords = $state.rawWords.filter(w => w.id != e.detail);
+            syncData();
+        }
+    };
+
+    $methods.onFormSubmit = (e) => {
+        const formData = e.detail;
+        if (formData.id) {
+            // 编辑
+            const idx = $state.rawWords.findIndex(w => w.id == formData.id);
+            if (idx !== -1) $state.rawWords[idx] = formData;
+        } else {
+            // 新增
+            formData.id = Date.now();
+            $state.rawWords.push(formData);
+        }
+        syncData();
+        $state.showModal = false;
+    };
+
+    // 辅助：同步状态并序列化
+    function syncData() {
+        // 触发 ComponentLoader 的响应式更新
+        // 注意：因为 ComponentLoader 监听的是属性赋值，引用类型修改内部需重新赋值触发 set
+        $state.rawWords = [...$state.rawWords]; 
+        $state.jsonWords = JSON.stringify($state.rawWords);
+        $state.isEmpty = $state.rawWords.length === 0;
+    }
+
+    // 4. 加载页脚
+    (async () => {
+        const footer = await $loader.importHtml('./components/raw-footer.html');
+        $scope.querySelector('#footer-slot').appendChild(footer);
+    })();
+</script>
