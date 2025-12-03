@@ -1,36 +1,31 @@
-<!-- [约定] 这是子组件，被 user-card 引用 -->
 <style>
-    .badge {
-        display: inline-flex; align-items: center; gap: 6px;
-        padding: 4px 10px; border-radius: 20px;
-        font-size: 0.8rem; font-weight: bold; background: #eee; color: #666;
-        transition: all 0.3s;
-    }
-    .dot { width: 8px; height: 8px; border-radius: 50%; background: #999; }
-    
-    /* 动态 class */
-    .badge.online { background: #e6fffa; color: #047857; border: 1px solid #047857; }
-    .badge.online .dot { background: #10b981; }
+    .badge { padding: 5px 10px; border-radius: 4px; background: #eee; color: #666; display: inline-block;}
+    .badge.online { background: #d1fae5; color: #065f46; border: 1px solid #34d399; }
 </style>
 
 <template>
-    <!-- [约定] s-class="online": 当 $state.isOnline 为 true 时，添加 .online 类 -->
-    <div class="badge" s-class="online">
-        <div class="dot"></div>
-        <span s-text="statusText">离线</span>
+    <!-- s-class="isOnline": 根据状态切换绿色样式 -->
+    <div class="badge" s-class="isOnline">
+        <span s-text="statusText">检测中...</span>
     </div>
 </template>
 
 <script>
-    // 初始化
+    // 初始化默认数据
     $state.isOnline = false;
     $state.statusText = '离线';
 
-    // [约定] 从宿主标签 <status-badge status="..."> 获取属性
-    const initialStatus = $host.getAttribute('status');
-    
-    if (initialStatus === 'online') {
-        $state.isOnline = true;
-        $state.statusText = '在线';
-    }
+    // [关键修正] 使用 $watch 监听父组件传下来的 status 属性
+    // 当父组件执行 <status-badge status="online"> 时，这里会自动触发
+    $watch('status', (newVal) => {
+        console.log('子组件收到了新状态:', newVal);
+        
+        if (newVal === 'online') {
+            $state.isOnline = true;
+            $state.statusText = '🟢 在线';
+        } else {
+            $state.isOnline = false;
+            $state.statusText = '🔴 离线';
+        }
+    });
 </script>

@@ -1,66 +1,13 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <title>组件通信测试</title>
-</head>
+<html>
 <body>
+    <h1>最终版：单向数据流演示</h1>
     
-    <!-- 引入引擎 -->
+    <user-card></user-card>
+
     <script type="module">
         import { registerComponent } from './ComponentLoader.js';
-        registerComponent('info-card', './info-card.html');
-    </script>
-
-    <!-- 父组件界面 -->
-    <div id="app" style="padding: 20px; font-family: sans-serif; background: #f0f2f5;">
-        <h2>父组件控制台</h2>
-        
-        <label>修改姓名:</label>
-        <!-- 原生 input 监听 -->
-        <input type="text" id="name-input" value="张三">
-        <br><br>
-
-        <label>修改角色:</label>
-        <select id="role-input">
-            <option value="Admin">管理员</option>
-            <option value="User">普通用户</option>
-        </select>
-
-        <hr>
-
-        <!-- [关键] 子组件 -->
-        <!-- 我们没有任何 JS 代码直接去操作子组件内部的 DOM -->
-        <!-- 我们只是修改了这个标签的属性 (Attribute) -->
-        <info-card id="my-card" name="张三" role="Admin"></info-card>
-
-    </div>
-
-    <script>
-        // 模拟父组件逻辑 (这里用原生 JS 模拟 Vue 的父组件行为)
-        const nameInput = document.getElementById('name-input');
-        const roleInput = document.getElementById('role-input');
-        const card = document.getElementById('my-card');
-
-        // 1. [Props Down] 父组件数据变了 -> 修改子组件属性
-        nameInput.addEventListener('input', (e) => {
-            // 只要这一行！子组件内部会自动更新 s-text="name"
-            card.setAttribute('name', e.target.value);
-        });
-
-        roleInput.addEventListener('change', (e) => {
-            card.setAttribute('role', e.target.value);
-        });
-
-        // 2. [Events Up] 监听子组件发出的事件
-        card.addEventListener('delete-user', (e) => {
-            console.log('收到子组件请求:', e.detail);
-            alert('父组件收到了删除请求，即将重置数据！');
-            
-            // 父组件响应请求，修改数据
-            card.setAttribute('name', '已重置');
-            nameInput.value = '已重置';
-        });
+        registerComponent('user-card', './user-card.html');
     </script>
 </body>
 </html>
