@@ -1,45 +1,44 @@
-<!-- 1. 样式：只影响本组件 -->
 <style>
+    :host { display: block; }
     .card {
-        border: 1px solid #ddd;
-        padding: 20px;
-        border-radius: 8px;
-        background: #f9f9f9;
-        font-family: sans-serif;
+        border: 1px solid #ddd; border-radius: 12px; padding: 20px;
+        width: 300px; background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
-    h2 { color: #333; margin-top: 0; }
-    .btn { background: blue; color: white; border: none; padding: 5px 10px; cursor: pointer; }
+    .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+    h3 { margin: 0; font-size: 1.2rem; color: #2c3e50; }
+    .actions { margin-top: 15px; display: flex; gap: 10px; }
+    button { padding: 8px 16px; cursor: pointer; background: #3498db; color: white; border: none; border-radius: 6px; }
+    button:hover { background: #2980b9; }
 </style>
 
-<!-- 2. 结构：定义骨架 -->
 <template>
     <div class="card">
-        <h2>用户信息模块</h2>
-        <p>这里是一个独立的模块节点。</p>
-        <p>当前时间: <span class="time-display">--:--:--</span></p>
-        <button class="btn">点击测试</button>
+        <div class="header">
+            <h3 s-text="username">Loading...</h3>
+            
+            <!-- [演示] 1. 使用子组件 -->
+            <!-- status 属性是传给 status-badge 内部处理的 -->
+            <status-badge status="online"></status-badge>
+        </div>
+
+        <p>职业: <span s-text="job">工程师</span></p>
+        
+        <div class="actions">
+            <button s-on="click:sayHi">打招呼</button>
+        </div>
     </div>
 </template>
 
-<!-- 3. 逻辑：自动运行 -->
 <script>
-    // $scope 就是当前这个组件的 ShadowRoot
-    // $host 就是包裹这个组件的 div
-    
-    const timeSpan = $scope.querySelector('.time-display');
-    const btn = $scope.querySelector('.btn');
+    // [演示] 2. 在模板内部导入另一个模板 (嵌套导入)
+    // 这样 index.html 不需要知道 status-badge 的存在，只需要知道 user-card
+    $loader.registerComponent('status-badge', './status-badge.html');
 
-    // 逻辑1：自动运行的功能（比如时钟）
-    setInterval(() => {
-        timeSpan.textContent = new Date().toLocaleTimeString();
-    }, 1000);
+    // 获取属性
+    $state.username = $host.getAttribute('name') || '匿名用户';
+    $state.job = $host.getAttribute('job') || '自由职业者';
 
-    // 逻辑2：内部交互
-    btn.addEventListener('click', () => {
-        alert('你点击了组件内部的按钮！');
-        // 甚至可以修改自己的样式
-        $scope.querySelector('.card').style.backgroundColor = '#eef';
-    });
-
-    console.log('模块已加载，逻辑已启动');
+    $state.sayHi = () => {
+        alert(`你好，我是 ${$state.username}！`);
+    };
 </script>
