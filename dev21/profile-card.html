@@ -1,0 +1,46 @@
+<style>
+    .card { border: 1px solid #ccc; padding: 20px; }
+    .active { border-color: green; background: #f0fff0; }
+    .error { color: red; }
+</style>
+
+<template>
+    <!-- [V2.1] s-class 写法: 属性名:类名 -->
+    <!-- 当 isActive 为 true 时，添加 'active' 类 -->
+    <div class="card" s-class="isActive:active">
+        <h3>用户资料</h3>
+        
+        <!-- [V2.1] 深层属性支持 -->
+        <p>姓名: <span s-text="user.info.name"></span></p>
+        
+        <button s-on="click:toggleStatus">切换状态</button>
+        <button s-on="click:changeName">改名 (Deep Update)</button>
+    </div>
+</template>
+
+<script>
+    // 初始化数据
+    $state.isActive = false;
+    $state.user = {
+        info: { name: 'Alice', id: 1 }
+    };
+
+    // 方法
+    $methods.toggleStatus = () => {
+        $state.isActive = !$state.isActive;
+    };
+
+    $methods.changeName = () => {
+        // [V2.1] 使用 $host._set 或直接赋值
+        // 推荐深层修改用 _set 以确保触发更新
+        // 或者直接覆盖整个对象 $state.user = { ... }
+        
+        // 方式 A: 覆盖 (Proxy 拦截到 'user')
+        // const newUser = JSON.parse(JSON.stringify($state.user));
+        // newUser.info.name = 'Bob';
+        // $state.user = newUser;
+
+        // 方式 B: 使用 $host._set (性能更好)
+        $host._set('user.info.name', 'Bob_' + Math.floor(Math.random()*100));
+    };
+</script>
