@@ -1,0 +1,13 @@
+<div>
+  <button s-on="click:increment">+1</button>
+  <span s-text="count"></span>
+</div>
+
+<script>
+  $state.count = 0;
+
+  $methods.increment = () => {
+    $state.count += 1;
+    $emit('update', $state.count); // 通知父组件
+  };
+</script>

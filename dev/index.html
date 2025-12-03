@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VocabMaster Pro - ComponentLoader V3 Demo</title>
-    <link rel="stylesheet" href="./styles.css">
-    <script type="module">
-        import { registerComponent } from './ComponentLoader.js';
-        // 仅需注册根组件，其余由根组件内部按需加载
-        registerComponent('app-root', './components/app-root.html');
-    </script>
+  <meta charset="UTF-8">
+  <title>父子组件示例</title>
 </head>
 <body>
-    <app-root></app-root>
+  <my-parent></my-parent>
+
+  <script type="module">
+    import { registerComponent } from './ComponentLoader.js';
+
+    // 注册子组件
+    registerComponent('my-counter', './counter.html');
+
+    // 注册父组件
+    registerComponent('my-parent', './parent.html');
+  </script>
 </body>
 </html>
