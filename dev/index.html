@@ -3,20 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ComponentLoader V3 Demo</title>
-    <style>
-        body { margin: 0; background: #f4f6f8; font-family: sans-serif; }
-    </style>
-    
-    <!-- 引入核心库 -->
+    <title>VocabMaster Pro - ComponentLoader V3 Demo</title>
+    <link rel="stylesheet" href="./styles.css">
     <script type="module">
         import { registerComponent } from './ComponentLoader.js';
-        // 注册主文档组件
-        registerComponent('doc-page', './components/doc-page.html');
+        // 仅需注册根组件，其余由根组件内部按需加载
+        registerComponent('app-root', './components/app-root.html');
     </script>
 </head>
 <body>
-    <!-- 使用组件 -->
-    <doc-page></doc-page>
+    <app-root></app-root>
 </body>
 </html>
