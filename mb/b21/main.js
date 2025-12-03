@@ -2413,25 +2413,6 @@ function deleteVocabItem(vocab, paragraph, index) {
     }
 }
 
-function createGrammarDeleteButton(grammar, paragraph, index) {
-    const deleteBtn = document.createElement('button');
-    deleteBtn.className = 'delete-btn';
-    deleteBtn.setAttribute('title', `删除语法点: ${grammar.rule}`);
-    deleteBtn.setAttribute('aria-label', `删除语法点 ${grammar.rule}`);
-
-    deleteBtn.innerHTML = `
-        <svg class="delete-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M6 6L18 18M6 18L18 6"/>
-        </svg>
-    `;
-
-    deleteBtn.addEventListener('click', function (e) {
-        e.stopPropagation();
-        deleteGrammarItem(grammar, paragraph, index);
-    });
-
-    return deleteBtn;
-}
 // 删除语法功能
 function deleteGrammarItem(grammar, paragraph, index) {
     if (!confirm(`确定要删除语法点 "${grammar.rule}" 吗？`)) {
@@ -2887,6 +2868,8 @@ function renderCatalogList(searchTerm = '') {
         catalogList.appendChild(catalogItem);
     });
 }
+
+
 // 更新目录中的当前文章高亮
 function updateCatalogHighlight() {
     document.querySelectorAll('.article-catalog-item').forEach(item => {

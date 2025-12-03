@@ -1,0 +1,1573 @@
+[
+    {
+        "id": "reinvent_the_wheel_dev_advice",
+        "title": "Do Reinvent the Wheel",
+        "info": {
+            "author": "boisheep",
+            "source": "r/learnjavascript",
+            "level": "C1",
+            "tags": [
+                "programming",
+                "development philosophy",
+                "dependencies",
+                "best practices",
+                "software development"
+            ],
+            "link": "https://example.com/original-source",
+            "variants": null
+        },
+        "paras": [
+            {
+                "id": 1,
+                "en": "I only want to tell you one of my biggest things that I'd like to change that took me forever to learn. - Do reinvent the wheel.",
+                "cn": "我只想告诉你一件我花了很长时间才学会的、我最想改变的事情之一。——去重新发明轮子。",
+                "vocab": [
+                    {
+                        "word": "took me forever",
+                        "ph": "/tʊk miː fərˈevər/",
+                        "pos": "idiom",
+                        "mean": "花了我很长时间",
+                        "ex": "It took me forever to find my lost keys.",
+                        "tr": "我花了很长时间才找到我丢失的钥匙。",
+                        "match": [
+                            "took me forever"
+                        ]
+                    },
+                    {
+                        "word": "reinvent the wheel",
+                        "ph": "/ˌriːɪnˌvent ðə ˈwiːl/",
+                        "pos": "idiom",
+                        "mean": "重新发明轮子（比喻做不必要的重复工作）",
+                        "ex": "There's no need to write your own sorting algorithm; don't reinvent the wheel, just use the built-in function.",
+                        "tr": "没必要写你自己的排序算法；别重新发明轮子了，就用内置函数吧。",
+                        "match": [
+                            "reinvent the wheel"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "en": "People will tell you \"Don't reinvent the wheel\" all the time, but often, you will end up in the left-pad scenario; it may not happen 1 year down the road, maybe not even 2; but sooner or later, something happens, your node_modules turns into a black hole, API breaks, etc... soon you are in dependency hell.",
+                "cn": "人们会一直告诉你“不要重新发明轮子”，但通常，你最终会陷入“left-pad”那样的情景；可能一年后不会发生，甚至两年后也不会；但迟早，总会出事，你的 node_modules 文件夹会变成一个黑洞，API 坏掉，等等……很快你就陷入了依赖地狱。",
+                "vocab": [
+                    {
+                        "word": "left-pad scenario",
+                        "ph": "/left pæd sɪˈnɑːrioʊ/",
+                        "pos": "n phr",
+                        "mean": "left-pad 情景（指因一个微不足道的小依赖包被移除而导致大规模系统崩溃的著名事件）",
+                        "ex": "The project failed due to a left-pad scenario where a tiny, forgotten dependency was removed.",
+                        "tr": "项目因一个“left-pad”情景而失败，其中一个微小而被遗忘的依赖项被移除了。",
+                        "match": [
+                            "left-pad scenario"
+                        ]
+                    },
+                    {
+                        "word": "down the road",
+                        "ph": "/daʊn ðə roʊd/",
+                        "pos": "idiom",
+                        "mean": "将来",
+                        "ex": "This decision might seem small now, but it will have big consequences down the road.",
+                        "tr": "这个决定现在可能看起来很小，但将来会有重大后果。",
+                        "match": [
+                            "down the road"
+                        ]
+                    },
+                    {
+                        "word": "sooner or later",
+                        "ph": "/ˈsuːnər ɔːr ˈleɪtər/",
+                        "pos": "phr",
+                        "mean": "迟早",
+                        "ex": "If you don't maintain your car, it will break down sooner or later.",
+                        "tr": "如果你不保养你的车，它迟早会坏掉。",
+                        "match": [
+                            "sooner or later"
+                        ]
+                    },
+                    {
+                        "word": "black hole",
+                        "ph": "/blæk hoʊl/",
+                        "pos": "n phr",
+                        "mean": "黑洞（比喻消耗巨大资源且难以管理的东西）",
+                        "ex": "That complicated project became a black hole for the company's budget.",
+                        "tr": "那个复杂的项目成了公司预算的一个黑洞。",
+                        "match": [
+                            "black hole"
+                        ]
+                    },
+                    {
+                        "word": "API break",
+                        "ph": "/ˌeɪ piː ˈaɪ breɪk/",
+                        "pos": "n phr",
+                        "mean": "API 损坏/不兼容",
+                        "ex": "After the update, a major API break caused our application to stop working.",
+                        "tr": "更新后，一个重大的API不兼容导致我们的应用程序停止工作。",
+                        "match": [
+                            "API breaks"
+                        ]
+                    },
+                    {
+                        "word": "dependency hell",
+                        "ph": "/dɪˈpendənsi hel/",
+                        "pos": "n phr",
+                        "mean": "依赖地狱（指管理软件依赖项时遇到的复杂和冲突问题）",
+                        "ex": "He spent the whole day in dependency hell trying to get the old project to run.",
+                        "tr": "他花了整整一天时间在依赖地狱里，试图让那个旧项目运行起来。",
+                        "match": [
+                            "dependency hell"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "en": "And then one of the dependency has a bug, good luck, your PR gets denied because the dev has other ideas, you fork the thing, oh no...",
+                "cn": "然后其中一个依赖有了 bug，祝你好运，你的 PR（合并请求）被拒绝了，因为那个开发者有别的想法，你 fork（复刻）了那个项目，哦不……",
+                "vocab": [
+                    {
+                        "word": "dependency",
+                        "ph": "/dɪˈpendənsi/",
+                        "pos": "n",
+                        "mean": "（软件）依赖项",
+                        "ex": "This project has a lot of outdated dependencies that need to be updated.",
+                        "tr": "这个项目有很多过时的依赖项需要更新。",
+                        "match": [
+                            "dependency"
+                        ]
+                    },
+                    {
+                        "word": "PR (Pull Request)",
+                        "ph": "/ˌpiː ˈɑːr/",
+                        "pos": "n",
+                        "mean": "合并请求",
+                        "ex": "He submitted a PR to fix the bug in the open-source library.",
+                        "tr": "他提交了一个合并请求来修复那个开源库中的bug。",
+                        "match": [
+                            "PR"
+                        ]
+                    },
+                    {
+                        "word": "deny",
+                        "ph": "/dɪˈnaɪ/",
+                        "pos": "v",
+                        "mean": "拒绝",
+                        "ex": "The manager had to deny his request for a vacation.",
+                        "tr": "经理不得不拒绝他的休假请求。",
+                        "match": [
+                            "denied"
+                        ]
+                    },
+                    {
+                        "word": "dev",
+                        "ph": "/dev/",
+                        "pos": "n",
+                        "mean": "（非正式）开发者 (developer)",
+                        "ex": "Ask the lead dev for her opinion on the new feature.",
+                        "tr": "问问首席开发者她对新功能的看法。",
+                        "match": [
+                            "dev"
+                        ]
+                    },
+                    {
+                        "word": "fork",
+                        "ph": "/fɔːrk/",
+                        "pos": "v",
+                        "mean": "（在版本控制系统中）复刻，创建分支",
+                        "ex": "If you want to contribute to the project, you should first fork the repository.",
+                        "tr": "如果你想为这个项目做贡献，你应该首先复刻这个仓库。",
+                        "match": [
+                            "fork"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "en": "Then you realize these dependencies often do more than what you need them to do, and bring more overhead than you expected.",
+                "cn": "然后你意识到，这些依赖项通常做了超出你需要它们做的事情，并且带来了比你预期更多的开销。",
+                "vocab": [
+                    {
+                        "word": "dependency",
+                        "ph": "/dɪˈpendənsi/",
+                        "pos": "n",
+                        "mean": "（软件）依赖项",
+                        "ex": "This project has a lot of outdated dependencies that need to be updated.",
+                        "tr": "这个项目有很多过时的依赖项需要更新。",
+                        "match": [
+                            "dependencies"
+                        ]
+                    },
+                    {
+                        "word": "overhead",
+                        "ph": "/ˈoʊvərhed/",
+                        "pos": "n",
+                        "mean": "（计算机）开销；间接成本",
+                        "ex": "Adding too many features can increase the software's performance overhead.",
+                        "tr": "添加太多功能会增加软件的性能开销。",
+                        "match": [
+                            "overhead"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "en": "You freeze the dependencies, and then, oh no; security vulnerabilities, why in the world?... and now you need a feature from the next version except nothing is backwards compatible.",
+                "cn": "你冻结了依赖项的版本，然后，哦不；安全漏洞，这到底是怎么回事？……现在你需要下一个版本的一个功能，但什么都不向后兼容了。",
+                "vocab": [
+                    {
+                        "word": "freeze",
+                        "ph": "/friːz/",
+                        "pos": "v",
+                        "mean": "（软件）冻结（版本）",
+                        "ex": "To ensure stability, we decided to freeze the library versions for this release.",
+                        "tr": "为了确保稳定性，我们决定为这个版本冻结库的版本。",
+                        "match": [
+                            "freeze"
+                        ]
+                    },
+                    {
+                        "word": "security vulnerability",
+                        "ph": "/sɪˈkjʊərəti ˌvʌlnərəˈbɪləti/",
+                        "pos": "n phr",
+                        "mean": "安全漏洞",
+                        "ex": "The latest update patches a critical security vulnerability.",
+                        "tr": "最新的更新补上了一个严重的安全漏洞。",
+                        "match": [
+                            "security vulnerabilities"
+                        ]
+                    },
+                    {
+                        "word": "why in the world",
+                        "ph": "/waɪ ɪn ðə wɜːrld/",
+                        "pos": "phr",
+                        "mean": "到底为什么",
+                        "ex": "Why in the world would you do something so risky?",
+                        "tr": "你到底为什么要做这么冒险的事？",
+                        "match": [
+                            "why in the world"
+                        ]
+                    },
+                    {
+                        "word": "backwards compatible",
+                        "ph": "/ˈbækwərdz kəmˈpætəbl/",
+                        "pos": "adj",
+                        "mean": "向后兼容的",
+                        "ex": "The new operating system is not backwards compatible with old software.",
+                        "tr": "新的操作系统不向后兼容旧的软件。",
+                        "match": [
+                            "backwards compatible"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "en": "One day I undusted some code from ages ago, when I was too stupid and just kept reinventing the wheel, basic stable dependencies, jquery and that was it, damn... it ran, no errors, still runs... surprisingly complex behaviour, easy to fix anything.",
+                "cn": "有一天，我翻出了很久以前的一些代码，那时我太傻了，只会不停地重新发明轮子，只有些基本稳定的依赖，jquery，就这些，该死……它运行了，没错误，现在还在运行……功能惊人地复杂，修理任何东西都很容易。",
+                "vocab": [
+                    {
+                        "word": "undust",
+                        "ph": "/ʌnˈdʌst/",
+                        "pos": "v",
+                        "mean": "（非正式）除去灰尘；重新启用",
+                        "ex": "It's time to undust my old guitar and start playing again.",
+                        "tr": "是时候把我旧吉他的灰尘掸掉，重新开始弹了。",
+                        "match": [
+                            "undusted"
+                        ]
+                    },
+                    {
+                        "word": "ages ago",
+                        "ph": "/ˈeɪdʒɪz əˈɡoʊ/",
+                        "pos": "idiom",
+                        "mean": "很久以前",
+                        "ex": "I saw that movie ages ago.",
+                        "tr": "我很久以前就看过那部电影了。",
+                        "match": [
+                            "ages ago"
+                        ]
+                    },
+                    {
+                        "word": "stable",
+                        "ph": "/ˈsteɪbl/",
+                        "pos": "adj",
+                        "mean": "稳定的",
+                        "ex": "We should use the stable version of the software for production.",
+                        "tr": "我们应该在生产环境中使用软件的稳定版本。",
+                        "match": [
+                            "stable"
+                        ]
+                    },
+                    {
+                        "word": "damn",
+                        "ph": "/dæm/",
+                        "pos": "int",
+                        "mean": "（粗俗）该死（用于表示惊讶或沮丧）",
+                        "ex": "Damn, I forgot my keys again!",
+                        "tr": "该死，我又忘带钥匙了！",
+                        "match": [
+                            "damn"
+                        ]
+                    },
+                    {
+                        "word": "surprisingly",
+                        "ph": "/sərˈpraɪzɪŋli/",
+                        "pos": "adv",
+                        "mean": "惊人地",
+                        "ex": "The test was surprisingly easy.",
+                        "tr": "考试惊人地简单。",
+                        "match": [
+                            "surprisingly"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "en": "Since then I have a saying, if I can, if it's something I can achieve, even if it takes me a week or two; I will reinvent the wheel, reduce dependencies as much as possible.",
+                "cn": "从那时起，我有个座右铭，如果我能做到，如果是某些我能实现的事情，即使花我一两周时间；我就会重新发明轮子，尽可能地减少依赖。",
+                "vocab": [
+                    {
+                        "word": "saying",
+                        "ph": "/ˈseɪɪŋ/",
+                        "pos": "n",
+                        "mean": "格言；座右铭",
+                        "ex": "As the old saying goes, 'An apple a day keeps the doctor away.'",
+                        "tr": "正如老话所说，“一天一苹果，医生远离我。”",
+                        "match": [
+                            "saying"
+                        ]
+                    },
+                    {
+                        "word": "achieve",
+                        "ph": "/əˈtʃiːv/",
+                        "pos": "v",
+                        "mean": "实现",
+                        "ex": "With hard work, you can achieve your goals.",
+                        "tr": "通过努力工作，你能实现你的目标。",
+                        "match": [
+                            "achieve"
+                        ]
+                    },
+                    {
+                        "word": "reduce",
+                        "ph": "/rɪˈduːs/",
+                        "pos": "v",
+                        "mean": "减少",
+                        "ex": "We need to reduce our spending to save money.",
+                        "tr": "我们需要减少开支来省钱。",
+                        "match": [
+                            "reduce"
+                        ]
+                    },
+                    {
+                        "word": "as much as possible",
+                        "ph": "/æz mʌtʃ æz ˈpɒsəbl/",
+                        "pos": "phr",
+                        "mean": "尽可能地",
+                        "ex": "Try to practice your English as much as possible.",
+                        "tr": "试着尽可能多地练习你的英语。",
+                        "match": [
+                            "as much as possible"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "en": "I notice my code not only became faster with less overhead, but also, dependency hell became less of an issue.",
+                "cn": "我注意到我的代码不仅开销更少、速度更快了，而且，依赖地狱也不再那么是个问题了。",
+                "vocab": [
+                    {
+                        "word": "overhead",
+                        "ph": "/ˈoʊvərhed/",
+                        "pos": "n",
+                        "mean": "（计算机）开销",
+                        "ex": "Adding too many features can increase the software's performance overhead.",
+                        "tr": "添加太多功能会增加软件的性能开销。",
+                        "match": [
+                            "overhead"
+                        ]
+                    },
+                    {
+                        "word": "dependency hell",
+                        "ph": "/dɪˈpendənsi hel/",
+                        "pos": "n phr",
+                        "mean": "依赖地狱",
+                        "ex": "He spent the whole day in dependency hell trying to get the old project to run.",
+                        "tr": "他花了整整一天时间在依赖地狱里，试图让那个旧项目运行起来。",
+                        "match": [
+                            "dependency hell"
+                        ]
+                    },
+                    {
+                        "word": "less of an issue",
+                        "ph": "/les əv ən ˈɪʃuː/",
+                        "pos": "phr",
+                        "mean": "不再那么是个问题",
+                        "ex": "Since the new road was built, traffic has become less of an issue.",
+                        "tr": "自从新路建成后，交通不再那么是个问题了。",
+                        "match": [
+                            "less of an issue"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "pos_types": {
+            "n": {
+                "en": "noun",
+                "cn": "名词"
+            },
+            "v": {
+                "en": "verb",
+                "cn": "动词"
+            },
+            "adj": {
+                "en": "adjective",
+                "cn": "形容词"
+            },
+            "adv": {
+                "en": "adverb",
+                "cn": "副词"
+            },
+            "prep": {
+                "en": "preposition",
+                "cn": "介词"
+            },
+            "conj": {
+                "en": "conjunction",
+                "cn": "连词"
+            },
+            "pron": {
+                "en": "pronoun",
+                "cn": "代词"
+            },
+            "det": {
+                "en": "determiner",
+                "cn": "限定词"
+            },
+            "int": {
+                "en": "interjection",
+                "cn": "感叹词"
+            },
+            "phr": {
+                "en": "phrase",
+                "cn": "短语"
+            },
+            "phr v": {
+                "en": "phrasal verb",
+                "cn": "动词短语"
+            },
+            "n phr": {
+                "en": "noun phrase",
+                "cn": "名词短语"
+            },
+            "adj phr": {
+                "en": "adjective phrase",
+                "cn": "形容词短语"
+            },
+            "modal v": {
+                "en": "modal verb",
+                "cn": "情态动词"
+            },
+            "idiom": {
+                "en": "idiom",
+                "cn": "习语"
+            },
+            "S": {
+                "en": "sentence",
+                "cn": "句子"
+            }
+        }
+    },
+    {
+        "id": "js_features_iterator_helpers",
+        "title": "Modern JavaScript Features",
+        "info": {
+            "author": "Web Developer",
+            "source": "Technical Blog Post",
+            "level": "C1",
+            "tags": [
+                "javascript",
+                "programming",
+                "web development",
+                "best practices",
+                "performance"
+            ],
+            "link": "https://example.com/original-source",
+            "variants": null
+        },
+        "paras": [
+            {
+                "id": 1,
+                "en": "Have you ever performed multiple chained array transformations on the same array? For example, something like this: arr.slice(10, 20).filter(el => el < 10).map(el => el + 5). This is really inefficient because for each transformation a new array should be allocated. Imagine you do this for huge arrays (> 500K elements)... This is why JS has recently introduced methods for iterators. They work similar to regular array transformation methods, except they don't create temporary arrays but create new iterators which iterate on other iterators.",
+                "cn": "你是否曾对同一个数组执行过多次链式数组转换？例如，像这样：arr.slice(10, 20).filter(el => el < 10).map(el => el + 5)。这非常低效，因为每次转换都需要分配一个新数组。想象一下如果你对巨大的数组（超过50万个元素）这样做……这就是为什么JS最近引入了迭代器方法。它们的工作方式与常规数组转换方法类似，只是它们不创建临时数组，而是创建新的迭代器，这些迭代器在其他迭代器上进行迭代。",
+                "vocab": [
+                    {
+                        "word": "chained",
+                        "ph": "/tʃeɪnd/",
+                        "pos": "adj",
+                        "mean": "链式的",
+                        "ex": "He used a series of chained commands to automate the process.",
+                        "tr": "他使用了一系列链式命令来自动化该过程。",
+                        "match": [
+                            "chained"
+                        ]
+                    },
+                    {
+                        "word": "transformation",
+                        "ph": "/ˌtrænsfərˈmeɪʃn/",
+                        "pos": "n",
+                        "mean": "转换",
+                        "ex": "The data requires a significant transformation before it can be analyzed.",
+                        "tr": "数据在分析前需要进行一次重大的转换。",
+                        "match": [
+                            "transformations",
+                            "transformation"
+                        ]
+                    },
+                    {
+                        "word": "inefficient",
+                        "ph": "/ˌɪnɪˈfɪʃnt/",
+                        "pos": "adj",
+                        "mean": "低效的",
+                        "ex": "Using a loop within a loop for this task is very inefficient.",
+                        "tr": "对这项任务使用嵌套循环是非常低效的。",
+                        "match": [
+                            "inefficient"
+                        ]
+                    },
+                    {
+                        "word": "allocate",
+                        "ph": "/ˈæləkeɪt/",
+                        "pos": "v",
+                        "mean": "（内存）分配",
+                        "ex": "The program needs to allocate more memory to handle the large file.",
+                        "tr": "该程序需要分配更多内存来处理这个大文件。",
+                        "match": [
+                            "allocated"
+                        ]
+                    },
+                    {
+                        "word": "iterator",
+                        "ph": "/ˈɪtəreɪtər/",
+                        "pos": "n",
+                        "mean": "迭代器",
+                        "ex": "An iterator is an object that allows you to traverse through a collection of data one element at a time.",
+                        "tr": "迭代器是一个允许你一次一个元素地遍历数据集合的对象。",
+                        "match": [
+                            "iterators",
+                            "iterator"
+                        ]
+                    },
+                    {
+                        "word": "temporary",
+                        "ph": "/ˈtempəreri/",
+                        "pos": "adj",
+                        "mean": "临时的",
+                        "ex": "The program creates a temporary file to store intermediate results.",
+                        "tr": "该程序创建一个临时文件来存储中间结果。",
+                        "match": [
+                            "temporary"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "en": "This is the list of the methods: Iterator.prototype.drop(). Returns a new iterator helper object that skips the given number of elements at the start of this iterator. It roughly does the same thing as Array.prototype.slice(n) for the regular array. Iterator.prototype.take(). Returns a new iterator helper object that takes at most the given number of elements from the start of this iterator. It roughly does the same thing as Array.prototype.slice(0, n) for the regular array.",
+                "cn": "以下是这些方法的列表：Iterator.prototype.drop()。返回一个新的迭代器辅助对象，它会跳过此迭代器开始处的给定数量的元素。它大致上与常规数组的 Array.prototype.slice(n) 做同样的事情。Iterator.prototype.take()。返回一个新的迭代器辅助对象，它最多从此迭代器的开始处获取给定数量的元素。它大致上与常规数组的 Array.prototype.slice(0, n) 做同样的事情。",
+                "vocab": [
+                    {
+                        "word": "prototype",
+                        "ph": "/ˈproʊtətaɪp/",
+                        "pos": "n",
+                        "mean": "（编程）原型",
+                        "ex": "In JavaScript, objects inherit methods from their prototype.",
+                        "tr": "在JavaScript中，对象从其原型继承方法。",
+                        "match": [
+                            "prototype"
+                        ]
+                    },
+                    {
+                        "word": "skip",
+                        "ph": "/skɪp/",
+                        "pos": "v",
+                        "mean": "跳过",
+                        "ex": "If you don't like a chapter, you can just skip it and move to the next one.",
+                        "tr": "如果你不喜欢某一章，你可以直接跳过它，进入下一章。",
+                        "match": [
+                            "skips"
+                        ]
+                    },
+                    {
+                        "word": "roughly",
+                        "ph": "/ˈrʌfli/",
+                        "pos": "adv",
+                        "mean": "大致上",
+                        "ex": "The project will cost roughly one million dollars.",
+                        "tr": "这个项目将花费大约一百万美元。",
+                        "match": [
+                            "roughly"
+                        ]
+                    },
+                    {
+                        "word": "at most",
+                        "ph": "/æt moʊst/",
+                        "pos": "phr",
+                        "mean": "最多",
+                        "ex": "The journey will take two hours at most.",
+                        "tr": "这次旅程最多需要两个小时。",
+                        "match": [
+                            "at most"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "en": "Iterator.prototype.some(). Is similar to Array.prototype.some(). It tests whether at least one element produced by the iterator passes the test implemented by the provided function. Iterator.prototype.every(). Is similar to Array.prototype.every(). It tests whether all elements produced by the iterator pass the test implemented by the provided function. Iterator.prototype.filter(). Is similar to Array.prototype.filter(). Returns an iterator on the filtered values. Iterator.prototype.find(). Is similar to Array.prototype.find(). Returns the first element produced by the iterator that satisfies the provided testing function. Iterator.prototype.flatMap(). Is similar to Array.prototype.flatMap(). Returns an iterator on the flattened values. Iterator.prototype.forEach(). Is similar to Array.prototype.forEach(). It executes a provided function once for each element produced by the iterator. Iterator.prototype.map(). Is similar to Array.prototype.map(). Returns an iterator of transformed values by a mapping function. Iterator.prototype.reduce(). Is similar to Array.prototype.reduce(). It executes a user-supplied \"reducer\" callback function on each element produced by the iterator, passing in the return value from the calculation on the preceding element. Iterator.prototype.toArray(). Creates an Array with the populated yielded values.",
+                "cn": "Iterator.prototype.some()。与 Array.prototype.some() 类似。它测试迭代器产生的元素中是否至少有一个通过了由所提供函数实现的测试。Iterator.prototype.every()。与 Array.prototype.every() 类似。它测试迭代器产生的所有元素是否都通过了由所提供函数实现的测试。Iterator.prototype.filter()。与 Array.prototype.filter() 类似。返回一个包含过滤后值的迭代器。Iterator.prototype.find()。与 Array.prototype.find() 类似。返回迭代器产生的第一个满足所提供测试函数的元素。Iterator.prototype.flatMap()。与 Array.prototype.flatMap() 类似。返回一个包含扁平化后值的迭代器。Iterator.prototype.forEach()。与 Array.prototype.forEach() 类似。它对迭代器产生的每个元素执行一次所提供的函数。Iterator.prototype.map()。与 Array.prototype.map() 类似。通过一个映射函数返回一个包含转换后值的迭代器。Iterator.prototype.reduce()。与 Array.prototype.reduce() 类似。它对迭代器产生的每个元素执行一个用户提供的“reducer”回调函数，并将前一个元素计算的返回值传入。Iterator.prototype.toArray()。用生成的 yielded 值创建一个数组。",
+                "vocab": [
+                    {
+                        "word": "at least",
+                        "ph": "/æt liːst/",
+                        "pos": "phr",
+                        "mean": "至少",
+                        "ex": "You should drink at least eight glasses of water a day.",
+                        "tr": "你每天应该至少喝八杯水。",
+                        "match": [
+                            "at least"
+                        ]
+                    },
+                    {
+                        "word": "satisfy",
+                        "ph": "/ˈsætɪsfaɪ/",
+                        "pos": "v",
+                        "mean": "满足",
+                        "ex": "The new design must satisfy all the customer's requirements.",
+                        "tr": "新设计必须满足客户的所有要求。",
+                        "match": [
+                            "satisfies"
+                        ]
+                    },
+                    {
+                        "word": "flattened",
+                        "ph": "/ˈflætnd/",
+                        "pos": "adj",
+                        "mean": "扁平化的",
+                        "ex": "The function returns a flattened array from a nested one.",
+                        "tr": "该函数从一个嵌套数组返回一个扁平化的数组。",
+                        "match": [
+                            "flattened"
+                        ]
+                    },
+                    {
+                        "word": "user-supplied",
+                        "ph": "/ˈjuːzər səˈplaɪd/",
+                        "pos": "adj",
+                        "mean": "用户提供的",
+                        "ex": "The program allows for a user-supplied configuration file.",
+                        "tr": "该程序允许使用用户提供的配置文件。",
+                        "match": [
+                            "user-supplied"
+                        ]
+                    },
+                    {
+                        "word": "preceding",
+                        "ph": "/prɪˈsiːdɪŋ/",
+                        "pos": "adj",
+                        "mean": "前面的",
+                        "ex": "Please refer to the chart on the preceding page.",
+                        "tr": "请参考前一页的图表。",
+                        "match": [
+                            "preceding"
+                        ]
+                    },
+                    {
+                        "word": "populate",
+                        "ph": "/ˈpɒpjuleɪt/",
+                        "pos": "v",
+                        "mean": "填充",
+                        "ex": "The script will populate the database with initial data.",
+                        "tr": "该脚本将用初始数据填充数据库。",
+                        "match": [
+                            "populated"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "en": "Common ways for creating iterables are via the static method Iterator.from() and via the method values() of Array, NodeList, Set and many other containers. So the more memory efficient version of the given example of transformation chaining will be: arr.values().drop(10).take(10).filter(el => el < 10).map(el => el + 5).toArray().",
+                "cn": "创建可迭代对象的常见方法是通过静态方法 Iterator.from() 和通过 Array、NodeList、Set 及许多其他容器的 values() 方法。因此，给定转换链示例的更节省内存的版本将是：arr.values().drop(10).take(10).filter(el => el < 10).map(el => el + 5).toArray()。",
+                "vocab": [
+                    {
+                        "word": "iterable",
+                        "ph": "/ˈɪtərəbl/",
+                        "pos": "n",
+                        "mean": "可迭代对象",
+                        "ex": "In Python, lists, tuples, and strings are all examples of iterables.",
+                        "tr": "在 Python 中，列表、元组和字符串都是可迭代对象的例子。",
+                        "match": [
+                            "iterables"
+                        ]
+                    },
+                    {
+                        "word": "via",
+                        "ph": "/ˈvaɪə/",
+                        "pos": "prep",
+                        "mean": "通过",
+                        "ex": "He sent the message via email.",
+                        "tr": "他通过电子邮件发送了消息。",
+                        "match": [
+                            "via"
+                        ]
+                    },
+                    {
+                        "word": "static method",
+                        "ph": "/ˈstætɪk ˈmeθəd/",
+                        "pos": "n phr",
+                        "mean": "静态方法",
+                        "ex": "You can call a static method directly on the class, without creating an instance.",
+                        "tr": "你可以直接在类上调用静态方法，而无需创建实例。",
+                        "match": [
+                            "static method"
+                        ]
+                    },
+                    {
+                        "word": "container",
+                        "ph": "/kənˈteɪnər/",
+                        "pos": "n",
+                        "mean": "容器",
+                        "ex": "Arrays and lists are common types of data containers in programming.",
+                        "tr": "数组和列表是编程中常见的数据容器类型。",
+                        "match": [
+                            "containers"
+                        ]
+                    },
+                    {
+                        "word": "memory efficient",
+                        "ph": "/ˈmeməri ɪˈfɪʃnt/",
+                        "pos": "adj phr",
+                        "mean": "节省内存的",
+                        "ex": "This new algorithm is much more memory efficient than the old one.",
+                        "tr": "这个新算法比旧的要节省内存得多。",
+                        "match": [
+                            "memory efficient"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "en": "One caveat is that it's a relatively new feature, the last mainstream browser that started to support this feature is Safari. It started to support from 31/03/2025, so better to wait at least for several months.",
+                "cn": "一个需要注意的是，这是一个相对较新的功能，最后一个开始支持此功能的主流浏览器是 Safari。它从 2025年3月31日 开始支持，所以最好至少再等几个月。",
+                "vocab": [
+                    {
+                        "word": "caveat",
+                        "ph": "/ˈkæviæt/",
+                        "pos": "n",
+                        "mean": "警告；注意事项",
+                        "ex": "The product works well, with the caveat that it requires a powerful computer.",
+                        "tr": "这个产品效果很好，但需要注意的是，它需要一台性能强大的电脑。",
+                        "match": [
+                            "caveat"
+                        ]
+                    },
+                    {
+                        "word": "relatively",
+                        "ph": "/ˈrelətɪvli/",
+                        "pos": "adv",
+                        "mean": "相对地",
+                        "ex": "Compared to the old model, the new one is relatively inexpensive.",
+                        "tr": "与旧型号相比，新型号相对便宜。",
+                        "match": [
+                            "relatively"
+                        ]
+                    },
+                    {
+                        "word": "mainstream",
+                        "ph": "/ˈmeɪnstriːm/",
+                        "pos": "adj",
+                        "mean": "主流的",
+                        "ex": "That band used to be indie, but now their music is very mainstream.",
+                        "tr": "那支乐队曾经是独立的，但现在他们的音乐非常主流。",
+                        "match": [
+                            "mainstream"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "en": "Array at() method. Array.prototype.at() is an alternative way for accessing the nth element. The cool thing is that it also supports negative indexing where it will count from the last element. For example [10,20,30].at(-1) will return 30, [10,20,30].at(-2) will return 20, etc. This negative indexing makes so much easier to access the last elements. Before that you had to write this ugly boilerplate code arr[arr.length - 1].",
+                "cn": "数组的 at() 方法。Array.prototype.at() 是访问第 n 个元素的另一种方式。很酷的一点是，它还支持负数索引，它会从最后一个元素开始计数。例如 [10,20,30].at(-1) 将返回 30，[10,20,30].at(-2) 将返回 20，等等。这种负数索引使得访问最后几个元素变得容易得多。在此之前，你必须写这样丑陋的样板代码 arr[arr.length - 1]。",
+                "vocab": [
+                    {
+                        "word": "alternative",
+                        "ph": "/ɔːlˈtɜːrnətɪv/",
+                        "pos": "adj",
+                        "mean": "可替代的",
+                        "ex": "If the main road is closed, we'll have to find an alternative route.",
+                        "tr": "如果主路关闭，我们将不得不寻找一条备用路线。",
+                        "match": [
+                            "alternative"
+                        ]
+                    },
+                    {
+                        "word": "access",
+                        "ph": "/ˈækses/",
+                        "pos": "v",
+                        "mean": "访问",
+                        "ex": "You can access your account information by logging in on our website.",
+                        "tr": "你可以通过在我们的网站上登录来访问你的账户信息。",
+                        "match": [
+                            "accessing",
+                            "access"
+                        ]
+                    },
+                    {
+                        "word": "negative indexing",
+                        "ph": "/ˈneɡətɪv ˈɪndeksɪŋ/",
+                        "pos": "n phr",
+                        "mean": "负数索引",
+                        "ex": "Python lists are famous for their easy-to-use negative indexing.",
+                        "tr": "Python 列表以其易于使用的负数索引而闻名。",
+                        "match": [
+                            "negative indexing"
+                        ]
+                    },
+                    {
+                        "word": "boilerplate",
+                        "ph": "/ˈbɔɪlərpleɪt/",
+                        "pos": "n",
+                        "mean": "样板代码",
+                        "ex": "Using a framework can help reduce the amount of boilerplate code you have to write.",
+                        "tr": "使用框架可以帮助减少你必须编写的样板代码量。",
+                        "match": [
+                            "boilerplate"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "en": "Promise.withResolvers(). Have you ever written such code in order to have the promise resolvers for the later use? Bulky, isn't it? Fortunately, this is now a thing of past since JS nowadays supports Promise.withResolvers(). So you can write this instead:",
+                "cn": "Promise.withResolvers()。你是否曾为了以后使用 promise 的解析器而写过这样的代码？很臃肿，不是吗？幸运的是，这现在已经是过去式了，因为如今的JS支持 Promise.withResolvers()。所以你可以这样写：",
+                "vocab": [
+                    {
+                        "word": "resolver",
+                        "ph": "/rɪˈzɒlvər/",
+                        "pos": "n",
+                        "mean": "（Promise的）解析器；解决程序",
+                        "ex": "In a Promise, the resolver function is called with two arguments: resolve and reject.",
+                        "tr": "在 Promise 中，解析器函数被调用时带有两个参数：resolve 和 reject。",
+                        "match": [
+                            "resolvers"
+                        ]
+                    },
+                    {
+                        "word": "bulky",
+                        "ph": "/ˈbʌlki/",
+                        "pos": "adj",
+                        "mean": "臃肿的；庞大的",
+                        "ex": "The old software was bulky and slow to load.",
+                        "tr": "旧软件很臃肿，加载缓慢。",
+                        "match": [
+                            "Bulky"
+                        ]
+                    },
+                    {
+                        "word": "a thing of the past",
+                        "ph": "/ə θɪŋ əv ðə pæst/",
+                        "pos": "idiom",
+                        "mean": "过时的事物",
+                        "ex": "With streaming services, physical DVDs have become a thing of the past.",
+                        "tr": "随着流媒体服务的出现，实体DVD已成为过去式。",
+                        "match": [
+                            "a thing of past"
+                        ]
+                    }
+                ],
+                "blocks": [
+                    {
+                        "type": "code",
+                        "content": "let resolve, reject;\nconst promise = new Promise((resolver, rejector) => {\n\tresolve = resolver;\n\treject = rejector;\n});\n\n// use promise, resolve and reject later\n// ......",
+                        "language": "javascript"
+                    },
+                    {
+                        "type": "code",
+                        "content": "const { promise, resolve, reject } = Promise.withResolvers();\n\n// use promise, resolve and reject later\n// ......",
+                        "language": "javascript"
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "en": "String.prototype.replace() / String.prototype.replaceAll() callback. This is an old thing, but many developers don't know that you can pass a callback instead of string for the second parameter of String.prototype.replace() or String.prototype.replaceAll(). The replacement strings will be the values returned from the callback. For example: This is a very powerful thing, it allows to do many replacements with just one pass. Very efficient from both performance and memory standpoint. For more details please check the documentation.",
+                "cn": "String.prototype.replace() / String.prototype.replaceAll() 的回调函数。这是一个老功能了，但许多开发者不知道你可以为 String.prototype.replace() 或 String.prototype.replaceAll() 的第二个参数传递一个回调函数而不是字符串。替换的字符串将是回调函数返回的值。例如：这是一个非常强大的功能，它允许你仅用一次遍历就完成多次替换。从性能和内存的角度来看都非常高效。更多细节请查阅文档。",
+                "vocab": [
+                    {
+                        "word": "callback",
+                        "ph": "/ˈkɔːlbæk/",
+                        "pos": "n",
+                        "mean": "回调函数",
+                        "ex": "The function takes a callback that will be executed once the data is loaded.",
+                        "tr": "该函数接受一个回调函数，数据加载完毕后将执行它。",
+                        "match": [
+                            "callback"
+                        ]
+                    },
+                    {
+                        "word": "parameter",
+                        "ph": "/pəˈræmɪtər/",
+                        "pos": "n",
+                        "mean": "参数",
+                        "ex": "The function requires two parameters: a username and a password.",
+                        "tr": "该函数需要两个参数：一个用户名和一个密码。",
+                        "match": [
+                            "parameter"
+                        ]
+                    },
+                    {
+                        "word": "replacement",
+                        "ph": "/rɪˈpleɪsmənt/",
+                        "pos": "n",
+                        "mean": "替换物",
+                        "ex": "He couldn't find an exact replacement for the broken part.",
+                        "tr": "他找不到那个坏掉零件的精确替换物。",
+                        "match": [
+                            "replacement"
+                        ]
+                    },
+                    {
+                        "word": "one pass",
+                        "ph": "/wʌn pæs/",
+                        "pos": "n phr",
+                        "mean": "一次遍历",
+                        "ex": "The algorithm is designed to sort the list in a single pass.",
+                        "tr": "该算法被设计成用一次遍历就对列表进行排序。",
+                        "match": [
+                            "one pass"
+                        ]
+                    },
+                    {
+                        "word": "standpoint",
+                        "ph": "/ˈstændpɔɪnt/",
+                        "pos": "n",
+                        "mean": "角度；立场",
+                        "ex": "From a financial standpoint, this is a risky investment.",
+                        "tr": "从财务角度来看，这是一项有风险的投资。",
+                        "match": [
+                            "standpoint"
+                        ]
+                    }
+                ],
+                "blocks": [
+                    {
+                        "type": "code",
+                        "content": "let counter = 0;\nconsole.log(\"NUMBER, NUMBER, NUMBER\".replaceAll(\"NUMBER\", (match) => match + \"=\" + (++counter)))\n// NUMBER=1, NUMBER=2, NUMBER=3",
+                        "language": "javascript"
+                    }
+                ]
+            },
+            {
+                "id": 9,
+                "en": "Swapping variables. Another old thing. People oftentimes swap variables like this: Do this instead:",
+                "cn": "交换变量。另一个老技巧。人们经常这样交换变量：请用这种方式代替：",
+                "vocab": [
+                    {
+                        "word": "swap",
+                        "ph": "/swɒp/",
+                        "pos": "v",
+                        "mean": "交换",
+                        "ex": "I'll swap my chocolate bar for your bag of chips.",
+                        "tr": "我用我的巧克力棒换你那袋薯片。",
+                        "match": [
+                            "swap"
+                        ]
+                    }
+                ],
+                "blocks": [
+                    {
+                        "type": "code",
+                        "content": "let a = 1, b = 2;\nconsole.log(a, b); // 1, 2\nconst temp = a;\na = b;\nb = temp;\nconsole.log(a, b); // 2, 1",
+                        "language": "javascript"
+                    },
+                    {
+                        "type": "code",
+                        "content": "let a = 1, b = 2;\nconsole.log(a, b); // 1, 2\n[a, b] = [b, a];\nconsole.log(a, b); // 2, 1",
+                        "language": "javascript"
+                    }
+                ]
+            },
+            {
+                "id": 10,
+                "en": "structuredClone(). Browsers nowadays support structuredClone() API. This is a very convenient function for deeply copying most regular objects. However, people oftentimes use JSON.stringify() and JSON.parse() for deeply copying objects without thinking whether it's appropriate or not. This is where things can go wrong when doing JSON.stringify() / JSON.parse(): JSON.stringify() doesn't support some values, such as NaN or undefined. They can be skipped or converted into null. For some data types, such as bigint, it will even throw exception. JSON.stringify() cannot work with objects that contain cyclic references: Although usually not as serious as the first 2, but I must say it's not efficient for larger objects. It's slow and wastes a lot of memory.",
+                "cn": "structuredClone()。如今的浏览器支持 structuredClone() API。这是一个非常方便的函数，用于深拷贝大多数常规对象。然而，人们常常不假思索地使用 JSON.stringify() 和 JSON.parse() 来深拷贝对象，而不考虑这是否合适。以下是使用 JSON.stringify() / JSON.parse() 可能出错的地方：JSON.stringify() 不支持某些值，如 NaN 或 undefined。它们可能被跳过或转换成 null。对于某些数据类型，如 bigint，它甚至会抛出异常。JSON.stringify() 无法处理包含循环引用的对象：虽然通常不像前两条那么严重，但我必须说它对于较大的对象效率不高。它很慢，并且浪费大量内存。",
+                "vocab": [
+                    {
+                        "word": "convenient",
+                        "ph": "/kənˈviːniənt/",
+                        "pos": "adj",
+                        "mean": "方便的",
+                        "ex": "The new subway station is very convenient for commuters.",
+                        "tr": "新的地铁站对通勤者来说非常方便。",
+                        "match": [
+                            "convenient"
+                        ]
+                    },
+                    {
+                        "word": "deeply copy",
+                        "ph": "/ˈdiːpli ˈkɒpi/",
+                        "pos": "phr v",
+                        "mean": "深拷贝",
+                        "ex": "To avoid unintended side effects, you should deeply copy the nested object.",
+                        "tr": "为避免意外的副作用，你应该深拷贝那个嵌套对象。",
+                        "match": [
+                            "deeply copying"
+                        ]
+                    },
+                    {
+                        "word": "appropriate",
+                        "ph": "/əˈproʊpriət/",
+                        "pos": "adj",
+                        "mean": "合适的",
+                        "ex": "That is not an appropriate way to speak to your teacher.",
+                        "tr": "那样和你老师说话是不合适的。",
+                        "match": [
+                            "appropriate"
+                        ]
+                    },
+                    {
+                        "word": "throw exception",
+                        "ph": "/θroʊ ɪkˈsepʃn/",
+                        "pos": "phr v",
+                        "mean": "抛出异常",
+                        "ex": "If the input is invalid, the function will throw an exception.",
+                        "tr": "如果输入无效，该函数将抛出异常。",
+                        "match": [
+                            "throw exception"
+                        ]
+                    },
+                    {
+                        "word": "cyclic reference",
+                        "ph": "/ˈsaɪklɪk ˈrefərəns/",
+                        "pos": "n phr",
+                        "mean": "循环引用",
+                        "ex": "Garbage collectors have to be able to handle cyclic references to prevent memory leaks.",
+                        "tr": "垃圾回收器必须能够处理循环引用以防止内存泄漏。",
+                        "match": [
+                            "cyclic references"
+                        ]
+                    }
+                ],
+                "blocks": [
+                    {
+                        "type": "code",
+                        "content": "const obj = {};\nobj.selfReference = obj;\nconsole.log(JSON.stringify(obj)); // exception",
+                        "language": "javascript"
+                    }
+                ]
+            },
+            {
+                "id": 11,
+                "en": "structuredClone() should be preferred as much as possible. structuredClone() also automatically handles self referencing / cyclic structures. For more advanced information about object cloning and comparison, please read this.",
+                "cn": "应尽可能优先使用 structuredClone()。structuredClone() 也能自动处理自引用/循环结构。有关对象克隆和比较的更高级信息，请阅读此文。",
+                "vocab": [
+                    {
+                        "word": "prefer",
+                        "ph": "/prɪˈfɜːr/",
+                        "pos": "v",
+                        "mean": "更喜欢；优先选择",
+                        "ex": "I prefer coffee to tea in the morning.",
+                        "tr": "早上我更喜欢喝咖啡而不是茶。",
+                        "match": [
+                            "preferred"
+                        ]
+                    },
+                    {
+                        "word": "self-referencing",
+                        "ph": "/self ˈrefərənsɪŋ/",
+                        "pos": "adj",
+                        "mean": "自引用的",
+                        "ex": "The data structure contained a self-referencing loop.",
+                        "tr": "该数据结构包含一个自引用循环。",
+                        "match": [
+                            "self referencing"
+                        ]
+                    },
+                    {
+                        "word": "cloning",
+                        "ph": "/ˈkloʊnɪŋ/",
+                        "pos": "n",
+                        "mean": "克隆",
+                        "ex": "Object cloning in programming creates a copy of an existing object.",
+                        "tr": "编程中的对象克隆是创建一个现有对象的副本。",
+                        "match": [
+                            "cloning"
+                        ]
+                    },
+                    {
+                        "word": "isomorphic",
+                        "ph": "/ˌaɪsoʊˈmɔːrfɪk/",
+                        "pos": "adj",
+                        "mean": "（数学、图论）同构的",
+                        "ex": "The two graphs were different in appearance but were mathematically isomorphic.",
+                        "tr": "这两个图在外观上不同，但在数学上是同构的。",
+                        "match": [
+                            "isomorphic"
+                        ]
+                    }
+                ],
+                "blocks": [
+                    {
+                        "type": "code",
+                        "content": "const obj = {};\nobj.selfReference = obj;\nconst clonedObj = structuredClone(obj);\nconsole.log(obj === clonedObj); \n// false, because it's a cloned object with a different memory address\n\nconsole.log(clonedObj.selfReference === clonedObj);\n// true, because it has the same structure as obj (isomorphic to obj, i.e. as a graph)",
+                        "language": "javascript"
+                    }
+                ]
+            },
+            {
+                "id": 12,
+                "en": "Tagged templates. Most of us are familiar with template literals (``), but many people are unaware of tagged templates. Tagged templates allow you to parse template literals with a function. The first argument of a tag function contains an array of string values. The remaining arguments are related to the expressions. Tagged templates are useful when you want to do some automatic transformations to the interpolated values (or even the whole string) (values inside `${... here ...}`).",
+                "cn": "带标签的模板。我们大多数人都熟悉模板字面量（``），但许多人不知道带标签的模板。带标签的模板允许你用一个函数来解析模板字面量。标签函数的第一个参数包含一个字符串值数组。其余的参数与表达式相关。当你想要对插值（在`${... 这里 ...}`内的值）进行一些自动转换时，带标签的模板非常有用。",
+                "vocab": [
+                    {
+                        "word": "template literal",
+                        "ph": "/ˈtemplət ˈlɪtərəl/",
+                        "pos": "n phr",
+                        "mean": "模板字面量",
+                        "ex": "Template literals in JavaScript allow for embedded expressions.",
+                        "tr": "JavaScript中的模板字面量允许嵌入表达式。",
+                        "match": [
+                            "template literals"
+                        ]
+                    },
+                    {
+                        "word": "unaware of",
+                        "ph": "/ˌʌnəˈwer əv/",
+                        "pos": "adj",
+                        "mean": "不知道的",
+                        "ex": "He was unaware of the danger he was in.",
+                        "tr": "他没有意识到自己所处的危险。",
+                        "match": [
+                            "unaware of"
+                        ]
+                    },
+                    {
+                        "word": "tagged template",
+                        "ph": "/tæɡd ˈtemplət/",
+                        "pos": "n phr",
+                        "mean": "带标签的模板",
+                        "ex": "You can create powerful custom logic using tagged templates.",
+                        "tr": "你可以使用带标签的模板创建强大的自定义逻辑。",
+                        "match": [
+                            "Tagged templates"
+                        ]
+                    },
+                    {
+                        "word": "parse",
+                        "ph": "/pɑːrs/",
+                        "pos": "v",
+                        "mean": "解析",
+                        "ex": "The program needs to parse the JSON data before it can be used.",
+                        "tr": "程序在使用JSON数据之前需要先解析它。",
+                        "match": [
+                            "parse"
+                        ]
+                    },
+                    {
+                        "word": "interpolate",
+                        "ph": "/ɪnˈtɜːrpəleɪt/",
+                        "pos": "v",
+                        "mean": "插值",
+                        "ex": "Template literals make it easy to interpolate variables directly into strings.",
+                        "tr": "模板字面量使得将变量直接插值到字符串中变得容易。",
+                        "match": [
+                            "interpolated"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 13,
+                "en": "For example we want to automatically escape html text when doing interpolation:",
+                "cn": "例如，我们想在进行插值时自动转义html文本：",
+                "vocab": [
+                    {
+                        "word": "escape",
+                        "ph": "/ɪˈskeɪp/",
+                        "pos": "v",
+                        "mean": "转义",
+                        "ex": "You need to escape special characters in a URL.",
+                        "tr": "你需要对URL中的特殊字符进行转义。",
+                        "match": [
+                            "escape"
+                        ]
+                    }
+                ],
+                "blocks": [
+                    {
+                        "type": "code",
+                        "content": "function escapeHtml(strings, ...args) {\n\tconst div = document.createElement(\"div\");\n\n\tlet output = strings[0];\n\n\tfor (let i = 0; i < args.length; ++i) {\n\t\tdiv.innerText = args[i];\n\t\toutput += div.innerHTML;\n\t\toutput += strings[i + 1];\n\t}\n\n\treturn output;\n}\n\nconsole.log(escapeHtml`<br> ${'<br>'}`); // <br> &lt;br&gt;",
+                        "language": "javascript"
+                    }
+                ]
+            },
+            {
+                "id": 14,
+                "en": "WeakMap / WeakSet. Besides Map and Set JavaScript also supports WeakMap and WeakSet. WeakMap and WeakSet are similar to Map and Set except that they don't allow primitive values for their keys and they lack iterators. This is done because when you lose all the references pointing to a key the key and, possibly, the associated value must have the possibility to be freed from the map / set and be garbage collected.",
+                "cn": "WeakMap / WeakSet。除了 Map 和 Set，JavaScript 还支持 WeakMap 和 WeakSet。WeakMap 和 WeakSet 与 Map 和 Set 类似，只是它们不允许原始值作为键，并且它们缺少迭代器。这样做是因为，当你丢失了所有指向某个键的引用时，该键以及可能关联的值必须有可能从 map / set 中被释放并被垃圾回收。",
+                "vocab": [
+                    {
+                        "word": "primitive value",
+                        "ph": "/ˈprɪmətɪv ˈvæljuː/",
+                        "pos": "n phr",
+                        "mean": "原始值",
+                        "ex": "In JavaScript, strings, numbers, and booleans are all primitive values.",
+                        "tr": "在JavaScript中，字符串、数字和布尔值都是原始值。",
+                        "match": [
+                            "primitive values"
+                        ]
+                    },
+                    {
+                        "word": "lack",
+                        "ph": "/læk/",
+                        "pos": "v",
+                        "mean": "缺少",
+                        "ex": "The report lacks sufficient evidence to be convincing.",
+                        "tr": "这份报告缺乏足够的证据，难以令人信服。",
+                        "match": [
+                            "lack"
+                        ]
+                    },
+                    {
+                        "word": "reference",
+                        "ph": "/ˈrefərəns/",
+                        "pos": "n",
+                        "mean": "（内存）引用",
+                        "ex": "When no references point to an object, it can be garbage collected.",
+                        "tr": "当没有引用指向一个对象时，它就可以被垃圾回收。",
+                        "match": [
+                            "references"
+                        ]
+                    },
+                    {
+                        "word": "associated",
+                        "ph": "/əˈsoʊʃieɪtɪd/",
+                        "pos": "adj",
+                        "mean": "关联的",
+                        "ex": "Please review the document and its associated files.",
+                        "tr": "请审阅该文件及其关联文件。",
+                        "match": [
+                            "associated"
+                        ]
+                    },
+                    {
+                        "word": "garbage collected",
+                        "ph": "/ˈɡɑːrbɪdʒ kəˈlektɪd/",
+                        "pos": "v phr",
+                        "mean": "被垃圾回收",
+                        "ex": "Unused objects in memory are automatically garbage collected by the system.",
+                        "tr": "内存中未使用的对象会被系统自动进行垃圾回收。",
+                        "match": [
+                            "garbage collected"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 15,
+                "en": "Use WeakMap or WeakSet if you want to associate something with an object without any side effects.",
+                "cn": "如果你想将某物与一个对象关联起来而没有任何副作用，请使用 WeakMap 或 WeakSet。",
+                "vocab": [
+                    {
+                        "word": "associate with",
+                        "ph": "/əˈsoʊʃieɪt wɪθ/",
+                        "pos": "phr v",
+                        "mean": "与…关联",
+                        "ex": "This brand is often associated with high quality and luxury.",
+                        "tr": "这个品牌常与高品质和奢华联系在一起。",
+                        "match": [
+                            "associate something with"
+                        ]
+                    },
+                    {
+                        "word": "side effect",
+                        "ph": "/saɪd ɪˈfekt/",
+                        "pos": "n phr",
+                        "mean": "副作用",
+                        "ex": "A pure function in programming is one that has no side effects.",
+                        "tr": "编程中的纯函数是指没有任何副作用的函数。",
+                        "match": [
+                            "side effects"
+                        ]
+                    }
+                ],
+                "blocks": [
+                    {
+                        "type": "code",
+                        "content": "const set = new WeakSet();\nconst map = new WeakMap();\n\n{\n\tconst key1 = new Date();\n\tconst key2 = new Date();\n\n\tconsole.log(set.has(key1)); // false\n\tset.add(key1);\n\tconsole.log(set.has(key1)); // true\n\tconsole.log(map.get(key2)); // undefined\n\tmap.set(key2, 10);\n\tconsole.log(map.get(key2)); // 10\n}\n\n// here we lost the references to key1 and key2, so the keys \n// and values will be garbage collected later",
+                        "language": "javascript"
+                    }
+                ]
+            },
+            {
+                "id": 16,
+                "en": "Recently JavaScript has added support for boolean operations with Set objects. Here is the list of boolean operations: Set.prototype.difference(). Returns a new set containing elements in this set but not in the given set.",
+                "cn": "最近 JavaScript 增加了对 Set 对象进行布尔运算的支持。以下是布尔运算的列表：Set.prototype.difference()。返回一个新集合，其中包含在此集合中但不在给定集合中的元素。",
+                "vocab": [
+                    {
+                        "word": "boolean operation",
+                        "ph": "/ˈbuːliən ˌɒpəˈreɪʃn/",
+                        "pos": "n phr",
+                        "mean": "布尔运算",
+                        "ex": "AND, OR, and NOT are fundamental boolean operations in logic.",
+                        "tr": "与、或、非是逻辑学中的基本布尔运算。",
+                        "match": [
+                            "boolean operations"
+                        ]
+                    },
+                    {
+                        "word": "difference",
+                        "ph": "/ˈdɪfrəns/",
+                        "pos": "n",
+                        "mean": "差集",
+                        "ex": "The difference between set A and set B contains elements only in A.",
+                        "tr": "集合A与集合B的差集包含仅存在于A中的元素。",
+                        "match": [
+                            "difference"
+                        ]
+                    }
+                ],
+                "blocks": [
+                    {
+                        "type": "code",
+                        "content": "const set1 = new Set([1,2,3,4]);\nconst set2 = new Set([3,4,5,6]);\nconsole.log(set1.difference(set2)); // Set(2) {1, 2}",
+                        "language": "javascript"
+                    }
+                ]
+            },
+            {
+                "id": 17,
+                "en": "Set.prototype.intersection(). Returns a new set containing elements in both this set and the given set.",
+                "cn": "Set.prototype.intersection()。返回一个新集合，其中包含同时在此集合和给定集合中的元素。",
+                "vocab": [
+                    {
+                        "word": "intersection",
+                        "ph": "/ˌɪntərˈsekʃn/",
+                        "pos": "n",
+                        "mean": "交集",
+                        "ex": "The intersection of the two sets includes only the elements they share.",
+                        "tr": "两个集合的交集仅包含它们共有的元素。",
+                        "match": [
+                            "intersection"
+                        ]
+                    }
+                ],
+                "blocks": [
+                    {
+                        "type": "code",
+                        "content": "const set1 = new Set([1,2,3,4]);\nconst set2 = new Set([3,4,5,6]);\nconsole.log(set1.intersection(set2)); // Set(2) {3, 4}",
+                        "language": "javascript"
+                    }
+                ]
+            },
+            {
+                "id": 18,
+                "en": "Set.prototype.union(). Returns a new set containing elements which are in either or both of this set and the given set.",
+                "cn": "Set.prototype.union()。返回一个新集合，其中包含在此集合或给定集合中，或两者共有的元素。",
+                "vocab": [
+                    {
+                        "word": "union",
+                        "ph": "/ˈjuːniən/",
+                        "pos": "n",
+                        "mean": "并集",
+                        "ex": "The union of set A and set B contains all elements from both sets.",
+                        "tr": "集合A与集合B的并集包含来自两个集合的所有元素。",
+                        "match": [
+                            "union"
+                        ]
+                    }
+                ],
+                "blocks": [
+                    {
+                        "type": "code",
+                        "content": "const set1 = new Set([1,2,3,4]);\nconst set2 = new Set([3,4,5,6]);\nconsole.log(set1.union(set2)); // Set(6) {1, 2, 3, 4, 5, 6}",
+                        "language": "javascript"
+                    }
+                ]
+            },
+            {
+                "id": 19,
+                "en": "Set.prototype.symmetricDifference(). Returns a new set containing elements which are in either of this set and the given set, but not in both.",
+                "cn": "Set.prototype.symmetricDifference()。返回一个新集合，其中包含在此集合或给定集合中，但非两者共有的元素。",
+                "vocab": [
+                    {
+                        "word": "symmetric difference",
+                        "ph": "/sɪˈmetrɪk ˈdɪfrəns/",
+                        "pos": "n phr",
+                        "mean": "对称差集",
+                        "ex": "The symmetric difference of two sets is the set of elements which are in either of the sets, but not in their intersection.",
+                        "tr": "两个集合的对称差集是指存在于任一集合中，但不存在于它们交集中的元素集合。",
+                        "match": [
+                            "symmetricDifference"
+                        ]
+                    }
+                ],
+                "blocks": [
+                    {
+                        "type": "code",
+                        "content": "const set1 = new Set([1,2,3,4]);\nconst set2 = new Set([3,4,5,6]);\nconsole.log(set1.symmetricDifference(set2)); // Set(4) {1, 2, 5, 6}",
+                        "language": "javascript"
+                    }
+                ]
+            },
+            {
+                "id": 20,
+                "en": "Set.prototype.isDisjointFrom(). Returns a boolean indicating if this set has no elements in common with the given set.",
+                "cn": "Set.prototype.isDisjointFrom()。返回一个布尔值，指示此集合是否与给定集合没有共同元素。",
+                "vocab": [
+                    {
+                        "word": "disjoint",
+                        "ph": "/dɪsˈdʒɔɪnt/",
+                        "pos": "adj",
+                        "mean": "不相交的",
+                        "ex": "The two circles are disjoint; they do not overlap at all.",
+                        "tr": "这两个圆是不相交的；它们完全不重叠。",
+                        "match": [
+                            "isDisjointFrom"
+                        ]
+                    }
+                ],
+                "blocks": [
+                    {
+                        "type": "code",
+                        "content": "const set1 = new Set([1,2,3,4]);\nconst set2 = new Set([3,4,5,6]);\nconst set3 = new Set([5,6]);\nconsole.log(set1.isDisjointFrom(set2)); // false\nconsole.log(set1.isDisjointFrom(set3)); // true",
+                        "language": "javascript"
+                    }
+                ]
+            },
+            {
+                "id": 21,
+                "en": "Set.prototype.isSubsetOf(). Returns a boolean indicating if all elements of this set are in the given set.",
+                "cn": "Set.prototype.isSubsetOf()。返回一个布尔值，指示此集合的所有元素是否都在给定集合中。",
+                "vocab": [
+                    {
+                        "word": "subset",
+                        "ph": "/ˈsʌbset/",
+                        "pos": "n",
+                        "mean": "子集",
+                        "ex": "The set of even numbers is a subset of the set of all integers.",
+                        "tr": "偶数集合是所有整数集合的一个子集。",
+                        "match": [
+                            "isSubsetOf"
+                        ]
+                    }
+                ],
+                "blocks": [
+                    {
+                        "type": "code",
+                        "content": "const set1 = new Set([1,2,3,4]);\nconst set2 = new Set([3,4,5,6]);\nconst set3 = new Set([5,6]);\nconsole.log(set1.isSubsetOf(set2)); // false\nconsole.log(set3.isSubsetOf(set2)); // true",
+                        "language": "javascript"
+                    }
+                ]
+            },
+            {
+                "id": 22,
+                "en": "Set.prototype.isSupersetOf(). Returns a boolean indicating if all elements of the given set are in this set.",
+                "cn": "Set.prototype.isSupersetOf()。返回一个布尔值，指示给定集合的所有元素是否都在此集合中。",
+                "vocab": [
+                    {
+                        "word": "superset",
+                        "ph": "/ˈsuːpərset/",
+                        "pos": "n",
+                        "mean": "超集",
+                        "ex": "The set of all integers is a superset of the set of even numbers.",
+                        "tr": "所有整数的集合是偶数集合的一个超集。",
+                        "match": [
+                            "isSupersetOf"
+                        ]
+                    }
+                ],
+                "blocks": [
+                    {
+                        "type": "code",
+                        "content": "const set1 = new Set([1,2,3,4]);\nconst set2 = new Set([3,4,5,6]);\nconst set3 = new Set([5,6]);\nconsole.log(set2.isSupersetOf(set1)); // false\nconsole.log(set2.isSupersetOf(set3)); // true",
+                        "language": "javascript"
+                    }
+                ]
+            }
+        ],
+        "pos_types": {
+            "n": {
+                "en": "noun",
+                "cn": "名词"
+            },
+            "v": {
+                "en": "verb",
+                "cn": "动词"
+            },
+            "adj": {
+                "en": "adjective",
+                "cn": "形容词"
+            },
+            "adv": {
+                "en": "adverb",
+                "cn": "副词"
+            },
+            "prep": {
+                "en": "preposition",
+                "cn": "介词"
+            },
+            "conj": {
+                "en": "conjunction",
+                "cn": "连词"
+            },
+            "pron": {
+                "en": "pronoun",
+                "cn": "代词"
+            },
+            "det": {
+                "en": "determiner",
+                "cn": "限定词"
+            },
+            "int": {
+                "en": "interjection",
+                "cn": "感叹词"
+            },
+            "phr": {
+                "en": "phrase",
+                "cn": "短语"
+            },
+            "phr v": {
+                "en": "phrasal verb",
+                "cn": "动词短语"
+            },
+            "n phr": {
+                "en": "noun phrase",
+                "cn": "名词短语"
+            },
+            "adj phr": {
+                "en": "adjective phrase",
+                "cn": "形容词短语"
+            },
+            "modal v": {
+                "en": "modal verb",
+                "cn": "情态动词"
+            },
+            "idiom": {
+                "en": "idiom",
+                "cn": "习语"
+            },
+            "S": {
+                "en": "sentence",
+                "cn": "句子"
+            }
+        }
+    }
+]

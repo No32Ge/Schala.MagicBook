@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<body>
+
+    <div id="container-1"></div>
+    <div id="container-2"></div>
+
+    <!-- 引入为 module 方便使用 import 语法 -->
+    <script type="module">
+        import { importHtml } from './HtmlImporter.js';
+
+        async function init() {
+            
+            // 场景 1：加载一个模块并放到容器1里
+            const node1 = await importHtml('./user-card.html');
+            document.getElementById('container-1').appendChild(node1);
+
+            // 场景 2：复用！加载同一个模块放到容器2里
+            // 它们是完全独立的，互不干扰
+            const node2 = await importHtml('./user-card.html');
+            document.getElementById('container-2').appendChild(node2);
+            
+            // 场景 3：动态加载你的语法弹窗
+            // 只要你有 grammar-modal.html，就可以直接拿来用
+            const modalNode = await importHtml('./grammar-modal.html');
+            document.body.appendChild(modalNode);
+        }
+
+        init();
+    </script>
+</body>
+</html>

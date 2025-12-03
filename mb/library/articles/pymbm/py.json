@@ -1,0 +1,702 @@
+[
+    {
+        "id": "python_tutorial_chapter_1_1",
+        "title": "1.1 What is Python?",
+        "info": {
+            "author": "GE32 Academy",
+            "source": "Original Tutorial",
+            "level": "B1",
+            "tags": [
+                "python",
+                "programming",
+                "introduction",
+                "fundamentals",
+                "coding"
+            ],
+            "link": "https://example.com/original-source",
+            "variants": null
+        },
+        "paras": [
+            {
+                "id": 1,
+                "en": "Python is a high-level, interpreted programming language known for its remarkable readability and simple syntax. Created by Guido van Rossum and first released in 1991, its design philosophy emphasizes code clarity, allowing programmers to express concepts in fewer lines of code than might be possible in languages like C++ or Java. Contrary to what its name might suggest, Python was named after the British comedy group Monty Python, not the snake. This playful spirit is a hallmark of the Python community.",
+                "cn": "Python 是一种高级、解释型的编程语言，以其卓越的可读性和简单的语法而闻名。它由吉多·范罗苏姆创造，并于1991年首次发布，其设计哲学强调代码的清晰度，允许程序员用比 C++ 或 Java 等语言更少的代码行来表达概念。与其名字可能暗示的相反，Python 是以英国喜剧团体“蒙提·派森”命名的，而不是蛇。这种有趣的精髓是 Python 社区的一个标志。",
+                "vocab": [
+                    {
+                        "word": "high-level",
+                        "ph": "/haɪ ˈlevl/",
+                        "pos": "adj",
+                        "mean": "高级的（指编程语言接近人类语言）",
+                        "ex": "Beginners often find high-level languages easier to learn because their syntax is more intuitive.",
+                        "tr": "初学者通常觉得高级语言更容易学习，因为它们的语法更直观。",
+                        "match": [
+                            "high-level"
+                        ]
+                    },
+                    {
+                        "word": "interpreted",
+                        "ph": "/ɪnˈtɜːrprɪtɪd/",
+                        "pos": "adj",
+                        "mean": "解释型的",
+                        "ex": "An interpreted language is executed line by line, which can make debugging easier.",
+                        "tr": "解释型语言是逐行执行的，这可以使调试变得更容易。",
+                        "match": [
+                            "interpreted"
+                        ]
+                    },
+                    {
+                        "word": "readability",
+                        "ph": "/ˌriːdəˈbɪləti/",
+                        "pos": "n",
+                        "mean": "可读性",
+                        "ex": "Good code should prioritize readability to make it easier for others to understand.",
+                        "tr": "好的代码应优先考虑可读性，以便让其他人更容易理解。",
+                        "match": [
+                            "readability"
+                        ]
+                    },
+                    {
+                        "word": "syntax",
+                        "ph": "/ˈsɪntæks/",
+                        "pos": "n",
+                        "mean": "语法",
+                        "ex": "A single misplaced comma can cause a syntax error in your program.",
+                        "tr": "一个放错位置的逗号就可能导致你的程序出现语法错误。",
+                        "match": [
+                            "syntax"
+                        ]
+                    },
+                    {
+                        "word": "philosophy",
+                        "ph": "/fəˈlɒsəfi/",
+                        "pos": "n",
+                        "mean": "哲学",
+                        "ex": "The company's design philosophy is centered around simplicity and user experience.",
+                        "tr": "该公司的设计哲学以简洁和用户体验为中心。",
+                        "match": [
+                            "philosophy"
+                        ]
+                    },
+                    {
+                        "word": "hallmark",
+                        "ph": "/ˈhɔːlmɑːrk/",
+                        "pos": "n",
+                        "mean": "标志；特征",
+                        "ex": "Attention to detail is a hallmark of his work.",
+                        "tr": "注重细节是他工作的一个标志。",
+                        "match": [
+                            "hallmark"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "en": "At its heart, Python values clarity over complexity. This is captured in the “Zen of Python,” a collection of 19 guiding principles for the language's design. Instead of using brackets `{}` or semicolons `;` to define code blocks, Python uses simple indentation. This forces programmers to write visually clean and organized code. For example, a simple decision-making structure looks like this:",
+                "cn": "Python 的核心是推崇清晰而非复杂。这一点体现在“Python之禅”中，这是该语言设计的19条指导原则的集合。Python 不使用括号 `{}` 或分号 `;` 来定义代码块，而是使用简单的缩进。这迫使程序员编写视觉上整洁且有组织的代码。例如，一个简单的决策结构是这样的：",
+                "vocab": [
+                    {
+                        "word": "clarity",
+                        "ph": "/ˈklærəti/",
+                        "pos": "n",
+                        "mean": "清晰度",
+                        "ex": "He explained the complex topic with great clarity.",
+                        "tr": "他以非常清晰的方式解释了这个复杂的话题。",
+                        "match": [
+                            "clarity"
+                        ]
+                    },
+                    {
+                        "word": "complexity",
+                        "ph": "/kəmˈpleksəti/",
+                        "pos": "n",
+                        "mean": "复杂性",
+                        "ex": "The complexity of the problem required a team of experts to solve.",
+                        "tr": "这个问题的复杂性需要一个专家团队来解决。",
+                        "match": [
+                            "complexity"
+                        ]
+                    },
+                    {
+                        "word": "guiding principle",
+                        "ph": "/ˈɡaɪdɪŋ ˈprɪnsəpl/",
+                        "pos": "n phr",
+                        "mean": "指导原则",
+                        "ex": "Honesty is a guiding principle in her life.",
+                        "tr": "诚实是她生活中的一条指导原则。",
+                        "match": [
+                            "guiding principles"
+                        ]
+                    },
+                    {
+                        "word": "indentation",
+                        "ph": "/ˌɪndenˈteɪʃn/",
+                        "pos": "n",
+                        "mean": "缩进",
+                        "ex": "In Python, proper indentation is not just for style; it's required by the syntax.",
+                        "tr": "在Python中，正确的缩进不仅仅是为了风格，它是语法所要求的。",
+                        "match": [
+                            "indentation"
+                        ]
+                    }
+                ],
+                "blocks": [
+                    {
+                        "type": "code",
+                        "content": "age = 20\nif age >= 18:\n    print(\"You are an adult.\")\nelse:\n    print(\"You are a minor.\")",
+                        "language": "python"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "en": "One of Python's greatest strengths is its versatility. It is a general-purpose language, which means it isn’t tied to a specific problem domain. You can use Python for a vast array of applications, including web development (with frameworks like Django and Flask), data science and artificial intelligence (using libraries like Pandas, NumPy, and TensorFlow), task automation and scripting, and even game development. This power is amplified by Python's “batteries included” philosophy, referring to its huge standard library that provides tools for many common tasks right out of the box.",
+                "cn": "Python 最大的优势之一是其多功能性。它是一种通用语言，这意味着它不局限于特定的问题领域。你可以将 Python 用于各种各样的应用，包括 Web 开发（使用像 Django 和 Flask 这样的框架）、数据科学和人工智能（使用像 Pandas、NumPy 和 TensorFlow 这样的库）、任务自动化和脚本编写，甚至游戏开发。Python 的“自带电池”理念放大了这种能力，指的是其庞大的标准库，为许多常见任务提供了开箱即用的工具。",
+                "vocab": [
+                    {
+                        "word": "versatility",
+                        "ph": "/ˌvɜːrsəˈtɪləti/",
+                        "pos": "n",
+                        "mean": "多功能性",
+                        "ex": "The versatility of this tool makes it useful for many different jobs.",
+                        "tr": "这个工具的多功能性使它能用于许多不同的工作。",
+                        "match": [
+                            "versatility"
+                        ]
+                    },
+                    {
+                        "word": "general-purpose",
+                        "ph": "/ˈdʒenrəl ˈpɜːrpəs/",
+                        "pos": "adj",
+                        "mean": "通用的",
+                        "ex": "This is a general-purpose cleaner that can be used on most surfaces.",
+                        "tr": "这是一种可用于大多数表面的通用清洁剂。",
+                        "match": [
+                            "general-purpose"
+                        ]
+                    },
+                    {
+                        "word": "domain",
+                        "ph": "/doʊˈmeɪn/",
+                        "pos": "n",
+                        "mean": "领域",
+                        "ex": "His expertise is in the domain of ancient history.",
+                        "tr": "他的专长是古代史领域。",
+                        "match": [
+                            "domain"
+                        ]
+                    },
+                    {
+                        "word": "array",
+                        "ph": "/əˈreɪ/",
+                        "pos": "n",
+                        "mean": "大量；一系列",
+                        "ex": "The store offers a wide array of products.",
+                        "tr": "这家商店提供种类繁多的产品。",
+                        "match": [
+                            "array"
+                        ]
+                    },
+                    {
+                        "word": "framework",
+                        "ph": "/ˈfreɪmwɜːrk/",
+                        "pos": "n",
+                        "mean": "（软件）框架",
+                        "ex": "Using a web framework can speed up the development of a website.",
+                        "tr": "使用Web框架可以加快网站的开发速度。",
+                        "match": [
+                            "frameworks"
+                        ]
+                    },
+                    {
+                        "word": "automation",
+                        "ph": "/ˌɔːtəˈmeɪʃn/",
+                        "pos": "n",
+                        "mean": "自动化",
+                        "ex": "The factory increased its efficiency through automation.",
+                        "tr": "工厂通过自动化提高了效率。",
+                        "match": [
+                            "automation"
+                        ]
+                    },
+                    {
+                        "word": "amplify",
+                        "ph": "/ˈæmplɪfaɪ/",
+                        "pos": "v",
+                        "mean": "放大；增强",
+                        "ex": "Using a microphone will amplify your voice so everyone can hear.",
+                        "tr": "使用麦克风会放大你的声音，这样每个人都能听到。",
+                        "match": [
+                            "amplified"
+                        ]
+                    },
+                    {
+                        "word": "batteries included",
+                        "ph": "/ˈbætəriz ɪnˈkluːdɪd/",
+                        "pos": "idiom",
+                        "mean": "自带电池（比喻功能齐全，开箱即用）",
+                        "ex": "The software follows a 'batteries included' approach, offering many useful features by default.",
+                        "tr": "该软件遵循“自带电池”的方针，默认提供许多有用的功能。",
+                        "match": [
+                            "batteries included"
+                        ]
+                    },
+                    {
+                        "word": "out of the box",
+                        "ph": "/aʊt əv ðə bɒks/",
+                        "pos": "idiom",
+                        "mean": "开箱即用",
+                        "ex": "The new printer worked perfectly right out of the box, with no complicated setup required.",
+                        "tr": "新打印机开箱即用，无需复杂设置。",
+                        "match": [
+                            "out of the box"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "en": "So, why should you choose Python? For beginners, it's one of the most beginner-friendly languages available, making it an excellent starting point for a journey into programming. For experienced developers, it offers the power and flexibility to build complex applications quickly. Its massive and supportive community means that if you ever get stuck, help is just a search away. In short, Python manages to be both powerful and simple, making it a valuable tool for almost anyone.",
+                "cn": "那么，你为什么要选择 Python 呢？对于初学者来说，它是现有的最适合初学者的语言之一，是开启编程之旅的绝佳起点。对于有经验的开发者来说，它提供了快速构建复杂应用程序的能力和灵活性。其庞大而友善的社区意味着，如果你遇到困难，只需一次搜索就能找到帮助。简而言之，Python 成功地做到了既强大又简单，使其成为对几乎任何人都有价值的工具。",
+                "vocab": [
+                    {
+                        "word": "beginner-friendly",
+                        "ph": "/bɪˈɡɪnər ˈfrendli/",
+                        "pos": "adj",
+                        "mean": "适合初学者的",
+                        "ex": "This tutorial is designed to be beginner-friendly, with clear explanations and simple examples.",
+                        "tr": "本教程旨在对初学者友好，提供清晰的解释和简单的例子。",
+                        "match": [
+                            "beginner-friendly"
+                        ]
+                    },
+                    {
+                        "word": "starting point",
+                        "ph": "/ˈstɑːrtɪŋ pɔɪnt/",
+                        "pos": "n phr",
+                        "mean": "起点",
+                        "ex": "This basic course is a good starting point for learning a new skill.",
+                        "tr": "这门基础课程是学习一项新技能的好起点。",
+                        "match": [
+                            "starting point"
+                        ]
+                    },
+                    {
+                        "word": "experienced",
+                        "ph": "/ɪkˈspɪəriənst/",
+                        "pos": "adj",
+                        "mean": "有经验的",
+                        "ex": "We are looking to hire an experienced project manager.",
+                        "tr": "我们希望聘请一位有经验的项目经理。",
+                        "match": [
+                            "experienced"
+                        ]
+                    },
+                    {
+                        "word": "get stuck",
+                        "ph": "/ɡet stʌk/",
+                        "pos": "phr v",
+                        "mean": "卡住；遇到困难",
+                        "ex": "If you get stuck on a difficult problem, it's okay to ask for help.",
+                        "tr": "如果你在一个难题上卡住了，寻求帮助是可以的。",
+                        "match": [
+                            "get stuck"
+                        ]
+                    },
+                    {
+                        "word": "in short",
+                        "ph": "/ɪn ʃɔːrt/",
+                        "pos": "phr",
+                        "mean": "简而言之",
+                        "ex": "The meeting was long and detailed, but in short, the project was approved.",
+                        "tr": "会议漫长而详细，但简而言之，项目被批准了。",
+                        "match": [
+                            "In short"
+                        ]
+                    },
+                    {
+                        "word": "valuable",
+                        "ph": "/ˈvæljuəbl/",
+                        "pos": "adj",
+                        "mean": "有价值的",
+                        "ex": "He provided some valuable advice on how to improve my resume.",
+                        "tr": "他就在如何改进我的简历方面提供了一些宝贵的建议。",
+                        "match": [
+                            "valuable"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "pos_types": {
+            "n": {
+                "en": "noun",
+                "cn": "名词"
+            },
+            "v": {
+                "en": "verb",
+                "cn": "动词"
+            },
+            "adj": {
+                "en": "adjective",
+                "cn": "形容词"
+            },
+            "adv": {
+                "en": "adverb",
+                "cn": "副词"
+            },
+            "prep": {
+                "en": "preposition",
+                "cn": "介词"
+            },
+            "conj": {
+                "en": "conjunction",
+                "cn": "连词"
+            },
+            "pron": {
+                "en": "pronoun",
+                "cn": "代词"
+            },
+            "det": {
+                "en": "determiner",
+                "cn": "限定词"
+            },
+            "int": {
+                "en": "interjection",
+                "cn": "感叹词"
+            },
+            "phr": {
+                "en": "phrase",
+                "cn": "短语"
+            },
+            "phr v": {
+                "en": "phrasal verb",
+                "cn": "动词短语"
+            },
+            "n phr": {
+                "en": "noun phrase",
+                "cn": "名词短语"
+            },
+            "adj phr": {
+                "en": "adjective phrase",
+                "cn": "形容词短语"
+            },
+            "modal v": {
+                "en": "modal verb",
+                "cn": "情态动词"
+            },
+            "idiom": {
+                "en": "idiom",
+                "cn": "习语"
+            },
+            "S": {
+                "en": "sentence",
+                "cn": "句子"
+            }
+        }
+    },
+    {
+        "id": "python_tutorial_chapter_2_2_integrated",
+        "title": "2.2 Basic Operators: Math & Logic",
+        "info": {
+            "author": "GE32 Academy",
+            "source": "Integrated Tutorial",
+            "level": "B1+",
+            "tags": [
+                "python",
+                "operators",
+                "arithmetic",
+                "syntax",
+                "clean code"
+            ],
+            "link": "https://example.com/integrated-source",
+            "variants": null
+        },
+        "paras": [
+            {
+                "id": 1,
+                "en": "We start with **addition** (`+`) and **subtraction** (`-`). While these seem simple, Python handles different data types intelligently. If you add an integer to a float, Python performs an **implicit conversion**, automatically promoting the integer to a float to prevent data loss. This ensures your calculations maintain **precision**.",
+                "cn": "我们从**加法**（`+`）和**减法**（`-`）开始。虽然这些看起来很简单，但 Python 能智能地处理不同的数据类型。如果你将一个整数加到一个浮点数上，Python 会执行**隐式转换**，自动将整数提升为浮点数以防止数据丢失。这确保了你的计算保持**精度**。",
+                "vocab": [
+                    {
+                        "word": "implicit conversion",
+                        "ph": "/ɪmˈplɪsɪt kənˈvɜːrʒn/",
+                        "pos": "n phr",
+                        "mean": "隐式转换（自动类型转换）",
+                        "ex": "Implicit conversion happens automatically in the background.",
+                        "tr": "隐式转换在后台自动发生。"
+                    },
+                    {
+                        "word": "promote",
+                        "ph": "/prəˈmoʊt/",
+                        "pos": "v",
+                        "mean": "提升；升级",
+                        "ex": "The system promotes the variable to a larger data type.",
+                        "tr": "系统将变量提升为更大的数据类型。"
+                    },
+                    {
+                        "word": "precision",
+                        "ph": "/prɪˈsɪʒn/",
+                        "pos": "n",
+                        "mean": "精度；精确度",
+                        "ex": "Financial apps require high precision.",
+                        "tr": "金融应用需要高精度。"
+                    },
+                    {
+                        "word": "variable",
+                        "ph": "/ˈveriəbl/",
+                        "pos": "n",
+                        "mean": "变量",
+                        "ex": "Store the result in a variable.",
+                        "tr": "将结果存储在一个变量中。"
+                    }
+                ],
+                "blocks": [
+                    {
+                        "type": "code",
+                        "content": "# Example 1: Basic Integer Math\nwallet = 100\nspent = 25\nremaining = wallet - spent\nprint(remaining)  \n# Output: 75\n\n# Example 2: Mixing Types (Implicit Conversion)\n# Adding an int (10) and a float (0.5)\nbase_price = 10\ntax = 0.5\ntotal = base_price + tax\n\nprint(total)      \n# Output: 10.5 (Notice the result is now a float)\nprint(type(total))\n# Output: <class 'float'>",
+                        "language": "python"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "en": "Multiplication (`*`) works as expected, but **division** (`/`) has a unique behavior in Python 3. The standard division operator *always* returns a **float**, even if the numbers divide evenly. This is to distinguish it from **integer division**. Also, be aware that dividing by zero will cause a **runtime error**.",
+                "cn": "乘法（`*`）按预期工作，但 Python 3 中的**除法**（`/`）有一个独特的行为。标准除法运算符*总是*返回一个**浮点数**，即使数字能整除。这是为了将其与**整数除法**区分开来。另外，请注意除以零会导致**运行时错误**。",
+                "vocab": [
+                    {
+                        "word": "unique",
+                        "ph": "/juˈniːk/",
+                        "pos": "adj",
+                        "mean": "独特的；唯一的",
+                        "ex": "Each user has a unique ID.",
+                        "tr": "每个用户都有一个唯一的ID。"
+                    },
+                    {
+                        "word": "behavior",
+                        "ph": "/bɪˈheɪvjər/",
+                        "pos": "n",
+                        "mean": "行为；表现",
+                        "ex": "This is the default behavior of the function.",
+                        "tr": "这是函数的默认行为。"
+                    },
+                    {
+                        "word": "distinguish",
+                        "ph": "/dɪˈstɪŋɡwɪʃ/",
+                        "pos": "v",
+                        "mean": "区分；辨别",
+                        "ex": "It's hard to distinguish between the two errors.",
+                        "tr": "很难区分这两个错误。"
+                    },
+                    {
+                        "word": "runtime error",
+                        "ph": "/ˈrʌntaɪm erər/",
+                        "pos": "n phr",
+                        "mean": "运行时错误",
+                        "ex": "A division by zero causes a runtime error.",
+                        "tr": "除以零会导致运行时错误。"
+                    }
+                ],
+                "blocks": [
+                    {
+                        "type": "code",
+                        "content": "# Example 1: Standard Multiplication\ndaily_pay = 100\ndays = 5\nprint(daily_pay * days)  \n# Output: 500\n\n# Example 2: The \"Float Rule\" of Division\n# Even if 10 / 2 is mathematically 5, Python returns 5.0\nresult = 10 / 2\nprint(result)            \n# Output: 5.0\n\n# Example 3: Division with decimals\nprint(5 / 2)             \n# Output: 2.5",
+                        "language": "python"
+                    },
+                    {
+                        "type": "code",
+                        "content": "# Example 4: The Danger Zone (Uncomment to see error)\n# x = 10 / 0\n# Output: ZeroDivisionError: division by zero",
+                        "language": "python"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "en": "Two essential tools for programming logic are **Floor Division** (`//`) and **Modulus** (`%`). Floor division **truncates** the decimal, giving you the integer quotient. Modulus gives you the **remainder**. These are frequently used together to convert units (like seconds to minutes) or check for **parity** (even vs. odd).",
+                "cn": "编程逻辑的两个基本工具是**地板除**（`//`）和**模运算**（`%`）。地板除**截断**小数，给你整数商。模运算给你**余数**。它们经常一起用于转换单位（如秒转分钟）或检查**奇偶性**（偶数对奇数）。",
+                "vocab": [
+                    {
+                        "word": "truncate",
+                        "ph": "/ˈtrʌŋkeɪt/",
+                        "pos": "v",
+                        "mean": "截断；去尾",
+                        "ex": "Floor division truncates the result to the nearest integer.",
+                        "tr": "地板除将结果截断为最接近的整数。"
+                    },
+                    {
+                        "word": "quotient",
+                        "ph": "/ˈkwoʊʃnt/",
+                        "pos": "n",
+                        "mean": "商",
+                        "ex": "In 10 divided by 3, the quotient is 3.",
+                        "tr": "在10除以3中，商是3。"
+                    },
+                    {
+                        "word": "remainder",
+                        "ph": "/rɪˈmeɪndər/",
+                        "pos": "n",
+                        "mean": "余数",
+                        "ex": "The remainder of 10 divided by 3 is 1.",
+                        "tr": "10除以3的余数是1。"
+                    },
+                    {
+                        "word": "parity",
+                        "ph": "/ˈpærəti/",
+                        "pos": "n",
+                        "mean": "奇偶性",
+                        "ex": "Algorithms often check bit parity.",
+                        "tr": "算法经常检查位奇偶性。"
+                    }
+                ],
+                "blocks": [
+                    {
+                        "type": "code",
+                        "content": "# Example 1: Floor Division vs Standard Division\nprint(7 / 2)   # Output: 3.5 (Float)\nprint(7 // 2)  # Output: 3 (Integer, .5 is discarded)\n\n# Example 2: Logic - Even or Odd?\n# Any number % 2 will be 0 (Even) or 1 (Odd)\nnumber = 17\nremainder = number % 2\nprint(remainder) \n# Output: 1 (So, 17 is Odd)",
+                        "language": "python"
+                    },
+                    {
+                        "type": "code",
+                        "content": "# Example 3: Unit Conversion (Real World Use)\ntotal_seconds = 130\n\n# Get whole minutes\nminutes = 130 // 60  # Result: 2\n\n# Get remaining seconds\nseconds = 130 % 60   # Result: 10\n\nprint(f\"Time: {minutes} min {seconds} sec\")\n# Output: Time: 2 min 10 sec",
+                        "language": "python"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "en": "For advanced math, use **exponentiation** (`**`) to raise numbers to a power. It is crucial to respect the **order of operations** (PEMDAS). If you need to change the order, wrap the expression in **parentheses**. Python also offers **augmented assignment** operators (like `+=`), which are a **shorthand** to update a variable's value in place.",
+                "cn": "对于高级数学，使用**指数运算**（`**`）将数字提升为幂。遵守**运算顺序**（PEMDAS）至关重要。如果你需要改变顺序，请用**圆括号**将表达式括起来。Python 还提供了**增强赋值**运算符（如 `+=`），这是一种就地更新变量值的**速记法**。",
+                "vocab": [
+                    {
+                        "word": "exponentiation",
+                        "ph": "/ɪkˌspɒnənˈʃiˈeɪʃn/",
+                        "pos": "n",
+                        "mean": "取幂；指数运算",
+                        "ex": "Exponentiation is used to calculate area and volume.",
+                        "tr": "指数运算用于计算面积和体积。"
+                    },
+                    {
+                        "word": "parentheses",
+                        "ph": "/pəˈrenθəsiːz/",
+                        "pos": "n",
+                        "mean": "圆括号 (plural)",
+                        "ex": "Parentheses force the addition to happen before multiplication.",
+                        "tr": "括号强制加法在乘法之前发生。"
+                    },
+                    {
+                        "word": "augmented assignment",
+                        "ph": "/ɔːɡˈmentɪd əˈsaɪnmənt/",
+                        "pos": "n phr",
+                        "mean": "增强赋值（如 +=）",
+                        "ex": "Using augmented assignment makes the code cleaner.",
+                        "tr": "使用增强赋值使代码更整洁。"
+                    },
+                    {
+                        "word": "shorthand",
+                        "ph": "/ˈʃɔːrthænd/",
+                        "pos": "n",
+                        "mean": "速记；简写",
+                        "ex": " 'x *= 2' is shorthand for 'x = x * 2'.",
+                        "tr": " 'x *= 2' 是 'x = x * 2' 的简写。"
+                    }
+                ],
+                "blocks": [
+                    {
+                        "type": "code",
+                        "content": "# Example 1: Exponents\nprint(2 ** 3)    # 2 * 2 * 2\n# Output: 8\nprint(4 ** 0.5)  # Power of 0.5 is Square Root\n# Output: 2.0\n\n# Example 2: Order of Operations (PEMDAS)\n# Multiplication (*) happens before Addition (+)\nprint(10 + 5 * 2)   \n# Output: 20 (10 + 10)\n\n# Parentheses change priority\nprint((10 + 5) * 2) \n# Output: 30 (15 * 2)",
+                        "language": "python"
+                    },
+                    {
+                        "type": "code",
+                        "content": "# Example 3: Shorthand Operators\nscore = 10\nscore += 5  # Same as: score = score + 5\nprint(score)\n# Output: 15\n\nscore *= 2  # Same as: score = score * 2\nprint(score)\n# Output: 30",
+                        "language": "python"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "en": "Surprisingly, the `+` and `*` operators are **overloaded** to work with strings too. `+` creates a new string by **concatenation** (joining), while `*` handles **repetition**. However, strict rules apply: you cannot add a number to a string without converting it first, otherwise, Python raises a `TypeError`.",
+                "cn": "令人惊讶的是，`+` 和 `*` 运算符被**重载**以同样适用于字符串。`+` 通过**连接**（合并）创建一个新字符串，而 `*` 处理**重复**。但是，有严格的规则：你不能在不先转换的情况下将数字加到字符串上，否则，Python 会引发 `TypeError`。",
+                "vocab": [
+                    {
+                        "word": "overload",
+                        "ph": "/ˌoʊvərˈloʊd/",
+                        "pos": "v",
+                        "mean": "重载；超载",
+                        "ex": "The operator is overloaded to handle text.",
+                        "tr": "该运算符被重载以处理文本。"
+                    },
+                    {
+                        "word": "concatenation",
+                        "ph": "/kənˌkætəˈneɪʃn/",
+                        "pos": "n",
+                        "mean": "连接；级联",
+                        "ex": "Concatenation combines two strings into one.",
+                        "tr": "连接将两个字符串合并为一个。"
+                    },
+                    {
+                        "word": "strict",
+                        "ph": "/strɪkt/",
+                        "pos": "adj",
+                        "mean": "严格的",
+                        "ex": "Python has strict rules about data types.",
+                        "tr": "Python 对数据类型有严格的规定。"
+                    },
+                    {
+                        "word": "raise",
+                        "ph": "/reɪz/",
+                        "pos": "v",
+                        "mean": "引发；提出；举起",
+                        "ex": "The code will raise an error if inputs are wrong.",
+                        "tr": "如果输入错误，代码将引发错误。"
+                    }
+                ],
+                "blocks": [
+                    {
+                        "type": "code",
+                        "content": "# Example 1: String Concatenation (+)\npart1 = \"Hello\"\npart2 = \"World\"\n# Notice we must add the space manually\nmessage = part1 + \" \" + part2 \nprint(message)\n# Output: Hello World\n\n# Example 2: String Repetition (*)\nseparator = \"-\" * 20\nprint(separator)\n# Output: --------------------",
+                        "language": "python"
+                    },
+                    {
+                        "type": "code",
+                        "content": "# Example 3: Common Error (Type Mismatch)\nage = 25\n# text = \"I am \" + age      <-- This causes TypeError\n\n# Correct way: Cast the integer to string first\ntext = \"I am \" + str(age)\nprint(text)\n# Output: I am 25",
+                        "language": "python"
+                    }
+                ]
+            }
+        ],
+        "pos_types": {
+            "n": {
+                "en": "noun",
+                "cn": "名词"
+            },
+            "v": {
+                "en": "verb",
+                "cn": "动词"
+            },
+            "adj": {
+                "en": "adjective",
+                "cn": "形容词"
+            },
+            "adv": {
+                "en": "adverb",
+                "cn": "副词"
+            },
+            "n phr": {
+                "en": "noun phrase",
+                "cn": "名词短语"
+            },
+            "prep": {
+                "en": "preposition",
+                "cn": "介词"
+            },
+            "conj": {
+                "en": "conjunction",
+                "cn": "连词"
+            },
+            "pron": {
+                "en": "pronoun",
+                "cn": "代词"
+            }
+        }
+    }
+]

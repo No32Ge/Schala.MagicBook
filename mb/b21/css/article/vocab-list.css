@@ -79,6 +79,7 @@
 
 /* 单词操作区域 */
 .word-actions {
+    user-select: none;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -116,6 +117,7 @@
 
 /* 单词发音按钮样式 */
 .word-speech-btn {
+    user-select: none;
     background: rgba(52, 152, 219, 0.1);
     border: none;
     cursor: pointer;
@@ -253,6 +255,7 @@
     }
 
     .word-actions {
+        user-select: none;
         align-self: flex-end;
     }
 

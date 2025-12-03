@@ -1696,5 +1696,827 @@
         "cn": "句子"
       }
     }
+  },
+  {
+    "id": "python_tutorial_chapter_1_2",
+    "title": "1.2 Running Your First Python Program",
+    "info": {
+      "author": "GE32 Academy",
+      "source": "Original Tutorial",
+      "level": "B1",
+      "tags": [
+        "python",
+        "programming",
+        "hello world",
+        "interpreter",
+        "coding"
+      ],
+      "link": "https://example.com/original-source",
+      "variants": null
+    },
+    "paras": [
+      {
+        "id": 1,
+        "en": "The best way to learn any programming language is by writing code. In this section, we'll dive right in and run our first Python program. Traditionally, the first program you write in a new language is one that simply displays the message “Hello, World!” on the screen. It's a simple act, but it's a rite of passage that confirms your environment is set up correctly and you're ready to start your journey.",
+        "cn": "学习任何编程语言最好的方法就是编写代码。在本节中，我们将直接深入，运行我们的第一个Python程序。传统上，你在新语言中编写的第一个程序就是一个简单地在屏幕上显示“Hello, World!”消息的程序。这是一个简单的行为，但它是一种入门仪式，确认你的环境已正确设置，并且你已准备好开始你的旅程。",
+        "vocab": [
+          {
+            "word": "dive right in",
+            "ph": "/daɪv raɪt ɪn/",
+            "pos": "idiom",
+            "mean": "直接开始；深入其中",
+            "ex": "Instead of a long introduction, let's dive right in and start solving the problem.",
+            "tr": "我们别做冗长的介绍了，直接深入开始解决问题吧。",
+            "match": [
+              "dive right in"
+            ]
+          },
+          {
+            "word": "traditionally",
+            "ph": "/trəˈdɪʃənəli/",
+            "pos": "adv",
+            "mean": "传统上",
+            "ex": "Traditionally, the family gathers for a large meal on this holiday.",
+            "tr": "传统上，这个家庭会在这天假日聚在一起吃大餐。",
+            "match": [
+              "Traditionally"
+            ]
+          },
+          {
+            "word": "display",
+            "ph": "/dɪˈspleɪ/",
+            "pos": "v",
+            "mean": "显示",
+            "ex": "The monitor will display the results of the calculation.",
+            "tr": "显示器将显示计算结果。",
+            "match": [
+              "displays"
+            ]
+          },
+          {
+            "word": "rite of passage",
+            "ph": "/raɪt əv ˈpæsɪdʒ/",
+            "pos": "n phr",
+            "mean": "（标志人生阶段变化的）入门仪式；成人礼",
+            "ex": "Getting your driver's license is a common rite of passage for teenagers.",
+            "tr": "考取驾照是青少年常见的一种成人礼。",
+            "match": [
+              "rite of passage"
+            ]
+          },
+          {
+            "word": "confirm",
+            "ph": "/kənˈfɜːrm/",
+            "pos": "v",
+            "mean": "确认",
+            "ex": "Can you please confirm your attendance for the meeting?",
+            "tr": "你能否确认一下你是否出席会议？",
+            "match": [
+              "confirms"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "en": "There are two primary ways to run Python code: in an interactive interpreter or by executing a script file. We'll start with the interpreter, as it's the quickest way to get instant feedback. First, you'll need to open your computer's command-line interface. This might be called Terminal on macOS and Linux, or Command Prompt / PowerShell on Windows. Once it's open, simply type `python` (or `python3` on some systems) and press Enter. You should see a new prompt, typically `>>>`, which indicates the Python interpreter is active and waiting for your commands.",
+        "cn": "运行 Python 代码主要有两种方式：在交互式解释器中，或者通过执行脚本文件。我们将从解释器开始，因为这是获得即时反馈的最快方式。首先，你需要打开你电脑的命令行界面。在 macOS 和 Linux 上可能叫作“终端”，在 Windows 上则叫“命令提示符”或“PowerShell”。打开后，只需键入 `python`（在某些系统上是 `python3`）并按 Enter 键。你应该会看到一个新的提示符，通常是 `>>>`，这表示 Python 解释器已激活并正在等待你的命令。",
+        "vocab": [
+          {
+            "word": "primary",
+            "ph": "/ˈpraɪmeri/",
+            "pos": "adj",
+            "mean": "主要的",
+            "ex": "Our primary goal is to finish the project on time.",
+            "tr": "我们的主要目标是按时完成项目。",
+            "match": [
+              "primary"
+            ]
+          },
+          {
+            "word": "interactive interpreter",
+            "ph": "/ˌɪntərˈæktɪv ɪnˈtɜːrprɪtər/",
+            "pos": "n phr",
+            "mean": "交互式解释器",
+            "ex": "The interactive interpreter is great for testing small snippets of code.",
+            "tr": "交互式解释器非常适合测试小的代码片段。",
+            "match": [
+              "interactive interpreter"
+            ]
+          },
+          {
+            "word": "execute",
+            "ph": "/ˈeksɪkjuːt/",
+            "pos": "v",
+            "mean": "执行",
+            "ex": "Double-click the icon to execute the program.",
+            "tr": "双击图标以执行该程序。",
+            "match": [
+              "executing"
+            ]
+          },
+          {
+            "word": "instant feedback",
+            "ph": "/ˈɪnstənt ˈfiːdbæk/",
+            "pos": "n phr",
+            "mean": "即时反馈",
+            "ex": "Online quizzes can provide instant feedback on your answers.",
+            "tr": "在线测验可以为你的答案提供即时反馈。",
+            "match": [
+              "instant feedback"
+            ]
+          },
+          {
+            "word": "prompt",
+            "ph": "/prɒmpt/",
+            "pos": "n",
+            "mean": "（命令行）提示符",
+            "ex": "The command line showed a blinking cursor after the prompt.",
+            "tr": "命令行在提示符后显示一个闪烁的光标。",
+            "match": [
+              "prompt"
+            ]
+          },
+          {
+            "word": "indicate",
+            "ph": "/ˈɪndɪkeɪt/",
+            "pos": "v",
+            "mean": "表明；指示",
+            "ex": "A red light on the device will indicate that the battery is low.",
+            "tr": "设备上的红灯将表明电池电量不足。",
+            "match": [
+              "indicates"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "en": "Now, at the `>>>` prompt, type the following code and press Enter:",
+        "cn": "现在，在 `>>>` 提示符后，键入以下代码并按 Enter 键：",
+        "vocab": [],
+        "blocks": [
+          {
+            "type": "code",
+            "content": "print(\"Hello, World!\")",
+            "language": "python"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "en": "The interpreter will immediately respond by printing the text to the next line:",
+        "cn": "解释器将立即响应，将文本打印到下一行：",
+        "vocab": [
+          {
+            "word": "immediately",
+            "ph": "/ɪˈmiːdiətli/",
+            "pos": "adv",
+            "mean": "立即",
+            "ex": "When you see the fire alarm, you must leave the building immediately.",
+            "tr": "当你看到火警时，你必须立即离开大楼。",
+            "match": [
+              "immediately"
+            ]
+          },
+          {
+            "word": "respond",
+            "ph": "/rɪˈspɒnd/",
+            "pos": "v",
+            "mean": "响应；回答",
+            "ex": "He didn't respond to my email for several days.",
+            "tr": "他好几天都没有回复我的电子邮件。",
+            "match": [
+              "respond"
+            ]
+          }
+        ],
+        "blocks": [
+          {
+            "type": "code",
+            "content": "Hello, World!",
+            "language": "text"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "en": "Congratulations! You've just written and executed your first Python program. Let's briefly break down what happened. `print()` is a built-in function in Python that outputs text to the console. The text you want to print, in this case \"Hello, World!\", is called an argument, and it must be placed inside the parentheses. Since it is text (what programmers call a string), it also needs to be enclosed in quotation marks (`\"` or `'`). Don't worry about the terminology for now; we will cover all of these concepts in much more detail later. For now, celebrate your first small victory!",
+        "cn": "恭喜！你刚刚编写并执行了你的第一个 Python 程序。让我们简要地分解一下发生了什么。`print()` 是 Python 中一个内置的函数，它将文本输出到控制台。你想要打印的文本，在本例中是“Hello, World!”，被称为一个参数，并且必须放在括号内。由于它是文本（程序员称之为字符串），它还需要用引号（`\"` 或 `'`）括起来。现在不用担心这些术语；我们稍后会更详细地介绍所有这些概念。现在，庆祝你的第一个小胜利吧！",
+        "vocab": [
+          {
+            "word": "congratulations",
+            "ph": "/kənˌɡrætʃəˈleɪʃnz/",
+            "pos": "int",
+            "mean": "恭喜",
+            "ex": "Congratulations on your graduation!",
+            "tr": "恭喜你毕业！",
+            "match": [
+              "Congratulations"
+            ]
+          },
+          {
+            "word": "break down",
+            "ph": "/breɪk daʊn/",
+            "pos": "phr v",
+            "mean": "分解",
+            "ex": "Let's break down this complex problem into smaller, manageable parts.",
+            "tr": "让我们把这个复杂的问题分解成更小的、可管理的部分。",
+            "match": [
+              "break down"
+            ]
+          },
+          {
+            "word": "built-in function",
+            "ph": "/ˈbɪlt ɪn ˈfʌŋkʃn/",
+            "pos": "n phr",
+            "mean": "内置函数",
+            "ex": "`len()` is a useful built-in function in Python for finding the length of a string or list.",
+            "tr": "`len()` 是 Python 中一个有用的内置函数，用于查找字符串或列表的长度。",
+            "match": [
+              "built-in function"
+            ]
+          },
+          {
+            "word": "output",
+            "ph": "/ˈaʊtpʊt/",
+            "pos": "v",
+            "mean": "输出",
+            "ex": "The program will output the results to a text file.",
+            "tr": "该程序会将结果输出到一个文本文件中。",
+            "match": [
+              "outputs"
+            ]
+          },
+          {
+            "word": "console",
+            "ph": "/ˈkɒnsoʊl/",
+            "pos": "n",
+            "mean": "控制台",
+            "ex": "Error messages from the program are often displayed in the console.",
+            "tr": "程序的错误信息通常显示在控制台中。",
+            "match": [
+              "console"
+            ]
+          },
+          {
+            "word": "argument",
+            "ph": "/ˈɑːrɡjumənt/",
+            "pos": "n",
+            "mean": "（函数）参数",
+            "ex": "The `print()` function takes a string as its argument.",
+            "tr": "`print()` 函数接受一个字符串作为其参数。",
+            "match": [
+              "argument"
+            ]
+          },
+          {
+            "word": "parentheses",
+            "ph": "/pəˈrenθəsiːz/",
+            "pos": "n",
+            "mean": "括号",
+            "ex": "In mathematics, you should always calculate the expression inside the parentheses first.",
+            "tr": "在数学中，你应该总是先计算括号内的表达式。",
+            "match": [
+              "parentheses"
+            ]
+          },
+          {
+            "word": "string",
+            "ph": "/strɪŋ/",
+            "pos": "n",
+            "mean": "字符串",
+            "ex": "\"Hello\" is an example of a string in most programming languages.",
+            "tr": "在大多数编程语言中，“Hello”是一个字符串的例子。",
+            "match": [
+              "string"
+            ]
+          },
+          {
+            "word": "enclose",
+            "ph": "/ɪnˈkloʊz/",
+            "pos": "v",
+            "mean": "包围；括起来",
+            "ex": "Please enclose your signature in the designated box.",
+            "tr": "请将您的签名括在指定的框内。",
+            "match": [
+              "enclosed"
+            ]
+          }
+        ]
+      }
+    ],
+    "pos_types": {
+      "n": {
+        "en": "noun",
+        "cn": "名词"
+      },
+      "v": {
+        "en": "verb",
+        "cn": "动词"
+      },
+      "adj": {
+        "en": "adjective",
+        "cn": "形容词"
+      },
+      "adv": {
+        "en": "adverb",
+        "cn": "副词"
+      },
+      "prep": {
+        "en": "preposition",
+        "cn": "介词"
+      },
+      "conj": {
+        "en": "conjunction",
+        "cn": "连词"
+      },
+      "pron": {
+        "en": "pronoun",
+        "cn": "代词"
+      },
+      "det": {
+        "en": "determiner",
+        "cn": "限定词"
+      },
+      "int": {
+        "en": "interjection",
+        "cn": "感叹词"
+      },
+      "phr": {
+        "en": "phrase",
+        "cn": "短语"
+      },
+      "phr v": {
+        "en": "phrasal verb",
+        "cn": "动词短语"
+      },
+      "n phr": {
+        "en": "noun phrase",
+        "cn": "名词短语"
+      },
+      "adj phr": {
+        "en": "adjective phrase",
+        "cn": "形容词短语"
+      },
+      "modal v": {
+        "en": "modal verb",
+        "cn": "情态动词"
+      },
+      "idiom": {
+        "en": "idiom",
+        "cn": "习语"
+      },
+      "S": {
+        "en": "sentence",
+        "cn": "句子"
+      }
+    }
+  },
+  {
+    "id": "python_tutorial_chapter_2_2",
+    "title": "2.2 Basic Operators (+, -, *, /, %, **, //)",
+    "info": {
+      "author": "GE32 Academy",
+      "source": "Original Tutorial",
+      "level": "B1",
+      "tags": [
+        "python",
+        "operators",
+        "math",
+        "arithmetic",
+        "coding basics"
+      ],
+      "link": "https://example.com/original-source",
+      "variants": null
+    },
+    "paras": [
+      {
+        "id": 1,
+        "en": "At its core, a computer is just a powerful calculator. To perform mathematical calculations, Python uses special symbols called **operators**. The most common ones correspond to the arithmetic you learned in school: addition (`+`) and subtraction (`-`).",
+        "cn": "就其核心而言，计算机只是一个强大的计算器。为了执行数学计算，Python 使用被称为**运算符**的特殊符号。最常见的运算符对应于你在学校学过的算术：加法（`+`）和减法（`-`）。",
+        "vocab": [
+          {
+            "word": "core",
+            "ph": "/kɔːr/",
+            "pos": "n",
+            "mean": "核心；要点",
+            "ex": "The core of the problem is a lack of money.",
+            "tr": "问题的核心是缺钱。",
+            "match": [
+              "core"
+            ]
+          },
+          {
+            "word": "calculator",
+            "ph": "/ˈkælkjuleɪtər/",
+            "pos": "n",
+            "mean": "计算器",
+            "ex": "You are allowed to use a calculator during the exam.",
+            "tr": "考试期间允许使用计算器。",
+            "match": [
+              "calculator"
+            ]
+          },
+          {
+            "word": "operator",
+            "ph": "/ˈɑːpəreɪtər/",
+            "pos": "n",
+            "mean": "运算符；操作员",
+            "ex": "In Python, the plus sign is an arithmetic operator.",
+            "tr": "在Python中，加号是一个算术运算符。",
+            "match": [
+              "operators",
+              "operator"
+            ]
+          },
+          {
+            "word": "arithmetic",
+            "ph": "/əˈrɪθmətɪk/",
+            "pos": "n",
+            "mean": "算术",
+            "ex": "Basic arithmetic includes addition, subtraction, multiplication, and division.",
+            "tr": "基本算术包括加、减、乘、除。",
+            "match": [
+              "arithmetic"
+            ]
+          },
+          {
+            "word": "subtraction",
+            "ph": "/səbˈtrækʃn/",
+            "pos": "n",
+            "mean": "减法",
+            "ex": "Subtraction is the opposite of addition.",
+            "tr": "减法是加法的反义词。",
+            "match": [
+              "subtraction"
+            ]
+          }
+        ],
+        "blocks": [
+          {
+            "type": "code",
+            "content": "print(10 + 5)\nprint(10 - 5)",
+            "language": "python"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "en": "For multiplication and division, the symbols might look slightly different from what you use in handwriting. Python uses an **asterisk** (`*`) for multiplication and a **forward slash** (`/`) for division.",
+        "cn": "对于乘法和除法，符号可能看起来和你手写的略有不同。Python 使用**星号**（`*`）表示乘法，使用**正斜杠**（`/`）表示除法。",
+        "vocab": [
+          {
+            "word": "multiplication",
+            "ph": "/ˌmʌltɪplɪˈkeɪʃn/",
+            "pos": "n",
+            "mean": "乘法",
+            "ex": "We are learning the multiplication tables in math class.",
+            "tr": "我们正在数学课上学习乘法表。",
+            "match": [
+              "multiplication"
+            ]
+          },
+          {
+            "word": "division",
+            "ph": "/dɪˈvɪʒn/",
+            "pos": "n",
+            "mean": "除法；部门",
+            "ex": "Division by zero allows for undefined results.",
+            "tr": "除以零会导致未定义的结果。",
+            "match": [
+              "division"
+            ]
+          },
+          {
+            "word": "asterisk",
+            "ph": "/ˈæstərɪsk/",
+            "pos": "n",
+            "mean": "星号 (*)",
+            "ex": "The required fields are marked with an asterisk.",
+            "tr": "必填字段标有星号。",
+            "match": [
+              "asterisk"
+            ]
+          },
+          {
+            "word": "forward slash",
+            "ph": "/ˈfɔːrwərd slæʃ/",
+            "pos": "n phr",
+            "mean": "正斜杠 (/)",
+            "ex": "Web addresses usually contain forward slashes.",
+            "tr": "网址通常包含正斜杠。",
+            "match": [
+              "forward slash"
+            ]
+          }
+        ],
+        "blocks": [
+          {
+            "type": "code",
+            "content": "print(2 * 3)\nprint(10 / 2)",
+            "language": "python"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "en": "There is a specific detail regarding division. Standard division (`/`) always produces a `float` (a number with a decimal), even if the result is a whole number. If you want to perform **integer division** (also known as **floor division**) to discard the decimal part, use double slashes (`//`).",
+        "cn": "关于除法有一个特定的细节。标准除法（`/`）总是产生一个 `float`（带小数的数字），即使结果是一个整数。如果你想执行**整数除法**（也称为**地板除**）以丢弃小数部分，请使用双斜杠（`//`）。",
+        "vocab": [
+          {
+            "word": "specific",
+            "ph": "/spəˈsɪfɪk/",
+            "pos": "adj",
+            "mean": "特定的；具体的",
+            "ex": "Is there a specific reason you chose this color?",
+            "tr": "你选择这个颜色有什么特定的原因吗？",
+            "match": [
+              "specific"
+            ]
+          },
+          {
+            "word": "discard",
+            "ph": "/dɪˈskɑːrd/",
+            "pos": "v",
+            "mean": "丢弃；抛弃",
+            "ex": "Discard any old data that is no longer useful.",
+            "tr": "丢弃任何不再有用的旧数据。",
+            "match": [
+              "discard"
+            ]
+          },
+          {
+            "word": "floor division",
+            "ph": "/flɔːr dɪˈvɪʒn/",
+            "pos": "n phr",
+            "mean": "地板除（向下取整除法）",
+            "ex": "Floor division rounds the result down to the nearest whole number.",
+            "tr": "地板除将结果向下取整到最接近的整数。",
+            "match": [
+              "floor division"
+            ]
+          },
+          {
+            "word": "whole number",
+            "ph": "/hoʊl ˈnʌmbər/",
+            "pos": "n phr",
+            "mean": "整数",
+            "ex": "Please enter a whole number, not a fraction.",
+            "tr": "请输入一个整数，不要输入分数。",
+            "match": [
+              "whole number"
+            ]
+          }
+        ],
+        "blocks": [
+          {
+            "type": "code",
+            "content": "print(7 / 2)   # Output: 3.5\nprint(7 // 2)  # Output: 3",
+            "language": "python"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "en": "Another incredibly useful operator is the **modulus** operator, represented by the percent sign (`%`). It does not calculate percentages. Instead, it returns the **remainder** of a division. This is often used to check if a number is even or odd (an even number divided by 2 has a remainder of 0).",
+        "cn": "另一个非常有用的运算符是**模**运算符，用百分号（`%`）表示。它不计算百分比。相反，它返回除法的**余数**。这通常用于检查一个数字是偶数还是奇数（偶数除以 2 的余数为 0）。",
+        "vocab": [
+          {
+            "word": "modulus",
+            "ph": "/ˈmɒdjʊləs/",
+            "pos": "n",
+            "mean": "模数；模运算",
+            "ex": "The modulus operator is essential in cryptography.",
+            "tr": "模运算在密码学中是必不可少的。",
+            "match": [
+              "modulus"
+            ]
+          },
+          {
+            "word": "represent",
+            "ph": "/ˌreprɪˈzent/",
+            "pos": "v",
+            "mean": "代表；表示",
+            "ex": "The red lines on the map represent main roads.",
+            "tr": "地图上的红线代表主要道路。",
+            "match": [
+              "represented"
+            ]
+          },
+          {
+            "word": "remainder",
+            "ph": "/rɪˈmeɪndər/",
+            "pos": "n",
+            "mean": "余数；剩余物",
+            "ex": "10 divided by 3 gives a remainder of 1.",
+            "tr": "10除以3的余数是1。",
+            "match": [
+              "remainder"
+            ]
+          },
+          {
+            "word": "even",
+            "ph": "/ˈiːvn/",
+            "pos": "adj",
+            "mean": "偶数的；平坦的",
+            "ex": "Numbers like 2, 4, and 6 are even numbers.",
+            "tr": "像2、4和6这样的数字是偶数。",
+            "match": [
+              "even"
+            ]
+          },
+          {
+            "word": "odd",
+            "ph": "/ɑːd/",
+            "pos": "adj",
+            "mean": "奇数的；奇怪的",
+            "ex": "Numbers like 1, 3, and 5 are odd numbers.",
+            "tr": "像1、3和5这样的数字是奇数。",
+            "match": [
+              "odd"
+            ]
+          }
+        ],
+        "blocks": [
+          {
+            "type": "code",
+            "content": "print(10 % 3)  # Output: 1 (because 3 goes into 10 three times, leaving 1)\nprint(4 % 2)   # Output: 0",
+            "language": "python"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "en": "Finally, if you need to calculate **exponents** (raising a number to a **power**), use two asterisks (`**`). Do not use the caret symbol (`^`), as that means something else in Python.",
+        "cn": "最后，如果你需要计算**指数**（将一个数字提升到某个**幂**），请使用两个星号（`**`）。不要使用脱字符（`^`），因为那在 Python 中意味着别的东西。",
+        "vocab": [
+          {
+            "word": "exponent",
+            "ph": "/ɪkˈspoʊnənt/",
+            "pos": "n",
+            "mean": "指数",
+            "ex": "In the expression 2^3, 3 is the exponent.",
+            "tr": "在表达式 2^3 中，3是指数。",
+            "match": [
+              "exponents"
+            ]
+          },
+          {
+            "word": "power",
+            "ph": "/ˈpaʊər/",
+            "pos": "n",
+            "mean": "幂；功率；力量",
+            "ex": "2 raised to the power of 3 is 8.",
+            "tr": "2的3次幂是8。",
+            "match": [
+              "power"
+            ]
+          },
+          {
+            "word": "raise",
+            "ph": "/reɪz/",
+            "pos": "v",
+            "mean": "提升；增加",
+            "ex": "To square a number, you raise it to the power of 2.",
+            "tr": "要计算一个数的平方，你需要将其提升到2次幂。",
+            "match": [
+              "raising"
+            ]
+          }
+        ],
+        "blocks": [
+          {
+            "type": "code",
+            "content": "print(2 ** 3)  # Output: 8 (2 * 2 * 2)\nprint(5 ** 2)  # Output: 25",
+            "language": "python"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "en": "You can combine these operators with variables to create dynamic expressions. Python follows the standard **order of operations** (PEMDAS: Parentheses, Exponents, Multiplication/Division, Addition/Subtraction). You can always use **parentheses** `()` to control the order.",
+        "cn": "你可以将这些运算符与变量结合使用，以创建动态表达式。Python 遵循标准的**运算顺序**（PEMDAS：括号、指数、乘/除、加/减）。你总是可以使用**括号** `()` 来控制顺序。",
+        "vocab": [
+          {
+            "word": "combine",
+            "ph": "/kəmˈbaɪn/",
+            "pos": "v",
+            "mean": "结合；组合",
+            "ex": "We can combine strings and numbers in the output.",
+            "tr": "我们可以在输出中组合字符串和数字。",
+            "match": [
+              "combine"
+            ]
+          },
+          {
+            "word": "expression",
+            "ph": "/ɪkˈspreʃn/",
+            "pos": "n",
+            "mean": "表达式；表达",
+            "ex": "Wait for the program to evaluate the mathematical expression.",
+            "tr": "等待程序计算这个数学表达式。",
+            "match": [
+              "expressions"
+            ]
+          },
+          {
+            "word": "order of operations",
+            "ph": "/ˈɔːrdər əv ˌɑːpəˈreɪʃnz/",
+            "pos": "n phr",
+            "mean": "运算顺序",
+            "ex": "If you forget the order of operations, your calculation might be wrong.",
+            "tr": "如果你忘记了运算顺序，你的计算可能是错的。",
+            "match": [
+              "order of operations"
+            ]
+          },
+          {
+            "word": "parentheses",
+            "ph": "/pəˈrenθəsiːz/",
+            "pos": "n",
+            "mean": "圆括号 (复数)",
+            "ex": "Operations inside parentheses are performed first.",
+            "tr": "括号内的运算最先执行。",
+            "match": [
+              "parentheses"
+            ]
+          }
+        ],
+        "blocks": [
+          {
+            "type": "code",
+            "content": "x = 10\ny = 5\nresult = (x + y) * 2\nprint(result)  # Output: 30",
+            "language": "python"
+          }
+        ]
+      }
+    ],
+    "pos_types": {
+      "n": {
+        "en": "noun",
+        "cn": "名词"
+      },
+      "v": {
+        "en": "verb",
+        "cn": "动词"
+      },
+      "adj": {
+        "en": "adjective",
+        "cn": "形容词"
+      },
+      "adv": {
+        "en": "adverb",
+        "cn": "副词"
+      },
+      "prep": {
+        "en": "preposition",
+        "cn": "介词"
+      },
+      "conj": {
+        "en": "conjunction",
+        "cn": "连词"
+      },
+      "pron": {
+        "en": "pronoun",
+        "cn": "代词"
+      },
+      "det": {
+        "en": "determiner",
+        "cn": "限定词"
+      },
+      "int": {
+        "en": "interjection",
+        "cn": "感叹词"
+      },
+      "phr": {
+        "en": "phrase",
+        "cn": "短语"
+      },
+      "phr v": {
+        "en": "phrasal verb",
+        "cn": "动词短语"
+      },
+      "n phr": {
+        "en": "noun phrase",
+        "cn": "名词短语"
+      },
+      "adj phr": {
+        "en": "adjective phrase",
+        "cn": "形容词短语"
+      },
+      "modal v": {
+        "en": "modal verb",
+        "cn": "情态动词"
+      },
+      "idiom": {
+        "en": "idiom",
+        "cn": "习语"
+      },
+      "S": {
+        "en": "sentence",
+        "cn": "句子"
+      }
+    }
   }
 ]

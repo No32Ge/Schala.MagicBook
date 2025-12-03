@@ -1,0 +1,234 @@
+<script type="text/template" id="add-grammar-modal-template">
+    <div id="add-grammar-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">语法点</h3>
+            </div>
+            <div class="modal-body">
+                <div class="modal-tabs">
+                    <button class="modal-tab active" data-tab="form">当前语法数据</button>
+                    <button class="modal-tab" data-tab="json">添加语法数据</button>
+                </div>
+                <div id="grammar-form-tab" class="modal-tab-content active" data-tab="form">
+                    <div class="form-group">
+                        <label class="form-label required-field">当前语法数据</label>
+                        <textarea class="json-input" id="grammar-rule-now" placeholder="Ge32 english 语法框框"></textarea>
+                    </div>
+                </div>
+                <div id="grammar-json-tab" class="modal-tab-content" data-tab="json">
+                    <div class="form-group">
+                        <label class="form-label required-field">JSON数据</label>
+                        <textarea class="json-input" id="grammar-json" placeholder="输入JSON数组，例如：[]"></textarea>
+                        <div class="add-method-buttons">
+                            <button class="btn batch-add-btn" id="batch-add-grammar-btn">批量添加JSON</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" id="cancel-grammar-btn">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+<script id="output">
+    (() => {
+        const host = document.createElement("div");
+        const shadow = host.attachShadow({ mode: "open" });
+
+        const template = document.getElementById("add-grammar-modal-template");
+        const css = document.getElementById("css");
+
+        // CSS
+        const styleEl = document.createElement("style");
+        styleEl.textContent = css.textContent;
+        shadow.appendChild(styleEl);
+
+        // HTML 内容
+        shadow.innerHTML += template.innerHTML;
+
+        // 将宿主插入文档
+        document.body.appendChild(host);
+
+        // 删除模板和原 CSS
+        template.remove();
+        css.remove();
+
+        // 删除自己
+        document.getElementById("output").remove();
+    })();
+</script>
+<style id="css">
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 10000;
+    }
+
+    .modal-overlay.show {
+        display: flex;
+    }
+
+    .modal-content {
+        background: white;
+        padding: 25px;
+        border-radius: 8px;
+        width: 90%;
+        max-width: 500px;
+        max-height: 80vh;
+        overflow-y: auto;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .modal-header {
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .modal-title {
+        font-size: 1.3rem;
+        color: var(--primary-color);
+        margin: 0;
+    }
+
+    .modal-body {
+        margin-bottom: 20px;
+    }
+
+    .modal-tabs {
+        display: flex;
+        border-bottom: 1px solid var(--border-color);
+        margin-bottom: 20px;
+    }
+
+    .modal-tab {
+        padding: 10px 20px;
+        background: none;
+        border: none;
+        border-bottom: 2px solid transparent;
+        cursor: pointer;
+        font-size: 0.9rem;
+        color: var(--text-light);
+        transition: all 0.2s;
+    }
+
+    .modal-tab.active {
+        color: var(--secondary-color);
+        border-bottom-color: var(--secondary-color);
+        font-weight: bold;
+    }
+
+    .modal-tab-content {
+        display: none;
+    }
+
+    .modal-tab-content.active {
+        display: block;
+    }
+
+    .modal-footer {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        padding-top: 15px;
+        border-top: 1px solid var(--border-color);
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: var(--primary-color);
+        font-size: 0.9rem;
+    }
+
+    .required-field::after {
+        content: " *";
+        color: #e74c3c;
+    }
+
+    .json-input {
+        width: 100%;
+        height: 200px;
+        padding: 12px;
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
+        font-family: 'Courier New', monospace;
+        font-size: 0.85rem;
+        resize: vertical;
+        box-sizing: border-box;
+    }
+
+    .json-input:focus {
+        outline: none;
+        border-color: var(--secondary-color);
+    }
+
+    .add-method-buttons {
+        display: flex;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .add-method-buttons .btn {
+        flex: 1;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        transition: all 0.2s;
+    }
+
+    .btn-primary {
+        background: var(--secondary-color);
+        color: white;
+    }
+
+    .btn-primary:hover {
+        background: #2980b9;
+    }
+
+    .btn-secondary {
+        background: #95a5a6;
+        color: white;
+    }
+
+    .btn-secondary:hover {
+        background: #7f8c8d;
+    }
+
+    .batch-add-btn {
+        background: #e67e22;
+        color: white;
+    }
+
+    .batch-add-btn:hover {
+        background: #d35400;
+    }
+
+    /* CSS 变量定义 */
+    :root {
+        --primary-color: #2c3e50;
+        --secondary-color: #3498db;
+        --light-color: #f9f9f9;
+        --border-color: #eaeaea;
+        --text-color: #333;
+        --text-light: #7f8c8d;
+    }
+</style>
