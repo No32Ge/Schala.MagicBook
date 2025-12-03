@@ -1,44 +1,30 @@
 <style>
-    :host { display: block; }
-    .card {
-        border: 1px solid #ddd; border-radius: 12px; padding: 20px;
-        width: 300px; background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-    .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
-    h3 { margin: 0; font-size: 1.2rem; color: #2c3e50; }
-    .actions { margin-top: 15px; display: flex; gap: 10px; }
-    button { padding: 8px 16px; cursor: pointer; background: #3498db; color: white; border: none; border-radius: 6px; }
-    button:hover { background: #2980b9; }
+    .card { border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 8px; }
+    h3 { margin: 0; color: #333; }
+    .tag { background: #eee; padding: 2px 8px; border-radius: 4px; font-size: 0.8em; }
+    button { margin-top: 10px; cursor: pointer; }
 </style>
 
 <template>
     <div class="card">
-        <div class="header">
-            <h3 s-text="username">Loading...</h3>
-            
-            <!-- [演示] 1. 使用子组件 -->
-            <!-- status 属性是传给 status-badge 内部处理的 -->
-            <status-badge status="online"></status-badge>
-        </div>
-
-        <p>职业: <span s-text="job">工程师</span></p>
+        <!-- 这里的 name 和 role 会自动跟随标签属性变化 -->
+        <h3>姓名: <span s-text="name"></span></h3>
+        <p>角色: <span class="tag" s-text="role"></span></p>
         
-        <div class="actions">
-            <button s-on="click:sayHi">打招呼</button>
-        </div>
+        <!-- 点击触发 deleteUser 方法 -->
+        <button s-on="click:requestDelete">🗑️ 请求删除 (子传父)</button>
     </div>
 </template>
 
 <script>
-    // [演示] 2. 在模板内部导入另一个模板 (嵌套导入)
-    // 这样 index.html 不需要知道 status-badge 的存在，只需要知道 user-card
-    $loader.registerComponent('status-badge', './status-badge.html');
+    // 1. 初始化默认值 (防止还没传参时显示空)
+    $state.name = 'Waiting...';
+    $state.role = 'Visitor';
 
-    // 获取属性
-    $state.username = $host.getAttribute('name') || '匿名用户';
-    $state.job = $host.getAttribute('job') || '自由职业者';
-
-    $state.sayHi = () => {
-        alert(`你好，我是 ${$state.username}！`);
+    // 2. 定义行为
+    // 注意：这里我们不修改数据，而是发出事件，让父亲去改
+    $state.requestDelete = (e, { $emit }) => {
+        // 发出自定义事件 'delete-user'
+        $emit('delete-user', { reason: 'User clicked button' });
     };
 </script>

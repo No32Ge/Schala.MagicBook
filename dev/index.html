@@ -2,58 +2,65 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>全场景导入演示</title>
-    <style>
-        body { font-family: sans-serif; background: #f4f6f8; padding: 40px; }
-        h1 { color: #333; margin-bottom: 30px; }
-        .grid { display: flex; gap: 20px; flex-wrap: wrap; }
-        
-        #banner-container {
-            width: 100%; max-width: 620px;
-        }
-    </style>
+    <title>组件通信测试</title>
 </head>
 <body>
+    
+    <!-- 引入引擎 -->
+    <script type="module">
+        import { registerComponent } from './ComponentLoader.js';
+        registerComponent('info-card', './info-card.html');
+    </script>
 
-    <h1>Component Loader 全场景演示</h1>
-
-    <div class="grid">
-        <!-- [演示] 场景 1: 使用 Web Component -->
-        <!-- 这里的 <user-card> 内部还自动导入了 <status-badge> -->
-        <user-card name="Alice" job="前端架构师"></user-card>
+    <!-- 父组件界面 -->
+    <div id="app" style="padding: 20px; font-family: sans-serif; background: #f0f2f5;">
+        <h2>父组件控制台</h2>
         
-        <!-- 复用 -->
-        <user-card name="Bob" job="产品经理"></user-card>
+        <label>修改姓名:</label>
+        <!-- 原生 input 监听 -->
+        <input type="text" id="name-input" value="张三">
+        <br><br>
+
+        <label>修改角色:</label>
+        <select id="role-input">
+            <option value="Admin">管理员</option>
+            <option value="User">普通用户</option>
+        </select>
+
+        <hr>
+
+        <!-- [关键] 子组件 -->
+        <!-- 我们没有任何 JS 代码直接去操作子组件内部的 DOM -->
+        <!-- 我们只是修改了这个标签的属性 (Attribute) -->
+        <info-card id="my-card" name="张三" role="Admin"></info-card>
+
     </div>
 
-    <!-- [演示] 场景 2: 这是一个普通的 div，我们将把原生模板导入到这里 -->
-    <div id="banner-container"></div>
+    <script>
+        // 模拟父组件逻辑 (这里用原生 JS 模拟 Vue 的父组件行为)
+        const nameInput = document.getElementById('name-input');
+        const roleInput = document.getElementById('role-input');
+        const card = document.getElementById('my-card');
 
-    <!-- 脚本区域 -->
-    <script type="module">
-        // 导入工具
-        import { registerComponent, importHtml } from './ComponentLoader.js';
+        // 1. [Props Down] 父组件数据变了 -> 修改子组件属性
+        nameInput.addEventListener('input', (e) => {
+            // 只要这一行！子组件内部会自动更新 s-text="name"
+            card.setAttribute('name', e.target.value);
+        });
 
-        // --- 动作 A: 注册 Web Component ---
-        // 只要注册了，页面上所有的 <user-card> 就会自动变成组件
-        // 注意：我们只注册了父组件，子组件 status-badge 是在 user-card 内部注册的
-        registerComponent('user-card', './user-card.html');
+        roleInput.addEventListener('change', (e) => {
+            card.setAttribute('role', e.target.value);
+        });
 
-        // --- 动作 B: 导入原生 HTML 片段 (非组件) ---
-        // 适用于你需要手动控制何时、何地插入一段 HTML
-        async function loadBanner() {
-            // 1. 获取 DOM 节点 (Fragment)
-            const bannerNode = await importHtml('./daily-banner.html');
+        // 2. [Events Up] 监听子组件发出的事件
+        card.addEventListener('delete-user', (e) => {
+            console.log('收到子组件请求:', e.detail);
+            alert('父组件收到了删除请求，即将重置数据！');
             
-            // 2. 手动添加到页面指定位置
-            document.getElementById('banner-container').appendChild(bannerNode);
-            
-            console.log("原生 Banner 已插入页面");
-        }
-
-        // 执行动作 B
-        loadBanner();
-
+            // 父组件响应请求，修改数据
+            card.setAttribute('name', '已重置');
+            nameInput.value = '已重置';
+        });
     </script>
 </body>
 </html>
