@@ -641,7 +641,7 @@
             navigator.msMaxTouchPoints > 0;
     }
 
-    if (!isTouchDevice) {
+    if (!isTouchDevice()) {
         // 页面加载完成后自动注入
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', autoInject);
