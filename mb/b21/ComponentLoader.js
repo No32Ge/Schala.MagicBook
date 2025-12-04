@@ -151,7 +151,7 @@ function initReactor(shadowRoot, compiledData, host) {
         const runScript = new Function('$scope', '$host', '$state', '$methods', '$emit', '$watch', '$loader', scriptContent);
         const tools = { registerComponent, importHtml };
         runScript(shadowRoot, host, $state, methods, $emit, $watch, tools);
-        // host.$methods = methods;   // 把内部方法暴露给组件实例
+        host.$methods = methods;   // 把内部方法暴露给组件实例
 
     }
     
