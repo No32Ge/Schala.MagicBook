@@ -61,7 +61,7 @@ function applyFontSize() {
 
 
 async function initNode() {
-    const addGrammarModal = await importHtml("./component/addGrammar.html");
+    const addGrammarModal = await importHtml("./template/addGram.html");
     document.dispatchEvent(new CustomEvent('initStep', { detail: "开始初始化" }));
     buildCatalog?.();
     const menu = initMenuDev?.(null)
