@@ -9,8 +9,8 @@ onCustomEvent("doSomething", ({ doWhat, who }) => {
 
 import { TextAnalyzer } from './js/textAnalyzer.js';
 import { initMenuDev } from "./component/floatingMenu.js";
-import { importArticlesModal } from "./component/importArticlesFromFile.js"
-import { addGrammarModal } from "./component/addGrammer.js"
+import { importArticlesModal } from "./component/importArticlesFromFile.js";
+
 import { buildCatalog } from "./component/catalog.js";
 import { addArticlesFromJs } from "./component/importArticleFromJs.js";
 import { addVocabModal } from "./component/addVocab.js";
@@ -19,6 +19,7 @@ import { getLibraryItemWithChapters } from "./res/articles/importArticles.js";
 import { initProgress } from "./component/progress.js";
 import FloatingBall from "./component/common/floatingBall.js"
 import { initArtcleData } from "./article/articleInit.js"
+import { registerComponent, importHtml } from './ComponentLoader.js';
 
 export function ready(data) {
     console.log("模块被调用：", data);
@@ -59,7 +60,8 @@ function applyFontSize() {
 // -----------------------------------------
 
 
-function initNode() {
+async function initNode() {
+    const addGrammarModal = await importHtml("./component/addGrammar.html");
     document.dispatchEvent(new CustomEvent('initStep', { detail: "开始初始化" }));
     buildCatalog?.();
     const menu = initMenuDev?.(null)

@@ -1,64 +1,4 @@
-<script type="text/template" id="add-grammar-modal-template">
-    <div id="add-grammar-modal" class="modal-overlay">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 class="modal-title">语法点</h3>
-            </div>
-            <div class="modal-body">
-                <div class="modal-tabs">
-                    <button class="modal-tab active" data-tab="form">当前语法数据</button>
-                    <button class="modal-tab" data-tab="json">添加语法数据</button>
-                </div>
-                <div id="grammar-form-tab" class="modal-tab-content active" data-tab="form">
-                    <div class="form-group">
-                        <label class="form-label required-field">当前语法数据</label>
-                        <textarea class="json-input" id="grammar-rule-now" placeholder="Ge32 english 语法框框"></textarea>
-                    </div>
-                </div>
-                <div id="grammar-json-tab" class="modal-tab-content" data-tab="json">
-                    <div class="form-group">
-                        <label class="form-label required-field">JSON数据</label>
-                        <textarea class="json-input" id="grammar-json" placeholder="输入JSON数组，例如：[]"></textarea>
-                        <div class="add-method-buttons">
-                            <button class="btn batch-add-btn" id="batch-add-grammar-btn">批量添加JSON</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" id="cancel-grammar-btn">取消</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</script>
-<script id="output">
-    (() => {
-        const host = document.createElement("div");
-        const shadow = host.attachShadow({ mode: "open" });
-
-        const template = document.getElementById("add-grammar-modal-template");
-        const css = document.getElementById("css");
-
-        // CSS
-        const styleEl = document.createElement("style");
-        styleEl.textContent = css.textContent;
-        shadow.appendChild(styleEl);
-
-        // HTML 内容
-        shadow.innerHTML += template.innerHTML;
-
-        // 将宿主插入文档
-        document.body.appendChild(host);
-
-        // 删除模板和原 CSS
-        template.remove();
-        css.remove();
-
-        // 删除自己
-        document.getElementById("output").remove();
-    })();
-</script>
-<style id="css">
+<style>
     .modal-overlay {
         position: fixed;
         top: 0;
@@ -232,3 +172,36 @@
         --text-light: #7f8c8d;
     }
 </style>
+<template>
+    <div id="add-grammar-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">语法点</h3>
+            </div>
+            <div class="modal-body">
+                <div class="modal-tabs">
+                    <button class="modal-tab active" data-tab="form">当前语法数据</button>
+                    <button class="modal-tab" data-tab="json">添加语法数据</button>
+                </div>
+                <div id="grammar-form-tab" class="modal-tab-content active" data-tab="form">
+                    <div class="form-group">
+                        <label class="form-label required-field">当前语法数据</label>
+                        <textarea class="json-input" id="grammar-rule-now" placeholder="Ge32 english 语法框框"></textarea>
+                    </div>
+                </div>
+                <div id="grammar-json-tab" class="modal-tab-content" data-tab="json">
+                    <div class="form-group">
+                        <label class="form-label required-field">JSON数据</label>
+                        <textarea class="json-input" id="grammar-json" placeholder="输入JSON数组，例如：[]"></textarea>
+                        <div class="add-method-buttons">
+                            <button class="btn batch-add-btn" id="batch-add-grammar-btn">批量添加JSON</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" id="cancel-grammar-btn">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template
