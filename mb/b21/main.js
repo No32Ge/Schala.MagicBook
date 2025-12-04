@@ -643,7 +643,7 @@ function renderPage() {
         };
 
         englishText.appendChild(
-            createCircleButton('G', () => document.getElementById("add-grammar-component").toggle())
+            createCircleButton('G', () => document.getElementById("add-grammar-component").$methods.toggle())
         );
 
         englishText.appendChild(
